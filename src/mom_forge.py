@@ -258,8 +258,16 @@ if __name__ == "__main__":
     users_path = "users.json"
     users = []
     if os.path.exists(users_path):
-        with open(users_path, 'r', encoding='utf-8') as f:
-            users = json.load(f)
+        try:
+            with open(users_path, 'r', encoding='utf-8') as f:
+                content = f.read().strip()
+                if content:
+                    users = json.loads(content)
+                else:
+                    users = []
+        except json.JSONDecodeError:
+            print("users.json war kaputt oder leer – neu initialisiert")
+            users = []
 
     if not any(u["name"] == mom.user_id for u in users):
         users.append({
