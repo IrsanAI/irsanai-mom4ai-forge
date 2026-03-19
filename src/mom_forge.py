@@ -50,14 +50,14 @@ class MomForge:
         name = f"Skeleton-G{self.generation}-{len(self.children) + 1}"
 
         # Bio-DNA → Parameter für Graph-Größe & Eigenschaften
-        # Korrekte gewichtete Summe (0–1 Bereich)
+        # Korrekte gewichtete Summe – mixture ist 0–100 → /100 normalisieren
         total_plast = sum(
-            mixture.get(k, 0) * BIO_COMPONENTS.get(k, {}).get("plastizitaet", 0.5)
+            (mixture.get(k, 0) / 100.0) * BIO_COMPONENTS.get(k, {}).get("plastizitaet", 0.5)
             for k in mixture
         )
 
         total_dezentral = sum(
-            mixture.get(k, 0) * BIO_COMPONENTS.get(k, {}).get("dezentral", 0.5)
+            (mixture.get(k, 0) / 100.0) * BIO_COMPONENTS.get(k, {}).get("dezentral", 0.5)
             for k in mixture
         )
 
