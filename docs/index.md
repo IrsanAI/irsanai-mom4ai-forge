@@ -28,17 +28,25 @@ Hier die aktuell besten 10 Skelette (sortiert nach Fitness – aktualisiert bei 
 
 <script>
 fetch('ancestry.json')
-  .then(response => response.json())
+  .then(response => {
+    if (!response.ok) throw new Error('ancestry.json nicht gefunden: ' + response.status);
+    return response.json();
+  })
   .then(data => {
+    console.log('ancestry.json geladen:', data.length, 'Skelette');
     const top10 = data.sort((a, b) => b.fitness - a.fitness).slice(0, 10);
     const container = document.getElementById('hall-of-fame');
+    container.innerHTML = '';  // vorherigen Inhalt löschen
+    if (top10.length === 0) {
+      container.innerHTML = '<p>Noch keine Skelette in Top 10.</p>';
+    }
     top10.forEach(s => {
       const div = document.createElement('div');
       div.style.textAlign = 'center';
       div.innerHTML = `
-        <img src="images/${s.name}.png" width="280" style="border-radius: 8px; border: 2px solid #0f0;">
+        <img src="images/${s.name}.png" width="280" style="border-radius: 8px; border: 2px solid #0f0;" onerror="this.src='https://via.placeholder.com/280?text=No+Image';">
         <h3>${s.name}</h3>
-        <p><strong>Produced by:</strong> ${s.produced_by}</p>
+        <p><strong>Produced by:</strong> ${s.produced_by || 'unbekannt'}</p>
         <p><strong>Fitness:</strong> ${s.fitness.toFixed(3)}</p>
         <p><strong>Born count:</strong> ${s.born_count || 1}x</p>
         <small>Dominant: ${s.facts.dominant_type}</small>
@@ -46,7 +54,10 @@ fetch('ancestry.json')
       container.appendChild(div);
     });
   })
-  .catch(err => console.error('Fehler beim Laden von ancestry.json', err));
+  .catch(err => {
+    console.error('Fehler beim Laden von ancestry.json:', err);
+    document.getElementById('hall-of-fame').innerHTML = '<p>Fehler beim Laden der Hall of Fame: ' + err.message + '</p>';
+  });
 </script>
 
 <small>Mehr Details in <a href="ancestry.json">ancestry.json</a> – bald interaktive Filter & Suche!</small>

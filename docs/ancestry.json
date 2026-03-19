@@ -1,0 +1,3356 @@
+[
+  {
+    "id": "fd5ff188",
+    "name": "QuorumSlime-G1.636388888888889-3-fd5ff188",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "slime_mold": 24.63,
+      "ameisen_schwarm": 21.35,
+      "mensch_gehirn": 3.74,
+      "quorum_sensing": 41.15,
+      "myzel_netz": 7.84,
+      "bienen_schwarm": 1.29
+    },
+    "timestamp": "2026-03-19T12:33:28.495679",
+    "facts": {
+      "nodes": 37,
+      "edges": 211,
+      "density": 0.15840840840840842,
+      "modularity": 0.19138210309912582,
+      "feedback_loops": 7,
+      "dominant_type": "quorum_sensing"
+    },
+    "fitness": 0.34996168258091215,
+    "image_path": "images/QuorumSlime-G1.636388888888889-3-fd5ff188.png"
+  },
+  {
+    "id": "e6b86a06",
+    "name": "MyzelSlime-G1.636388888888889-3-e6b86a06",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "myzel_netz": 42.11,
+      "ameisen_schwarm": 19.21,
+      "bienen_schwarm": 7.2,
+      "slime_mold": 20.62,
+      "mensch_gehirn": 10.85
+    },
+    "timestamp": "2026-03-19T12:33:29.237210",
+    "facts": {
+      "nodes": 38,
+      "edges": 197,
+      "density": 0.14011379800853485,
+      "modularity": 0.2087241315510547,
+      "feedback_loops": 6,
+      "dominant_type": "myzel_netz"
+    },
+    "fitness": 0.34640637570663496,
+    "image_path": "images/MyzelSlime-G1.636388888888889-3-e6b86a06.png"
+  },
+  {
+    "id": "6c12e82e",
+    "name": "SlimeAmeisen-G1.636388888888889-3-6c12e82e",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "ameisen_schwarm": 44.81,
+      "slime_mold": 55.19
+    },
+    "timestamp": "2026-03-19T12:33:30.348071",
+    "facts": {
+      "nodes": 37,
+      "edges": 212,
+      "density": 0.15915915915915915,
+      "modularity": 0.16659270249564587,
+      "feedback_loops": 7,
+      "dominant_type": "slime_mold"
+    },
+    "fitness": 0.34138131955267575,
+    "image_path": "images/SlimeAmeisen-G1.636388888888889-3-6c12e82e.png"
+  },
+  {
+    "id": "7a6f0646",
+    "name": "MyzelSlime-G1.636388888888889-6-7a6f0646",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "quorum_sensing": 10.29,
+      "bienen_schwarm": 11.03,
+      "mensch_gehirn": 19.28,
+      "slime_mold": 22.62,
+      "ameisen_schwarm": 11.48,
+      "myzel_netz": 25.29
+    },
+    "timestamp": "2026-03-19T14:00:27.163107",
+    "facts": {
+      "nodes": 38,
+      "edges": 214,
+      "density": 0.15220483641536273,
+      "modularity": 0.18062943119075792,
+      "feedback_loops": 5,
+      "dominant_type": "myzel_netz"
+    },
+    "fitness": 0.3290060962352534,
+    "image_path": "images/MyzelSlime-G1.636388888888889-6-7a6f0646.png"
+  },
+  {
+    "id": "52bbbff7",
+    "name": "BienenMyzel-G1.636388888888889-6-52bbbff7",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "ameisen_schwarm": 7.17,
+      "quorum_sensing": 18.26,
+      "mensch_gehirn": 4.0,
+      "bienen_schwarm": 37.57,
+      "myzel_netz": 32.57,
+      "slime_mold": 0.43
+    },
+    "timestamp": "2026-03-19T14:00:27.913284",
+    "facts": {
+      "nodes": 36,
+      "edges": 185,
+      "density": 0.14682539682539683,
+      "modularity": 0.1980170507106731,
+      "feedback_loops": 3,
+      "dominant_type": "bienen_schwarm"
+    },
+    "fitness": 0.31192662034610175,
+    "image_path": "images/BienenMyzel-G1.636388888888889-6-52bbbff7.png"
+  },
+  {
+    "id": "88711379",
+    "name": "AmeisenQuorum-G1.636388888888889-6-88711379",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "quorum_sensing": 30.86,
+      "ameisen_schwarm": 55.34,
+      "myzel_netz": 13.8
+    },
+    "timestamp": "2026-03-19T14:00:28.527325",
+    "facts": {
+      "nodes": 36,
+      "edges": 203,
+      "density": 0.16111111111111112,
+      "modularity": 0.17986118414349028,
+      "feedback_loops": 3,
+      "dominant_type": "ameisen_schwarm"
+    },
+    "fitness": 0.3078816306735992,
+    "image_path": "images/AmeisenQuorum-G1.636388888888889-6-88711379.png"
+  },
+  {
+    "id": "2f03c807",
+    "name": "SlimeMyzel-G1.636388888888889-6-2f03c807",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "slime_mold": 54.59,
+      "myzel_netz": 25.81,
+      "ameisen_schwarm": 19.6
+    },
+    "timestamp": "2026-03-19T14:00:29.093148",
+    "facts": {
+      "nodes": 38,
+      "edges": 219,
+      "density": 0.15576102418207682,
+      "modularity": 0.19530486677203432,
+      "feedback_loops": 6,
+      "dominant_type": "slime_mold"
+    },
+    "fitness": 0.34892099235150903,
+    "image_path": "images/SlimeMyzel-G1.636388888888889-6-2f03c807.png"
+  },
+  {
+    "id": "419ebea7",
+    "name": "MenschSlime-G1.636388888888889-6-419ebea7",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "mensch_gehirn": 81.77,
+      "slime_mold": 18.23
+    },
+    "timestamp": "2026-03-19T14:00:29.650164",
+    "facts": {
+      "nodes": 38,
+      "edges": 163,
+      "density": 0.11593172119487909,
+      "modularity": 0.22934964076757802,
+      "feedback_loops": 3,
+      "dominant_type": "mensch_gehirn"
+    },
+    "fitness": 0.3271031360071623,
+    "image_path": "images/MenschSlime-G1.636388888888889-6-419ebea7.png"
+  },
+  {
+    "id": "1c2d3bf9",
+    "name": "MyzelSlime-G1.636388888888889-6-1c2d3bf9",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "myzel_netz": 93.52,
+      "slime_mold": 6.48
+    },
+    "timestamp": "2026-03-19T14:00:30.117391",
+    "facts": {
+      "nodes": 39,
+      "edges": 211,
+      "density": 0.14237516869095818,
+      "modularity": 0.21764629925971057,
+      "feedback_loops": 6,
+      "dominant_type": "myzel_netz"
+    },
+    "fitness": 0.356794482450212,
+    "image_path": "images/MyzelSlime-G1.636388888888889-6-1c2d3bf9.png"
+  },
+  {
+    "id": "3fc65638",
+    "name": "BienenMensch-G1.636388888888889-12-3fc65638",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "mensch_gehirn": 49.56,
+      "bienen_schwarm": 50.44
+    },
+    "timestamp": "2026-03-19T14:03:09.324000",
+    "facts": {
+      "nodes": 36,
+      "edges": 143,
+      "density": 0.11349206349206349,
+      "modularity": 0.25569826383625416,
+      "feedback_loops": 5,
+      "dominant_type": "bienen_schwarm"
+    },
+    "fitness": 0.34048875652551247,
+    "image_path": "images/BienenMensch-G1.636388888888889-12-3fc65638.png"
+  },
+  {
+    "id": "cbe6c573",
+    "name": "AmeisenBienen-G1.636388888888889-12-cbe6c573",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "slime_mold": 9.19,
+      "myzel_netz": 7.65,
+      "bienen_schwarm": 16.06,
+      "ameisen_schwarm": 67.11
+    },
+    "timestamp": "2026-03-19T14:03:09.856018",
+    "facts": {
+      "nodes": 35,
+      "edges": 155,
+      "density": 0.13025210084033614,
+      "modularity": 0.21352780041001237,
+      "feedback_loops": 4,
+      "dominant_type": "ameisen_schwarm"
+    },
+    "fitness": 0.31871890071002035,
+    "image_path": "images/AmeisenBienen-G1.636388888888889-12-cbe6c573.png"
+  },
+  {
+    "id": "e01a7831",
+    "name": "SlimeMensch-G1.636388888888889-12-e01a7831",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "slime_mold": 35.03,
+      "ameisen_schwarm": 12.85,
+      "bienen_schwarm": 4.22,
+      "myzel_netz": 8.9,
+      "mensch_gehirn": 31.39,
+      "quorum_sensing": 7.62
+    },
+    "timestamp": "2026-03-19T14:03:10.328325",
+    "facts": {
+      "nodes": 38,
+      "edges": 204,
+      "density": 0.14509246088193456,
+      "modularity": 0.1859374755357001,
+      "feedback_loops": 7,
+      "dominant_type": "slime_mold"
+    },
+    "fitness": 0.34676629588431124,
+    "image_path": "images/SlimeMensch-G1.636388888888889-12-e01a7831.png"
+  },
+  {
+    "id": "cc383114",
+    "name": "AmeisenMyzel-G1.636388888888889-12-cc383114",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "bienen_schwarm": 14.14,
+      "ameisen_schwarm": 52.78,
+      "myzel_netz": 14.19,
+      "quorum_sensing": 11.51,
+      "mensch_gehirn": 7.38
+    },
+    "timestamp": "2026-03-19T14:03:10.862913",
+    "facts": {
+      "nodes": 36,
+      "edges": 191,
+      "density": 0.15158730158730158,
+      "modularity": 0.1808318561755687,
+      "feedback_loops": 9,
+      "dominant_type": "ameisen_schwarm"
+    },
+    "fitness": 0.3538377300699293,
+    "image_path": "images/AmeisenMyzel-G1.636388888888889-12-cc383114.png"
+  },
+  {
+    "id": "f5d83572",
+    "name": "AmeisenMyzel-G1.636388888888889-12-f5d83572",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "myzel_netz": 19.08,
+      "slime_mold": 13.31,
+      "ameisen_schwarm": 67.61
+    },
+    "timestamp": "2026-03-19T14:03:11.378130",
+    "facts": {
+      "nodes": 36,
+      "edges": 168,
+      "density": 0.13333333333333333,
+      "modularity": 0.2137421455798397,
+      "feedback_loops": 2,
+      "dominant_type": "ameisen_schwarm"
+    },
+    "fitness": 0.3072572078101993,
+    "image_path": "images/AmeisenMyzel-G1.636388888888889-12-f5d83572.png"
+  },
+  {
+    "id": "989cd8bf",
+    "name": "MyzelAmeisen-G1.636388888888889-12-989cd8bf",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "ameisen_schwarm": 25.93,
+      "mensch_gehirn": 7.22,
+      "myzel_netz": 41.66,
+      "quorum_sensing": 12.32,
+      "bienen_schwarm": 12.86
+    },
+    "timestamp": "2026-03-19T14:03:11.852761",
+    "facts": {
+      "nodes": 37,
+      "edges": 196,
+      "density": 0.14714714714714713,
+      "modularity": 0.19401142896947587,
+      "feedback_loops": 4,
+      "dominant_type": "myzel_netz"
+    },
+    "fitness": 0.3220455167437564,
+    "image_path": "images/MyzelAmeisen-G1.636388888888889-12-989cd8bf.png"
+  },
+  {
+    "id": "24fc0ce2",
+    "name": "BienenMyzel-G1.636388888888889-12-24fc0ce2",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "ameisen_schwarm": 8.96,
+      "mensch_gehirn": 19.64,
+      "bienen_schwarm": 33.23,
+      "myzel_netz": 24.35,
+      "slime_mold": 13.81
+    },
+    "timestamp": "2026-03-19T14:03:12.368053",
+    "facts": {
+      "nodes": 37,
+      "edges": 184,
+      "density": 0.13813813813813813,
+      "modularity": 0.218265116616026,
+      "feedback_loops": 9,
+      "dominant_type": "bienen_schwarm"
+    },
+    "fitness": 0.3687929833931453,
+    "image_path": "images/BienenMyzel-G1.636388888888889-12-24fc0ce2.png"
+  },
+  {
+    "id": "06b25f03",
+    "name": "MyzelMensch-G1.636388888888889-12-06b25f03",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "mensch_gehirn": 13.54,
+      "quorum_sensing": 8.04,
+      "ameisen_schwarm": 8.05,
+      "myzel_netz": 62.63,
+      "bienen_schwarm": 4.85,
+      "slime_mold": 2.89
+    },
+    "timestamp": "2026-03-19T14:03:12.914757",
+    "facts": {
+      "nodes": 38,
+      "edges": 204,
+      "density": 0.14509246088193456,
+      "modularity": 0.21343639368805808,
+      "feedback_loops": 3,
+      "dominant_type": "myzel_netz"
+    },
+    "fitness": 0.32796323413988054,
+    "image_path": "images/MyzelMensch-G1.636388888888889-12-06b25f03.png"
+  },
+  {
+    "id": "dfc7e75b",
+    "name": "QuorumSlime-G1.636388888888889-12-dfc7e75b",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "quorum_sensing": 50.28,
+      "bienen_schwarm": 16.47,
+      "slime_mold": 33.25
+    },
+    "timestamp": "2026-03-19T14:03:13.438545",
+    "facts": {
+      "nodes": 37,
+      "edges": 201,
+      "density": 0.15090090090090091,
+      "modularity": 0.18975813130695368,
+      "feedback_loops": 8,
+      "dominant_type": "quorum_sensing"
+    },
+    "fitness": 0.3542554502840557,
+    "image_path": "images/QuorumSlime-G1.636388888888889-12-dfc7e75b.png"
+  },
+  {
+    "id": "c7a5577b",
+    "name": "SlimeMyzel-G1.636388888888889-12-c7a5577b",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "slime_mold": 77.92,
+      "myzel_netz": 22.08
+    },
+    "timestamp": "2026-03-19T14:03:14.068741",
+    "facts": {
+      "nodes": 39,
+      "edges": 222,
+      "density": 0.14979757085020243,
+      "modularity": 0.17282171780413227,
+      "feedback_loops": 9,
+      "dominant_type": "slime_mold"
+    },
+    "fitness": 0.3645577219635655,
+    "image_path": "images/SlimeMyzel-G1.636388888888889-12-c7a5577b.png"
+  },
+  {
+    "id": "87bfcc3d",
+    "name": "MyzelMensch-G1.636388888888889-12-87bfcc3d",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "mensch_gehirn": 13.37,
+      "myzel_netz": 75.17,
+      "quorum_sensing": 11.46
+    },
+    "timestamp": "2026-03-19T14:03:14.771011",
+    "facts": {
+      "nodes": 39,
+      "edges": 215,
+      "density": 0.14507422402159245,
+      "modularity": 0.174801467674921,
+      "feedback_loops": 4,
+      "dominant_type": "myzel_netz"
+    },
+    "fitness": 0.32173589439917527,
+    "image_path": "images/MyzelMensch-G1.636388888888889-12-87bfcc3d.png"
+  },
+  {
+    "id": "5b0c2fd3",
+    "name": "MyzelBienen-G1.636388888888889-12-5b0c2fd3",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "mensch_gehirn": 6.73,
+      "bienen_schwarm": 8.39,
+      "slime_mold": 2.07,
+      "myzel_netz": 77.49,
+      "quorum_sensing": 5.33
+    },
+    "timestamp": "2026-03-19T14:03:15.493081",
+    "facts": {
+      "nodes": 38,
+      "edges": 228,
+      "density": 0.16216216216216217,
+      "modularity": 0.15517289505533913,
+      "feedback_loops": 3,
+      "dominant_type": "myzel_netz"
+    },
+    "fitness": 0.31011107509820685,
+    "image_path": "images/MyzelBienen-G1.636388888888889-12-5b0c2fd3.png"
+  },
+  {
+    "id": "ed0ac0cd",
+    "name": "AmeisenMensch-G1.636388888888889-12-ed0ac0cd",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "ameisen_schwarm": 32.73,
+      "myzel_netz": 13.35,
+      "slime_mold": 16.22,
+      "mensch_gehirn": 32.49,
+      "bienen_schwarm": 5.2
+    },
+    "timestamp": "2026-03-19T14:03:16.234978",
+    "facts": {
+      "nodes": 37,
+      "edges": 164,
+      "density": 0.12312312312312312,
+      "modularity": 0.24066575401213186,
+      "feedback_loops": 12,
+      "dominant_type": "ameisen_schwarm"
+    },
+    "fitness": 0.40089009091932953,
+    "image_path": "images/AmeisenMensch-G1.636388888888889-12-ed0ac0cd.png"
+  },
+  {
+    "id": "74ca500b",
+    "name": "MenschBienen-G1.636388888888889-12-74ca500b",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "slime_mold": 5.79,
+      "mensch_gehirn": 37.51,
+      "myzel_netz": 5.56,
+      "ameisen_schwarm": 15.91,
+      "bienen_schwarm": 24.01,
+      "quorum_sensing": 11.21
+    },
+    "timestamp": "2026-03-19T14:03:16.882811",
+    "facts": {
+      "nodes": 36,
+      "edges": 162,
+      "density": 0.12857142857142856,
+      "modularity": 0.2134196355897626,
+      "feedback_loops": 2,
+      "dominant_type": "mensch_gehirn"
+    },
+    "fitness": 0.30621896218579553,
+    "image_path": "images/MenschBienen-G1.636388888888889-12-74ca500b.png"
+  },
+  {
+    "id": "212c62bc",
+    "name": "MenschMyzel-G1.636388888888889-12-212c62bc",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "mensch_gehirn": 67.61,
+      "bienen_schwarm": 10.32,
+      "quorum_sensing": 4.89,
+      "myzel_netz": 17.18
+    },
+    "timestamp": "2026-03-19T14:03:17.546580",
+    "facts": {
+      "nodes": 38,
+      "edges": 163,
+      "density": 0.11593172119487909,
+      "modularity": 0.21009910954392377,
+      "feedback_loops": 3,
+      "dominant_type": "mensch_gehirn"
+    },
+    "fitness": 0.31540657289322743,
+    "image_path": "images/MenschMyzel-G1.636388888888889-12-212c62bc.png"
+  },
+  {
+    "id": "762c4a07",
+    "name": "QuorumBienen-G1.636388888888889-12-762c4a07",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "slime_mold": 1.64,
+      "quorum_sensing": 46.34,
+      "mensch_gehirn": 16.5,
+      "bienen_schwarm": 35.52
+    },
+    "timestamp": "2026-03-19T14:03:18.193255",
+    "facts": {
+      "nodes": 36,
+      "edges": 175,
+      "density": 0.1388888888888889,
+      "modularity": 0.19594836143807168,
+      "feedback_loops": 5,
+      "dominant_type": "quorum_sensing"
+    },
+    "fitness": 0.3229887251373234,
+    "image_path": "images/QuorumBienen-G1.636388888888889-12-762c4a07.png"
+  },
+  {
+    "id": "3f4baf11",
+    "name": "MyzelSlime-G1.636388888888889-12-3f4baf11",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "slime_mold": 37.18,
+      "myzel_netz": 62.82
+    },
+    "timestamp": "2026-03-19T14:03:18.963006",
+    "facts": {
+      "nodes": 39,
+      "edges": 206,
+      "density": 0.13900134952766532,
+      "modularity": 0.19043662626611355,
+      "feedback_loops": 5,
+      "dominant_type": "myzel_netz"
+    },
+    "fitness": 0.33721456635160574,
+    "image_path": "images/MyzelSlime-G1.636388888888889-12-3f4baf11.png"
+  },
+  {
+    "id": "d61ffdba",
+    "name": "AmeisenBienen-G1.636388888888889-12-d61ffdba",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "myzel_netz": 8.24,
+      "ameisen_schwarm": 76.01,
+      "bienen_schwarm": 15.26,
+      "slime_mold": 0.11,
+      "quorum_sensing": 0.37
+    },
+    "timestamp": "2026-03-19T14:03:19.722980",
+    "facts": {
+      "nodes": 35,
+      "edges": 170,
+      "density": 0.14285714285714285,
+      "modularity": 0.22142747642959615,
+      "feedback_loops": 9,
+      "dominant_type": "ameisen_schwarm"
+    },
+    "fitness": 0.36660002010043036,
+    "image_path": "images/AmeisenBienen-G1.636388888888889-12-d61ffdba.png"
+  },
+  {
+    "id": "41e628fa",
+    "name": "SlimeBienen-G1.636388888888889-12-41e628fa",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "bienen_schwarm": 4.73,
+      "slime_mold": 95.27
+    },
+    "timestamp": "2026-03-19T14:03:20.462815",
+    "facts": {
+      "nodes": 39,
+      "edges": 230,
+      "density": 0.15519568151147098,
+      "modularity": 0.1699489734473419,
+      "feedback_loops": 10,
+      "dominant_type": "slime_mold"
+    },
+    "fitness": 0.37144269022440174,
+    "image_path": "images/SlimeBienen-G1.636388888888889-12-41e628fa.png"
+  },
+  {
+    "id": "e7745654",
+    "name": "AmeisenBienen-G1.636388888888889-12-e7745654",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "ameisen_schwarm": 39.38,
+      "mensch_gehirn": 17.52,
+      "quorum_sensing": 4.36,
+      "myzel_netz": 15.79,
+      "slime_mold": 0.84,
+      "bienen_schwarm": 22.12
+    },
+    "timestamp": "2026-03-19T14:03:21.297290",
+    "facts": {
+      "nodes": 36,
+      "edges": 192,
+      "density": 0.1523809523809524,
+      "modularity": 0.1734968845214539,
+      "feedback_loops": 6,
+      "dominant_type": "ameisen_schwarm"
+    },
+    "fitness": 0.3270600172132963,
+    "image_path": "images/AmeisenBienen-G1.636388888888889-12-e7745654.png"
+  },
+  {
+    "id": "b2544ca7",
+    "name": "QuorumMensch-G1.636388888888889-32-b2544ca7",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "quorum_sensing": 42.71,
+      "mensch_gehirn": 35.28,
+      "ameisen_schwarm": 12.77,
+      "bienen_schwarm": 5.43,
+      "slime_mold": 3.8
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:18:58.583322",
+    "facts": {
+      "nodes": 37,
+      "edges": 156,
+      "density": 0.11711711711711711,
+      "modularity": 0.21019718035470272,
+      "feedback_loops": 4,
+      "dominant_type": "quorum_sensing"
+    },
+    "fitness": 0.31949828331654273,
+    "image_path": "images/QuorumMensch-G1.636388888888889-32-b2544ca7.png"
+  },
+  {
+    "id": "26eb4a6b",
+    "name": "MenschQuorum-G1.636388888888889-32-26eb4a6b",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "ameisen_schwarm": 5.46,
+      "bienen_schwarm": 17.03,
+      "mensch_gehirn": 45.5,
+      "quorum_sensing": 27.64,
+      "myzel_netz": 4.37
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:18:59.213139",
+    "facts": {
+      "nodes": 37,
+      "edges": 155,
+      "density": 0.11636636636636637,
+      "modularity": 0.2142983302993947,
+      "feedback_loops": 3,
+      "dominant_type": "mensch_gehirn"
+    },
+    "fitness": 0.31240701295998,
+    "image_path": "images/MenschQuorum-G1.636388888888889-32-26eb4a6b.png"
+  },
+  {
+    "id": "3a6b91d8",
+    "name": "QuorumAmeisen-G1.636388888888889-32-3a6b91d8",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "bienen_schwarm": 18.46,
+      "ameisen_schwarm": 29.28,
+      "myzel_netz": 21.64,
+      "quorum_sensing": 30.62
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:18:59.723991",
+    "facts": {
+      "nodes": 36,
+      "edges": 174,
+      "density": 0.1380952380952381,
+      "modularity": 0.22605617540087267,
+      "feedback_loops": 2,
+      "dominant_type": "quorum_sensing"
+    },
+    "fitness": 0.31219699176360466,
+    "image_path": "images/QuorumAmeisen-G1.636388888888889-32-3a6b91d8.png"
+  },
+  {
+    "id": "bcefe67e",
+    "name": "BienenQuorum-G1.636388888888889-32-bcefe67e",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "myzel_netz": 14.44,
+      "bienen_schwarm": 38.67,
+      "slime_mold": 0.33,
+      "quorum_sensing": 26.59,
+      "ameisen_schwarm": 16.97,
+      "mensch_gehirn": 3.0
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:19:00.288842",
+    "facts": {
+      "nodes": 35,
+      "edges": 162,
+      "density": 0.1361344537815126,
+      "modularity": 0.20183789250227707,
+      "feedback_loops": 6,
+      "dominant_type": "bienen_schwarm"
+    },
+    "fitness": 0.33295574241398157,
+    "image_path": "images/BienenQuorum-G1.636388888888889-32-bcefe67e.png"
+  },
+  {
+    "id": "a7f8381b",
+    "name": "QuorumMyzel-G1.636388888888889-32-a7f8381b",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "myzel_netz": 27.8,
+      "quorum_sensing": 72.2
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:19:00.803068",
+    "facts": {
+      "nodes": 37,
+      "edges": 220,
+      "density": 0.16516516516516516,
+      "modularity": 0.16902362928566958,
+      "feedback_loops": 8,
+      "dominant_type": "quorum_sensing"
+    },
+    "fitness": 0.3514075387143957,
+    "image_path": "images/QuorumMyzel-G1.636388888888889-32-a7f8381b.png"
+  },
+  {
+    "id": "464bf1ee",
+    "name": "MenschMyzel-G1.636388888888889-32-464bf1ee",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "ameisen_schwarm": 6.02,
+      "bienen_schwarm": 9.5,
+      "mensch_gehirn": 41.98,
+      "slime_mold": 6.44,
+      "myzel_netz": 36.07
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:19:01.395093",
+    "facts": {
+      "nodes": 38,
+      "edges": 178,
+      "density": 0.12660028449502134,
+      "modularity": 0.2049616248777751,
+      "feedback_loops": 5,
+      "dominant_type": "mensch_gehirn"
+    },
+    "fitness": 0.33331761200769827,
+    "image_path": "images/MenschMyzel-G1.636388888888889-32-464bf1ee.png"
+  },
+  {
+    "id": "05e81090",
+    "name": "MyzelAmeisen-G1.636388888888889-32-05e81090",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "myzel_netz": 26.73,
+      "quorum_sensing": 17.56,
+      "bienen_schwarm": 11.75,
+      "ameisen_schwarm": 22.35,
+      "mensch_gehirn": 10.37,
+      "slime_mold": 11.24
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:19:01.966212",
+    "facts": {
+      "nodes": 37,
+      "edges": 203,
+      "density": 0.1524024024024024,
+      "modularity": 0.1742966172461166,
+      "feedback_loops": 8,
+      "dominant_type": "myzel_netz"
+    },
+    "fitness": 0.34826696482895453,
+    "image_path": "images/MyzelAmeisen-G1.636388888888889-32-05e81090.png"
+  },
+  {
+    "id": "307184a4",
+    "name": "MyzelQuorum-G1.636388888888889-32-307184a4",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "myzel_netz": 90.93,
+      "quorum_sensing": 9.07
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:19:02.519668",
+    "facts": {
+      "nodes": 39,
+      "edges": 216,
+      "density": 0.145748987854251,
+      "modularity": 0.1899379021577064,
+      "feedback_loops": 5,
+      "dominant_type": "myzel_netz"
+    },
+    "fitness": 0.33705407372405044,
+    "image_path": "images/MyzelQuorum-G1.636388888888889-32-307184a4.png"
+  },
+  {
+    "id": "87e0e5bc",
+    "name": "MenschMyzel-G1.636388888888889-32-87e0e5bc",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "mensch_gehirn": 45.71,
+      "myzel_netz": 20.92,
+      "bienen_schwarm": 9.92,
+      "slime_mold": 16.3,
+      "ameisen_schwarm": 0.01,
+      "quorum_sensing": 7.15
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:19:03.073215",
+    "facts": {
+      "nodes": 38,
+      "edges": 175,
+      "density": 0.12446657183499289,
+      "modularity": 0.22428906455547906,
+      "feedback_loops": 1,
+      "dominant_type": "mensch_gehirn"
+    },
+    "fitness": 0.3094327955059043,
+    "image_path": "images/MenschMyzel-G1.636388888888889-32-87e0e5bc.png"
+  },
+  {
+    "id": "62de693b",
+    "name": "QuorumAmeisen-G1.636388888888889-32-62de693b",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "ameisen_schwarm": 38.47,
+      "bienen_schwarm": 5.35,
+      "quorum_sensing": 56.18
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:19:03.565375",
+    "facts": {
+      "nodes": 36,
+      "edges": 173,
+      "density": 0.1373015873015873,
+      "modularity": 0.22780645585655773,
+      "feedback_loops": 9,
+      "dominant_type": "quorum_sensing"
+    },
+    "fitness": 0.3694438876502304,
+    "image_path": "images/QuorumAmeisen-G1.636388888888889-32-62de693b.png"
+  },
+  {
+    "id": "2fc90680",
+    "name": "QuorumAmeisen-G1.636388888888889-32-2fc90680",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "ameisen_schwarm": 9.84,
+      "quorum_sensing": 90.16
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:19:04.043148",
+    "facts": {
+      "nodes": 36,
+      "edges": 178,
+      "density": 0.14126984126984127,
+      "modularity": 0.20412258200261843,
+      "feedback_loops": 5,
+      "dominant_type": "quorum_sensing"
+    },
+    "fitness": 0.3308935034887187,
+    "image_path": "images/QuorumAmeisen-G1.636388888888889-32-2fc90680.png"
+  },
+  {
+    "id": "6c0bd564",
+    "name": "SlimeAmeisen-G1.636388888888889-32-6c0bd564",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "bienen_schwarm": 19.77,
+      "mensch_gehirn": 17.53,
+      "ameisen_schwarm": 26.27,
+      "slime_mold": 36.43
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:19:04.597149",
+    "facts": {
+      "nodes": 37,
+      "edges": 185,
+      "density": 0.1388888888888889,
+      "modularity": 0.20926633499204417,
+      "feedback_loops": 9,
+      "dominant_type": "slime_mold"
+    },
+    "fitness": 0.36608796033629815,
+    "image_path": "images/SlimeAmeisen-G1.636388888888889-32-6c0bd564.png"
+  },
+  {
+    "id": "c5b1a1e7",
+    "name": "SlimeQuorum-G1.636388888888889-32-c5b1a1e7",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "quorum_sensing": 36.13,
+      "slime_mold": 63.87
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:19:05.072928",
+    "facts": {
+      "nodes": 38,
+      "edges": 185,
+      "density": 0.13157894736842105,
+      "modularity": 0.212003682907008,
+      "feedback_loops": 1,
+      "dominant_type": "slime_mold"
+    },
+    "fitness": 0.3087569078735749,
+    "image_path": "images/SlimeQuorum-G1.636388888888889-32-c5b1a1e7.png"
+  },
+  {
+    "id": "b86e9c9d",
+    "name": "BienenMyzel-G1.636388888888889-32-b86e9c9d",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "myzel_netz": 37.2,
+      "bienen_schwarm": 62.8
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:19:05.565021",
+    "facts": {
+      "nodes": 36,
+      "edges": 195,
+      "density": 0.15476190476190477,
+      "modularity": 0.18290937872843782,
+      "feedback_loops": 7,
+      "dominant_type": "bienen_schwarm"
+    },
+    "fitness": 0.33763664382784864,
+    "image_path": "images/BienenMyzel-G1.636388888888889-32-b86e9c9d.png"
+  },
+  {
+    "id": "2391d12d",
+    "name": "AmeisenBienen-G1.636388888888889-32-2391d12d",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "ameisen_schwarm": 83.4,
+      "bienen_schwarm": 16.6
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:19:06.073148",
+    "facts": {
+      "nodes": 35,
+      "edges": 173,
+      "density": 0.1453781512605042,
+      "modularity": 0.20286335292979416,
+      "feedback_loops": 9,
+      "dominant_type": "ameisen_schwarm"
+    },
+    "fitness": 0.3574649107515219,
+    "image_path": "images/AmeisenBienen-G1.636388888888889-32-2391d12d.png"
+  },
+  {
+    "id": "84540cb6",
+    "name": "SlimeQuorum-G1.636388888888889-32-84540cb6",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "slime_mold": 48.05,
+      "quorum_sensing": 22.36,
+      "myzel_netz": 3.95,
+      "mensch_gehirn": 17.86,
+      "bienen_schwarm": 0.99,
+      "ameisen_schwarm": 6.78
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:19:06.560148",
+    "facts": {
+      "nodes": 38,
+      "edges": 181,
+      "density": 0.1287339971550498,
+      "modularity": 0.20234572178492774,
+      "feedback_loops": 4,
+      "dominant_type": "slime_mold"
+    },
+    "fitness": 0.32634004966460567,
+    "image_path": "images/SlimeQuorum-G1.636388888888889-32-84540cb6.png"
+  },
+  {
+    "id": "fd4ac188",
+    "name": "AmeisenBienen-G1.636388888888889-32-fd4ac188",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "slime_mold": 1.79,
+      "bienen_schwarm": 15.95,
+      "mensch_gehirn": 12.24,
+      "ameisen_schwarm": 62.07,
+      "quorum_sensing": 7.94
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:19:07.102949",
+    "facts": {
+      "nodes": 35,
+      "edges": 166,
+      "density": 0.13949579831932774,
+      "modularity": 0.23318892976450017,
+      "feedback_loops": 8,
+      "dominant_type": "ameisen_schwarm"
+    },
+    "fitness": 0.363277598568317,
+    "image_path": "images/AmeisenBienen-G1.636388888888889-32-fd4ac188.png"
+  },
+  {
+    "id": "aadff739",
+    "name": "QuorumAmeisen-G1.636388888888889-32-aadff739",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "mensch_gehirn": 7.47,
+      "slime_mold": 7.31,
+      "ameisen_schwarm": 33.66,
+      "quorum_sensing": 46.55,
+      "myzel_netz": 3.08,
+      "bienen_schwarm": 1.93
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:19:07.573108",
+    "facts": {
+      "nodes": 36,
+      "edges": 189,
+      "density": 0.15,
+      "modularity": 0.17039729358396205,
+      "feedback_loops": 8,
+      "dominant_type": "quorum_sensing"
+    },
+    "fitness": 0.3441567699719306,
+    "image_path": "images/QuorumAmeisen-G1.636388888888889-32-aadff739.png"
+  },
+  {
+    "id": "c38fc845",
+    "name": "MyzelBienen-G1.636388888888889-32-c38fc845",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "quorum_sensing": 10.18,
+      "mensch_gehirn": 21.53,
+      "bienen_schwarm": 27.51,
+      "ameisen_schwarm": 9.74,
+      "myzel_netz": 31.03
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:19:08.073320",
+    "facts": {
+      "nodes": 37,
+      "edges": 165,
+      "density": 0.12387387387387387,
+      "modularity": 0.22750260312307374,
+      "feedback_loops": 7,
+      "dominant_type": "myzel_netz"
+    },
+    "fitness": 0.3520314322306099,
+    "image_path": "images/MyzelBienen-G1.636388888888889-32-c38fc845.png"
+  },
+  {
+    "id": "4d37af71",
+    "name": "AmeisenMyzel-G1.636388888888889-32-4d37af71",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "myzel_netz": 19.95,
+      "quorum_sensing": 17.68,
+      "slime_mold": 11.92,
+      "bienen_schwarm": 6.93,
+      "ameisen_schwarm": 30.24,
+      "mensch_gehirn": 13.28
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:19:08.547087",
+    "facts": {
+      "nodes": 37,
+      "edges": 181,
+      "density": 0.13588588588588588,
+      "modularity": 0.19673084468393062,
+      "feedback_loops": 4,
+      "dominant_type": "ameisen_schwarm"
+    },
+    "fitness": 0.31985519296544906,
+    "image_path": "images/AmeisenMyzel-G1.636388888888889-32-4d37af71.png"
+  },
+  {
+    "id": "3d07f44d",
+    "name": "AmeisenMensch-G1.636388888888889-32-3d07f44d",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "mensch_gehirn": 39.67,
+      "ameisen_schwarm": 60.33
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:19:09.053344",
+    "facts": {
+      "nodes": 36,
+      "edges": 161,
+      "density": 0.12777777777777777,
+      "modularity": 0.22727028391265552,
+      "feedback_loops": 5,
+      "dominant_type": "ameisen_schwarm"
+    },
+    "fitness": 0.3355941192433152,
+    "image_path": "images/AmeisenMensch-G1.636388888888889-32-3d07f44d.png"
+  },
+  {
+    "id": "2ac6754a",
+    "name": "SlimeAmeisen-G1.636388888888889-32-2ac6754a",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "myzel_netz": 1.23,
+      "slime_mold": 90.31,
+      "ameisen_schwarm": 8.47
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:19:09.580385",
+    "facts": {
+      "nodes": 39,
+      "edges": 212,
+      "density": 0.14304993252361672,
+      "modularity": 0.19499288052691682,
+      "feedback_loops": 10,
+      "dominant_type": "slime_mold"
+    },
+    "fitness": 0.377796306501467,
+    "image_path": "images/SlimeAmeisen-G1.636388888888889-32-2ac6754a.png"
+  },
+  {
+    "id": "85c0b41f",
+    "name": "MenschSlime-G1.636388888888889-32-85c0b41f",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "quorum_sensing": 18.43,
+      "slime_mold": 26.69,
+      "mensch_gehirn": 54.87
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:19:10.206260",
+    "facts": {
+      "nodes": 38,
+      "edges": 152,
+      "density": 0.10810810810810811,
+      "modularity": 0.252105104507751,
+      "feedback_loops": 5,
+      "dominant_type": "mensch_gehirn"
+    },
+    "fitness": 0.3490361405362142,
+    "image_path": "images/MenschSlime-G1.636388888888889-32-85c0b41f.png"
+  },
+  {
+    "id": "db1310ef",
+    "name": "BienenSlime-G1.636388888888889-32-db1310ef",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "mensch_gehirn": 3.09,
+      "slime_mold": 4.38,
+      "bienen_schwarm": 92.53
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:19:10.778183",
+    "facts": {
+      "nodes": 34,
+      "edges": 161,
+      "density": 0.14349376114081996,
+      "modularity": 0.19144222485562246,
+      "feedback_loops": 5,
+      "dominant_type": "bienen_schwarm"
+    },
+    "fitness": 0.31390376984043095,
+    "image_path": "images/BienenSlime-G1.636388888888889-32-db1310ef.png"
+  },
+  {
+    "id": "5e717f14",
+    "name": "MenschMyzel-G1.636388888888889-32-5e717f14",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "quorum_sensing": 7.84,
+      "myzel_netz": 35.27,
+      "mensch_gehirn": 50.59,
+      "bienen_schwarm": 6.3
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:19:11.372262",
+    "facts": {
+      "nodes": 38,
+      "edges": 169,
+      "density": 0.12019914651493599,
+      "modularity": 0.2221822289405294,
+      "feedback_loops": 9,
+      "dominant_type": "mensch_gehirn"
+    },
+    "fitness": 0.3709268916884505,
+    "image_path": "images/MenschMyzel-G1.636388888888889-32-5e717f14.png"
+  },
+  {
+    "id": "4af27036",
+    "name": "MenschBienen-G1.636388888888889-32-4af27036",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "ameisen_schwarm": 1.61,
+      "myzel_netz": 10.33,
+      "slime_mold": 8.73,
+      "mensch_gehirn": 53.95,
+      "bienen_schwarm": 25.38
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:19:11.973398",
+    "facts": {
+      "nodes": 37,
+      "edges": 161,
+      "density": 0.12087087087087087,
+      "modularity": 0.22762576792171835,
+      "feedback_loops": 4,
+      "dominant_type": "mensch_gehirn"
+    },
+    "fitness": 0.3293404962208154,
+    "image_path": "images/MenschBienen-G1.636388888888889-32-4af27036.png"
+  },
+  {
+    "id": "938bbac4",
+    "name": "BienenMensch-G1.636388888888889-32-938bbac4",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "mensch_gehirn": 19.86,
+      "bienen_schwarm": 52.16,
+      "myzel_netz": 6.01,
+      "slime_mold": 13.31,
+      "ameisen_schwarm": 8.65
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:19:12.618809",
+    "facts": {
+      "nodes": 36,
+      "edges": 163,
+      "density": 0.12936507936507938,
+      "modularity": 0.23908398111491286,
+      "feedback_loops": 2,
+      "dominant_type": "bienen_schwarm"
+    },
+    "fitness": 0.31251702254445385,
+    "image_path": "images/BienenMensch-G1.636388888888889-32-938bbac4.png"
+  },
+  {
+    "id": "5b0c8988",
+    "name": "AmeisenSlime-G1.636388888888889-32-5b0c8988",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "quorum_sensing": 22.35,
+      "slime_mold": 24.09,
+      "myzel_netz": 0.01,
+      "ameisen_schwarm": 53.56
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:19:13.253331",
+    "facts": {
+      "nodes": 36,
+      "edges": 180,
+      "density": 0.14285714285714285,
+      "modularity": 0.21077967639488107,
+      "feedback_loops": 7,
+      "dominant_type": "ameisen_schwarm"
+    },
+    "fitness": 0.3508177602763263,
+    "image_path": "images/AmeisenSlime-G1.636388888888889-32-5b0c8988.png"
+  },
+  {
+    "id": "c1ac03aa",
+    "name": "AmeisenMensch-G1.636388888888889-32-c1ac03aa",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "ameisen_schwarm": 26.74,
+      "quorum_sensing": 16.1,
+      "bienen_schwarm": 18.99,
+      "myzel_netz": 7.87,
+      "slime_mold": 5.34,
+      "mensch_gehirn": 24.96
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:19:13.880226",
+    "facts": {
+      "nodes": 36,
+      "edges": 184,
+      "density": 0.14603174603174604,
+      "modularity": 0.18839886385943214,
+      "feedback_loops": 7,
+      "dominant_type": "ameisen_schwarm"
+    },
+    "fitness": 0.34169033996381853,
+    "image_path": "images/AmeisenMensch-G1.636388888888889-32-c1ac03aa.png"
+  },
+  {
+    "id": "ca708169",
+    "name": "QuorumSlime-G1.636388888888889-32-ca708169",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "mensch_gehirn": 0.11,
+      "myzel_netz": 12.0,
+      "slime_mold": 40.21,
+      "ameisen_schwarm": 1.67,
+      "quorum_sensing": 46.02
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:19:14.589981",
+    "facts": {
+      "nodes": 38,
+      "edges": 196,
+      "density": 0.13940256045519203,
+      "modularity": 0.18085294463102203,
+      "feedback_loops": 4,
+      "dominant_type": "quorum_sensing"
+    },
+    "fitness": 0.3194757722500079,
+    "image_path": "images/QuorumSlime-G1.636388888888889-32-ca708169.png"
+  },
+  {
+    "id": "f9a7cf26",
+    "name": "MyzelMensch-G1.636388888888889-62-f9a7cf26",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "mensch_gehirn": 19.14,
+      "myzel_netz": 59.13,
+      "quorum_sensing": 13.32,
+      "bienen_schwarm": 8.42
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:39:10.089721",
+    "facts": {
+      "nodes": 38,
+      "edges": 173,
+      "density": 0.12304409672830725,
+      "modularity": 0.20072106101425827,
+      "feedback_loops": 6,
+      "dominant_type": "myzel_netz"
+    },
+    "fitness": 0.33932241569711213,
+    "image_path": "images/MyzelMensch-G1.636388888888889-62-f9a7cf26.png"
+  },
+  {
+    "id": "dbe6fbf4",
+    "name": "MyzelQuorum-G1.636388888888889-62-dbe6fbf4",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "mensch_gehirn": 21.06,
+      "myzel_netz": 38.15,
+      "ameisen_schwarm": 10.57,
+      "quorum_sensing": 29.59,
+      "slime_mold": 0.64
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:39:11.032535",
+    "facts": {
+      "nodes": 38,
+      "edges": 208,
+      "density": 0.14793741109530584,
+      "modularity": 0.19786694598540577,
+      "feedback_loops": 6,
+      "dominant_type": "myzel_netz"
+    },
+    "fitness": 0.3434113416950937,
+    "image_path": "images/MyzelQuorum-G1.636388888888889-62-dbe6fbf4.png"
+  },
+  {
+    "id": "451a6152",
+    "name": "BienenAmeisen-G1.636388888888889-62-451a6152",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "bienen_schwarm": 47.79,
+      "ameisen_schwarm": 39.71,
+      "slime_mold": 12.5
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:39:11.838538",
+    "facts": {
+      "nodes": 35,
+      "edges": 160,
+      "density": 0.13445378151260504,
+      "modularity": 0.19081276106202696,
+      "feedback_loops": 3,
+      "dominant_type": "bienen_schwarm"
+    },
+    "fitness": 0.2980406798141185,
+    "image_path": "images/BienenAmeisen-G1.636388888888889-62-451a6152.png"
+  },
+  {
+    "id": "7e63835c",
+    "name": "BienenMensch-G1.636388888888889-62-7e63835c",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "ameisen_schwarm": 9.4,
+      "mensch_gehirn": 21.56,
+      "slime_mold": 20.97,
+      "quorum_sensing": 19.49,
+      "bienen_schwarm": 28.57
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:39:12.476654",
+    "facts": {
+      "nodes": 36,
+      "edges": 168,
+      "density": 0.13333333333333333,
+      "modularity": 0.20690573550442465,
+      "feedback_loops": 7,
+      "dominant_type": "bienen_schwarm"
+    },
+    "fitness": 0.3465664822451916,
+    "image_path": "images/BienenMensch-G1.636388888888889-62-7e63835c.png"
+  },
+  {
+    "id": "b9015a50",
+    "name": "AmeisenBienen-G1.636388888888889-62-b9015a50",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "bienen_schwarm": 26.51,
+      "ameisen_schwarm": 63.75,
+      "slime_mold": 2.74,
+      "myzel_netz": 6.89,
+      "quorum_sensing": 0.11
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:39:13.118837",
+    "facts": {
+      "nodes": 35,
+      "edges": 178,
+      "density": 0.1495798319327731,
+      "modularity": 0.2013518285862497,
+      "feedback_loops": 2,
+      "dominant_type": "ameisen_schwarm"
+    },
+    "fitness": 0.29951131472891396,
+    "image_path": "images/AmeisenBienen-G1.636388888888889-62-b9015a50.png"
+  },
+  {
+    "id": "f95c6bff",
+    "name": "SlimeAmeisen-G1.636388888888889-62-f95c6bff",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "ameisen_schwarm": 15.77,
+      "slime_mold": 84.23
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:39:13.787000",
+    "facts": {
+      "nodes": 39,
+      "edges": 225,
+      "density": 0.15182186234817813,
+      "modularity": 0.1744180471029833,
+      "feedback_loops": 8,
+      "dominant_type": "slime_mold"
+    },
+    "fitness": 0.35456656002616793,
+    "image_path": "images/SlimeAmeisen-G1.636388888888889-62-f95c6bff.png"
+  },
+  {
+    "id": "a4df9fd1",
+    "name": "SlimeBienen-G1.636388888888889-62-a4df9fd1",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "slime_mold": 82.33,
+      "bienen_schwarm": 17.67
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:39:14.639811",
+    "facts": {
+      "nodes": 38,
+      "edges": 212,
+      "density": 0.1507823613086771,
+      "modularity": 0.19127390541271877,
+      "feedback_loops": 5,
+      "dominant_type": "slime_mold"
+    },
+    "fitness": 0.3372002928764713,
+    "image_path": "images/SlimeBienen-G1.636388888888889-62-a4df9fd1.png"
+  },
+  {
+    "id": "b6dedc42",
+    "name": "QuorumMyzel-G1.636388888888889-62-b6dedc42",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "quorum_sensing": 65.46,
+      "myzel_netz": 34.54
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:39:15.392684",
+    "facts": {
+      "nodes": 37,
+      "edges": 210,
+      "density": 0.15765765765765766,
+      "modularity": 0.17153462162915795,
+      "feedback_loops": 4,
+      "dominant_type": "quorum_sensing"
+    },
+    "fitness": 0.318748030813976,
+    "image_path": "images/QuorumMyzel-G1.636388888888889-62-b6dedc42.png"
+  },
+  {
+    "id": "78c231f6",
+    "name": "BienenMensch-G1.636388888888889-62-78c231f6",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "myzel_netz": 0.74,
+      "slime_mold": 11.16,
+      "quorum_sensing": 3.79,
+      "bienen_schwarm": 62.57,
+      "mensch_gehirn": 21.73
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:39:16.126705",
+    "facts": {
+      "nodes": 35,
+      "edges": 149,
+      "density": 0.12521008403361344,
+      "modularity": 0.21390925103922415,
+      "feedback_loops": 2,
+      "dominant_type": "bienen_schwarm"
+    },
+    "fitness": 0.2991391477894153,
+    "image_path": "images/BienenMensch-G1.636388888888889-62-78c231f6.png"
+  },
+  {
+    "id": "3a070004",
+    "name": "BienenQuorum-G1.636388888888889-62-3a070004",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "slime_mold": 9.48,
+      "quorum_sensing": 18.46,
+      "ameisen_schwarm": 5.03,
+      "bienen_schwarm": 59.57,
+      "myzel_netz": 7.45
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:39:16.775219",
+    "facts": {
+      "nodes": 35,
+      "edges": 174,
+      "density": 0.146218487394958,
+      "modularity": 0.2320610872188874,
+      "feedback_loops": 2,
+      "dominant_type": "bienen_schwarm"
+    },
+    "fitness": 0.3118911199932773,
+    "image_path": "images/BienenQuorum-G1.636388888888889-62-3a070004.png"
+  },
+  {
+    "id": "e96f9d1c",
+    "name": "QuorumSlime-G1.636388888888889-62-e96f9d1c",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "quorum_sensing": 53.18,
+      "slime_mold": 31.58,
+      "mensch_gehirn": 15.25
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:39:17.411595",
+    "facts": {
+      "nodes": 38,
+      "edges": 183,
+      "density": 0.1301564722617354,
+      "modularity": 0.22590702722878991,
+      "feedback_loops": 3,
+      "dominant_type": "quorum_sensing"
+    },
+    "fitness": 0.3261167636409282,
+    "image_path": "images/QuorumSlime-G1.636388888888889-62-e96f9d1c.png"
+  },
+  {
+    "id": "236735f5",
+    "name": "AmeisenBienen-G1.636388888888889-62-236735f5",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "quorum_sensing": 5.45,
+      "ameisen_schwarm": 34.75,
+      "mensch_gehirn": 8.78,
+      "slime_mold": 15.33,
+      "myzel_netz": 4.45,
+      "bienen_schwarm": 31.23
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:39:18.172485",
+    "facts": {
+      "nodes": 36,
+      "edges": 199,
+      "density": 0.15793650793650793,
+      "modularity": 0.1888053355695483,
+      "feedback_loops": 5,
+      "dominant_type": "ameisen_schwarm"
+    },
+    "fitness": 0.32549521998682934,
+    "image_path": "images/AmeisenBienen-G1.636388888888889-62-236735f5.png"
+  },
+  {
+    "id": "f37c1e71",
+    "name": "MenschAmeisen-G1.636388888888889-62-f37c1e71",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "ameisen_schwarm": 27.68,
+      "myzel_netz": 17.62,
+      "quorum_sensing": 26.59,
+      "mensch_gehirn": 28.11
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:39:18.906673",
+    "facts": {
+      "nodes": 37,
+      "edges": 166,
+      "density": 0.12462462462462462,
+      "modularity": 0.21866243774010724,
+      "feedback_loops": 4,
+      "dominant_type": "mensch_gehirn"
+    },
+    "fitness": 0.32623402367066484,
+    "image_path": "images/MenschAmeisen-G1.636388888888889-62-f37c1e71.png"
+  },
+  {
+    "id": "702f4199",
+    "name": "AmeisenMyzel-G1.636388888888889-62-702f4199",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "myzel_netz": 29.38,
+      "mensch_gehirn": 16.27,
+      "bienen_schwarm": 1.54,
+      "ameisen_schwarm": 49.25,
+      "slime_mold": 3.56
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:39:19.486893",
+    "facts": {
+      "nodes": 37,
+      "edges": 167,
+      "density": 0.12537537537537538,
+      "modularity": 0.20127486494459076,
+      "feedback_loops": 2,
+      "dominant_type": "ameisen_schwarm"
+    },
+    "fitness": 0.3019263121055569,
+    "image_path": "images/AmeisenMyzel-G1.636388888888889-62-702f4199.png"
+  },
+  {
+    "id": "66ec4a0b",
+    "name": "AmeisenMensch-G1.636388888888889-62-66ec4a0b",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "mensch_gehirn": 22.44,
+      "quorum_sensing": 6.85,
+      "slime_mold": 7.51,
+      "ameisen_schwarm": 45.85,
+      "myzel_netz": 10.13,
+      "bienen_schwarm": 7.22
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T14:39:20.099415",
+    "facts": {
+      "nodes": 36,
+      "edges": 178,
+      "density": 0.14126984126984127,
+      "modularity": 0.19771281241215005,
+      "feedback_loops": 2,
+      "dominant_type": "ameisen_schwarm"
+    },
+    "fitness": 0.30335584026072204,
+    "image_path": "images/AmeisenMensch-G1.636388888888889-62-66ec4a0b.png"
+  },
+  {
+    "id": "f62aecaf",
+    "name": "MyzelAmeisen-G1.636388888888889-77-f62aecaf",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "quorum_sensing": 2.04,
+      "mensch_gehirn": 2.15,
+      "myzel_netz": 77.63,
+      "bienen_schwarm": 3.43,
+      "slime_mold": 2.6,
+      "ameisen_schwarm": 12.15
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:38:12.390463",
+    "facts": {
+      "nodes": 38,
+      "edges": 207,
+      "density": 0.14722617354196302,
+      "modularity": 0.20754375473844544,
+      "feedback_loops": 12,
+      "dominant_type": "myzel_netz"
+    },
+    "fitness": 0.3981555911579991,
+    "image_path": "images/MyzelAmeisen-G1.636388888888889-77-f62aecaf.png"
+  },
+  {
+    "id": "aaf5b3cc",
+    "name": "MyzelAmeisen-G1.636388888888889-77-aaf5b3cc",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "myzel_netz": 26.62,
+      "quorum_sensing": 21.83,
+      "mensch_gehirn": 3.54,
+      "ameisen_schwarm": 24.16,
+      "slime_mold": 3.97,
+      "bienen_schwarm": 19.88
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:38:13.100323",
+    "facts": {
+      "nodes": 36,
+      "edges": 183,
+      "density": 0.14523809523809525,
+      "modularity": 0.19990313376771657,
+      "feedback_loops": 6,
+      "dominant_type": "myzel_netz"
+    },
+    "fitness": 0.3385729647538695,
+    "image_path": "images/MyzelAmeisen-G1.636388888888889-77-aaf5b3cc.png"
+  },
+  {
+    "id": "af562463",
+    "name": "SlimeMensch-G1.636388888888889-77-af562463",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "slime_mold": 50.05,
+      "mensch_gehirn": 49.95
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:38:13.605427",
+    "facts": {
+      "nodes": 39,
+      "edges": 205,
+      "density": 0.13832658569500675,
+      "modularity": 0.1814886139545622,
+      "feedback_loops": 9,
+      "dominant_type": "slime_mold"
+    },
+    "fitness": 0.36155756280018736,
+    "image_path": "images/SlimeMensch-G1.636388888888889-77-af562463.png"
+  },
+  {
+    "id": "beba1e5b",
+    "name": "QuorumAmeisen-G1.636388888888889-77-beba1e5b",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "bienen_schwarm": 13.23,
+      "ameisen_schwarm": 23.26,
+      "quorum_sensing": 40.93,
+      "myzel_netz": 22.57
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:38:14.162802",
+    "facts": {
+      "nodes": 36,
+      "edges": 171,
+      "density": 0.1357142857142857,
+      "modularity": 0.20328919144363677,
+      "feedback_loops": 1,
+      "dominant_type": "quorum_sensing"
+    },
+    "fitness": 0.2951881594539465,
+    "image_path": "images/QuorumAmeisen-G1.636388888888889-77-beba1e5b.png"
+  },
+  {
+    "id": "3ca77b74",
+    "name": "MyzelMensch-G1.636388888888889-77-3ca77b74",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "ameisen_schwarm": 9.1,
+      "bienen_schwarm": 4.83,
+      "slime_mold": 17.55,
+      "mensch_gehirn": 27.44,
+      "myzel_netz": 41.08
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:38:14.640429",
+    "facts": {
+      "nodes": 38,
+      "edges": 189,
+      "density": 0.13442389758179232,
+      "modularity": 0.19312759656975936,
+      "feedback_loops": 6,
+      "dominant_type": "myzel_netz"
+    },
+    "fitness": 0.34034900088646824,
+    "image_path": "images/MyzelMensch-G1.636388888888889-77-3ca77b74.png"
+  },
+  {
+    "id": "42376921",
+    "name": "SlimeAmeisen-G1.636388888888889-77-42376921",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "slime_mold": 47.65,
+      "mensch_gehirn": 24.39,
+      "ameisen_schwarm": 27.96
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:38:15.202514",
+    "facts": {
+      "nodes": 38,
+      "edges": 215,
+      "density": 0.15291607396870555,
+      "modularity": 0.21161204399409328,
+      "feedback_loops": 3,
+      "dominant_type": "slime_mold"
+    },
+    "fitness": 0.3278340911944466,
+    "image_path": "images/SlimeAmeisen-G1.636388888888889-77-42376921.png"
+  },
+  {
+    "id": "ad5bfdfa",
+    "name": "MenschMyzel-G1.636388888888889-77-ad5bfdfa",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "slime_mold": 2.56,
+      "mensch_gehirn": 46.8,
+      "ameisen_schwarm": 6.85,
+      "quorum_sensing": 14.65,
+      "myzel_netz": 29.14
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:38:15.760116",
+    "facts": {
+      "nodes": 38,
+      "edges": 173,
+      "density": 0.12304409672830725,
+      "modularity": 0.20922085374837784,
+      "feedback_loops": 5,
+      "dominant_type": "mensch_gehirn"
+    },
+    "fitness": 0.33446605180333716,
+    "image_path": "images/MenschMyzel-G1.636388888888889-77-ad5bfdfa.png"
+  },
+  {
+    "id": "43830e56",
+    "name": "BienenMyzel-G1.636388888888889-77-43830e56",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "bienen_schwarm": 50.2,
+      "myzel_netz": 49.8
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:38:16.240137",
+    "facts": {
+      "nodes": 36,
+      "edges": 199,
+      "density": 0.15793650793650793,
+      "modularity": 0.18066639731680306,
+      "feedback_loops": 4,
+      "dominant_type": "bienen_schwarm"
+    },
+    "fitness": 0.3167293725873429,
+    "image_path": "images/BienenMyzel-G1.636388888888889-77-43830e56.png"
+  },
+  {
+    "id": "6a306104",
+    "name": "MyzelAmeisen-G1.636388888888889-77-6a306104",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "bienen_schwarm": 23.07,
+      "slime_mold": 1.42,
+      "myzel_netz": 50.35,
+      "ameisen_schwarm": 25.16
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:38:16.750460",
+    "facts": {
+      "nodes": 37,
+      "edges": 182,
+      "density": 0.13663663663663664,
+      "modularity": 0.17324311717400928,
+      "feedback_loops": 3,
+      "dominant_type": "myzel_netz"
+    },
+    "fitness": 0.3011408645283992,
+    "image_path": "images/MyzelAmeisen-G1.636388888888889-77-6a306104.png"
+  },
+  {
+    "id": "603f7ada",
+    "name": "QuorumAmeisen-G1.636388888888889-77-603f7ada",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "quorum_sensing": 43.74,
+      "ameisen_schwarm": 29.37,
+      "bienen_schwarm": 26.89
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:38:17.257982",
+    "facts": {
+      "nodes": 35,
+      "edges": 174,
+      "density": 0.146218487394958,
+      "modularity": 0.20906630943230842,
+      "feedback_loops": 3,
+      "dominant_type": "quorum_sensing"
+    },
+    "fitness": 0.3119041818943426,
+    "image_path": "images/QuorumAmeisen-G1.636388888888889-77-603f7ada.png"
+  },
+  {
+    "id": "0ac5b861",
+    "name": "SlimeQuorum-G1.636388888888889-77-0ac5b861",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "mensch_gehirn": 3.32,
+      "myzel_netz": 8.88,
+      "bienen_schwarm": 5.54,
+      "quorum_sensing": 35.01,
+      "slime_mold": 47.25
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:38:17.782430",
+    "facts": {
+      "nodes": 38,
+      "edges": 211,
+      "density": 0.15007112375533427,
+      "modularity": 0.20229090676445793,
+      "feedback_loops": 5,
+      "dominant_type": "slime_mold"
+    },
+    "fitness": 0.3396920221781989,
+    "image_path": "images/SlimeQuorum-G1.636388888888889-77-0ac5b861.png"
+  },
+  {
+    "id": "f5288db7",
+    "name": "BienenAmeisen-G1.636388888888889-77-f5288db7",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "slime_mold": 14.98,
+      "myzel_netz": 7.81,
+      "bienen_schwarm": 48.58,
+      "quorum_sensing": 0.25,
+      "mensch_gehirn": 12.25,
+      "ameisen_schwarm": 16.13
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:38:18.308971",
+    "facts": {
+      "nodes": 36,
+      "edges": 172,
+      "density": 0.1365079365079365,
+      "modularity": 0.232063710835755,
+      "feedback_loops": 3,
+      "dominant_type": "bienen_schwarm"
+    },
+    "fitness": 0.3198769395033981,
+    "image_path": "images/BienenAmeisen-G1.636388888888889-77-f5288db7.png"
+  },
+  {
+    "id": "64339f2e",
+    "name": "SlimeBienen-G1.636388888888889-77-64339f2e",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "bienen_schwarm": 18.72,
+      "myzel_netz": 1.05,
+      "slime_mold": 51.96,
+      "quorum_sensing": 6.44,
+      "mensch_gehirn": 13.26,
+      "ameisen_schwarm": 8.57
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:38:18.770330",
+    "facts": {
+      "nodes": 37,
+      "edges": 186,
+      "density": 0.13963963963963963,
+      "modularity": 0.18551200751204558,
+      "feedback_loops": 2,
+      "dominant_type": "slime_mold"
+    },
+    "fitness": 0.3036443712631673,
+    "image_path": "images/SlimeBienen-G1.636388888888889-77-64339f2e.png"
+  },
+  {
+    "id": "0cbfe028",
+    "name": "AmeisenMensch-G1.636388888888889-77-0cbfe028",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "bienen_schwarm": 5.19,
+      "mensch_gehirn": 9.28,
+      "ameisen_schwarm": 85.12,
+      "slime_mold": 0.41
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:38:19.270368",
+    "facts": {
+      "nodes": 35,
+      "edges": 169,
+      "density": 0.14201680672268907,
+      "modularity": 0.19299483551434482,
+      "feedback_loops": 4,
+      "dominant_type": "ameisen_schwarm"
+    },
+    "fitness": 0.3122552072185459,
+    "image_path": "images/AmeisenMensch-G1.636388888888889-77-0cbfe028.png"
+  },
+  {
+    "id": "f4322c55",
+    "name": "BienenAmeisen-G1.636388888888889-77-f4322c55",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "myzel_netz": 3.92,
+      "bienen_schwarm": 54.64,
+      "ameisen_schwarm": 25.47,
+      "quorum_sensing": 2.48,
+      "mensch_gehirn": 6.1,
+      "slime_mold": 7.39
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:38:19.740364",
+    "facts": {
+      "nodes": 35,
+      "edges": 165,
+      "density": 0.13865546218487396,
+      "modularity": 0.22805341616562202,
+      "feedback_loops": 3,
+      "dominant_type": "bienen_schwarm"
+    },
+    "fitness": 0.31527651915930915,
+    "image_path": "images/BienenAmeisen-G1.636388888888889-77-f4322c55.png"
+  },
+  {
+    "id": "db501ca1",
+    "name": "BienenMyzel-G1.636388888888889-77-db501ca1",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "myzel_netz": 27.83,
+      "ameisen_schwarm": 24.33,
+      "mensch_gehirn": 0.48,
+      "slime_mold": 11.67,
+      "bienen_schwarm": 32.61,
+      "quorum_sensing": 3.07
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:38:20.250406",
+    "facts": {
+      "nodes": 36,
+      "edges": 188,
+      "density": 0.1492063492063492,
+      "modularity": 0.17775117205320726,
+      "feedback_loops": 4,
+      "dominant_type": "bienen_schwarm"
+    },
+    "fitness": 0.3126162903575851,
+    "image_path": "images/BienenMyzel-G1.636388888888889-77-db501ca1.png"
+  },
+  {
+    "id": "b269bf9e",
+    "name": "BienenSlime-G1.636388888888889-77-b269bf9e",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "quorum_sensing": 23.63,
+      "bienen_schwarm": 38.82,
+      "slime_mold": 37.54
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:38:20.740330",
+    "facts": {
+      "nodes": 36,
+      "edges": 176,
+      "density": 0.13968253968253969,
+      "modularity": 0.20334088667721206,
+      "feedback_loops": 6,
+      "dominant_type": "bienen_schwarm"
+    },
+    "fitness": 0.3383856143091909,
+    "image_path": "images/BienenSlime-G1.636388888888889-77-b269bf9e.png"
+  },
+  {
+    "id": "33f7f3f7",
+    "name": "QuorumAmeisen-G1.636388888888889-77-33f7f3f7",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "mensch_gehirn": 8.74,
+      "ameisen_schwarm": 21.9,
+      "quorum_sensing": 69.37
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:38:21.230430",
+    "facts": {
+      "nodes": 36,
+      "edges": 163,
+      "density": 0.12936507936507938,
+      "modularity": 0.23272419239982323,
+      "feedback_loops": 4,
+      "dominant_type": "quorum_sensing"
+    },
+    "fitness": 0.3307188179507829,
+    "image_path": "images/QuorumAmeisen-G1.636388888888889-77-33f7f3f7.png"
+  },
+  {
+    "id": "9d966ad3",
+    "name": "QuorumMyzel-G1.636388888888889-77-9d966ad3",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "bienen_schwarm": 6.77,
+      "ameisen_schwarm": 7.71,
+      "quorum_sensing": 51.19,
+      "myzel_netz": 26.62,
+      "mensch_gehirn": 7.71
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:38:21.690168",
+    "facts": {
+      "nodes": 37,
+      "edges": 207,
+      "density": 0.1554054054054054,
+      "modularity": 0.18570163914899276,
+      "feedback_loops": 4,
+      "dominant_type": "quorum_sensing"
+    },
+    "fitness": 0.32166342249663105,
+    "image_path": "images/QuorumMyzel-G1.636388888888889-77-9d966ad3.png"
+  },
+  {
+    "id": "97a71033",
+    "name": "AmeisenMyzel-G1.636388888888889-77-97a71033",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "myzel_netz": 20.35,
+      "ameisen_schwarm": 71.75,
+      "quorum_sensing": 7.79,
+      "slime_mold": 0.11
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:38:22.233248",
+    "facts": {
+      "nodes": 36,
+      "edges": 209,
+      "density": 0.16587301587301587,
+      "modularity": 0.1729277566796742,
+      "feedback_loops": 11,
+      "dominant_type": "ameisen_schwarm"
+    },
+    "fitness": 0.37254894923403464,
+    "image_path": "images/AmeisenMyzel-G1.636388888888889-77-97a71033.png"
+  },
+  {
+    "id": "6e1c36df",
+    "name": "MyzelWolf-G1.636388888888889-97-6e1c36df",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "mensch_gehirn": 9.52,
+      "ameisen_schwarm": 2.04,
+      "myzel_netz": 36.67,
+      "oktopus_nervensystem": 8.0,
+      "pflanzenwurzelnetz": 19.91,
+      "wolf_rudel": 23.86
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:11.412306",
+    "facts": {
+      "nodes": 36,
+      "edges": 169,
+      "density": 0.13412698412698412,
+      "modularity": 0.22142518928368266,
+      "feedback_loops": 5,
+      "dominant_type": "myzel_netz"
+    },
+    "fitness": 0.3333222414039086,
+    "image_path": "images/MyzelWolf-G1.636388888888889-97-6e1c36df.png"
+  },
+  {
+    "id": "ac3d4084",
+    "name": "VogelzugSlime-G1.636388888888889-97-ac3d4084",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "vogelzug": 92.98,
+      "slime_mold": 7.02
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:12.007946",
+    "facts": {
+      "nodes": 27,
+      "edges": 111,
+      "density": 0.1581196581196581,
+      "modularity": 0.19028491965422265,
+      "feedback_loops": 5,
+      "dominant_type": "vogelzug"
+    },
+    "fitness": 0.28633371924622647,
+    "image_path": "images/VogelzugSlime-G1.636388888888889-97-ac3d4084.png"
+  },
+  {
+    "id": "01e6298d",
+    "name": "AmeisenMyzel-G1.636388888888889-97-01e6298d",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "ameisen_schwarm": 57.46,
+      "myzel_netz": 42.54
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:12.379275",
+    "facts": {
+      "nodes": 34,
+      "edges": 170,
+      "density": 0.15151515151515152,
+      "modularity": 0.20183134677712722,
+      "feedback_loops": 2,
+      "dominant_type": "ameisen_schwarm"
+    },
+    "fitness": 0.2930137699244682,
+    "image_path": "images/AmeisenMyzel-G1.636388888888889-97-01e6298d.png"
+  },
+  {
+    "id": "e1830e39",
+    "name": "MyzelElefanten-G1.636388888888889-97-e1830e39",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "elefanten_matriarchat": 32.96,
+      "myzel_netz": 46.49,
+      "oktopus_nervensystem": 20.56
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:12.849209",
+    "facts": {
+      "nodes": 37,
+      "edges": 189,
+      "density": 0.14189189189189189,
+      "modularity": 0.18827105955411866,
+      "feedback_loops": 6,
+      "dominant_type": "myzel_netz"
+    },
+    "fitness": 0.33351820122894604,
+    "image_path": "images/MyzelElefanten-G1.636388888888889-97-e1830e39.png"
+  },
+  {
+    "id": "711801b3",
+    "name": "MenschQuorum-G1.636388888888889-97-711801b3",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "myzel_netz": 0.47,
+      "elefanten_matriarchat": 4.4,
+      "korallenriff": 10.43,
+      "quorum_sensing": 30.23,
+      "mensch_gehirn": 48.39,
+      "vogelzug": 6.09
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:13.349093",
+    "facts": {
+      "nodes": 33,
+      "edges": 107,
+      "density": 0.10132575757575757,
+      "modularity": 0.2737396435997587,
+      "feedback_loops": 3,
+      "dominant_type": "mensch_gehirn"
+    },
+    "fitness": 0.3155809048573532,
+    "image_path": "images/MenschQuorum-G1.636388888888889-97-711801b3.png"
+  },
+  {
+    "id": "60b02141",
+    "name": "MyzelKorallenriff-G1.636388888888889-97-60b02141",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "myzel_netz": 31.2,
+      "wolf_rudel": 8.97,
+      "mensch_gehirn": 15.37,
+      "korallenriff": 26.8,
+      "oktopus_nervensystem": 1.25,
+      "bienen_schwarm": 16.42
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:13.715137",
+    "facts": {
+      "nodes": 33,
+      "edges": 126,
+      "density": 0.11931818181818182,
+      "modularity": 0.23405302578888362,
+      "feedback_loops": 1,
+      "dominant_type": "myzel_netz"
+    },
+    "fitness": 0.28346083446769477,
+    "image_path": "images/MyzelKorallenriff-G1.636388888888889-97-60b02141.png"
+  },
+  {
+    "id": "ecc4efc3",
+    "name": "SlimeWolf-G1.636388888888889-97-ecc4efc3",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "wolf_rudel": 31.51,
+      "elefanten_matriarchat": 1.61,
+      "myzel_netz": 12.8,
+      "slime_mold": 36.85,
+      "vogelzug": 11.38,
+      "quorum_sensing": 5.84
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:14.179237",
+    "facts": {
+      "nodes": 34,
+      "edges": 140,
+      "density": 0.12477718360071301,
+      "modularity": 0.22743689089093377,
+      "feedback_loops": 3,
+      "dominant_type": "slime_mold"
+    },
+    "fitness": 0.3055449374897002,
+    "image_path": "images/SlimeWolf-G1.636388888888889-97-ecc4efc3.png"
+  },
+  {
+    "id": "c9df3e47",
+    "name": "QuorumSlime-G1.636388888888889-97-c9df3e47",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "wolf_rudel": 18.19,
+      "slime_mold": 20.04,
+      "elefanten_matriarchat": 1.44,
+      "quorum_sensing": 41.07,
+      "korallenriff": 19.26
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:14.629029",
+    "facts": {
+      "nodes": 33,
+      "edges": 121,
+      "density": 0.11458333333333333,
+      "modularity": 0.2642463764872206,
+      "feedback_loops": 2,
+      "dominant_type": "quorum_sensing"
+    },
+    "fitness": 0.3043101963064508,
+    "image_path": "images/QuorumSlime-G1.636388888888889-97-c9df3e47.png"
+  },
+  {
+    "id": "1cbbd7d2",
+    "name": "BienenMensch-G1.636388888888889-97-1cbbd7d2",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "bienen_schwarm": 91.62,
+      "mensch_gehirn": 8.38
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:15.059016",
+    "facts": {
+      "nodes": 28,
+      "edges": 96,
+      "density": 0.12698412698412698,
+      "modularity": 0.22399562841922455,
+      "feedback_loops": 2,
+      "dominant_type": "bienen_schwarm"
+    },
+    "fitness": 0.2653729734598838,
+    "image_path": "images/BienenMensch-G1.636388888888889-97-1cbbd7d2.png"
+  },
+  {
+    "id": "2c4b83bc",
+    "name": "AmeisenElefanten-G1.636388888888889-97-2c4b83bc",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "ameisen_schwarm": 36.7,
+      "myzel_netz": 15.36,
+      "pflanzenwurzelnetz": 7.22,
+      "elefanten_matriarchat": 31.57,
+      "korallenriff": 9.15
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:15.450809",
+    "facts": {
+      "nodes": 33,
+      "edges": 133,
+      "density": 0.1259469696969697,
+      "modularity": 0.2236959210659262,
+      "feedback_loops": 5,
+      "dominant_type": "ameisen_schwarm"
+    },
+    "fitness": 0.31756122321132535,
+    "image_path": "images/AmeisenElefanten-G1.636388888888889-97-2c4b83bc.png"
+  },
+  {
+    "id": "5bb8c7c7",
+    "name": "TermiteKorallenriff-G1.636388888888889-97-5bb8c7c7",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "korallenriff": 24.91,
+      "bienen_schwarm": 17.04,
+      "ameisen_schwarm": 21.53,
+      "termite_bau": 34.35,
+      "wolf_rudel": 2.17
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:15.889156",
+    "facts": {
+      "nodes": 30,
+      "edges": 116,
+      "density": 0.13333333333333333,
+      "modularity": 0.24085972771653819,
+      "feedback_loops": 5,
+      "dominant_type": "termite_bau"
+    },
+    "fitness": 0.312047285640946,
+    "image_path": "images/TermiteKorallenriff-G1.636388888888889-97-5bb8c7c7.png"
+  },
+  {
+    "id": "00afec07",
+    "name": "SlimeTermite-G1.636388888888889-97-00afec07",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "vogelzug": 5.8,
+      "termite_bau": 27.53,
+      "korallenriff": 14.23,
+      "wolf_rudel": 6.86,
+      "slime_mold": 45.13,
+      "oktopus_nervensystem": 0.44
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:16.318792",
+    "facts": {
+      "nodes": 33,
+      "edges": 148,
+      "density": 0.14015151515151514,
+      "modularity": 0.20241702947139228,
+      "feedback_loops": 5,
+      "dominant_type": "slime_mold"
+    },
+    "fitness": 0.31274181237798476,
+    "image_path": "images/SlimeTermite-G1.636388888888889-97-00afec07.png"
+  },
+  {
+    "id": "de8a9181",
+    "name": "SlimeAmeisen-G1.636388888888889-97-de8a9181",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "ameisen_schwarm": 42.2,
+      "slime_mold": 57.8
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:16.862010",
+    "facts": {
+      "nodes": 34,
+      "edges": 147,
+      "density": 0.13101604278074866,
+      "modularity": 0.2368111220034781,
+      "feedback_loops": 7,
+      "dominant_type": "slime_mold"
+    },
+    "fitness": 0.34733818995803833,
+    "image_path": "images/SlimeAmeisen-G1.636388888888889-97-de8a9181.png"
+  },
+  {
+    "id": "92419f3a",
+    "name": "AmeisenWolf-G1.636388888888889-97-92419f3a",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "oktopus_nervensystem": 10.87,
+      "wolf_rudel": 12.59,
+      "elefanten_matriarchat": 1.07,
+      "ameisen_schwarm": 75.47
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:17.353343",
+    "facts": {
+      "nodes": 32,
+      "edges": 131,
+      "density": 0.13205645161290322,
+      "modularity": 0.22743259721364056,
+      "feedback_loops": 2,
+      "dominant_type": "ameisen_schwarm"
+    },
+    "fitness": 0.2866928063136,
+    "image_path": "images/AmeisenWolf-G1.636388888888889-97-92419f3a.png"
+  },
+  {
+    "id": "a1218983",
+    "name": "SlimeAmeisen-G1.636388888888889-97-a1218983",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "myzel_netz": 12.1,
+      "vogelzug": 9.06,
+      "korallenriff": 18.43,
+      "slime_mold": 30.35,
+      "ameisen_schwarm": 30.06
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:17.799119",
+    "facts": {
+      "nodes": 33,
+      "edges": 137,
+      "density": 0.12973484848484848,
+      "modularity": 0.20754412228066482,
+      "feedback_loops": 4,
+      "dominant_type": "slime_mold"
+    },
+    "fitness": 0.3007187222669701,
+    "image_path": "images/SlimeAmeisen-G1.636388888888889-97-a1218983.png"
+  },
+  {
+    "id": "984f553f",
+    "name": "PflanzenwurzelnetzSlime-G1.636388888888889-97-984f553f",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "korallenriff": 5.67,
+      "pflanzenwurzelnetz": 67.3,
+      "ameisen_schwarm": 7.13,
+      "quorum_sensing": 8.18,
+      "slime_mold": 11.72
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:18.250803",
+    "facts": {
+      "nodes": 35,
+      "edges": 172,
+      "density": 0.14453781512605043,
+      "modularity": 0.2039816290788228,
+      "feedback_loops": 4,
+      "dominant_type": "pflanzenwurzelnetz"
+    },
+    "fitness": 0.318728643036635,
+    "image_path": "images/PflanzenwurzelnetzSlime-G1.636388888888889-97-984f553f.png"
+  },
+  {
+    "id": "052039bf",
+    "name": "ElefantenQuorum-G1.636388888888889-97-052039bf",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "mensch_gehirn": 4.48,
+      "myzel_netz": 21.14,
+      "elefanten_matriarchat": 36.73,
+      "quorum_sensing": 24.21,
+      "oktopus_nervensystem": 8.27,
+      "ameisen_schwarm": 5.17
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:18.759066",
+    "facts": {
+      "nodes": 35,
+      "edges": 143,
+      "density": 0.12016806722689076,
+      "modularity": 0.23282714898170115,
+      "feedback_loops": 5,
+      "dominant_type": "elefanten_matriarchat"
+    },
+    "fitness": 0.3285548455975245,
+    "image_path": "images/ElefantenQuorum-G1.636388888888889-97-052039bf.png"
+  },
+  {
+    "id": "14dd1155",
+    "name": "TermiteQuorum-G1.636388888888889-97-14dd1155",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "quorum_sensing": 49.39,
+      "termite_bau": 50.61
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:19.367059",
+    "facts": {
+      "nodes": 32,
+      "edges": 143,
+      "density": 0.14415322580645162,
+      "modularity": 0.20593673967248854,
+      "feedback_loops": 2,
+      "dominant_type": "termite_bau"
+    },
+    "fitness": 0.28337959840438065,
+    "image_path": "images/TermiteQuorum-G1.636388888888889-97-14dd1155.png"
+  },
+  {
+    "id": "024988a7",
+    "name": "VogelzugMensch-G1.636388888888889-97-024988a7",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "termite_bau": 14.97,
+      "elefanten_matriarchat": 2.66,
+      "quorum_sensing": 6.94,
+      "korallenriff": 1.99,
+      "vogelzug": 46.56,
+      "mensch_gehirn": 26.88
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:20.059206",
+    "facts": {
+      "nodes": 30,
+      "edges": 93,
+      "density": 0.10689655172413794,
+      "modularity": 0.2975208738712397,
+      "feedback_loops": 2,
+      "dominant_type": "vogelzug"
+    },
+    "fitness": 0.29926303254316206,
+    "image_path": "images/VogelzugMensch-G1.636388888888889-97-024988a7.png"
+  },
+  {
+    "id": "c34b2a73",
+    "name": "QuorumTermite-G1.636388888888889-97-c34b2a73",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "elefanten_matriarchat": 2.55,
+      "quorum_sensing": 33.01,
+      "oktopus_nervensystem": 8.54,
+      "slime_mold": 6.57,
+      "termite_bau": 27.99,
+      "myzel_netz": 21.34
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:20.550038",
+    "facts": {
+      "nodes": 34,
+      "edges": 170,
+      "density": 0.15151515151515152,
+      "modularity": 0.20100261341282954,
+      "feedback_loops": 2,
+      "dominant_type": "quorum_sensing"
+    },
+    "fitness": 0.29619586191146324,
+    "image_path": "images/QuorumTermite-G1.636388888888889-97-c34b2a73.png"
+  },
+  {
+    "id": "791f0c48",
+    "name": "QuorumSlime-G1.636388888888889-97-791f0c48",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "slime_mold": 27.61,
+      "ameisen_schwarm": 10.4,
+      "oktopus_nervensystem": 14.37,
+      "quorum_sensing": 47.61
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:21.243027",
+    "facts": {
+      "nodes": 35,
+      "edges": 160,
+      "density": 0.13445378151260504,
+      "modularity": 0.251905019751996,
+      "feedback_loops": 5,
+      "dominant_type": "quorum_sensing"
+    },
+    "fitness": 0.34073266560676263,
+    "image_path": "images/QuorumSlime-G1.636388888888889-97-791f0c48.png"
+  },
+  {
+    "id": "bf7a22d7",
+    "name": "WolfMensch-G1.636388888888889-97-bf7a22d7",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "oktopus_nervensystem": 0.8,
+      "vogelzug": 9.85,
+      "slime_mold": 11.04,
+      "mensch_gehirn": 25.1,
+      "wolf_rudel": 49.12,
+      "termite_bau": 4.08
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:21.908945",
+    "facts": {
+      "nodes": 33,
+      "edges": 113,
+      "density": 0.10700757575757576,
+      "modularity": 0.2738853501701845,
+      "feedback_loops": 2,
+      "dominant_type": "wolf_rudel"
+    },
+    "fitness": 0.3042192379805684,
+    "image_path": "images/WolfMensch-G1.636388888888889-97-bf7a22d7.png"
+  },
+  {
+    "id": "f85d3793",
+    "name": "MenschElefanten-G1.636388888888889-97-f85d3793",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "mensch_gehirn": 53.15,
+      "elefanten_matriarchat": 46.85
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:22.522068",
+    "facts": {
+      "nodes": 34,
+      "edges": 96,
+      "density": 0.0855614973262032,
+      "modularity": 0.28161099738845347,
+      "feedback_loops": 1,
+      "dominant_type": "mensch_gehirn"
+    },
+    "fitness": 0.30155209751277606,
+    "image_path": "images/MenschElefanten-G1.636388888888889-97-f85d3793.png"
+  },
+  {
+    "id": "d684e127",
+    "name": "AmeisenSlime-G1.636388888888889-97-d684e127",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "slime_mold": 24.18,
+      "pflanzenwurzelnetz": 17.04,
+      "myzel_netz": 15.67,
+      "vogelzug": 2.85,
+      "wolf_rudel": 9.02,
+      "ameisen_schwarm": 31.24
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:23.081082",
+    "facts": {
+      "nodes": 34,
+      "edges": 164,
+      "density": 0.14616755793226383,
+      "modularity": 0.17221822940947154,
+      "feedback_loops": 3,
+      "dominant_type": "ameisen_schwarm"
+    },
+    "fitness": 0.2905855119669513,
+    "image_path": "images/AmeisenSlime-G1.636388888888889-97-d684e127.png"
+  },
+  {
+    "id": "f6722731",
+    "name": "MenschOktopus-G1.636388888888889-97-f6722731",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "oktopus_nervensystem": 31.15,
+      "mensch_gehirn": 45.31,
+      "vogelzug": 3.71,
+      "wolf_rudel": 19.83
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:23.816886",
+    "facts": {
+      "nodes": 35,
+      "edges": 128,
+      "density": 0.10756302521008404,
+      "modularity": 0.2854458921840461,
+      "feedback_loops": 5,
+      "dominant_type": "mensch_gehirn"
+    },
+    "fitness": 0.3497296251374674,
+    "image_path": "images/MenschOktopus-G1.636388888888889-97-f6722731.png"
+  },
+  {
+    "id": "30d96be2",
+    "name": "ElefantenPflanzenwurzelnetz-G1.636388888888889-97-30d96be2",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "elefanten_matriarchat": 73.29,
+      "pflanzenwurzelnetz": 26.71
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:24.391344",
+    "facts": {
+      "nodes": 34,
+      "edges": 117,
+      "density": 0.10427807486631016,
+      "modularity": 0.24514055964387296,
+      "feedback_loops": 2,
+      "dominant_type": "elefanten_matriarchat"
+    },
+    "fitness": 0.30069731633384905,
+    "image_path": "images/ElefantenPflanzenwurzelnetz-G1.636388888888889-97-30d96be2.png"
+  },
+  {
+    "id": "2ccb9a5b",
+    "name": "QuorumTermite-G1.636388888888889-97-2ccb9a5b",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "quorum_sensing": 27.18,
+      "oktopus_nervensystem": 3.72,
+      "ameisen_schwarm": 19.47,
+      "termite_bau": 26.97,
+      "mensch_gehirn": 7.61,
+      "myzel_netz": 15.06
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:24.919000",
+    "facts": {
+      "nodes": 33,
+      "edges": 146,
+      "density": 0.13825757575757575,
+      "modularity": 0.20010773591186723,
+      "feedback_loops": 4,
+      "dominant_type": "quorum_sensing"
+    },
+    "fitness": 0.3034977381738933,
+    "image_path": "images/QuorumTermite-G1.636388888888889-97-2ccb9a5b.png"
+  },
+  {
+    "id": "f56d228a",
+    "name": "KorallenriffTermite-G1.636388888888889-97-f56d228a",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "termite_bau": 28.47,
+      "wolf_rudel": 12.6,
+      "oktopus_nervensystem": 8.58,
+      "korallenriff": 43.08,
+      "quorum_sensing": 7.27
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:25.468876",
+    "facts": {
+      "nodes": 31,
+      "edges": 110,
+      "density": 0.11827956989247312,
+      "modularity": 0.22412243080695876,
+      "feedback_loops": 7,
+      "dominant_type": "korallenriff"
+    },
+    "fitness": 0.32624694739053556,
+    "image_path": "images/KorallenriffTermite-G1.636388888888889-97-f56d228a.png"
+  },
+  {
+    "id": "17cbdc76",
+    "name": "ElefantenVogelzug-G1.636388888888889-97-17cbdc76",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "elefanten_matriarchat": 83.06,
+      "vogelzug": 16.94
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:25.943439",
+    "facts": {
+      "nodes": 32,
+      "edges": 111,
+      "density": 0.11189516129032258,
+      "modularity": 0.24072666499492115,
+      "feedback_loops": 1,
+      "dominant_type": "elefanten_matriarchat"
+    },
+    "fitness": 0.28042574768496364,
+    "image_path": "images/ElefantenVogelzug-G1.636388888888889-97-17cbdc76.png"
+  },
+  {
+    "id": "1267f1bd",
+    "name": "WolfMyzel-G1.636388888888889-97-1267f1bd",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "quorum_sensing": 19.54,
+      "termite_bau": 19.06,
+      "slime_mold": 8.57,
+      "myzel_netz": 24.91,
+      "korallenriff": 2.19,
+      "wolf_rudel": 25.74
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:26.435353",
+    "facts": {
+      "nodes": 34,
+      "edges": 152,
+      "density": 0.1354723707664884,
+      "modularity": 0.2247533917411948,
+      "feedback_loops": 6,
+      "dominant_type": "wolf_rudel"
+    },
+    "fitness": 0.3339233122318366,
+    "image_path": "images/WolfMyzel-G1.636388888888889-97-1267f1bd.png"
+  },
+  {
+    "id": "00721d07",
+    "name": "WolfMensch-G1.636388888888889-97-00721d07",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "elefanten_matriarchat": 19.0,
+      "wolf_rudel": 27.3,
+      "pflanzenwurzelnetz": 4.33,
+      "mensch_gehirn": 27.09,
+      "ameisen_schwarm": 21.7,
+      "bienen_schwarm": 0.58
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:27.090860",
+    "facts": {
+      "nodes": 33,
+      "edges": 129,
+      "density": 0.12215909090909091,
+      "modularity": 0.2678412499523836,
+      "feedback_loops": 3,
+      "dominant_type": "wolf_rudel"
+    },
+    "fitness": 0.31705947952545566,
+    "image_path": "images/WolfMensch-G1.636388888888889-97-00721d07.png"
+  },
+  {
+    "id": "11cbd40c",
+    "name": "MyzelMensch-G1.636388888888889-97-11cbd40c",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "oktopus_nervensystem": 18.18,
+      "mensch_gehirn": 25.66,
+      "bienen_schwarm": 5.11,
+      "myzel_netz": 44.54,
+      "quorum_sensing": 6.51
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:27.649207",
+    "facts": {
+      "nodes": 37,
+      "edges": 179,
+      "density": 0.13438438438438438,
+      "modularity": 0.2098198690326554,
+      "feedback_loops": 3,
+      "dominant_type": "myzel_netz"
+    },
+    "fitness": 0.31514990463335485,
+    "image_path": "images/MyzelMensch-G1.636388888888889-97-11cbd40c.png"
+  },
+  {
+    "id": "9e32e148",
+    "name": "MenschWolf-G1.636388888888889-97-9e32e148",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "slime_mold": 4.89,
+      "mensch_gehirn": 49.58,
+      "wolf_rudel": 27.25,
+      "termite_bau": 4.03,
+      "pflanzenwurzelnetz": 6.86,
+      "bienen_schwarm": 7.39
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:28.318908",
+    "facts": {
+      "nodes": 34,
+      "edges": 107,
+      "density": 0.09536541889483066,
+      "modularity": 0.2931343169492825,
+      "feedback_loops": 2,
+      "dominant_type": "mensch_gehirn"
+    },
+    "fitness": 0.31411199761067726,
+    "image_path": "images/MenschWolf-G1.636388888888889-97-9e32e148.png"
+  },
+  {
+    "id": "5244a2ca",
+    "name": "TermiteOktopus-G1.636388888888889-97-5244a2ca",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "ameisen_schwarm": 3.66,
+      "termite_bau": 86.55,
+      "oktopus_nervensystem": 9.79
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:28.791226",
+    "facts": {
+      "nodes": 31,
+      "edges": 125,
+      "density": 0.13440860215053763,
+      "modularity": 0.2160080646666091,
+      "feedback_loops": 1,
+      "dominant_type": "termite_bau"
+    },
+    "fitness": 0.27165754715997575,
+    "image_path": "images/TermiteOktopus-G1.636388888888889-97-5244a2ca.png"
+  },
+  {
+    "id": "22a2daa9",
+    "name": "ElefantenWolf-G1.636388888888889-97-22a2daa9",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "elefanten_matriarchat": 32.55,
+      "korallenriff": 9.79,
+      "myzel_netz": 10.98,
+      "wolf_rudel": 31.14,
+      "ameisen_schwarm": 15.54
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:29.379026",
+    "facts": {
+      "nodes": 33,
+      "edges": 127,
+      "density": 0.12026515151515152,
+      "modularity": 0.2508177418705933,
+      "feedback_loops": 4,
+      "dominant_type": "elefanten_matriarchat"
+    },
+    "fitness": 0.316508133403831,
+    "image_path": "images/ElefantenWolf-G1.636388888888889-97-22a2daa9.png"
+  },
+  {
+    "id": "d7532c7b",
+    "name": "TermiteVogelzug-G1.636388888888889-97-d7532c7b",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "termite_bau": 38.34,
+      "wolf_rudel": 14.47,
+      "vogelzug": 37.05,
+      "bienen_schwarm": 8.51,
+      "elefanten_matriarchat": 1.64
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:29.888984",
+    "facts": {
+      "nodes": 29,
+      "edges": 111,
+      "density": 0.13669950738916256,
+      "modularity": 0.16947134462340588,
+      "feedback_loops": 4,
+      "dominant_type": "termite_bau"
+    },
+    "fitness": 0.2696419273034068,
+    "image_path": "images/TermiteVogelzug-G1.636388888888889-97-d7532c7b.png"
+  },
+  {
+    "id": "4f005288",
+    "name": "WolfPflanzenwurzelnetz-G1.636388888888889-97-4f005288",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "oktopus_nervensystem": 10.6,
+      "elefanten_matriarchat": 1.48,
+      "termite_bau": 1.46,
+      "pflanzenwurzelnetz": 14.35,
+      "wolf_rudel": 59.67,
+      "ameisen_schwarm": 12.45
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:30.403743",
+    "facts": {
+      "nodes": 33,
+      "edges": 116,
+      "density": 0.10984848484848485,
+      "modularity": 0.26446784590193473,
+      "feedback_loops": 7,
+      "dominant_type": "wolf_rudel"
+    },
+    "fitness": 0.34982510436972164,
+    "image_path": "images/WolfPflanzenwurzelnetz-G1.636388888888889-97-4f005288.png"
+  },
+  {
+    "id": "970b36fe",
+    "name": "WolfKorallenriff-G1.636388888888889-97-970b36fe",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "korallenriff": 2.15,
+      "wolf_rudel": 97.85
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:30.858991",
+    "facts": {
+      "nodes": 32,
+      "edges": 123,
+      "density": 0.12399193548387097,
+      "modularity": 0.2157664378639229,
+      "feedback_loops": 4,
+      "dominant_type": "wolf_rudel"
+    },
+    "fitness": 0.2999324845480089,
+    "image_path": "images/WolfKorallenriff-G1.636388888888889-97-970b36fe.png"
+  },
+  {
+    "id": "9ffd5e46",
+    "name": "MenschVogelzug-G1.636388888888889-97-9ffd5e46",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "vogelzug": 49.04,
+      "korallenriff": 1.12,
+      "mensch_gehirn": 49.48,
+      "elefanten_matriarchat": 0.36
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:31.368935",
+    "facts": {
+      "nodes": 31,
+      "edges": 89,
+      "density": 0.0956989247311828,
+      "modularity": 0.24905719886501695,
+      "feedback_loops": 2,
+      "dominant_type": "mensch_gehirn"
+    },
+    "fitness": 0.27875133965233934,
+    "image_path": "images/MenschVogelzug-G1.636388888888889-97-9ffd5e46.png"
+  },
+  {
+    "id": "f5bc4577",
+    "name": "VogelzugPflanzenwurzelnetz-G1.636388888888889-97-f5bc4577",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "slime_mold": 2.55,
+      "vogelzug": 68.97,
+      "pflanzenwurzelnetz": 28.47
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:31.789151",
+    "facts": {
+      "nodes": 29,
+      "edges": 104,
+      "density": 0.12807881773399016,
+      "modularity": 0.2573367718961014,
+      "feedback_loops": 3,
+      "dominant_type": "vogelzug"
+    },
+    "fitness": 0.2960722722751803,
+    "image_path": "images/VogelzugPflanzenwurzelnetz-G1.636388888888889-97-f5bc4577.png"
+  },
+  {
+    "id": "49468805",
+    "name": "KorallenriffOktopus-G1.636388888888889-97-49468805",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "oktopus_nervensystem": 47.66,
+      "korallenriff": 52.34
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:32.262999",
+    "facts": {
+      "nodes": 34,
+      "edges": 156,
+      "density": 0.13903743315508021,
+      "modularity": 0.18385799090984023,
+      "feedback_loops": 7,
+      "dominant_type": "korallenriff"
+    },
+    "fitness": 0.32600633201100987,
+    "image_path": "images/KorallenriffOktopus-G1.636388888888889-97-49468805.png"
+  },
+  {
+    "id": "123ebb36",
+    "name": "MenschOktopus-G1.636388888888889-97-123ebb36",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "termite_bau": 22.14,
+      "mensch_gehirn": 48.83,
+      "oktopus_nervensystem": 29.03
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:32.939410",
+    "facts": {
+      "nodes": 35,
+      "edges": 124,
+      "density": 0.10420168067226891,
+      "modularity": 0.2580120609673181,
+      "feedback_loops": 1,
+      "dominant_type": "mensch_gehirn"
+    },
+    "fitness": 0.3020122183793828,
+    "image_path": "images/MenschOktopus-G1.636388888888889-97-123ebb36.png"
+  },
+  {
+    "id": "780f6dbf",
+    "name": "TermiteElefanten-G1.636388888888889-97-780f6dbf",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "elefanten_matriarchat": 34.04,
+      "termite_bau": 65.96
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:33.558993",
+    "facts": {
+      "nodes": 32,
+      "edges": 130,
+      "density": 0.1310483870967742,
+      "modularity": 0.20826831504470472,
+      "feedback_loops": 3,
+      "dominant_type": "termite_bau"
+    },
+    "fitness": 0.2870394084478082,
+    "image_path": "images/TermiteElefanten-G1.636388888888889-97-780f6dbf.png"
+  },
+  {
+    "id": "b3f207cd",
+    "name": "QuorumKorallenriff-G1.636388888888889-97-b3f207cd",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "termite_bau": 17.82,
+      "korallenriff": 19.32,
+      "quorum_sensing": 59.23,
+      "myzel_netz": 3.63
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:34.092002",
+    "facts": {
+      "nodes": 32,
+      "edges": 134,
+      "density": 0.1350806451612903,
+      "modularity": 0.2338881084101388,
+      "feedback_loops": 5,
+      "dominant_type": "quorum_sensing"
+    },
+    "fitness": 0.32218829908064534,
+    "image_path": "images/QuorumKorallenriff-G1.636388888888889-97-b3f207cd.png"
+  },
+  {
+    "id": "eed8e718",
+    "name": "VogelzugWolf-G1.636388888888889-97-eed8e718",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "korallenriff": 7.09,
+      "vogelzug": 77.46,
+      "wolf_rudel": 15.44
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:34.738760",
+    "facts": {
+      "nodes": 27,
+      "edges": 93,
+      "density": 0.13247863247863248,
+      "modularity": 0.18622653378249804,
+      "feedback_loops": 6,
+      "dominant_type": "vogelzug"
+    },
+    "fitness": 0.2904501005989055,
+    "image_path": "images/VogelzugWolf-G1.636388888888889-97-eed8e718.png"
+  },
+  {
+    "id": "3e071287",
+    "name": "VogelzugPflanzenwurzelnetz-G1.636388888888889-97-3e071287",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "pflanzenwurzelnetz": 4.72,
+      "vogelzug": 95.28
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:35.214886",
+    "facts": {
+      "nodes": 26,
+      "edges": 78,
+      "density": 0.12,
+      "modularity": 0.25480373711076365,
+      "feedback_loops": 2,
+      "dominant_type": "vogelzug"
+    },
+    "fitness": 0.26806809266344384,
+    "image_path": "images/VogelzugPflanzenwurzelnetz-G1.636388888888889-97-3e071287.png"
+  },
+  {
+    "id": "d51002f2",
+    "name": "MenschBienen-G1.636388888888889-97-d51002f2",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "vogelzug": 10.85,
+      "ameisen_schwarm": 13.68,
+      "pflanzenwurzelnetz": 9.69,
+      "bienen_schwarm": 15.02,
+      "mensch_gehirn": 50.75
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:35.649173",
+    "facts": {
+      "nodes": 32,
+      "edges": 96,
+      "density": 0.0967741935483871,
+      "modularity": 0.24735835881919732,
+      "feedback_loops": 2,
+      "dominant_type": "mensch_gehirn"
+    },
+    "fitness": 0.28921796876857897,
+    "image_path": "images/MenschBienen-G1.636388888888889-97-d51002f2.png"
+  },
+  {
+    "id": "c6d6fcc1",
+    "name": "QuorumMyzel-G1.636388888888889-97-c6d6fcc1",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "quorum_sensing": 81.06,
+      "myzel_netz": 18.94
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:36.166493",
+    "facts": {
+      "nodes": 34,
+      "edges": 156,
+      "density": 0.13903743315508021,
+      "modularity": 0.1833762626577783,
+      "feedback_loops": 5,
+      "dominant_type": "quorum_sensing"
+    },
+    "fitness": 0.31196070732161446,
+    "image_path": "images/QuorumMyzel-G1.636388888888889-97-c6d6fcc1.png"
+  },
+  {
+    "id": "732fd49a",
+    "name": "SlimeKorallenriff-G1.636388888888889-97-732fd49a",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "mensch_gehirn": 2.3,
+      "elefanten_matriarchat": 3.07,
+      "slime_mold": 63.13,
+      "ameisen_schwarm": 1.28,
+      "korallenriff": 30.21
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:38.449077",
+    "facts": {
+      "nodes": 34,
+      "edges": 146,
+      "density": 0.13012477718360071,
+      "modularity": 0.2636774033148881,
+      "feedback_loops": 2,
+      "dominant_type": "slime_mold"
+    },
+    "fitness": 0.3145979013708626,
+    "image_path": "images/SlimeKorallenriff-G1.636388888888889-97-732fd49a.png"
+  },
+  {
+    "id": "98a3b0c5",
+    "name": "AmeisenOktopus-G1.636388888888889-97-98a3b0c5",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "mensch_gehirn": 10.74,
+      "ameisen_schwarm": 46.13,
+      "oktopus_nervensystem": 43.13
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:43:40.648986",
+    "facts": {
+      "nodes": 35,
+      "edges": 163,
+      "density": 0.1369747899159664,
+      "modularity": 0.21232412028918216,
+      "feedback_loops": 2,
+      "dominant_type": "ameisen_schwarm"
+    },
+    "fitness": 0.2980487446391036,
+    "image_path": "images/AmeisenOktopus-G1.636388888888889-97-98a3b0c5.png"
+  },
+  {
+    "id": "8329a640",
+    "name": "KorallenriffWolf-G1.636388888888889-147-8329a640",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "wolf_rudel": 38.4,
+      "korallenriff": 61.6
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:46:45.838493",
+    "facts": {
+      "nodes": 30,
+      "edges": 113,
+      "density": 0.12988505747126436,
+      "modularity": 0.2589340562265555,
+      "feedback_loops": 0,
+      "dominant_type": "korallenriff"
+    },
+    "fitness": 0.27162982085653264,
+    "image_path": "images/KorallenriffWolf-G1.636388888888889-147-8329a640.png"
+  },
+  {
+    "id": "2e85b87c",
+    "name": "QuorumBienen-G1.636388888888889-147-2e85b87c",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "myzel_netz": 10.99,
+      "elefanten_matriarchat": 7.09,
+      "ameisen_schwarm": 10.39,
+      "bienen_schwarm": 16.97,
+      "quorum_sensing": 52.9,
+      "termite_bau": 1.66
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-19T15:46:46.308682",
+    "facts": {
+      "nodes": 33,
+      "edges": 146,
+      "density": 0.13825757575757575,
+      "modularity": 0.23551792357280021,
+      "feedback_loops": 5,
+      "dominant_type": "quorum_sensing"
+    },
+    "fitness": 0.32453844608239424,
+    "image_path": "images/QuorumBienen-G1.636388888888889-147-2e85b87c.png"
+  }
+]
