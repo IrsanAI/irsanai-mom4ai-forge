@@ -27,18 +27,21 @@ Hier die aktuell besten 10 Skelette (sortiert nach Fitness – aktualisiert bei 
 <div id="hall-of-fame" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 2em 0;"></div>
 
 <script>
+console.log('Versuche ancestry.json zu laden...');
 fetch('ancestry.json')
   .then(response => {
-    if (!response.ok) throw new Error('ancestry.json nicht gefunden: ' + response.status);
+    console.log('Response Status:', response.status);
+    if (!response.ok) throw new Error('Status ' + response.status);
     return response.json();
   })
   .then(data => {
-    console.log('ancestry.json geladen:', data.length, 'Skelette');
+    console.log('Daten geladen – Anzahl Skelette:', data.length);
     const top10 = data.sort((a, b) => b.fitness - a.fitness).slice(0, 10);
     const container = document.getElementById('hall-of-fame');
-    container.innerHTML = '';  // vorherigen Inhalt löschen
+    container.innerHTML = '';
     if (top10.length === 0) {
       container.innerHTML = '<p>Noch keine Skelette in Top 10.</p>';
+      return;
     }
     top10.forEach(s => {
       const div = document.createElement('div');
@@ -55,8 +58,8 @@ fetch('ancestry.json')
     });
   })
   .catch(err => {
-    console.error('Fehler beim Laden von ancestry.json:', err);
-    document.getElementById('hall-of-fame').innerHTML = '<p>Fehler beim Laden der Hall of Fame: ' + err.message + '</p>';
+    console.error('Fehler:', err);
+    document.getElementById('hall-of-fame').innerHTML = '<p>Fehler beim Laden: ' + err.message + '</p>';
   });
 </script>
 
