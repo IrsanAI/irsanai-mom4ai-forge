@@ -37,20 +37,19 @@ Nur die mit starker Auto-Fitness (Dichte, Modularität, Feedback-Loops) überleb
 Hier die überlebenden Skelette (wächst mit jedem Run):
 
 <p align="center">
-  <img src="images/QuorumSlime-G1.636388888888889-3-fd5ff188.png" alt="QuorumSlime" width="300"/>
-  <figcaption>QuorumSlime – stark quorum-dominiert</figcaption>
+  <figure>
+    <img src="images/QuorumSlime-G1.636388888888889-3-fd5ff188.png" alt="QuorumSlime" width="300"/>
+    <figcaption>QuorumSlime – stark quorum-dominiert</figcaption>
+  </figure>
+  <figure>
+    <img src="images/MyzelSlime-G1.636388888888889-3-e6b86a06.png" alt="MyzelSlime" width="300"/>
+    <figcaption>MyzelSlime – hohe Plastizität</figcaption>
+  </figure>
+  <figure>
+    <img src="images/SlimeAmeisen-G1.636388888888889-3-6c12e82e.png" alt="SlimeAmeisen" width="300"/>
+    <figcaption>SlimeAmeisen – dezentral & swarmig</figcaption>
+  </figure>
 </p>
-
-<p align="center">
-  <img src="images/MyzelSlime-G1.636388888888889-3-e6b86a06.png" alt="MyzelSlime" width="300"/>
-  <figcaption>MyzelSlime – hohe Plastizität</figcaption>
-</p>
-
-<p align="center">
-  <img src="images/SlimeAmeisen-G1.636388888888889-3-6c12e82e.png" alt="SlimeAmeisen" width="300"/>
-  <figcaption>SlimeAmeisen – dezentral & swarmig</figcaption>
-</p>
-
 <small>Mehr in <a href="/irsanai-mom4ai-forge/ancestry.json">ancestry.json</a> – bald interaktiv mit JS!</small>
 
 ## Aktueller Stand & Roadmap
