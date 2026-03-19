@@ -1,9 +1,3 @@
-
----
-
-### 3. src/bio_components.py
-
-```python
 """Bio-Komponenten-Bibliothek – alle Reiche des Lebens als Vorlage"""
 
 BIO_COMPONENTS = {

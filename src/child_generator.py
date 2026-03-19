@@ -1,6 +1,6 @@
 import random
 import numpy as np
-
+from bio_components import BIO_COMPONENTS
 
 def generate_child_mixture(num_components: int = 3) -> dict:
     """Erzeugt eine zufällige prozentuale Mischung (0–100 %)"""
