@@ -7,7 +7,7 @@ import uuid
 from datetime import datetime
 from bio_components import BIO_COMPONENTS
 from child_generator import generate_child_mixture
-from tqdm import tqdm  # nur für zukünftige Erweiterungen
+from tqdm import tqdm
 
 SURVIVORS_DIR = "survivors"
 os.makedirs(SURVIVORS_DIR, exist_ok=True)
@@ -17,7 +17,7 @@ os.makedirs(VISUALS_DIR, exist_ok=True)
 
 class MomForge:
     def __init__(self):
-        self.children = []  # jetzt: {"graph": nx.DiGraph, "fitness": float, "mixture": dict, "name": str, "factsheet": dict}
+        self.children = []
         self.generation = 0
         print("🤱 Mom4AI erwacht... bereit, architektonische Skelette zu gebären.")
 
@@ -55,7 +55,7 @@ class MomForge:
         name_parts = [comp.split('_')[0].capitalize() for comp, _ in dominant_components]
         name = f"{''.join(name_parts)}-G{self.generation}-{len(self.children) + 1}-{unique_id}"
 
-        # Factsheet erstellen (wird später gefüllt)
+        # Factsheet
         factsheet = {
             "id": unique_id,
             "name": name,
@@ -72,7 +72,7 @@ class MomForge:
             }
         }
 
-        # Bio-DNA → Parameter
+        # Bio-DNA Parameter
         total_plast = sum(
             (mixture.get(k, 0) / 100.0) * BIO_COMPONENTS.get(k, {}).get("plastizitaet", 0.5)
             for k in mixture
@@ -90,7 +90,6 @@ class MomForge:
 
         G = nx.DiGraph()
 
-        # Knoten-Typen
         layer_types = ["AttentionHead", "MyzelRouter", "SwarmFFN", "StandardMLP", "PlasticityGate"]
         type_weights = [
             mixture.get("mensch_gehirn", 0) / 100 + mixture.get("quorum_sensing", 0) / 100,
@@ -105,7 +104,6 @@ class MomForge:
             layer_type = random.choices(layer_types, weights=type_weights, k=1)[0]
             G.add_node(i, type=layer_type, bio_influence=mixture)
 
-        # Kanten
         for i in range(num_nodes):
             for j in range(i + 1, num_nodes):
                 if random.random() < edge_prob:
@@ -148,27 +146,27 @@ class MomForge:
         bio_score = sum((mixture.get(k, 0) / 100) * BIO_COMPONENTS.get(k, {}).get("plastizitaet", 0.5) for k in mixture)
 
         fitness = (
-            0.35 * density +
-            0.30 * modularity +
-            0.20 * (feedback_loops / num_nodes) +
+            0.25 * density +
+            0.35 * modularity +
+            0.25 * (feedback_loops / max(1, num_nodes)) +
             0.15 * bio_score
         )
-        fitness = min(1.0, max(0.0, fitness))
+        fitness = min(1.0, max(0.0, fitness * 1.2))  # kleiner Boost
 
         print(f"  → Auto-Fitness: {fitness:.3f} (Density: {density:.3f}, Modularity: {modularity:.3f})")
         return fitness
 
     def simulate_feedback(self, fitness: float):
-        if fitness > 0.75:
-            verdict = "🌟 Starke Architektur – überlebt & wird Basis für nächste Generation!"
-        elif fitness > 0.50:
+        if fitness > 0.50:
+            verdict = "🌟 Starke Architektur – überlebt & wird Basis!"
+        elif fitness > 0.35:
             verdict = "🟢 Gute Architektur – überlebt"
-        elif fitness > 0.30:
+        elif fitness > 0.20:
             verdict = "🟡 Mittel – bleibt neutral"
         else:
             verdict = "💀 Schwache Architektur – stirbt aus"
         print(verdict)
-        return fitness > 0.35
+        return fitness > 0.20
 
     def save_survivor_skeleton(self, G, fitness, mixture, name):
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -189,12 +187,10 @@ class MomForge:
 if __name__ == "__main__":
     mom = MomForge()
 
-    # Automatisches Laden
     if os.path.exists(SURVIVORS_DIR) and any(f.endswith('.json') for f in os.listdir(SURVIVORS_DIR)):
         print("Alte Skelette gefunden – lade automatisch...")
         mom.load_survivors()
 
-    # Ancestry laden
     ancestry_path = "ancestry.json"
     ancestry = []
     if os.path.exists(ancestry_path):
@@ -218,7 +214,6 @@ if __name__ == "__main__":
             survivors.append(name)
             print(f"💾 Skelett {name} zur ancestry.json hinzugefügt")
 
-    # Ancestry speichern
     with open(ancestry_path, 'w', encoding='utf-8') as f:
         json.dump(ancestry, f, indent=2, ensure_ascii=False)
     print(f"Ancestry aktualisiert: {len(ancestry)} Skelette insgesamt")
