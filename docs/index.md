@@ -10,20 +10,46 @@ title: Mom4AI Forge
 
 <p align="center">
   <a href="https://irsanai.github.io/irsanai-mom4ai-forge/">
-    <img src="https://img.shields.io/badge/Live%20Demo%20live-00ff00?style=for-the-badge&logo=githubpages&logoColor=white" alt="Live Demo">
+    <img src="https://img.shields.io/badge/Live%20Demo-live-00ff00?style=for-the-badge&logo=githubpages&logoColor=white" alt="Live Demo">
   </a>
 </p>
 
 ## Vision
 
 Eine KI, die **nicht kopiert** – sondern **neu erfindet**.  
-Aus Myzel-Netzen, Ameisen-Schwärmen, Quorum Sensing & Slime Molds entstehen Graph-Skelette.  
+Aus Myzel-Netzen, Ameisen-Schwärmen, Oktopus-Nervensystemen, Korallenriffen & Vogelzügen entstehen Graph-Skelette.  
 Nur die mit starker Auto-Fitness (Dichte, Modularität, Feedback-Loops) überleben.
 
-<p align="center">
-  <img src="/irsanai-mom4ai-forge/images/Skeleton-G0-1.png" alt="Beispiel-Skelett 1" width="600"/>
-  <br><small>Ein frühes Skelett – myzelartig verzweigt, schwarmartig verbunden</small>
-</p>
+## Hall of Fame – Moms Ancestry (Top 10)
+
+Hier die aktuell besten 10 Skelette (sortiert nach Fitness – aktualisiert bei jedem Push):
+
+<div id="hall-of-fame" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 2em 0;"></div>
+
+<script>
+fetch('ancestry.json')
+  .then(response => response.json())
+  .then(data => {
+    const top10 = data.sort((a, b) => b.fitness - a.fitness).slice(0, 10);
+    const container = document.getElementById('hall-of-fame');
+    top10.forEach(s => {
+      const div = document.createElement('div');
+      div.style.textAlign = 'center';
+      div.innerHTML = `
+        <img src="images/${s.name}.png" width="280" style="border-radius: 8px; border: 2px solid #0f0;">
+        <h3>${s.name}</h3>
+        <p><strong>Produced by:</strong> ${s.produced_by}</p>
+        <p><strong>Fitness:</strong> ${s.fitness.toFixed(3)}</p>
+        <p><strong>Born count:</strong> ${s.born_count || 1}x</p>
+        <small>Dominant: ${s.facts.dominant_type}</small>
+      `;
+      container.appendChild(div);
+    });
+  })
+  .catch(err => console.error('Fehler beim Laden von ancestry.json', err));
+</script>
+
+<small>Mehr Details in <a href="ancestry.json">ancestry.json</a> – bald interaktive Filter & Suche!</small>
 
 ## Wie es funktioniert
 
@@ -32,31 +58,13 @@ Nur die mit starker Auto-Fitness (Dichte, Modularität, Feedback-Loops) überleb
 3. Bewertet automatisch (Fitness-Score)
 4. Überlebende werden gespeichert & können mutiert werden
 
-## Hall of Fame – Moms Ancestry
-
-Hier die überlebenden Skelette (wächst mit jedem Run):
-
-<p align="center">
-  <figure>
-    <img src="images/QuorumSlime-G1.636388888888889-3-fd5ff188.png" alt="QuorumSlime" width="300"/>
-    <figcaption>QuorumSlime – stark quorum-dominiert</figcaption>
-  </figure>
-  <figure>
-    <img src="images/MyzelSlime-G1.636388888888889-3-e6b86a06.png" alt="MyzelSlime" width="300"/>
-    <figcaption>MyzelSlime – hohe Plastizität</figcaption>
-  </figure>
-  <figure>
-    <img src="images/SlimeAmeisen-G1.636388888888889-3-6c12e82e.png" alt="SlimeAmeisen" width="300"/>
-    <figcaption>SlimeAmeisen – dezentral & swarmig</figcaption>
-  </figure>
-</p>
-<small>Mehr in <a href="/irsanai-mom4ai-forge/ancestry.json">ancestry.json</a> – bald interaktiv mit JS!</small>
-
 ## Aktueller Stand & Roadmap
 
 - Graph-Generierung mit networkx
 - Auto-Fitness (Dichte, Modularity, Feedback)
 - Speichern/Laden & PNG-Visuals
+- User-Registrierung (unique Namen)
+- DNA-Hash + born_count-Tracking
 
 - Mutation & Crossover von Skeletten
 - Aus Graph → echtes Mini-Transformer-Chat-Modell
