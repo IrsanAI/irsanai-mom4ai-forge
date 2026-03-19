@@ -30,12 +30,17 @@ Hier die aktuell besten 10 Skelette (sortiert nach Fitness – aktualisiert bei 
 console.log('Versuche ancestry.json zu laden...');
 fetch('ancestry.json')
   .then(response => {
-    console.log('Response Status:', response.status);
-    if (!response.ok) throw new Error('Status ' + response.status);
-    return response.json();
+    console.log('Status:', response.status);
+    if (!response.ok) throw new Error('HTTP ' + response.status);
+    return response.text();  // erst als Text laden
+  })
+  .then(text => {
+    console.log('Roh-Text:', text.substring(0, 200));  // ersten 200 Zeichen loggen
+    if (!text.trim()) throw new Error('Datei ist leer');
+    return JSON.parse(text);
   })
   .then(data => {
-    console.log('Daten geladen – Anzahl Skelette:', data.length);
+    console.log('Daten geladen – Anzahl:', data.length);
     const top10 = data.sort((a, b) => b.fitness - a.fitness).slice(0, 10);
     const container = document.getElementById('hall-of-fame');
     container.innerHTML = '';
@@ -50,16 +55,16 @@ fetch('ancestry.json')
         <img src="images/${s.name}.png" width="280" style="border-radius: 8px; border: 2px solid #0f0;" onerror="this.src='https://via.placeholder.com/280?text=No+Image';">
         <h3>${s.name}</h3>
         <p><strong>Produced by:</strong> ${s.produced_by || 'unbekannt'}</p>
-        <p><strong>Fitness:</strong> ${s.fitness.toFixed(3)}</p>
+        <p><strong>Fitness:</strong> ${s.fitness ? s.fitness.toFixed(3) : 'N/A'}</p>
         <p><strong>Born count:</strong> ${s.born_count || 1}x</p>
-        <small>Dominant: ${s.facts.dominant_type}</small>
+        <small>Dominant: ${s.facts?.dominant_type || 'N/A'}</small>
       `;
       container.appendChild(div);
     });
   })
   .catch(err => {
-    console.error('Fehler:', err);
-    document.getElementById('hall-of-fame').innerHTML = '<p>Fehler beim Laden: ' + err.message + '</p>';
+    console.error('Ladefehler:', err);
+    document.getElementById('hall-of-fame').innerHTML = '<p>Fehler beim Laden der Hall of Fame: ' + err.message + '</p>';
   });
 </script>
 
