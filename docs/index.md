@@ -32,26 +32,28 @@ Nur die mit starker Auto-Fitness (Dichte, Modularität, Feedback-Loops) überleb
 3. Bewertet automatisch (Fitness-Score)
 4. Überlebende werden gespeichert & können mutiert werden
 
-## Aktueller Stand (März 2026)
+## Hall of Fame – Moms Ancestry
+
+Hier die überlebenden Skelette (wächst mit jedem Run):
+
+<p align="center">
+  <img src="/irsanai-mom4ai-forge/images/QuorumSlime-G1.636388888888889-3-fd5ff188.png" alt="QuorumSlime" width="400"/>
+  <img src="/irsanai-mom4ai-forge/images/MyzelSlime-G1.636388888888889-3-e6b86a06.png" alt="MyzelSlime" width="400"/>
+  <img src="/irsanai-mom4ai-forge/images/SlimeAmeisen-G1.636388888888889-3-6c12e82e.png" alt="SlimeAmeisen" width="400"/>
+</p>
+
+<small>Mehr in <a href="/irsanai-mom4ai-forge/ancestry.json">ancestry.json</a> – bald interaktiv mit JS!</small>
+
+## Aktueller Stand & Roadmap
 
 - Graph-Generierung mit networkx
 - Auto-Fitness (Dichte, Modularity, Feedback)
 - Speichern/Laden & PNG-Visuals
-- Erste Generationen laufen
-
-## Roadmap
 
 - Mutation & Crossover von Skeletten
 - Aus Graph → echtes Mini-Transformer-Chat-Modell
 - Echte User-Resonance durch Chatten
-- Skalierung auf Server (mehr Knoten, echte Training)
-
-## Beispiele (aus Runs)
-
-<p align="center">
-  <img src="/irsanai-mom4ai-forge/images/Skeleton-G1.636388888888889-2.png" alt="Beispiel-Skelett 2" width="400"/>
-  <img src="/irsanai-mom4ai-forge/images/Skeleton-G1.636388888888889-3.png" alt="Beispiel-Skelett 3" width="400"/>
-</p>
+- Skalierung auf Server
 
 Made with ❤️ by [IrsanAI](https://github.com/IrsanAI)  
 [Live Demo](https://irsanai.github.io/irsanai-mom4ai-forge/) • [Repo](https://github.com/IrsanAI/irsanai-mom4ai-forge) • [X/Twitter] • [Discord?]
