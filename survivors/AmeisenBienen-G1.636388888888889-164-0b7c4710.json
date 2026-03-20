@@ -1,0 +1,977 @@
+{
+  "name": "AmeisenBienen-G1.636388888888889-164-0b7c4710",
+  "generation": 0.6363888888888889,
+  "mixture": {
+    "vogelzug": 9.05,
+    "korallenriff": 7.5,
+    "ameisen_schwarm": 37.79,
+    "wolf_rudel": 14.25,
+    "bienen_schwarm": 31.42
+  },
+  "fitness": 0.2997229062310207,
+  "timestamp": "20260320_174414",
+  "graph_data": {
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogelzug": 9.05,
+          "korallenriff": 7.5,
+          "ameisen_schwarm": 37.79,
+          "wolf_rudel": 14.25,
+          "bienen_schwarm": 31.42
+        },
+        "id": 0
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogelzug": 9.05,
+          "korallenriff": 7.5,
+          "ameisen_schwarm": 37.79,
+          "wolf_rudel": 14.25,
+          "bienen_schwarm": 31.42
+        },
+        "id": 1
+      },
+      {
+        "type": "SwarmFFN",
+        "bio_influence": {
+          "vogelzug": 9.05,
+          "korallenriff": 7.5,
+          "ameisen_schwarm": 37.79,
+          "wolf_rudel": 14.25,
+          "bienen_schwarm": 31.42
+        },
+        "id": 2
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 9.05,
+          "korallenriff": 7.5,
+          "ameisen_schwarm": 37.79,
+          "wolf_rudel": 14.25,
+          "bienen_schwarm": 31.42
+        },
+        "id": 3
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 9.05,
+          "korallenriff": 7.5,
+          "ameisen_schwarm": 37.79,
+          "wolf_rudel": 14.25,
+          "bienen_schwarm": 31.42
+        },
+        "id": 4
+      },
+      {
+        "type": "SwarmFFN",
+        "bio_influence": {
+          "vogelzug": 9.05,
+          "korallenriff": 7.5,
+          "ameisen_schwarm": 37.79,
+          "wolf_rudel": 14.25,
+          "bienen_schwarm": 31.42
+        },
+        "id": 5
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 9.05,
+          "korallenriff": 7.5,
+          "ameisen_schwarm": 37.79,
+          "wolf_rudel": 14.25,
+          "bienen_schwarm": 31.42
+        },
+        "id": 6
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogelzug": 9.05,
+          "korallenriff": 7.5,
+          "ameisen_schwarm": 37.79,
+          "wolf_rudel": 14.25,
+          "bienen_schwarm": 31.42
+        },
+        "id": 7
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 9.05,
+          "korallenriff": 7.5,
+          "ameisen_schwarm": 37.79,
+          "wolf_rudel": 14.25,
+          "bienen_schwarm": 31.42
+        },
+        "id": 8
+      },
+      {
+        "type": "SwarmFFN",
+        "bio_influence": {
+          "vogelzug": 9.05,
+          "korallenriff": 7.5,
+          "ameisen_schwarm": 37.79,
+          "wolf_rudel": 14.25,
+          "bienen_schwarm": 31.42
+        },
+        "id": 9
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 9.05,
+          "korallenriff": 7.5,
+          "ameisen_schwarm": 37.79,
+          "wolf_rudel": 14.25,
+          "bienen_schwarm": 31.42
+        },
+        "id": 10
+      },
+      {
+        "type": "SwarmFFN",
+        "bio_influence": {
+          "vogelzug": 9.05,
+          "korallenriff": 7.5,
+          "ameisen_schwarm": 37.79,
+          "wolf_rudel": 14.25,
+          "bienen_schwarm": 31.42
+        },
+        "id": 11
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogelzug": 9.05,
+          "korallenriff": 7.5,
+          "ameisen_schwarm": 37.79,
+          "wolf_rudel": 14.25,
+          "bienen_schwarm": 31.42
+        },
+        "id": 12
+      },
+      {
+        "type": "SwarmFFN",
+        "bio_influence": {
+          "vogelzug": 9.05,
+          "korallenriff": 7.5,
+          "ameisen_schwarm": 37.79,
+          "wolf_rudel": 14.25,
+          "bienen_schwarm": 31.42
+        },
+        "id": 13
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogelzug": 9.05,
+          "korallenriff": 7.5,
+          "ameisen_schwarm": 37.79,
+          "wolf_rudel": 14.25,
+          "bienen_schwarm": 31.42
+        },
+        "id": 14
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 9.05,
+          "korallenriff": 7.5,
+          "ameisen_schwarm": 37.79,
+          "wolf_rudel": 14.25,
+          "bienen_schwarm": 31.42
+        },
+        "id": 15
+      },
+      {
+        "type": "SwarmFFN",
+        "bio_influence": {
+          "vogelzug": 9.05,
+          "korallenriff": 7.5,
+          "ameisen_schwarm": 37.79,
+          "wolf_rudel": 14.25,
+          "bienen_schwarm": 31.42
+        },
+        "id": 16
+      },
+      {
+        "type": "SwarmFFN",
+        "bio_influence": {
+          "vogelzug": 9.05,
+          "korallenriff": 7.5,
+          "ameisen_schwarm": 37.79,
+          "wolf_rudel": 14.25,
+          "bienen_schwarm": 31.42
+        },
+        "id": 17
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 9.05,
+          "korallenriff": 7.5,
+          "ameisen_schwarm": 37.79,
+          "wolf_rudel": 14.25,
+          "bienen_schwarm": 31.42
+        },
+        "id": 18
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 9.05,
+          "korallenriff": 7.5,
+          "ameisen_schwarm": 37.79,
+          "wolf_rudel": 14.25,
+          "bienen_schwarm": 31.42
+        },
+        "id": 19
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 9.05,
+          "korallenriff": 7.5,
+          "ameisen_schwarm": 37.79,
+          "wolf_rudel": 14.25,
+          "bienen_schwarm": 31.42
+        },
+        "id": 20
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 9.05,
+          "korallenriff": 7.5,
+          "ameisen_schwarm": 37.79,
+          "wolf_rudel": 14.25,
+          "bienen_schwarm": 31.42
+        },
+        "id": 21
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogelzug": 9.05,
+          "korallenriff": 7.5,
+          "ameisen_schwarm": 37.79,
+          "wolf_rudel": 14.25,
+          "bienen_schwarm": 31.42
+        },
+        "id": 22
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 9.05,
+          "korallenriff": 7.5,
+          "ameisen_schwarm": 37.79,
+          "wolf_rudel": 14.25,
+          "bienen_schwarm": 31.42
+        },
+        "id": 23
+      },
+      {
+        "type": "SwarmFFN",
+        "bio_influence": {
+          "vogelzug": 9.05,
+          "korallenriff": 7.5,
+          "ameisen_schwarm": 37.79,
+          "wolf_rudel": 14.25,
+          "bienen_schwarm": 31.42
+        },
+        "id": 24
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 9.05,
+          "korallenriff": 7.5,
+          "ameisen_schwarm": 37.79,
+          "wolf_rudel": 14.25,
+          "bienen_schwarm": 31.42
+        },
+        "id": 25
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogelzug": 9.05,
+          "korallenriff": 7.5,
+          "ameisen_schwarm": 37.79,
+          "wolf_rudel": 14.25,
+          "bienen_schwarm": 31.42
+        },
+        "id": 26
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 9.05,
+          "korallenriff": 7.5,
+          "ameisen_schwarm": 37.79,
+          "wolf_rudel": 14.25,
+          "bienen_schwarm": 31.42
+        },
+        "id": 27
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 9.05,
+          "korallenriff": 7.5,
+          "ameisen_schwarm": 37.79,
+          "wolf_rudel": 14.25,
+          "bienen_schwarm": 31.42
+        },
+        "id": 28
+      }
+    ],
+    "edges": [
+      {
+        "weight": 1.2818298353397117,
+        "type": "forward",
+        "source": 0,
+        "target": 2
+      },
+      {
+        "weight": 1.3028497486721744,
+        "type": "forward",
+        "source": 0,
+        "target": 3
+      },
+      {
+        "weight": 1.183954648072719,
+        "type": "forward",
+        "source": 0,
+        "target": 4
+      },
+      {
+        "weight": 1.2040739792209805,
+        "type": "forward",
+        "source": 0,
+        "target": 8
+      },
+      {
+        "weight": 0.5753745623863518,
+        "type": "forward",
+        "source": 0,
+        "target": 11
+      },
+      {
+        "weight": 0.6442879961606081,
+        "type": "forward",
+        "source": 0,
+        "target": 14
+      },
+      {
+        "weight": 1.0479772269904877,
+        "type": "forward",
+        "source": 0,
+        "target": 17
+      },
+      {
+        "weight": 1.4923540493973682,
+        "type": "forward",
+        "source": 0,
+        "target": 20
+      },
+      {
+        "weight": 0.6798164918039614,
+        "type": "forward",
+        "source": 0,
+        "target": 21
+      },
+      {
+        "weight": 0.7959423206558625,
+        "type": "forward",
+        "source": 0,
+        "target": 22
+      },
+      {
+        "weight": 0.9611553217484684,
+        "type": "forward",
+        "source": 0,
+        "target": 23
+      },
+      {
+        "weight": 1.0489506045238552,
+        "type": "forward",
+        "source": 0,
+        "target": 24
+      },
+      {
+        "weight": 0.5403845104112525,
+        "type": "forward",
+        "source": 0,
+        "target": 26
+      },
+      {
+        "weight": 1.2948075536449268,
+        "type": "forward",
+        "source": 0,
+        "target": 28
+      },
+      {
+        "weight": 0.8463401450322631,
+        "type": "forward",
+        "source": 1,
+        "target": 7
+      },
+      {
+        "weight": 0.8910457022721269,
+        "type": "forward",
+        "source": 1,
+        "target": 17
+      },
+      {
+        "weight": 0.6221567089686613,
+        "type": "forward",
+        "source": 2,
+        "target": 3
+      },
+      {
+        "weight": 1.0103826554792672,
+        "type": "forward",
+        "source": 2,
+        "target": 4
+      },
+      {
+        "weight": 0.8463425255436102,
+        "type": "forward",
+        "source": 2,
+        "target": 5
+      },
+      {
+        "weight": 1.4419428826644745,
+        "type": "forward",
+        "source": 2,
+        "target": 7
+      },
+      {
+        "weight": 1.0740074754411895,
+        "type": "forward",
+        "source": 2,
+        "target": 8
+      },
+      {
+        "weight": 1.2007355561910464,
+        "type": "forward",
+        "source": 2,
+        "target": 16
+      },
+      {
+        "weight": 1.4797612066205286,
+        "type": "forward",
+        "source": 2,
+        "target": 17
+      },
+      {
+        "weight": 1.357320435091301,
+        "type": "forward",
+        "source": 2,
+        "target": 26
+      },
+      {
+        "weight": 1.1793241384669888,
+        "type": "forward",
+        "source": 3,
+        "target": 5
+      },
+      {
+        "weight": 0.8020086104334417,
+        "type": "forward",
+        "source": 3,
+        "target": 13
+      },
+      {
+        "weight": 1.184784314654135,
+        "type": "forward",
+        "source": 3,
+        "target": 24
+      },
+      {
+        "weight": 0.623758004047052,
+        "type": "forward",
+        "source": 3,
+        "target": 28
+      },
+      {
+        "weight": 0.6741882034512194,
+        "type": "feedback",
+        "source": 3,
+        "target": 4
+      },
+      {
+        "weight": 0.5861743953395411,
+        "type": "feedback",
+        "source": 3,
+        "target": 8
+      },
+      {
+        "weight": 0.4773771194649851,
+        "type": "feedback",
+        "source": 3,
+        "target": 10
+      },
+      {
+        "weight": 0.7753625508034917,
+        "type": "forward",
+        "source": 4,
+        "target": 5
+      },
+      {
+        "weight": 0.7980713747106977,
+        "type": "forward",
+        "source": 4,
+        "target": 6
+      },
+      {
+        "weight": 0.7891917771348687,
+        "type": "forward",
+        "source": 4,
+        "target": 7
+      },
+      {
+        "weight": 1.3750391547535892,
+        "type": "forward",
+        "source": 4,
+        "target": 11
+      },
+      {
+        "weight": 0.5719279310877281,
+        "type": "forward",
+        "source": 4,
+        "target": 14
+      },
+      {
+        "weight": 1.0157503230166767,
+        "type": "forward",
+        "source": 4,
+        "target": 15
+      },
+      {
+        "weight": 0.8871322781738968,
+        "type": "forward",
+        "source": 4,
+        "target": 19
+      },
+      {
+        "weight": 0.5927315532595836,
+        "type": "forward",
+        "source": 4,
+        "target": 20
+      },
+      {
+        "weight": 1.4451754222289814,
+        "type": "forward",
+        "source": 4,
+        "target": 21
+      },
+      {
+        "weight": 0.9233785939844914,
+        "type": "forward",
+        "source": 4,
+        "target": 23
+      },
+      {
+        "weight": 1.369719438491055,
+        "type": "forward",
+        "source": 4,
+        "target": 25
+      },
+      {
+        "weight": 0.9890638116912561,
+        "type": "forward",
+        "source": 5,
+        "target": 8
+      },
+      {
+        "weight": 0.6062830440895722,
+        "type": "forward",
+        "source": 5,
+        "target": 17
+      },
+      {
+        "weight": 0.6092732472198071,
+        "type": "forward",
+        "source": 5,
+        "target": 20
+      },
+      {
+        "weight": 0.625685966316013,
+        "type": "forward",
+        "source": 5,
+        "target": 22
+      },
+      {
+        "weight": 0.9431172505362697,
+        "type": "forward",
+        "source": 5,
+        "target": 25
+      },
+      {
+        "weight": 0.9441634370015053,
+        "type": "forward",
+        "source": 6,
+        "target": 8
+      },
+      {
+        "weight": 0.9293923121177443,
+        "type": "forward",
+        "source": 6,
+        "target": 24
+      },
+      {
+        "weight": 1.1328656177746743,
+        "type": "forward",
+        "source": 6,
+        "target": 28
+      },
+      {
+        "weight": 1.2107481480797435,
+        "type": "forward",
+        "source": 7,
+        "target": 12
+      },
+      {
+        "weight": 1.134246691567756,
+        "type": "forward",
+        "source": 7,
+        "target": 14
+      },
+      {
+        "weight": 0.7161084559430478,
+        "type": "forward",
+        "source": 7,
+        "target": 15
+      },
+      {
+        "weight": 0.7400562995766694,
+        "type": "forward",
+        "source": 7,
+        "target": 17
+      },
+      {
+        "weight": 1.2169523594545504,
+        "type": "forward",
+        "source": 7,
+        "target": 19
+      },
+      {
+        "weight": 1.4913510180393779,
+        "type": "forward",
+        "source": 7,
+        "target": 25
+      },
+      {
+        "weight": 1.2073657347552371,
+        "type": "forward",
+        "source": 8,
+        "target": 9
+      },
+      {
+        "weight": 0.9585499382210425,
+        "type": "forward",
+        "source": 8,
+        "target": 16
+      },
+      {
+        "weight": 1.2270137073706535,
+        "type": "forward",
+        "source": 8,
+        "target": 18
+      },
+      {
+        "weight": 1.1039073243014976,
+        "type": "forward",
+        "source": 8,
+        "target": 23
+      },
+      {
+        "weight": 1.4694975279482967,
+        "type": "forward",
+        "source": 8,
+        "target": 24
+      },
+      {
+        "weight": 1.131575734404718,
+        "type": "forward",
+        "source": 9,
+        "target": 20
+      },
+      {
+        "weight": 1.013041978306903,
+        "type": "forward",
+        "source": 9,
+        "target": 25
+      },
+      {
+        "weight": 1.4339219820075908,
+        "type": "forward",
+        "source": 10,
+        "target": 14
+      },
+      {
+        "weight": 1.0213584775844304,
+        "type": "forward",
+        "source": 10,
+        "target": 24
+      },
+      {
+        "weight": 0.5955671158281449,
+        "type": "forward",
+        "source": 11,
+        "target": 12
+      },
+      {
+        "weight": 0.847565055068064,
+        "type": "forward",
+        "source": 11,
+        "target": 16
+      },
+      {
+        "weight": 1.0617233315366488,
+        "type": "forward",
+        "source": 11,
+        "target": 17
+      },
+      {
+        "weight": 1.211779679915057,
+        "type": "forward",
+        "source": 11,
+        "target": 22
+      },
+      {
+        "weight": 1.3767165073455205,
+        "type": "forward",
+        "source": 12,
+        "target": 14
+      },
+      {
+        "weight": 1.237470962148937,
+        "type": "forward",
+        "source": 12,
+        "target": 18
+      },
+      {
+        "weight": 0.88425685932341,
+        "type": "forward",
+        "source": 12,
+        "target": 25
+      },
+      {
+        "weight": 1.132457644721157,
+        "type": "forward",
+        "source": 12,
+        "target": 26
+      },
+      {
+        "weight": 1.4867133817903762,
+        "type": "forward",
+        "source": 12,
+        "target": 27
+      },
+      {
+        "weight": 0.6338185362524298,
+        "type": "forward",
+        "source": 13,
+        "target": 18
+      },
+      {
+        "weight": 0.738186655767929,
+        "type": "forward",
+        "source": 13,
+        "target": 19
+      },
+      {
+        "weight": 0.6688112251964223,
+        "type": "forward",
+        "source": 13,
+        "target": 20
+      },
+      {
+        "weight": 0.6537914958004537,
+        "type": "forward",
+        "source": 13,
+        "target": 21
+      },
+      {
+        "weight": 0.9197867889146594,
+        "type": "forward",
+        "source": 13,
+        "target": 24
+      },
+      {
+        "weight": 0.6326672719996866,
+        "type": "forward",
+        "source": 13,
+        "target": 25
+      },
+      {
+        "weight": 1.1441785271411988,
+        "type": "forward",
+        "source": 14,
+        "target": 22
+      },
+      {
+        "weight": 1.4364980008691672,
+        "type": "forward",
+        "source": 14,
+        "target": 25
+      },
+      {
+        "weight": 1.3269567561895759,
+        "type": "forward",
+        "source": 15,
+        "target": 21
+      },
+      {
+        "weight": 0.9440883295918702,
+        "type": "forward",
+        "source": 15,
+        "target": 22
+      },
+      {
+        "weight": 0.7487969834568657,
+        "type": "forward",
+        "source": 15,
+        "target": 26
+      },
+      {
+        "weight": 0.7002896467332548,
+        "type": "forward",
+        "source": 16,
+        "target": 20
+      },
+      {
+        "weight": 0.6890561539548562,
+        "type": "forward",
+        "source": 17,
+        "target": 21
+      },
+      {
+        "weight": 1.454863973254795,
+        "type": "forward",
+        "source": 18,
+        "target": 25
+      },
+      {
+        "weight": 0.866678907055481,
+        "type": "forward",
+        "source": 19,
+        "target": 20
+      },
+      {
+        "weight": 1.2405393470699007,
+        "type": "forward",
+        "source": 19,
+        "target": 24
+      },
+      {
+        "weight": 0.5796203596494155,
+        "type": "forward",
+        "source": 19,
+        "target": 25
+      },
+      {
+        "weight": 1.253773585848848,
+        "type": "forward",
+        "source": 19,
+        "target": 26
+      },
+      {
+        "weight": 0.5717584625483166,
+        "type": "forward",
+        "source": 20,
+        "target": 21
+      },
+      {
+        "weight": 1.2546010221406005,
+        "type": "forward",
+        "source": 20,
+        "target": 25
+      },
+      {
+        "weight": 1.3555202814355867,
+        "type": "forward",
+        "source": 20,
+        "target": 28
+      },
+      {
+        "weight": 0.5100749521193365,
+        "type": "forward",
+        "source": 21,
+        "target": 24
+      },
+      {
+        "weight": 0.6950820293834638,
+        "type": "forward",
+        "source": 21,
+        "target": 27
+      },
+      {
+        "weight": 0.7364058177173359,
+        "type": "feedback",
+        "source": 21,
+        "target": 26
+      },
+      {
+        "weight": 1.1020941016341377,
+        "type": "forward",
+        "source": 22,
+        "target": 26
+      },
+      {
+        "weight": 1.4900959318214726,
+        "type": "forward",
+        "source": 22,
+        "target": 27
+      },
+      {
+        "weight": 1.1395159740477316,
+        "type": "forward",
+        "source": 22,
+        "target": 28
+      },
+      {
+        "weight": 1.41082889308599,
+        "type": "forward",
+        "source": 23,
+        "target": 26
+      },
+      {
+        "weight": 1.240266507859669,
+        "type": "forward",
+        "source": 24,
+        "target": 25
+      },
+      {
+        "weight": 0.7838041098888069,
+        "type": "forward",
+        "source": 24,
+        "target": 28
+      },
+      {
+        "weight": 1.426871194589638,
+        "type": "forward",
+        "source": 25,
+        "target": 27
+      },
+      {
+        "weight": 0.5546319634498151,
+        "type": "forward",
+        "source": 26,
+        "target": 28
+      }
+    ]
+  }
+}
