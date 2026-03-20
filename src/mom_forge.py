@@ -279,6 +279,58 @@ if __name__ == "__main__":
             json.dump(users, f, indent=2)
         print(f"Dein Name '{mom.user_id}' wurde zentral registriert!")
 
+    import subprocess
+    import os
+
+    # PAT aus Datei laden (sicherer als hardcode)
+    pat_file = os.path.expanduser("~/.github_pat")
+    if os.path.exists(pat_file):
+        with open(pat_file, 'r') as f:
+            pat = f.read().strip()
+        repo_url = f"https://{pat}@github.com/IrsanAI/irsanai-mom4ai-forge.git"
+    else:
+        repo_url = "origin"
+
+    print("Versuche automatisch zu pushen...")
+
+    try:
+        # PAT sauber laden
+        pat_file = os.path.expanduser("~/.github_pat")
+        if os.path.exists(pat_file):
+            with open(pat_file, 'r', encoding='utf-8-sig') as f:
+                pat = f.read().strip()
+            repo_url = f"https://{pat}@github.com/IrsanAI/irsanai-mom4ai-forge.git"
+        else:
+            repo_url = "origin"
+
+        # 1. Zuerst alles committen (neue Skelette + Bilder)
+        print("   → Add + Commit der neuen Skelette...")
+        subprocess.run(["git", "add", "ancestry.json", "docs/images/", "users.json", ".user.json", "survivors/"],
+                       check=True)
+        subprocess.run(
+            ["git", "commit", "-m", f"Automatischer Upload: {len(survivors)} neue Skelette von {mom.user_id}"],
+            check=True)
+
+        # 2. Dann Pull mit Rebase (konflikt-sicher)
+        print("   → Pull + Rebase...")
+        subprocess.run(["git", "pull", repo_url, "main", "--rebase"], check=True, capture_output=True, text=True)
+
+        # 3. Push
+        print("   → Push...")
+        subprocess.run(["git", "push", repo_url, "main"], check=True)
+
+        print("✅ Automatisch & konflikt-sicher gepusht! Pages aktualisiert sich in 1–2 Min.")
+
+    except subprocess.CalledProcessError as e:
+        print("Auto-Push fehlgeschlagen – mach manuell:")
+        print("git add .")
+        print("git commit -m 'Manueller Upload'")
+        print("git pull --rebase")
+        print("git push")
+        print("Fehler-Details:", e.stderr if hasattr(e, 'stderr') else str(e))
+    except Exception as e:
+        print("Unerwarteter Fehler:", str(e))
+
     # Dann push (wie vorher)
     print(f"\n🎉 {len(survivors)} Skelette überlebt: {', '.join(survivors) or 'keine'}")
     print("Mom4AI lebt – nächste Generation kann auf alten Skeletten aufbauen.")
