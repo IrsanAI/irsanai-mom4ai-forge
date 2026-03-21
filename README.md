@@ -164,6 +164,7 @@ Falls du Lust hast, einfach clonen, PAT setzen, laufen lassen – und zuschauen,
 Release-Checkliste: `docs/release_readiness.md`.
 Release Notes Draft: `docs/releases/v0.1.0-alpha.md`.
 Changelog: `CHANGELOG.md`.
+Release FAQ: `docs/release_faq.md`.
 
 Made with ❤️ & many late-night runs by IrsanAI
 
