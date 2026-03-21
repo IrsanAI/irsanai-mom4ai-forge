@@ -1,36 +1,115 @@
-# irsanai-mom4ai-forge
+```markdown
+# Mom4AI Forge
 
 <p align="center">
-  <a href="https://irsanai.github.io/irsanai-mom4ai-forge/">
-    <img src="https://img.shields.io/badge/Live%20Demo%20ansehen-00ff00?style=for-the-badge&logo=githubpages&logoColor=white" alt="Live GitHub Pages">
-  </a>
+  <img src="docs/images/momai-forge-vs-typical-nn.jpg" alt="MomAI Forge vs. typisches neuronales Netz" width="800"/>
+  <br>
+  <em>Links: typisches neuronales Netz – Rechts: MomAI Forge Topologie</em>
 </p>
+**Links:** Klassisches Feedforward-Netz  
+**Rechts:** MomAI Forge – evolutive, bio-inspirierte Topologie
 
-**Mom for AI** – Die evolutive Mutter-KI, die neue neuronale Netz-Architekturen gebiert.
+[![GitHub Pages](https://img.shields.io/badge/Live%20Demo-View%20Hall%20of%20Fame-brightgreen?style=for-the-badge&logo=githubpages)](https://irsanai.github.io/irsanai-mom4ai-forge/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
-### Live Demo (GitHub Pages)
-https://irsanai.github.io/irsanai-mom4ai-forge/  
-→ Schau dir Beispiele, Vision, Roadmap und Screenshots an
+**Deutsch** | [English](#english)
 
-<p align="center">
-  <img src="survivors/visuals/Skeleton-G0-1.png" alt="Beispiel-Skelett" width="600"/>
-  <br><small>Ein frühes Skelett – myzelartig verzweigt, schwarmartig verbunden</small>
-</p>
+## Was ist Mom4AI Forge?
 
-### Vision
-Eine KI, die **nicht kopiert** – sondern **neu erfindet**.  
-Aus Myzel-Netzen, Ameisen-Schwärmen, Quorum Sensing & Slime Molds entstehen Graph-Skelette, die später zu Chat-Modellen werden.  
-Nur Skelette mit starker Auto-Fitness (Dichte, Modularität, Feedback) überleben.
+Eine offene, evolutionäre Pipeline, die Graph-basierte neuronale Netz-Skelette aus biologisch inspirierten Mustern (Myzel-Netze, Ameisen-Schwärme, Oktopus-Nervensysteme, Korallenriffe, Vogelzüge …) generiert, automatisch bewertet und nur die besten überleben lässt.
 
-Ziel: Neue, resonanzstarke Architekturen für die nächste Generation von AI.
+Aktueller Stand (März 2026):
+- Generierung von Directed Acyclic Graphs (DAGs) mit networkx
+- Biologisch inspirierte DNA-Mischung (Plastizität & Dezentralität)
+- Auto-Fitness (Density, Modularity, Feedback-Loops)
+- PNG-Visualisierungen der Graphen
+- Ancestry-Tracking (Lineage + born_count)
+- Hall of Fame (interaktiv, filterbar, live aktualisiert)
+- Automatisches Pushen neuer Skelette zum zentralen Repo (optional)
 
-### Aktueller Stand (März 2026)
-- Graph-basierte Skelett-Generierung mit networkx
-- Auto-Fitness ohne User-Input
-- Speichern/Laden von Skeletten (JSON)
-- Automatische PNG-Visualisierung
+**Live Hall of Fame**: https://irsanai.github.io/irsanai-mom4ai-forge/
 
-### Schnellstart
+## Schnellstart – wie du mitmachst
+
+1. Repository clonen
+```bash
+git clone https://github.com/IrsanAI/irsanai-mom4ai-forge.git
+cd irsanai-mom4ai-forge
+```
+
+2. Abhängigkeiten installieren
 ```bash
 pip install -r requirements.txt
+```
+
+3. Ersten Run starten
+```bash
 python src/mom_forge.py
+```
+
+Du wirst einmalig nach einem **unique User-Namen** gefragt (z. B. dein GitHub-Name oder ein Nick). Dieser Name wird zentral in `users.json` registriert – jeder Name darf nur einmal existieren.
+
+4. Neue Skelette generieren lassen
+- Gib einfach eine Zahl ein (z. B. 10)
+- Die Fabrik erzeugt, bewertet und speichert die Überlebenden
+- Am Ende wird automatisch versucht, alles zum zentralen Repo zu pushen
+
+### Wichtig: Automatisches Pushen (optional, aber sehr empfohlen)
+
+Damit deine Skelette in der globalen Hall of Fame landen, muss das Repo pushen dürfen. Dazu brauchst du **einmalig** einen GitHub Personal Access Token (PAT):
+
+1. Gehe zu https://github.com/settings/tokens
+2. „Generate new token (classic)“
+3. Wähle Scope: **repo** (full control of private repositories)
+4. Token generieren und kopieren
+5. In deinem Home-Verzeichnis speichern:
+   ```powershell
+   # Windows (PowerShell)
+   echo "ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" > "$HOME\.github_pat"
+   ```
+   oder (Linux/macOS):
+   ```bash
+   echo "ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" > ~/.github_pat
+   ```
+
+6. Fertig – ab jetzt pusht Mom4AI deine neuen Skelette automatisch.
+
+**Hinweis:** Wenn du kein PAT setzen willst, kannst du die Änderungen auch manuell committen & pushen:
+```bash
+git add .
+git commit -m "Meine neuen Skelette"
+git push
+```
+
+## Roadmap & was kommt als Nächstes
+
+- [x] Auto-Fitness & Ancestry-Tracking
+- [x] Interaktive Hall of Fame (Suche, Filter, Stats)
+- [x] Automatisches Pushen mit PAT
+- [ ] Mutation & Crossover (Skelette paaren)
+- [ ] Erste echte Resonanz-Messung (Chat-Interaktionen)
+- [ ] Community-Rangliste & Seltenheits-Badges
+- [ ] Vis.js Evolution-Tree in der Hall of Fame
+- [ ] Mini-Transformer aus Graph-Skeletten
+
+## Mitmachen & Community
+
+Jeder neue Skelett-Upload landet in der globalen Ancestry und kann in der Hall of Fame auftauchen. Je mehr Leute mitmachen, desto vielfältiger und spannender wird das Ökosystem.
+
+Falls du Lust hast, einfach clonen, PAT setzen, laufen lassen – und zuschauen, wie deine Kreationen in der Hall of Fame erscheinen.
+
+**Fragen / Ideen / Bugs?**  
+→ Issues auf GitHub oder einfach einen PR mit neuen Bio-Komponenten.
+
+Made with ❤️ & many late-night runs by IrsanAI
+
+---
+
+## English
+
+# Mom4AI Forge
+**The evolutionary AI mother giving birth to new neural network architectures**
+
+[... englische Version analog zur deutschen, kürzer gehalten wenn du willst ...]
+
+```
