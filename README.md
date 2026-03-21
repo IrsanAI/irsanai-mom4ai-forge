@@ -1,4 +1,3 @@
-```markdown
 # Mom4AI Forge
 
 <p align="center">
@@ -162,6 +161,8 @@ Falls du Lust hast, einfach clonen, PAT setzen, laufen lassen – und zuschauen,
 **Fragen / Ideen / Bugs?**  
 → Issues auf GitHub oder einfach einen PR mit neuen Bio-Komponenten.
 
+Release-Checkliste: `docs/release_readiness.md`.
+
 Made with ❤️ & many late-night runs by IrsanAI
 
 ---
@@ -172,5 +173,3 @@ Made with ❤️ & many late-night runs by IrsanAI
 **The evolutionary AI mother giving birth to new neural network architectures**
 
 [... englische Version analog zur deutschen, kürzer gehalten wenn du willst ...]
-
-```
