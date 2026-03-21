@@ -26,46 +26,94 @@ Hier die aktuell besten 10 Skelette (sortiert nach Fitness – aktualisiert bei 
 
 <div id="hall-of-fame" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 2em 0;"></div>
 
+<div id="hall-stats" style="text-align:center; margin:1em; color:#0f0;">
+  <h2>Live Evolution – Mom's Ancestry</h2>
+  <p id="stats-total">Gesamt Skelette: <span id="total-count">...</span> • User: <span id="user-count">...</span> • Seltenste: <span id="rare-count">...</span>× geboren</p>
+</div>
+
+<div style="margin:1em; text-align:center;">
+  <input type="text" id="search" placeholder="Suche nach Name, User oder Dominant..." style="padding:8px; width:300px; background:#111; color:#0f0; border:1px solid #0f0;">
+  <select id="sort" style="padding:8px; background:#111; color:#0f0; border:1px solid #0f0;">
+    <option value="fitness-desc">Fitness ↓</option>
+    <option value="fitness-asc">Fitness ↑</option>
+    <option value="born-desc">Born count ↓</option>
+    <option value="born-asc">Born count ↑</option>
+  </select>
+  <button onclick="loadHall()" style="padding:8px 16px; background:#0f0; color:#000; border:none; cursor:pointer;">Aktualisieren</button>
+</div>
+
+<div id="hall-of-fame" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:20px; margin:2em 0;"></div>
+
 <script>
-console.log('Versuche ancestry.json zu laden...');
-fetch('ancestry.json')
-  .then(response => {
-    console.log('Status:', response.status);
-    if (!response.ok) throw new Error('HTTP ' + response.status);
-    return response.text();  // erst als Text laden
-  })
-  .then(text => {
-    console.log('Roh-Text:', text.substring(0, 200));  // ersten 200 Zeichen loggen
-    if (!text.trim()) throw new Error('Datei ist leer');
-    return JSON.parse(text);
-  })
-  .then(data => {
-    console.log('Daten geladen – Anzahl:', data.length);
-    const top10 = data.sort((a, b) => b.fitness - a.fitness).slice(0, 10);
-    const container = document.getElementById('hall-of-fame');
-    container.innerHTML = '';
-    if (top10.length === 0) {
-      container.innerHTML = '<p>Noch keine Skelette in Top 10.</p>';
-      return;
-    }
-    top10.forEach(s => {
-      const div = document.createElement('div');
-      div.style.textAlign = 'center';
-      div.innerHTML = `
-        <img src="images/${s.name}.png" width="280" style="border-radius: 8px; border: 2px solid #0f0;" onerror="this.src='https://via.placeholder.com/280?text=No+Image';">
-        <h3>${s.name}</h3>
-        <p><strong>Produced by:</strong> ${s.produced_by || 'unbekannt'}</p>
-        <p><strong>Fitness:</strong> ${s.fitness ? s.fitness.toFixed(3) : 'N/A'}</p>
-        <p><strong>Born count:</strong> ${s.born_count || 1}x</p>
-        <small>Dominant: ${s.facts?.dominant_type || 'N/A'}</small>
-      `;
-      container.appendChild(div);
-    });
-  })
-  .catch(err => {
-    console.error('Ladefehler:', err);
-    document.getElementById('hall-of-fame').innerHTML = '<p>Fehler beim Laden der Hall of Fame: ' + err.message + '</p>';
+let allSkeletons = [];
+
+async function loadHall() {
+  try {
+    const resp = await fetch('ancestry.json');
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    allSkeletons = await resp.json();
+    
+    // Stats oben
+    document.getElementById('total-count').textContent = allSkeletons.length;
+    const users = new Set(allSkeletons.map(s => s.produced_by || 'unbekannt'));
+    document.getElementById('user-count').textContent = users.size;
+    const minBorn = Math.min(...allSkeletons.map(s => s.born_count || 1));
+    document.getElementById('rare-count').textContent = minBorn;
+
+    renderSkeletons(allSkeletons);
+  } catch (err) {
+    document.getElementById('hall-of-fame').innerHTML = '<p style="color:red;">Fehler: ' + err.message + '</p>';
+  }
+}
+
+function renderSkeletons(data) {
+  const container = document.getElementById('hall-of-fame');
+  container.innerHTML = '';
+
+  const sortVal = document.getElementById('sort').value;
+  const search = document.getElementById('search').value.toLowerCase();
+
+  let filtered = data.filter(s => {
+    if (!search) return true;
+    return (
+      s.name.toLowerCase().includes(search) ||
+      (s.produced_by || '').toLowerCase().includes(search) ||
+      (s.facts?.dominant_type || '').toLowerCase().includes(search)
+    );
   });
+
+  if (sortVal === 'fitness-desc') filtered.sort((a,b) => b.fitness - a.fitness);
+  if (sortVal === 'fitness-asc')  filtered.sort((a,b) => a.fitness - b.fitness);
+  if (sortVal === 'born-desc')    filtered.sort((a,b) => (b.born_count||1) - (a.born_count||1));
+  if (sortVal === 'born-asc')     filtered.sort((a,b) => (a.born_count||1) - (b.born_count||1));
+
+  const top = filtered.slice(0, 20); // erstmal 20 statt 10 – skalierbar
+
+  top.forEach(s => {
+    const div = document.createElement('div');
+    div.style.background = '#111';
+    div.style.padding = '12px';
+    div.style.border = '1px solid #0f0';
+    div.style.borderRadius = '8px';
+    div.innerHTML = `
+      <img src="images/${s.name}.png" width="280" style="border-radius:8px;" onerror="this.src='https://via.placeholder.com/280x280/111/0f0?text=${s.name.slice(0,10)}';">
+      <h3 style="margin:8px 0;">${s.name}</h3>
+      <p><strong>Produced by:</strong> ${s.produced_by || 'unbekannt'}</p>
+      <p><strong>Fitness:</strong> ${s.fitness.toFixed(3)}</p>
+      <p><strong>Born count:</strong> <strong style="color:#0f0;">${s.born_count || 1}x</strong></p>
+      <p><strong>Dominant:</strong> ${s.facts?.dominant_type || 'N/A'}</p>
+    `;
+    container.appendChild(div);
+  });
+}
+
+// Auto-Refresh alle 30 Sekunden + initial laden
+setInterval(loadHall, 30000);
+loadHall();
+
+// Suche & Sort live reagieren
+document.getElementById('search').addEventListener('input', () => renderSkeletons(allSkeletons));
+document.getElementById('sort').addEventListener('change', () => renderSkeletons(allSkeletons));
 </script>
 
 <small>Mehr Details in <a href="ancestry.json">ancestry.json</a> – bald interaktive Filter & Suche!</small>

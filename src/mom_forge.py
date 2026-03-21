@@ -303,20 +303,25 @@ if __name__ == "__main__":
         else:
             repo_url = "origin"
 
-        # 1. Zuerst alles committen (neue Skelette + Bilder)
-        print("   → Add + Commit der neuen Skelette...")
+        # 1. Alles temporär verstecken (Stash)
+        print("   → Stash (verstecke Änderungen)...")
+        subprocess.run(["git", "stash", "push", "-m", "Auto-Push Stash"], check=True, capture_output=True)
+
+        # 2. Pull mit Rebase
+        print("   → Pull + Rebase...")
+        subprocess.run(["git", "pull", repo_url, "main", "--rebase"], check=True, capture_output=True, text=True)
+
+        # 3. Stash zurückholen
+        print("   → Pop Stash...")
+        subprocess.run(["git", "stash", "pop"], check=True, capture_output=True)
+
+        # 4. Add + Commit + Push
+        print("   → Add + Commit + Push...")
         subprocess.run(["git", "add", "ancestry.json", "docs/images/", "users.json", ".user.json", "survivors/"],
                        check=True)
         subprocess.run(
             ["git", "commit", "-m", f"Automatischer Upload: {len(survivors)} neue Skelette von {mom.user_id}"],
             check=True)
-
-        # 2. Dann Pull mit Rebase (konflikt-sicher)
-        print("   → Pull + Rebase...")
-        subprocess.run(["git", "pull", repo_url, "main", "--rebase"], check=True, capture_output=True, text=True)
-
-        # 3. Push
-        print("   → Push...")
         subprocess.run(["git", "push", repo_url, "main"], check=True)
 
         print("✅ Automatisch & konflikt-sicher gepusht! Pages aktualisiert sich in 1–2 Min.")
@@ -327,7 +332,7 @@ if __name__ == "__main__":
         print("git commit -m 'Manueller Upload'")
         print("git pull --rebase")
         print("git push")
-        print("Fehler-Details:", e.stderr if hasattr(e, 'stderr') else str(e))
+        print("Fehler-Details:", e.stderr.decode(errors='ignore') if hasattr(e, 'stderr') else str(e))
     except Exception as e:
         print("Unerwarteter Fehler:", str(e))
 
