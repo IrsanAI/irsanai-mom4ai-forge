@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "momai-forge"
+version = "0.1.0a0"
+description = "Mom4AI Forge CLI and evolution factory tooling."
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=2.0.0",
+  "networkx>=3.3",
+  "torch>=2.4.0",
+  "torchvision>=0.19.0",
+  "tqdm>=4.66.0",
+  "scikit-learn>=1.5.0",
+]
+
+[project.scripts]
+MomAI = "momai_cli:main"
+momai = "momai_cli:main"
+
+[tool.setuptools]
+py-modules = [
+  "mom_forge",
+  "mom_forge_stable_version",
+  "bio_components",
+  "child_generator",
+  "resonance_protocol",
+  "live_dashboard_server",
+  "momai_cli",
+]
+
+[tool.setuptools.package-dir]
+"" = "src"

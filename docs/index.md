@@ -29,6 +29,7 @@ Hier die aktuell besten 10 Skelette (sortiert nach Fitness – aktualisiert bei 
 <div id="hall-stats" style="text-align:center; margin:1em; color:#0f0;">
   <h2>Live Evolution – Mom's Ancestry</h2>
   <p id="stats-total">Gesamt Skelette: <span id="total-count">...</span> • User: <span id="user-count">...</span> • Seltenste: <span id="rare-count">...</span>× geboren</p>
+  <p id="stats-resonance">Resonant: <span id="resonant-count">...</span> • Emerging: <span id="emerging-count">...</span> • Non-resonant: <span id="non-resonant-count">...</span></p>
 </div>
 
 <div style="margin:1em; text-align:center;">
@@ -42,7 +43,16 @@ Hier die aktuell besten 10 Skelette (sortiert nach Fitness – aktualisiert bei 
   <button onclick="loadHall()" style="padding:8px 16px; background:#0f0; color:#000; border:none; cursor:pointer;">Aktualisieren</button>
 </div>
 
-<div id="hall-of-fame" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:20px; margin:2em 0;"></div>
+<div id="top-5" style="margin: 1.5em 0;">
+  <h3 style="color:#0f0; text-align:center;">Top 5 Gesamt (Online Snapshot)</h3>
+  <ol id="top-5-list" style="max-width: 780px; margin: 0 auto; color:#0f0; background:#111; border:1px solid #0f0; border-radius:8px; padding:16px 24px;"></ol>
+</div>
+
+<div id="local-runtime" style="margin:1.5em auto; max-width:780px; color:#0f0; background:#111; border:1px solid #0f0; border-radius:8px; padding:16px;">
+  <h3 style="margin-top:0;">Local Runtime / Sync Monitor</h3>
+  <p id="local-runtime-stats">Warte auf lokalen Server...</p>
+  <p id="local-runtime-git">Git Sync: -</p>
+</div>
 
 <script>
 let allSkeletons = [];
@@ -59,11 +69,63 @@ async function loadHall() {
     document.getElementById('user-count').textContent = users.size;
     const minBorn = Math.min(...allSkeletons.map(s => s.born_count || 1));
     document.getElementById('rare-count').textContent = minBorn;
+    const resonant = allSkeletons.filter(s => s.resonance_classification === 'resonant').length;
+    const emerging = allSkeletons.filter(s => s.resonance_classification === 'emerging').length;
+    const nonResonant = allSkeletons.filter(s => s.resonance_classification === 'non_resonant').length;
+    document.getElementById('resonant-count').textContent = resonant;
+    document.getElementById('emerging-count').textContent = emerging;
+    document.getElementById('non-resonant-count').textContent = nonResonant;
 
     renderSkeletons(allSkeletons);
+    renderTop5(allSkeletons);
   } catch (err) {
     document.getElementById('hall-of-fame').innerHTML = '<p style="color:red;">Fehler: ' + err.message + '</p>';
   }
+}
+
+async function loadLocalRuntime() {
+  try {
+    const [statsResp, syncResp] = await Promise.all([
+      fetch('/api/local_stats'),
+      fetch('/api/sync_status')
+    ]);
+    if (!statsResp.ok || !syncResp.ok) throw new Error('local api unavailable');
+
+    const stats = await statsResp.json();
+    const sync = await syncResp.json();
+    document.getElementById('local-runtime-stats').textContent =
+      `Local skeletons: ${stats.total_skeletons} | Local users: ${stats.total_users} | Local top1: ${stats.top5?.[0]?.name || 'n/a'}`;
+    document.getElementById('local-runtime-git').textContent =
+      `Git Sync: branch=${sync.branch || 'n/a'} | dirty=${sync.dirty_worktree ? 'yes' : 'no'} | tracking=${sync.tracking || 'n/a'}`;
+  } catch (_err) {
+    document.getElementById('local-runtime-stats').textContent =
+      'Lokaler Runtime-Server nicht verbunden. Starte: python src/live_dashboard_server.py';
+    document.getElementById('local-runtime-git').textContent =
+      'Tipp: lokale API-Endpunkte (/api/local_stats, /api/sync_status) sind nur lokal verfügbar.';
+  }
+}
+
+function badgeForResonance(cls) {
+  if (cls === 'resonant') return '<span style="color:#00ff99;font-weight:bold;">resonant</span>';
+  if (cls === 'emerging') return '<span style="color:#7CFC00;font-weight:bold;">emerging</span>';
+  if (cls === 'non_resonant') return '<span style="color:#ff5a5a;font-weight:bold;">non_resonant</span>';
+  if (cls === 'neutral') return '<span style="color:#ffd166;font-weight:bold;">neutral</span>';
+  return '<span style="color:#9e9e9e;font-weight:bold;">no_data</span>';
+}
+
+function renderTop5(data) {
+  const top5 = [...data]
+    .sort((a,b) => (b.fitness || 0) - (a.fitness || 0))
+    .slice(0, 5);
+
+  const list = document.getElementById('top-5-list');
+  list.innerHTML = '';
+  top5.forEach((s, idx) => {
+    const li = document.createElement('li');
+    li.style.margin = '6px 0';
+    li.innerHTML = `<strong>#${idx + 1}</strong> ${s.name} — Fitness ${(s.fitness || 0).toFixed(3)} — ${badgeForResonance(s.resonance_classification)}`;
+    list.appendChild(li);
+  });
 }
 
 function renderSkeletons(data) {
@@ -100,6 +162,8 @@ function renderSkeletons(data) {
       <h3 style="margin:8px 0;">${s.name}</h3>
       <p><strong>Produced by:</strong> ${s.produced_by || 'unbekannt'}</p>
       <p><strong>Fitness:</strong> ${s.fitness.toFixed(3)}</p>
+      <p><strong>Resonance:</strong> ${badgeForResonance(s.resonance_classification)}</p>
+      <p><strong>Interactions:</strong> ${s.resonance_interactions || 0}</p>
       <p><strong>Born count:</strong> <strong style="color:#0f0;">${s.born_count || 1}x</strong></p>
       <p><strong>Dominant:</strong> ${s.facts?.dominant_type || 'N/A'}</p>
     `;
@@ -109,7 +173,9 @@ function renderSkeletons(data) {
 
 // Auto-Refresh alle 30 Sekunden + initial laden
 setInterval(loadHall, 30000);
+setInterval(loadLocalRuntime, 8000);
 loadHall();
+loadLocalRuntime();
 
 // Suche & Sort live reagieren
 document.getElementById('search').addEventListener('input', () => renderSkeletons(allSkeletons));
