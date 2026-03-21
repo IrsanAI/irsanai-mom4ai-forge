@@ -24,6 +24,7 @@ Aktueller Stand (März 2026):
 - Auto-Fitness (Density, Modularity, Feedback-Loops)
 - PNG-Visualisierungen der Graphen
 - Ancestry-Tracking (Lineage + born_count)
+- Resonance Protocol v0.1 (Interaction-Score aus echten Dialogen via `resonance_events.jsonl`)
 - Hall of Fame (interaktiv, filterbar, live aktualisiert)
 - Automatisches Pushen neuer Skelette zum zentralen Repo (optional)
 
@@ -87,10 +88,21 @@ git push
 - [x] Interaktive Hall of Fame (Suche, Filter, Stats)
 - [x] Automatisches Pushen mit PAT
 - [ ] Mutation & Crossover (Skelette paaren)
-- [ ] Erste echte Resonanz-Messung (Chat-Interaktionen)
+- [x] Erste Resonanz-Messung (JSONL-basierter Interaction-Score)
+- [ ] Live-Resonanz-Messung direkt aus Chat/Agent-Runtime
 - [ ] Community-Rangliste & Seltenheits-Badges
 - [ ] Vis.js Evolution-Tree in der Hall of Fame
 - [ ] Mini-Transformer aus Graph-Skeletten
+
+## Resonance Protocol (neu)
+
+Mom4AI bewertet nicht mehr nur Struktur, sondern kann auch **echte Interaktion** als Fitnesssignal einbeziehen:
+
+- Datei: `resonance_events.jsonl` (eine JSON-Zeile pro Dialog-Event)
+- Kernkriterien: `intent_match`, `context_match`, `tone_match`, `reliability`, `coordination`
+- Klassifikation: `resonant`, `emerging`, `neutral`, `non_resonant`
+
+Details und Beispiel-Format: `docs/resonance_protocol.md`.
 
 ## Mitmachen & Community
 
