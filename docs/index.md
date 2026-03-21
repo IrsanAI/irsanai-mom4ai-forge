@@ -48,6 +48,12 @@ Hier die aktuell besten 10 Skelette (sortiert nach Fitness – aktualisiert bei 
   <ol id="top-5-list" style="max-width: 780px; margin: 0 auto; color:#0f0; background:#111; border:1px solid #0f0; border-radius:8px; padding:16px 24px;"></ol>
 </div>
 
+<div id="local-runtime" style="margin:1.5em auto; max-width:780px; color:#0f0; background:#111; border:1px solid #0f0; border-radius:8px; padding:16px;">
+  <h3 style="margin-top:0;">Local Runtime / Sync Monitor</h3>
+  <p id="local-runtime-stats">Warte auf lokalen Server...</p>
+  <p id="local-runtime-git">Git Sync: -</p>
+</div>
+
 <script>
 let allSkeletons = [];
 
@@ -74,6 +80,28 @@ async function loadHall() {
     renderTop5(allSkeletons);
   } catch (err) {
     document.getElementById('hall-of-fame').innerHTML = '<p style="color:red;">Fehler: ' + err.message + '</p>';
+  }
+}
+
+async function loadLocalRuntime() {
+  try {
+    const [statsResp, syncResp] = await Promise.all([
+      fetch('/api/local_stats'),
+      fetch('/api/sync_status')
+    ]);
+    if (!statsResp.ok || !syncResp.ok) throw new Error('local api unavailable');
+
+    const stats = await statsResp.json();
+    const sync = await syncResp.json();
+    document.getElementById('local-runtime-stats').textContent =
+      `Local skeletons: ${stats.total_skeletons} | Local users: ${stats.total_users} | Local top1: ${stats.top5?.[0]?.name || 'n/a'}`;
+    document.getElementById('local-runtime-git').textContent =
+      `Git Sync: branch=${sync.branch || 'n/a'} | dirty=${sync.dirty_worktree ? 'yes' : 'no'} | tracking=${sync.tracking || 'n/a'}`;
+  } catch (_err) {
+    document.getElementById('local-runtime-stats').textContent =
+      'Lokaler Runtime-Server nicht verbunden. Starte: python src/live_dashboard_server.py';
+    document.getElementById('local-runtime-git').textContent =
+      'Tipp: lokale API-Endpunkte (/api/local_stats, /api/sync_status) sind nur lokal verfügbar.';
   }
 }
 
@@ -145,7 +173,9 @@ function renderSkeletons(data) {
 
 // Auto-Refresh alle 30 Sekunden + initial laden
 setInterval(loadHall, 30000);
+setInterval(loadLocalRuntime, 8000);
 loadHall();
+loadLocalRuntime();
 
 // Suche & Sort live reagieren
 document.getElementById('search').addEventListener('input', () => renderSkeletons(allSkeletons));
