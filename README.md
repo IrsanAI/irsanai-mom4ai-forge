@@ -43,9 +43,18 @@ cd irsanai-mom4ai-forge
 pip install -r requirements.txt
 ```
 
+Optional (empfohlen für 1-Kommando-Start):
+```bash
+pip install -e .
+```
+
 3. Ersten Run starten
 ```bash
 python src/mom_forge.py
+```
+oder nach `pip install -e .` einfach:
+```bash
+MomAI
 ```
 
 Du wirst einmalig nach einem **unique User-Namen** gefragt (z. B. dein GitHub-Name oder ein Nick). Dieser Name wird zentral in `users.json` registriert – jeder Name darf nur einmal existieren.
@@ -130,6 +139,19 @@ Wenn der Python-Hybrid-Server läuft, kommen zusätzlich lokale Endpunkte dazu:
 2. **Lineage Explorer** (3D/2.5D): Kind → Eltern → Cluster inkl. Drift über Zeit.
 3. **Dual-Ranking**: Local vs Global (deine Runs vs Online Hall of Fame).
 4. **Human + Agent Feedback Layer**: Kommentare/Signals je Skeleton als Resonanz-Quelle.
+
+## Factory Blueprint (Produktionslinien-Denken)
+
+Für das von dir beschriebene „Werkshallen“-Modell sollten wir die Pipeline explizit in Linien aufteilen:
+
+1. **Design-Linie**: MomAI erzeugt Skelett + DNA + Visual + Basisklassifikation.
+2. **Assembly-Linie**: Skelett → trainierbares Child-GPT (weights/tokenizer/config).
+3. **Quality-Linie**: Resonanztests (Mensch + Agent), Robustheit, Kultur-/Kontext-Checks.
+4. **Registry-Linie**: Veröffentlichung in Model-Portal (free/paid, Tags, Zielgruppe).
+5. **Feedback-Linie**: Nutzungsdaten/Kommentare/Resonanz fließen zurück in Selektion.
+
+Das ist der Weg zum echten USP: **nicht nur Modelle erzeugen, sondern reproduzierbar Resonanz-Modelle fertigen**.
+Mehr Details: `docs/factory_blueprint.md`.
 
 ## Mitmachen & Community
 
