@@ -104,6 +104,23 @@ Mom4AI bewertet nicht mehr nur Struktur, sondern kann auch **echte Interaktion**
 
 Details und Beispiel-Format: `docs/resonance_protocol.md`.
 
+## Lokales Live-Dashboard (ohne Docker & mit Docker)
+
+### Ohne Docker
+```bash
+# Im Repo-Root
+python -m http.server 8080 --directory docs
+```
+Dann öffnen: `http://localhost:8080`
+
+### Mit Docker
+```bash
+docker run --rm -p 8080:80 -v "${PWD}/docs:/usr/share/nginx/html:ro" nginx:alpine
+```
+Dann öffnen: `http://localhost:8080`
+
+So können User lokal dieselbe Hall-of-Fame-Ansicht sehen, inkl. Live-Reload der `ancestry.json`.
+
 ## Mitmachen & Community
 
 Jeder neue Skelett-Upload landet in der globalen Ancestry und kann in der Hall of Fame auftauchen. Je mehr Leute mitmachen, desto vielfältiger und spannender wird das Ökosystem.
