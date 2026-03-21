@@ -162,6 +162,8 @@ Falls du Lust hast, einfach clonen, PAT setzen, laufen lassen – und zuschauen,
 → Issues auf GitHub oder einfach einen PR mit neuen Bio-Komponenten.
 
 Release-Checkliste: `docs/release_readiness.md`.
+Release Notes Draft: `docs/releases/v0.1.0-alpha.md`.
+Changelog: `CHANGELOG.md`.
 
 Made with ❤️ & many late-night runs by IrsanAI
 
