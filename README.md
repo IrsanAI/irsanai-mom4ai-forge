@@ -24,6 +24,7 @@ Aktueller Stand (März 2026):
 - Auto-Fitness (Density, Modularity, Feedback-Loops)
 - PNG-Visualisierungen der Graphen
 - Ancestry-Tracking (Lineage + born_count)
+- Resonance Protocol v0.1 (Interaction-Score aus echten Dialogen via `resonance_events.jsonl`)
 - Hall of Fame (interaktiv, filterbar, live aktualisiert)
 - Automatisches Pushen neuer Skelette zum zentralen Repo (optional)
 
@@ -87,10 +88,48 @@ git push
 - [x] Interaktive Hall of Fame (Suche, Filter, Stats)
 - [x] Automatisches Pushen mit PAT
 - [ ] Mutation & Crossover (Skelette paaren)
-- [ ] Erste echte Resonanz-Messung (Chat-Interaktionen)
+- [x] Erste Resonanz-Messung (JSONL-basierter Interaction-Score)
+- [ ] Live-Resonanz-Messung direkt aus Chat/Agent-Runtime
 - [ ] Community-Rangliste & Seltenheits-Badges
 - [ ] Vis.js Evolution-Tree in der Hall of Fame
 - [ ] Mini-Transformer aus Graph-Skeletten
+
+## Resonance Protocol (neu)
+
+Mom4AI bewertet nicht mehr nur Struktur, sondern kann auch **echte Interaktion** als Fitnesssignal einbeziehen:
+
+- Datei: `resonance_events.jsonl` (eine JSON-Zeile pro Dialog-Event)
+- Kernkriterien: `intent_match`, `context_match`, `tone_match`, `reliability`, `coordination`
+- Klassifikation: `resonant`, `emerging`, `neutral`, `non_resonant`
+
+Details und Beispiel-Format: `docs/resonance_protocol.md`.
+
+## Lokales Live-Dashboard (ohne Docker & mit Docker)
+
+### Ohne Docker
+```bash
+# Im Repo-Root (Hybrid runtime inkl. local APIs)
+python src/live_dashboard_server.py
+```
+Dann öffnen: `http://localhost:8080`
+
+### Mit Docker
+```bash
+docker run --rm -p 8080:80 -v "${PWD}/docs:/usr/share/nginx/html:ro" nginx:alpine
+```
+Dann öffnen: `http://localhost:8080`
+
+So können User lokal dieselbe Hall-of-Fame-Ansicht sehen, inkl. Live-Reload der `ancestry.json`.
+Wenn der Python-Hybrid-Server läuft, kommen zusätzlich lokale Endpunkte dazu:
+- `/api/local_stats` (lokale Top-5, User-/Skeleton-Counts, Resonanzverteilung)
+- `/api/sync_status` (Branch/Tracking/dirty worktree)
+
+## Nächster logischer Schritt (USP-Richtung)
+
+1. **Realtime Evolution Stream** (SSE/WebSocket): Birth, Fitness, Resonance, Survival live.
+2. **Lineage Explorer** (3D/2.5D): Kind → Eltern → Cluster inkl. Drift über Zeit.
+3. **Dual-Ranking**: Local vs Global (deine Runs vs Online Hall of Fame).
+4. **Human + Agent Feedback Layer**: Kommentare/Signals je Skeleton als Resonanz-Quelle.
 
 ## Mitmachen & Community
 
