@@ -363,6 +363,19 @@ if __name__ == "__main__":
 
     print("Versuche automatisch zu pushen...")
 
+    def _extract_error_text(err: subprocess.CalledProcessError) -> str:
+        stderr = getattr(err, "stderr", None)
+        stdout = getattr(err, "stdout", None)
+        if isinstance(stderr, bytes):
+            return stderr.decode(errors="ignore")
+        if isinstance(stderr, str) and stderr.strip():
+            return stderr
+        if isinstance(stdout, bytes):
+            return stdout.decode(errors="ignore")
+        if isinstance(stdout, str) and stdout.strip():
+            return stdout
+        return str(err)
+
     try:
         # PAT sauber laden
         pat_file = os.path.expanduser("~/.github_pat")
@@ -375,7 +388,12 @@ if __name__ == "__main__":
 
         # 1. Alles temporär verstecken (Stash)
         print("   → Stash (verstecke Änderungen)...")
-        subprocess.run(["git", "stash", "push", "-m", "Auto-Push Stash"], check=True, capture_output=True)
+        subprocess.run(
+            ["git", "stash", "push", "-m", "Auto-Push Stash"],
+            check=True,
+            capture_output=True,
+            text=True
+        )
 
         # 2. Pull mit Rebase
         print("   → Pull + Rebase...")
@@ -383,16 +401,26 @@ if __name__ == "__main__":
 
         # 3. Stash zurückholen
         print("   → Pop Stash...")
-        subprocess.run(["git", "stash", "pop"], check=True, capture_output=True)
+        subprocess.run(["git", "stash", "pop"], check=True, capture_output=True, text=True)
 
         # 4. Add + Commit + Push
         print("   → Add + Commit + Push...")
         subprocess.run(["git", "add", "ancestry.json", "docs/images/", "users.json", ".user.json", "survivors/"],
                        check=True)
-        subprocess.run(
+        commit_result = subprocess.run(
             ["git", "commit", "-m", f"Automatischer Upload: {len(survivors)} neue Skelette von {mom.user_id}"],
-            check=True)
-        subprocess.run(["git", "push", repo_url, "main"], check=True)
+            capture_output=True,
+            text=True
+        )
+        if commit_result.returncode != 0 and "nothing to commit" not in (commit_result.stdout + commit_result.stderr).lower():
+            raise subprocess.CalledProcessError(
+                commit_result.returncode,
+                commit_result.args,
+                output=commit_result.stdout,
+                stderr=commit_result.stderr
+            )
+
+        subprocess.run(["git", "push", repo_url, "main"], check=True, capture_output=True, text=True)
 
         print("✅ Automatisch & konflikt-sicher gepusht! Pages aktualisiert sich in 1–2 Min.")
 
@@ -402,7 +430,10 @@ if __name__ == "__main__":
         print("git commit -m 'Manueller Upload'")
         print("git pull --rebase")
         print("git push")
-        print("Fehler-Details:", e.stderr.decode(errors='ignore') if hasattr(e, 'stderr') else str(e))
+        details = _extract_error_text(e)
+        if "refusing to allow a personal access token to create or update workflow" in details.lower():
+            print("Hinweis: Dein PAT braucht zusätzlich den Scope 'workflow' oder nutze den origin-Remote mit lokalem Git-Login.")
+        print("Fehler-Details:", details)
     except Exception as e:
         print("Unerwarteter Fehler:", str(e))
 

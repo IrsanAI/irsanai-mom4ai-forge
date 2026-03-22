@@ -69,7 +69,8 @@ Damit deine Skelette in der globalen Hall of Fame landen, muss das Repo pushen d
 
 1. Gehe zu https://github.com/settings/tokens
 2. „Generate new token (classic)“
-3. Wähle Scope: **repo** (full control of private repositories)
+3. Wähle Scope: **repo**  
+   Wenn du Dateien unter `.github/workflows/*` pushen willst, zusätzlich Scope: **workflow**
 4. Token generieren und kopieren
 5. In deinem Home-Verzeichnis speichern:
    ```powershell
