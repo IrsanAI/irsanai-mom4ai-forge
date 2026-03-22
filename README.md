@@ -132,6 +132,7 @@ So können User lokal dieselbe Hall-of-Fame-Ansicht sehen, inkl. Live-Reload der
 Wenn der Python-Hybrid-Server läuft, kommen zusätzlich lokale Endpunkte dazu:
 - `/api/local_stats` (lokale Top-5, User-/Skeleton-Counts, Resonanzverteilung)
 - `/api/sync_status` (Branch/Tracking/dirty worktree)
+Auf GitHub Pages erscheint dafür automatisch ein „Online Mode“-Hinweis statt einer Fehlermeldung.
 
 ## Nächster logischer Schritt (USP-Richtung)
 
@@ -166,6 +167,7 @@ Release-Checkliste: `docs/release_readiness.md`.
 Release Notes Draft: `docs/releases/v0.1.0-alpha.md`.
 Changelog: `CHANGELOG.md`.
 Release FAQ: `docs/release_faq.md`.
+Release Guard (lokal ausführen): `python src/release_guard.py`.
 
 Made with ❤️ & many late-night runs by IrsanAI
 

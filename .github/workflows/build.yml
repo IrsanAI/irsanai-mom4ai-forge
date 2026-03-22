@@ -19,4 +19,7 @@ jobs:
           python-version: "3.11"
       - name: Syntax check
         run: |
-          python -m py_compile src/mom_forge.py src/bio_components.py src/child_generator.py src/resonance_protocol.py src/live_dashboard_server.py
+          python -m py_compile src/mom_forge.py src/bio_components.py src/child_generator.py src/resonance_protocol.py src/live_dashboard_server.py src/release_guard.py
+      - name: Release guard
+        run: |
+          python src/release_guard.py

@@ -84,6 +84,15 @@ async function loadHall() {
 }
 
 async function loadLocalRuntime() {
+  const isLocalHost = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+  if (!isLocalHost) {
+    document.getElementById('local-runtime-stats').textContent =
+      'Online Mode aktiv (GitHub Pages). Lokale Runtime-API ist hier bewusst deaktiviert.';
+    document.getElementById('local-runtime-git').textContent =
+      'Für Local Runtime/Sync: python src/live_dashboard_server.py und dann http://localhost:8080 öffnen.';
+    return;
+  }
+
   try {
     const [statsResp, syncResp] = await Promise.all([
       fetch('/api/local_stats'),
