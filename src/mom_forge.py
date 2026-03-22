@@ -8,12 +8,14 @@ import hashlib
 from datetime import datetime
 from bio_components import BIO_COMPONENTS
 from child_generator import generate_child_mixture
+from resonance_protocol import score_interactions, classify_resonance
 
 SURVIVORS_DIR = "survivors"
 os.makedirs(SURVIVORS_DIR, exist_ok=True)
 VISUALS_DIR = "survivors/visuals"
 os.makedirs(VISUALS_DIR, exist_ok=True)
 USER_FILE = ".user.json"
+RESONANCE_EVENTS_FILE = "resonance_events.jsonl"
 
 
 class MomForge:
@@ -192,15 +194,59 @@ class MomForge:
         print(f"  → Auto-Fitness: {fitness:.3f} (Density: {density:.3f}, Modularity: {modularity:.3f})")
         return fitness
 
-    def simulate_feedback(self, fitness: float):
-        if fitness > 0.50:
-            verdict = "🌟 Starke Architektur – überlebt & wird Basis!"
-        elif fitness > 0.35:
-            verdict = "🟢 Gute Architektur – überlebt"
-        elif fitness > 0.20:
-            verdict = "🟡 Mittel – bleibt neutral"
+    def load_resonance_scores(self):
+        if not os.path.exists(RESONANCE_EVENTS_FILE):
+            return {}
+
+        per_skeleton_events = {}
+        with open(RESONANCE_EVENTS_FILE, "r", encoding="utf-8") as f:
+            for raw_line in f:
+                line = raw_line.strip()
+                if not line:
+                    continue
+                try:
+                    event = json.loads(line)
+                except json.JSONDecodeError:
+                    continue
+                skeleton_name = event.get("skeleton_name")
+                if not skeleton_name:
+                    continue
+                per_skeleton_events.setdefault(skeleton_name, []).append(event)
+
+        scores = {}
+        for skeleton_name, events in per_skeleton_events.items():
+            result = score_interactions(events)
+            scores[skeleton_name] = {
+                "score": result.score,
+                "connection": result.connection,
+                "coordination": result.coordination,
+                "interaction_count": result.interaction_count,
+                "classification": result.classification
+            }
+        return scores
+
+    def calculate_combined_fitness(self, auto_fitness: float, resonance_score: float, interaction_count: int):
+        if interaction_count <= 0:
+            return auto_fitness
+
+        if interaction_count >= 5:
+            resonance_weight = 0.70
         else:
-            verdict = "💀 Schwache Architektur – stirbt aus"
+            resonance_weight = 0.20 + (interaction_count / 5.0) * 0.50
+
+        auto_weight = 1.0 - resonance_weight
+        combined = (auto_weight * auto_fitness) + (resonance_weight * resonance_score)
+        return max(0.0, min(1.0, combined))
+
+    def simulate_feedback(self, fitness: float, resonance_classification: str = "no_data"):
+        if fitness > 0.50 and resonance_classification in ("resonant", "emerging", "insufficient_data", "no_data"):
+            verdict = f"🌟 Stark – überlebt ({resonance_classification})"
+        elif fitness > 0.35:
+            verdict = f"🟢 Gut – überlebt ({resonance_classification})"
+        elif fitness > 0.20 and resonance_classification in ("neutral", "insufficient_data", "no_data"):
+            verdict = f"🟡 Mittel – bleibt neutral ({resonance_classification})"
+        else:
+            verdict = f"💀 Schwach – stirbt aus ({resonance_classification})"
         print(verdict)
         return fitness > 0.20
 
@@ -234,18 +280,42 @@ if __name__ == "__main__":
             ancestry = json.load(f)
         print(f"Ancestry geladen: {len(ancestry)} Einträge")
 
+    resonance_scores = mom.load_resonance_scores()
+    if resonance_scores:
+        print(f"Resonance-Events geladen: {len(resonance_scores)} Skelette mit Live-Interaktion")
+    else:
+        print("Keine Resonance-Events gefunden – Auto-Fitness als Vorfilter aktiv.")
+
     survivors = []
     anzahl = int(input("Wie viele neue Skelette sollen gebaut werden? ") or "8")
     for _ in range(anzahl):
         G, mixture, name, factsheet, dna_hash = mom.birth_new_skeleton(num_components=random.randint(2, 6))
         mom.visualize_skeleton(G, name)
 
-        combined_fitness = mom.calculate_auto_fitness(G, mixture)
-        survives = mom.simulate_feedback(combined_fitness)
+        auto_fitness = mom.calculate_auto_fitness(G, mixture)
+        resonance_entry = resonance_scores.get(name, {})
+        resonance_fitness = float(resonance_entry.get("score", 0.0))
+        interaction_count = int(resonance_entry.get("interaction_count", 0))
+        combined_fitness = mom.calculate_combined_fitness(auto_fitness, resonance_fitness, interaction_count)
+        resonance_classification = resonance_entry.get(
+            "classification",
+            classify_resonance(resonance_fitness, interaction_count)
+        )
+
+        print(
+            f"  → Resonance: {resonance_fitness:.3f} | Interaktionen: {interaction_count} | "
+            f"Klassifikation: {resonance_classification}"
+        )
+        print(f"  → Combined Fitness: {combined_fitness:.3f}")
+        survives = mom.simulate_feedback(combined_fitness, resonance_classification)
 
         if survives:
             mom.save_survivor_skeleton(G, combined_fitness, mixture, name)
             factsheet["fitness"] = combined_fitness
+            factsheet["auto_fitness"] = auto_fitness
+            factsheet["resonance_fitness"] = resonance_fitness
+            factsheet["resonance_interactions"] = interaction_count
+            factsheet["resonance_classification"] = resonance_classification
             factsheet["image_path"] = f"images/{name}.png"
             ancestry.append(factsheet)
             survivors.append(name)
@@ -293,6 +363,19 @@ if __name__ == "__main__":
 
     print("Versuche automatisch zu pushen...")
 
+    def _extract_error_text(err: subprocess.CalledProcessError) -> str:
+        stderr = getattr(err, "stderr", None)
+        stdout = getattr(err, "stdout", None)
+        if isinstance(stderr, bytes):
+            return stderr.decode(errors="ignore")
+        if isinstance(stderr, str) and stderr.strip():
+            return stderr
+        if isinstance(stdout, bytes):
+            return stdout.decode(errors="ignore")
+        if isinstance(stdout, str) and stdout.strip():
+            return stdout
+        return str(err)
+
     try:
         # PAT sauber laden
         pat_file = os.path.expanduser("~/.github_pat")
@@ -305,7 +388,12 @@ if __name__ == "__main__":
 
         # 1. Alles temporär verstecken (Stash)
         print("   → Stash (verstecke Änderungen)...")
-        subprocess.run(["git", "stash", "push", "-m", "Auto-Push Stash"], check=True, capture_output=True)
+        subprocess.run(
+            ["git", "stash", "push", "-m", "Auto-Push Stash"],
+            check=True,
+            capture_output=True,
+            text=True
+        )
 
         # 2. Pull mit Rebase
         print("   → Pull + Rebase...")
@@ -313,16 +401,26 @@ if __name__ == "__main__":
 
         # 3. Stash zurückholen
         print("   → Pop Stash...")
-        subprocess.run(["git", "stash", "pop"], check=True, capture_output=True)
+        subprocess.run(["git", "stash", "pop"], check=True, capture_output=True, text=True)
 
         # 4. Add + Commit + Push
         print("   → Add + Commit + Push...")
         subprocess.run(["git", "add", "ancestry.json", "docs/images/", "users.json", ".user.json", "survivors/"],
                        check=True)
-        subprocess.run(
+        commit_result = subprocess.run(
             ["git", "commit", "-m", f"Automatischer Upload: {len(survivors)} neue Skelette von {mom.user_id}"],
-            check=True)
-        subprocess.run(["git", "push", repo_url, "main"], check=True)
+            capture_output=True,
+            text=True
+        )
+        if commit_result.returncode != 0 and "nothing to commit" not in (commit_result.stdout + commit_result.stderr).lower():
+            raise subprocess.CalledProcessError(
+                commit_result.returncode,
+                commit_result.args,
+                output=commit_result.stdout,
+                stderr=commit_result.stderr
+            )
+
+        subprocess.run(["git", "push", repo_url, "main"], check=True, capture_output=True, text=True)
 
         print("✅ Automatisch & konflikt-sicher gepusht! Pages aktualisiert sich in 1–2 Min.")
 
@@ -332,7 +430,10 @@ if __name__ == "__main__":
         print("git commit -m 'Manueller Upload'")
         print("git pull --rebase")
         print("git push")
-        print("Fehler-Details:", e.stderr.decode(errors='ignore') if hasattr(e, 'stderr') else str(e))
+        details = _extract_error_text(e)
+        if "refusing to allow a personal access token to create or update workflow" in details.lower():
+            print("Hinweis: Dein PAT braucht zusätzlich den Scope 'workflow' oder nutze den origin-Remote mit lokalem Git-Login.")
+        print("Fehler-Details:", details)
     except Exception as e:
         print("Unerwarteter Fehler:", str(e))
 
