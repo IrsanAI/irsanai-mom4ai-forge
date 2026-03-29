@@ -7,7 +7,7 @@ import uuid
 import hashlib
 from datetime import datetime
 from bio_components import BIO_COMPONENTS
-from child_generator import generate_child_mixture
+from child_generator import generate_child_mixture, crossover_mixtures, mutate_mixture
 from resonance_protocol import score_interactions, classify_resonance
 
 SURVIVORS_DIR = "survivors"
@@ -85,8 +85,19 @@ class MomForge:
         self.generation = max([c["fitness"] for c in self.children] or [0]) + 1 if self.children else 0
         print(f"✅ {loaded_count} Skelette geladen. Nächste Generation: {self.generation}")
 
-    def birth_new_skeleton(self, num_components: int = 3):
-        mixture = generate_child_mixture(num_components)
+    def birth_new_skeleton(self, num_components: int = 3, strategy: str = "random", parent_pool=None):
+        parent_pool = parent_pool or []
+        if strategy == "crossover" and len(parent_pool) >= 2:
+            p1, p2 = random.sample(parent_pool, 2)
+            mixture = crossover_mixtures(p1["mixture"], p2["mixture"])
+            parent_names = [p1["name"], p2["name"]]
+        elif strategy == "mutation" and len(parent_pool) >= 1:
+            p = random.choice(parent_pool)
+            mixture = mutate_mixture(p["mixture"])
+            parent_names = [p["name"]]
+        else:
+            mixture = generate_child_mixture(num_components)
+            parent_names = []
 
         unique_id = str(uuid.uuid4())[:8]
         dominant_components = sorted(mixture.items(), key=lambda x: x[1], reverse=True)[:2]
@@ -107,7 +118,9 @@ class MomForge:
                 "modularity": 0.0,
                 "feedback_loops": 0,
                 "dominant_type": max(mixture, key=mixture.get) if mixture else "unknown"
-            }
+            },
+            "creation_mode": strategy,
+            "parents": parent_names
         }
 
         total_plast = sum(
@@ -289,7 +302,19 @@ if __name__ == "__main__":
     survivors = []
     anzahl = int(input("Wie viele neue Skelette sollen gebaut werden? ") or "8")
     for _ in range(anzahl):
-        G, mixture, name, factsheet, dna_hash = mom.birth_new_skeleton(num_components=random.randint(2, 6))
+        parent_candidates = sorted(mom.children, key=lambda c: c.get("fitness", 0), reverse=True)[:12]
+        rnd = random.random()
+        strategy = "random"
+        if len(parent_candidates) >= 2 and rnd < 0.45:
+            strategy = "crossover"
+        elif len(parent_candidates) >= 1 and rnd < 0.75:
+            strategy = "mutation"
+
+        G, mixture, name, factsheet, dna_hash = mom.birth_new_skeleton(
+            num_components=random.randint(2, 6),
+            strategy=strategy,
+            parent_pool=parent_candidates
+        )
         mom.visualize_skeleton(G, name)
 
         auto_fitness = mom.calculate_auto_fitness(G, mixture)

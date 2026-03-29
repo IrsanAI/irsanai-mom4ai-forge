@@ -96,7 +96,8 @@ git push
 - [x] Auto-Fitness & Ancestry-Tracking
 - [x] Interaktive Hall of Fame (Suche, Filter, Stats)
 - [x] Automatisches Pushen mit PAT
-- [ ] Mutation & Crossover (Skelette paaren)
+- [x] Basis-Mutation & Crossover (DNA-Mischungen aus Survivor-Eltern)
+- [ ] Erweiterte Evolution (lineage-aware Parent-Selection, adaptive Mutationsraten)
 - [x] Erste Resonanz-Messung (JSONL-basierter Interaction-Score)
 - [ ] Live-Resonanz-Messung direkt aus Chat/Agent-Runtime
 - [ ] Community-Rangliste & Seltenheits-Badges
