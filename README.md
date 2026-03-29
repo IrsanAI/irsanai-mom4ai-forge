@@ -97,7 +97,8 @@ git push
 - [x] Interaktive Hall of Fame (Suche, Filter, Stats)
 - [x] Automatisches Pushen mit PAT
 - [x] Basis-Mutation & Crossover (DNA-Mischungen aus Survivor-Eltern)
-- [ ] Erweiterte Evolution (lineage-aware Parent-Selection, adaptive Mutationsraten)
+- [x] Erweiterte Evolution (lineage-aware Parent-Selection, adaptive Mutationsraten)
+- [ ] Multi-Objective Selektion (Fitness + Resonanz + Diversitätsdruck)
 - [x] Erste Resonanz-Messung (JSONL-basierter Interaction-Score)
 - [ ] Live-Resonanz-Messung direkt aus Chat/Agent-Runtime
 - [ ] Community-Rangliste & Seltenheits-Badges

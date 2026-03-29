@@ -85,15 +85,58 @@ class MomForge:
         self.generation = max([c["fitness"] for c in self.children] or [0]) + 1 if self.children else 0
         print(f"✅ {loaded_count} Skelette geladen. Nächste Generation: {self.generation}")
 
-    def birth_new_skeleton(self, num_components: int = 3, strategy: str = "random", parent_pool=None):
+    @staticmethod
+    def dominant_component(mixture: dict) -> str:
+        if not mixture:
+            return "unknown"
+        return max(mixture, key=mixture.get)
+
+    def select_parent_candidates(self, limit: int = 12):
+        """
+        Lineage-aware Parent Selection:
+        - priorisiert Fitness
+        - hält Diversität über dominante DNA-Komponenten
+        """
+        ranked = sorted(self.children, key=lambda c: c.get("fitness", 0), reverse=True)
+        if not ranked:
+            return []
+
+        selected = []
+        seen_dominants = set()
+        for candidate in ranked:
+            dominant = self.dominant_component(candidate.get("mixture", {}))
+            if dominant not in seen_dominants or len(selected) < max(3, limit // 3):
+                selected.append(candidate)
+                seen_dominants.add(dominant)
+            if len(selected) >= limit:
+                break
+
+        # falls durch Diversitätsregel noch nicht genug Eltern da sind
+        if len(selected) < min(limit, len(ranked)):
+            for candidate in ranked:
+                if candidate in selected:
+                    continue
+                selected.append(candidate)
+                if len(selected) >= limit:
+                    break
+        return selected
+
+    def birth_new_skeleton(
+        self,
+        num_components: int = 3,
+        strategy: str = "random",
+        parent_pool=None,
+        mutation_strength: float = 0.08,
+        crossover_noise: float = 0.07
+    ):
         parent_pool = parent_pool or []
         if strategy == "crossover" and len(parent_pool) >= 2:
             p1, p2 = random.sample(parent_pool, 2)
-            mixture = crossover_mixtures(p1["mixture"], p2["mixture"])
+            mixture = crossover_mixtures(p1["mixture"], p2["mixture"], mutation_noise=crossover_noise)
             parent_names = [p1["name"], p2["name"]]
         elif strategy == "mutation" and len(parent_pool) >= 1:
             p = random.choice(parent_pool)
-            mixture = mutate_mixture(p["mixture"])
+            mixture = mutate_mixture(p["mixture"], mutation_strength=mutation_strength)
             parent_names = [p["name"]]
         else:
             mixture = generate_child_mixture(num_components)
@@ -302,7 +345,10 @@ if __name__ == "__main__":
     survivors = []
     anzahl = int(input("Wie viele neue Skelette sollen gebaut werden? ") or "8")
     for _ in range(anzahl):
-        parent_candidates = sorted(mom.children, key=lambda c: c.get("fitness", 0), reverse=True)[:12]
+        parent_candidates = mom.select_parent_candidates(limit=12)
+        diversity = len({mom.dominant_component(c.get("mixture", {})) for c in parent_candidates}) / max(1, len(parent_candidates))
+        adaptive_mutation = 0.06 if diversity > 0.6 else 0.11
+        adaptive_crossover_noise = 0.05 if diversity > 0.6 else 0.10
         rnd = random.random()
         strategy = "random"
         if len(parent_candidates) >= 2 and rnd < 0.45:
@@ -313,7 +359,9 @@ if __name__ == "__main__":
         G, mixture, name, factsheet, dna_hash = mom.birth_new_skeleton(
             num_components=random.randint(2, 6),
             strategy=strategy,
-            parent_pool=parent_candidates
+            parent_pool=parent_candidates,
+            mutation_strength=adaptive_mutation,
+            crossover_noise=adaptive_crossover_noise
         )
         mom.visualize_skeleton(G, name)
 
