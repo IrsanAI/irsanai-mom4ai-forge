@@ -23,3 +23,6 @@ jobs:
       - name: Release guard
         run: |
           python src/release_guard.py
+      - name: Smoke tests
+        run: |
+          python tests/smoke_test.py
