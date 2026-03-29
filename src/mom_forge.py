@@ -294,6 +294,31 @@ class MomForge:
         combined = (auto_weight * auto_fitness) + (resonance_weight * resonance_score)
         return max(0.0, min(1.0, combined))
 
+    @staticmethod
+    def mixture_distance(m1: dict, m2: dict) -> float:
+        keys = set(m1.keys()) | set(m2.keys())
+        if not keys:
+            return 0.0
+        l1 = sum(abs(float(m1.get(k, 0.0)) - float(m2.get(k, 0.0))) for k in keys)
+        return max(0.0, min(1.0, l1 / 200.0))
+
+    def calculate_multi_objective_score(
+        self,
+        auto_fitness: float,
+        resonance_score: float,
+        interaction_count: int,
+        child_mixture: dict,
+        parent_pool: list
+    ):
+        base = self.calculate_combined_fitness(auto_fitness, resonance_score, interaction_count)
+        if not parent_pool:
+            return base, 0.0
+
+        distances = [self.mixture_distance(child_mixture, p.get("mixture", {})) for p in parent_pool[:8]]
+        diversity_score = sum(distances) / len(distances) if distances else 0.0
+        final = (0.75 * base) + (0.25 * diversity_score)
+        return max(0.0, min(1.0, final)), diversity_score
+
     def simulate_feedback(self, fitness: float, resonance_classification: str = "no_data"):
         if fitness > 0.50 and resonance_classification in ("resonant", "emerging", "insufficient_data", "no_data"):
             verdict = f"🌟 Stark – überlebt ({resonance_classification})"
@@ -369,7 +394,14 @@ if __name__ == "__main__":
         resonance_entry = resonance_scores.get(name, {})
         resonance_fitness = float(resonance_entry.get("score", 0.0))
         interaction_count = int(resonance_entry.get("interaction_count", 0))
-        combined_fitness = mom.calculate_combined_fitness(auto_fitness, resonance_fitness, interaction_count)
+        objective_ar = mom.calculate_combined_fitness(auto_fitness, resonance_fitness, interaction_count)
+        combined_fitness, diversity_objective = mom.calculate_multi_objective_score(
+            auto_fitness=auto_fitness,
+            resonance_score=resonance_fitness,
+            interaction_count=interaction_count,
+            child_mixture=mixture,
+            parent_pool=parent_candidates
+        )
         resonance_classification = resonance_entry.get(
             "classification",
             classify_resonance(resonance_fitness, interaction_count)
@@ -379,7 +411,9 @@ if __name__ == "__main__":
             f"  → Resonance: {resonance_fitness:.3f} | Interaktionen: {interaction_count} | "
             f"Klassifikation: {resonance_classification}"
         )
-        print(f"  → Combined Fitness: {combined_fitness:.3f}")
+        print(f"  → Objective(Auto+Resonance): {objective_ar:.3f}")
+        print(f"  → Objective(Diversity): {diversity_objective:.3f}")
+        print(f"  → Combined Fitness (multi-objective): {combined_fitness:.3f}")
         survives = mom.simulate_feedback(combined_fitness, resonance_classification)
 
         if survives:
@@ -389,6 +423,8 @@ if __name__ == "__main__":
             factsheet["resonance_fitness"] = resonance_fitness
             factsheet["resonance_interactions"] = interaction_count
             factsheet["resonance_classification"] = resonance_classification
+            factsheet["objective_auto_resonance"] = objective_ar
+            factsheet["objective_diversity"] = diversity_objective
             factsheet["image_path"] = f"images/{name}.png"
             ancestry.append(factsheet)
             survivors.append(name)
