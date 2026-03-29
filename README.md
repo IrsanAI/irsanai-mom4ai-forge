@@ -133,10 +133,15 @@ git push
   **Chemie (Repo-Fit):** `74/100` 🟩🟩🟩⬜⬜  
   **Coach-Feedback:** Runtime-Eingang steht; als Nächstes Session-Memory + Streaming.
 
-- [ ] Live-Resonanz-Messung direkt aus Chat/Agent-Runtime (Session-basiert, kontinuierlich)  
-  **Resonanz:** `45/100` 🟨🟨⬜⬜⬜  
-  **Chemie (Repo-Fit):** `64/100` 🟨🟨🟨⬜⬜  
-  **Coach-Feedback:** API da, jetzt echte End-to-End-Pipeline für kontinuierliche Dialoge bauen.
+- [x] Session-Continuity (session-basierte Aggregation via `resonance_sessions.json`)  
+  **Resonanz:** `68/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `77/100` 🟩🟩🟩⬜⬜  
+  **Coach-Feedback:** Kontinuität ist da; nächster Schritt ist Streaming + memory-aware weighting.
+
+- [ ] Live-Resonanz-Messung direkt aus Chat/Agent-Runtime (kontinuierlich + streaming)  
+  **Resonanz:** `54/100` 🟨🟨🟨⬜⬜  
+  **Chemie (Repo-Fit):** `69/100` 🟨🟨🟨⬜⬜  
+  **Coach-Feedback:** API + Session vorhanden, jetzt echte Runtime-Integration pro Turn etablieren.
 
 - [ ] Community-Rangliste & Seltenheits-Badges  
   **Resonanz:** `40/100` 🟨🟨⬜⬜⬜  

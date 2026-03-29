@@ -52,6 +52,7 @@ Hier die aktuell besten 10 Skelette (sortiert nach Fitness – aktualisiert bei 
   <h3 style="margin-top:0;">Local Runtime / Sync Monitor</h3>
   <p id="local-runtime-stats">Warte auf lokalen Server...</p>
   <p id="local-runtime-git">Git Sync: -</p>
+  <p id="local-runtime-session">Session: -</p>
 </div>
 
 <script>
@@ -94,23 +95,33 @@ async function loadLocalRuntime() {
   }
 
   try {
-    const [statsResp, syncResp] = await Promise.all([
+    const [statsResp, syncResp, sessionResp] = await Promise.all([
       fetch('/api/local_stats'),
-      fetch('/api/sync_status')
+      fetch('/api/sync_status'),
+      fetch('/api/session_summary')
     ]);
-    if (!statsResp.ok || !syncResp.ok) throw new Error('local api unavailable');
+    if (!statsResp.ok || !syncResp.ok || !sessionResp.ok) throw new Error('local api unavailable');
 
     const stats = await statsResp.json();
     const sync = await syncResp.json();
+    const sessions = await sessionResp.json();
     document.getElementById('local-runtime-stats').textContent =
       `Local skeletons: ${stats.total_skeletons} | Local users: ${stats.total_users} | Local top1: ${stats.top5?.[0]?.name || 'n/a'}`;
     document.getElementById('local-runtime-git').textContent =
       `Git Sync: branch=${sync.branch || 'n/a'} | dirty=${sync.dirty_worktree ? 'yes' : 'no'} | tracking=${sync.tracking || 'n/a'}`;
+    const list = Array.isArray(sessions.sessions) ? sessions.sessions : [];
+    const bestSession = list.sort((a,b) => (b.session_resonance || 0) - (a.session_resonance || 0))[0];
+    document.getElementById('local-runtime-session').textContent =
+      bestSession
+        ? `Best Session: ${bestSession.session_id} | Resonance ${(bestSession.session_resonance || 0).toFixed(3)} | Events ${bestSession.event_count || 0}`
+        : 'Session: noch keine Live-Events.';
   } catch (_err) {
     document.getElementById('local-runtime-stats').textContent =
       'Lokaler Runtime-Server nicht verbunden. Starte: python src/live_dashboard_server.py';
     document.getElementById('local-runtime-git').textContent =
       'Tipp: lokale API-Endpunkte (/api/local_stats, /api/sync_status) sind nur lokal verfügbar.';
+    document.getElementById('local-runtime-session').textContent =
+      'Session-Summary benötigt den lokalen Runtime-Server.';
   }
 }
 

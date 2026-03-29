@@ -11,7 +11,7 @@ import os
 import subprocess
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urlparse, parse_qs
 from datetime import datetime
 
 
@@ -20,6 +20,7 @@ DOCS_DIR = ROOT / "docs"
 ANCESTRY_FILE = ROOT / "ancestry.json"
 USERS_FILE = ROOT / "users.json"
 RESONANCE_EVENTS_FILE = ROOT / "resonance_events.jsonl"
+RESONANCE_SESSIONS_FILE = ROOT / "resonance_sessions.json"
 
 
 def _safe_load_json(path: Path, fallback):
@@ -101,6 +102,64 @@ def _append_resonance_event(event: dict):
     return payload
 
 
+def _load_sessions():
+    return _safe_load_json(RESONANCE_SESSIONS_FILE, {})
+
+
+def _save_sessions(sessions: dict):
+    with RESONANCE_SESSIONS_FILE.open("w", encoding="utf-8") as f:
+        json.dump(sessions, f, ensure_ascii=False, indent=2)
+
+
+def _update_session_aggregate(event: dict):
+    sessions = _load_sessions()
+    session_id = str(event.get("session_id") or "default-session")
+    skeleton_name = str(event.get("skeleton_name") or "unknown-skeleton")
+
+    metrics = ["intent_match", "context_match", "tone_match", "reliability", "coordination"]
+    record = sessions.get(
+        session_id,
+        {
+            "session_id": session_id,
+            "event_count": 0,
+            "first_seen": event.get("timestamp"),
+            "last_seen": event.get("timestamp"),
+            "avg_intent_match": 0.0,
+            "avg_context_match": 0.0,
+            "avg_tone_match": 0.0,
+            "avg_reliability": 0.0,
+            "avg_coordination": 0.0,
+            "last_skeleton_name": skeleton_name,
+            "last_actor_type": event.get("actor_type", "unknown"),
+        },
+    )
+
+    n = int(record.get("event_count", 0))
+    for metric in metrics:
+        key = f"avg_{metric}"
+        prev_avg = float(record.get(key, 0.0))
+        current = float(event.get(metric, 0.0))
+        record[key] = ((prev_avg * n) + current) / (n + 1)
+
+    record["event_count"] = n + 1
+    record["last_seen"] = event.get("timestamp")
+    record["last_skeleton_name"] = skeleton_name
+    record["last_actor_type"] = event.get("actor_type", "unknown")
+
+    # Session-level resonance (gleich gewichtet)
+    record["session_resonance"] = (
+        record["avg_intent_match"]
+        + record["avg_context_match"]
+        + record["avg_tone_match"]
+        + record["avg_reliability"]
+        + record["avg_coordination"]
+    ) / 5.0
+
+    sessions[session_id] = record
+    _save_sessions(sessions)
+    return record
+
+
 class DashboardHandler(SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(DOCS_DIR), **kwargs)
@@ -121,6 +180,15 @@ class DashboardHandler(SimpleHTTPRequestHandler):
             return
         if parsed.path == "/api/sync_status":
             self._send_json(_git_sync_status())
+            return
+        if parsed.path == "/api/session_summary":
+            query = parse_qs(parsed.query)
+            sessions = _load_sessions()
+            session_id = query.get("session_id", [None])[0]
+            if session_id:
+                self._send_json(sessions.get(session_id, {"error": "session_not_found"}))
+            else:
+                self._send_json({"sessions": list(sessions.values())})
             return
         super().do_GET()
 
@@ -144,7 +212,8 @@ class DashboardHandler(SimpleHTTPRequestHandler):
             return
 
         stored = _append_resonance_event(event)
-        self._send_json({"status": "ok", "stored": stored}, status=201)
+        session = _update_session_aggregate(stored)
+        self._send_json({"status": "ok", "stored": stored, "session": session}, status=201)
 
 
 def main():
@@ -152,7 +221,7 @@ def main():
     port = int(os.getenv("MOM_DASHBOARD_PORT", "8080"))
     server = ThreadingHTTPServer((host, port), DashboardHandler)
     print(f"🚀 Mom4AI Dashboard läuft auf http://{host}:{port}")
-    print("   Endpoints: /api/local_stats, /api/sync_status, POST /api/resonance_event")
+    print("   Endpoints: /api/local_stats, /api/sync_status, /api/session_summary, POST /api/resonance_event")
     try:
         server.serve_forever()
     except KeyboardInterrupt:

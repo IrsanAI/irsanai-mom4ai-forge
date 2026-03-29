@@ -43,6 +43,14 @@ curl -X POST http://localhost:8080/api/resonance_event \
 ```
 
 Der Server schreibt das Event automatisch in `resonance_events.jsonl`.
+Zusätzlich aktualisiert er `resonance_sessions.json` für session-basierte Aggregation.
+
+Session-Summary abrufen:
+
+```bash
+curl "http://localhost:8080/api/session_summary"
+curl "http://localhost:8080/api/session_summary?session_id=chat-42"
+```
 
 ## Klassifikation
 
