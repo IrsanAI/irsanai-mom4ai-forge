@@ -12,12 +12,14 @@ import subprocess
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlparse
+from datetime import datetime
 
 
 ROOT = Path(__file__).resolve().parent.parent
 DOCS_DIR = ROOT / "docs"
 ANCESTRY_FILE = ROOT / "ancestry.json"
 USERS_FILE = ROOT / "users.json"
+RESONANCE_EVENTS_FILE = ROOT / "resonance_events.jsonl"
 
 
 def _safe_load_json(path: Path, fallback):
@@ -83,6 +85,22 @@ def _git_sync_status():
     }
 
 
+def _validate_resonance_event(event: dict):
+    required = ["skeleton_name", "intent_match", "context_match", "tone_match", "reliability", "coordination"]
+    missing = [k for k in required if k not in event]
+    if missing:
+        return False, f"missing fields: {', '.join(missing)}"
+    return True, "ok"
+
+
+def _append_resonance_event(event: dict):
+    payload = dict(event)
+    payload.setdefault("timestamp", datetime.utcnow().isoformat() + "Z")
+    with RESONANCE_EVENTS_FILE.open("a", encoding="utf-8") as f:
+        f.write(json.dumps(payload, ensure_ascii=False) + "\n")
+    return payload
+
+
 class DashboardHandler(SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(DOCS_DIR), **kwargs)
@@ -106,13 +124,35 @@ class DashboardHandler(SimpleHTTPRequestHandler):
             return
         super().do_GET()
 
+    def do_POST(self):
+        parsed = urlparse(self.path)
+        if parsed.path != "/api/resonance_event":
+            self._send_json({"error": "not found"}, status=404)
+            return
+
+        try:
+            content_len = int(self.headers.get("Content-Length", "0"))
+            raw = self.rfile.read(content_len) if content_len > 0 else b"{}"
+            event = json.loads(raw.decode("utf-8"))
+        except Exception as exc:
+            self._send_json({"error": f"invalid_json: {exc}"}, status=400)
+            return
+
+        ok, msg = _validate_resonance_event(event)
+        if not ok:
+            self._send_json({"error": msg}, status=400)
+            return
+
+        stored = _append_resonance_event(event)
+        self._send_json({"status": "ok", "stored": stored}, status=201)
+
 
 def main():
     host = os.getenv("MOM_DASHBOARD_HOST", "127.0.0.1")
     port = int(os.getenv("MOM_DASHBOARD_PORT", "8080"))
     server = ThreadingHTTPServer((host, port), DashboardHandler)
     print(f"🚀 Mom4AI Dashboard läuft auf http://{host}:{port}")
-    print("   Endpoints: /api/local_stats, /api/sync_status")
+    print("   Endpoints: /api/local_stats, /api/sync_status, POST /api/resonance_event")
     try:
         server.serve_forever()
     except KeyboardInterrupt:

@@ -128,10 +128,15 @@ git push
   **Chemie (Repo-Fit):** `82/100` 🟩🟩🟩🟩⬜  
   **Coach-Feedback:** Gute Brücke zwischen Theorie und implementierbarer Praxis.
 
-- [ ] Live-Resonanz-Messung direkt aus Chat/Agent-Runtime  
-  **Resonanz:** `35/100` 🟨⬜⬜⬜⬜  
-  **Chemie (Repo-Fit):** `58/100` 🟨🟨⬜⬜⬜  
-  **Coach-Feedback:** Größter Hebel für Realismus & spätere Produktreife.
+- [x] Live-Resonanz-Ingestion (POST `/api/resonance_event`)  
+  **Resonanz:** `62/100` 🟨🟨🟨⬜⬜  
+  **Chemie (Repo-Fit):** `74/100` 🟩🟩🟩⬜⬜  
+  **Coach-Feedback:** Runtime-Eingang steht; als Nächstes Session-Memory + Streaming.
+
+- [ ] Live-Resonanz-Messung direkt aus Chat/Agent-Runtime (Session-basiert, kontinuierlich)  
+  **Resonanz:** `45/100` 🟨🟨⬜⬜⬜  
+  **Chemie (Repo-Fit):** `64/100` 🟨🟨🟨⬜⬜  
+  **Coach-Feedback:** API da, jetzt echte End-to-End-Pipeline für kontinuierliche Dialoge bauen.
 
 - [ ] Community-Rangliste & Seltenheits-Badges  
   **Resonanz:** `40/100` 🟨🟨⬜⬜⬜  
@@ -147,57 +152,6 @@ git push
   **Resonanz:** `30/100` 🟧⬜⬜⬜⬜  
   **Chemie (Repo-Fit):** `72/100` 🟩🟩🟩⬜⬜  
   **Coach-Feedback:** Der zentrale „Moonshot“ Richtung Endprodukt/USP.
-
-## Resonance Protocol (neu)
-
-Mom4AI bewertet nicht mehr nur Struktur, sondern kann auch **echte Interaktion** als Fitnesssignal einbeziehen:
-
-- Datei: `resonance_events.jsonl` (eine JSON-Zeile pro Dialog-Event)
-- Kernkriterien: `intent_match`, `context_match`, `tone_match`, `reliability`, `coordination`
-- Klassifikation: `resonant`, `emerging`, `neutral`, `non_resonant`
-
-Details und Beispiel-Format: `docs/resonance_protocol.md`.
-
-## Lokales Live-Dashboard (ohne Docker & mit Docker)
-
-### Ohne Docker
-```bash
-# Im Repo-Root (Hybrid runtime inkl. local APIs)
-python src/live_dashboard_server.py
-```
-Dann öffnen: `http://localhost:8080`
-
-### Mit Docker
-```bash
-docker run --rm -p 8080:80 -v "${PWD}/docs:/usr/share/nginx/html:ro" nginx:alpine
-```
-Dann öffnen: `http://localhost:8080`
-
-So können User lokal dieselbe Hall-of-Fame-Ansicht sehen, inkl. Live-Reload der `ancestry.json`.
-Wenn der Python-Hybrid-Server läuft, kommen zusätzlich lokale Endpunkte dazu:
-- `/api/local_stats` (lokale Top-5, User-/Skeleton-Counts, Resonanzverteilung)
-- `/api/sync_status` (Branch/Tracking/dirty worktree)
-Auf GitHub Pages erscheint dafür automatisch ein „Online Mode“-Hinweis statt einer Fehlermeldung.
-
-## Nächster logischer Schritt (USP-Richtung)
-
-1. **Realtime Evolution Stream** (SSE/WebSocket): Birth, Fitness, Resonance, Survival live.
-2. **Lineage Explorer** (3D/2.5D): Kind → Eltern → Cluster inkl. Drift über Zeit.
-3. **Dual-Ranking**: Local vs Global (deine Runs vs Online Hall of Fame).
-4. **Human + Agent Feedback Layer**: Kommentare/Signals je Skeleton als Resonanz-Quelle.
-
-## Factory Blueprint (Produktionslinien-Denken)
-
-Für das von dir beschriebene „Werkshallen“-Modell sollten wir die Pipeline explizit in Linien aufteilen:
-
-1. **Design-Linie**: MomAI erzeugt Skelett + DNA + Visual + Basisklassifikation.
-2. **Assembly-Linie**: Skelett → trainierbares Child-GPT (weights/tokenizer/config).
-3. **Quality-Linie**: Resonanztests (Mensch + Agent), Robustheit, Kultur-/Kontext-Checks.
-4. **Registry-Linie**: Veröffentlichung in Model-Portal (free/paid, Tags, Zielgruppe).
-5. **Feedback-Linie**: Nutzungsdaten/Kommentare/Resonanz fließen zurück in Selektion.
-
-Das ist der Weg zum echten USP: **nicht nur Modelle erzeugen, sondern reproduzierbar Resonanz-Modelle fertigen**.
-Mehr Details: `docs/factory_blueprint.md`.
 
 ## Resonance Protocol (neu)
 
