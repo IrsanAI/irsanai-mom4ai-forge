@@ -6166,5 +6166,248 @@
     "resonance_interactions": 0,
     "resonance_classification": "insufficient_data",
     "image_path": "images/KaktusAmeisen-G1.636388888888889-372-9d5875ae.png"
+  },
+  {
+    "id": "a266238b",
+    "name": "FledermausVogelzug-G1.636388888888889-382-a266238b",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "elefanten_matriarchat": 9.52,
+      "libellen_schwarm": 5.09,
+      "mensch_gehirn": 8.81,
+      "vogel_formation": 0.0,
+      "fledermaus_echolot": 23.43,
+      "vogelzug": 17.03,
+      "ameisen_schwarm": 3.0,
+      "oktopus_nervensystem": 9.59,
+      "korallenriff": 14.0,
+      "pflanzenwurzelnetz": 6.0,
+      "slime_mold": 3.53
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-30T13:07:53.678025",
+    "facts": {
+      "nodes": 33,
+      "edges": 149,
+      "density": 0.14109848484848486,
+      "modularity": 0.20544425373994177,
+      "feedback_loops": 5,
+      "dominant_type": "fledermaus_echolot"
+    },
+    "creation_mode": "crossover",
+    "parents": [
+      "VogelzugKorallenriff-G1.636388888888889-173-2f157a3a",
+      "FledermausOktopus-G1.636388888888889-183-d483291e"
+    ],
+    "fitness": 0.46383506810989983,
+    "auto_fitness": 0.3121092574798664,
+    "resonance_fitness": 0.0,
+    "resonance_interactions": 0,
+    "resonance_classification": "insufficient_data",
+    "objective_auto_resonance": 0.3121092574798664,
+    "objective_diversity": 0.9190125,
+    "image_path": "images/FledermausVogelzug-G1.636388888888889-382-a266238b.png"
+  },
+  {
+    "id": "da68c2bc",
+    "name": "WolfKorallenriff-G1.636388888888889-382-da68c2bc",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "honigbienentanz": 20.01,
+      "bakterien_biofilm": 15.93,
+      "algen_bluete": 1.18,
+      "korallenriff": 30.21,
+      "wolf_rudel": 32.67
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-30T13:07:54.483299",
+    "facts": {
+      "nodes": 31,
+      "edges": 123,
+      "density": 0.13225806451612904,
+      "modularity": 0.2195796182787013,
+      "feedback_loops": 5,
+      "dominant_type": "wolf_rudel"
+    },
+    "creation_mode": "random",
+    "parents": [],
+    "fitness": 0.4798926043545651,
+    "auto_fitness": 0.3065255558060868,
+    "resonance_fitness": 0.0,
+    "resonance_interactions": 0,
+    "resonance_classification": "insufficient_data",
+    "objective_auto_resonance": 0.3065255558060868,
+    "objective_diversity": 0.99999375,
+    "image_path": "images/WolfKorallenriff-G1.636388888888889-382-da68c2bc.png"
+  },
+  {
+    "id": "06a61cc7",
+    "name": "MueckenSchnecken-G1.636388888888889-382-06a61cc7",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "muecken_wolke": 70.57,
+      "schnecken_chemospur": 17.6,
+      "tiefsee_leuchtnetz": 11.83
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-30T13:07:54.991628",
+    "facts": {
+      "nodes": 34,
+      "edges": 172,
+      "density": 0.1532976827094474,
+      "modularity": 0.19278211532435366,
+      "feedback_loops": 1,
+      "dominant_type": "muecken_wolke"
+    },
+    "creation_mode": "random",
+    "parents": [],
+    "fitness": 0.4547353794956206,
+    "auto_fitness": 0.28031592266082744,
+    "resonance_fitness": 0.0,
+    "resonance_interactions": 0,
+    "resonance_classification": "insufficient_data",
+    "objective_auto_resonance": 0.28031592266082744,
+    "objective_diversity": 0.97799375,
+    "image_path": "images/MueckenSchnecken-G1.636388888888889-382-06a61cc7.png"
+  },
+  {
+    "id": "f6f00eea",
+    "name": "MyzelAmeisen-G1.636388888888889-382-f6f00eea",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "quorum_sensing": 0.0,
+      "bienen_schwarm": 5.84,
+      "myzel_netz": 39.12,
+      "ameisen_schwarm": 24.0,
+      "mensch_gehirn": 21.85,
+      "slime_mold": 9.2
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-30T13:07:55.515986",
+    "facts": {
+      "nodes": 35,
+      "edges": 170,
+      "density": 0.14285714285714285,
+      "modularity": 0.19041932597127237,
+      "feedback_loops": 2,
+      "dominant_type": "myzel_netz"
+    },
+    "creation_mode": "crossover",
+    "parents": [
+      "MyzelAmeisen-G1.636388888888889-77-f62aecaf",
+      "AmeisenMensch-G1.636388888888889-12-ed0ac0cd"
+    ],
+    "fitness": 0.3818541451809508,
+    "auto_fitness": 0.2899992769079344,
+    "resonance_fitness": 0.0,
+    "resonance_interactions": 0,
+    "resonance_classification": "insufficient_data",
+    "objective_auto_resonance": 0.2899992769079344,
+    "objective_diversity": 0.6574187499999999,
+    "image_path": "images/MyzelAmeisen-G1.636388888888889-382-f6f00eea.png"
+  },
+  {
+    "id": "0e2bf3f2",
+    "name": "VogelAlgen-G1.636388888888889-382-0e2bf3f2",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "vogel_formation": 47.49,
+      "korallenriff": 1.92,
+      "algen_bluete": 38.74,
+      "termitenbau": 8.7,
+      "schwarmfisch": 2.2,
+      "fledermaus_echolot": 0.95
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-30T13:07:56.020347",
+    "facts": {
+      "nodes": 29,
+      "edges": 110,
+      "density": 0.1354679802955665,
+      "modularity": 0.23948444410551573,
+      "feedback_loops": 5,
+      "dominant_type": "vogel_formation"
+    },
+    "creation_mode": "random",
+    "parents": [],
+    "fitness": 0.47905394140801577,
+    "auto_fitness": 0.309032338544021,
+    "resonance_fitness": 0.0,
+    "resonance_interactions": 0,
+    "resonance_classification": "insufficient_data",
+    "objective_auto_resonance": 0.309032338544021,
+    "objective_diversity": 0.98911875,
+    "image_path": "images/VogelAlgen-G1.636388888888889-382-0e2bf3f2.png"
+  },
+  {
+    "id": "5b68ed0f",
+    "name": "MyzelMensch-G1.636388888888889-382-5b68ed0f",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "quorum_sensing": 0.0,
+      "bienen_schwarm": 8.74,
+      "myzel_netz": 45.76,
+      "ameisen_schwarm": 19.09,
+      "mensch_gehirn": 20.47,
+      "slime_mold": 5.94
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-30T13:07:56.426781",
+    "facts": {
+      "nodes": 35,
+      "edges": 177,
+      "density": 0.14873949579831933,
+      "modularity": 0.19856707314248775,
+      "feedback_loops": 3,
+      "dominant_type": "myzel_netz"
+    },
+    "creation_mode": "crossover",
+    "parents": [
+      "MyzelAmeisen-G1.636388888888889-77-f62aecaf",
+      "AmeisenMensch-G1.636388888888889-12-ed0ac0cd"
+    ],
+    "fitness": 0.39702219388021975,
+    "auto_fitness": 0.30440042517362637,
+    "resonance_fitness": 0.0,
+    "resonance_interactions": 0,
+    "resonance_classification": "insufficient_data",
+    "objective_auto_resonance": 0.30440042517362637,
+    "objective_diversity": 0.6748875,
+    "image_path": "images/MyzelMensch-G1.636388888888889-382-5b68ed0f.png"
+  },
+  {
+    "id": "43950602",
+    "name": "TermitenbauKorallen-G1.636388888888889-382-43950602",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "wolf_rudel_jagd": 1.22,
+      "oktopus_nervensystem": 2.26,
+      "termitenbau": 35.59,
+      "schnecken_chemospur": 18.77,
+      "vogelzug": 13.72,
+      "korallen_symbiose": 28.45
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-30T13:07:56.932065",
+    "facts": {
+      "nodes": 30,
+      "edges": 132,
+      "density": 0.15172413793103448,
+      "modularity": 0.20988922897130474,
+      "feedback_loops": 3,
+      "dominant_type": "termitenbau"
+    },
+    "creation_mode": "mutation",
+    "parents": [
+      "TermitenbauSchnecken-G1.636388888888889-183-358e1a71"
+    ],
+    "fitness": 0.4367127506604438,
+    "auto_fitness": 0.28443991754725834,
+    "resonance_fitness": 0.0,
+    "resonance_interactions": 0,
+    "resonance_classification": "insufficient_data",
+    "objective_auto_resonance": 0.28443991754725834,
+    "objective_diversity": 0.89353125,
+    "image_path": "images/TermitenbauKorallen-G1.636388888888889-382-43950602.png"
   }
 ]
