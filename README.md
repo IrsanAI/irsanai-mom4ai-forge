@@ -143,10 +143,15 @@ git push
   **Chemie (Repo-Fit):** `79/100` 🟩🟩🟩⬜⬜  
   **Coach-Feedback:** Kontinuierlicher Session-Flow steht; nächster Schritt sind native Chat/Agent-Adapter.
 
-- [ ] Native Chat/Agent-Runtime-Adapter (OpenAI/Agents/Custom Bots)  
-  **Resonanz:** `41/100` 🟨🟨⬜⬜⬜  
-  **Chemie (Repo-Fit):** `66/100` 🟨🟨🟨⬜⬜  
-  **Coach-Feedback:** Jetzt braucht es produktive Integrationen statt nur lokaler API-Einspeisung.
+- [x] Native Runtime-Adapter (MVP CLI: `momai-adapter`)  
+  **Resonanz:** `64/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `76/100` 🟩🟩🟩⬜⬜  
+  **Coach-Feedback:** Adapter-Basis steht; jetzt direkte Framework-Hooks pro Turn.
+
+- [ ] OpenAI/Agents/Custom-Bot Hook-Integrationen (ohne manuelle Flags)  
+  **Resonanz:** `46/100` 🟨🟨⬜⬜⬜  
+  **Chemie (Repo-Fit):** `68/100` 🟨🟨🟨⬜⬜  
+  **Coach-Feedback:** Ziel ist zero-friction Ingestion aus echten Runtime-Stacks.
 
 - [ ] Community-Rangliste & Seltenheits-Badges  
   **Resonanz:** `40/100` 🟨🟨⬜⬜⬜  
@@ -229,6 +234,7 @@ Changelog: `CHANGELOG.md`.
 Release FAQ: `docs/release_faq.md`.
 Release Guard (lokal ausführen): `python src/release_guard.py`.
 Repo Resonance Standard: `docs/repo_resonance_standard.md`.
+Runtime Adapter Guide: `docs/runtime_adapter.md`.
 
 Made with ❤️ & many late-night runs by IrsanAI
 

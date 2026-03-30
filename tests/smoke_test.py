@@ -10,6 +10,7 @@ sys.path.insert(0, str(ROOT / "src"))
 import live_dashboard_server as lds
 from live_dashboard_server import _validate_resonance_event
 from resonance_protocol import score_interactions
+from runtime_adapter import build_event
 
 
 def test_validate_resonance_event():
@@ -82,8 +83,26 @@ def test_session_aggregation():
         assert snap["top_session"]["session_id"] == "chat-42"
 
 
+def test_runtime_adapter_event_builder():
+    event = build_event(
+        skeleton_name="demo-skeleton",
+        session_id="demo-session",
+        intent_match=0.9,
+        context_match=0.8,
+        tone_match=0.7,
+        reliability=0.6,
+        coordination=0.75,
+        actor_type="agent",
+    )
+    assert event["skeleton_name"] == "demo-skeleton"
+    assert event["session_id"] == "demo-session"
+    assert 0.0 <= event["intent_match"] <= 1.0
+    assert "timestamp" in event
+
+
 if __name__ == "__main__":
     test_validate_resonance_event()
     test_resonance_scoring_bounds()
     test_session_aggregation()
+    test_runtime_adapter_event_builder()
     print("smoke tests passed")

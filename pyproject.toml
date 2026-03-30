@@ -19,6 +19,7 @@ dependencies = [
 [project.scripts]
 MomAI = "momai_cli:main"
 momai = "momai_cli:main"
+momai-adapter = "runtime_adapter:main"
 
 [tool.setuptools]
 py-modules = [
@@ -29,6 +30,7 @@ py-modules = [
   "resonance_protocol",
   "live_dashboard_server",
   "momai_cli",
+  "runtime_adapter",
 ]
 
 [tool.setuptools.package-dir]
