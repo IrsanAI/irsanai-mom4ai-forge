@@ -158,10 +158,15 @@ git push
   **Chemie (Repo-Fit):** `78/100` 🟩🟩🟩⬜⬜  
   **Coach-Feedback:** Semantik ist integriert; jetzt echte SDK-Hooks automatisieren.
 
-- [ ] Direkte SDK-Hooks (Agents/OpenAI/Custom) ohne manuelle Parameter  
-  **Resonanz:** `49/100` 🟨🟨⬜⬜⬜  
-  **Chemie (Repo-Fit):** `70/100` 🟩🟩🟩⬜⬜  
-  **Coach-Feedback:** Ziel ist frictionless Telemetrie pro Turn im produktiven Betrieb.
+- [x] Direkte SDK-Hooks (Agents/OpenAI/Custom) ohne manuelle Resonanz-Parameter  
+  **Resonanz:** `69/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `80/100` 🟩🟩🟩🟩⬜  
+  **Coach-Feedback:** Hook-Layer steht; nächster Schritt ist echte Vendor-spezifische Auto-Wiring-Integration.
+
+- [ ] Vendor-native Auto-Wiring (OpenAI Agents SDK / weitere Runtimes)  
+  **Resonanz:** `52/100` 🟨🟨🟨⬜⬜  
+  **Chemie (Repo-Fit):** `71/100` 🟩🟩🟩⬜⬜  
+  **Coach-Feedback:** Ziel: praktisch „drop-in“ ohne eigene Glue-Logik.
 
 - [ ] Community-Rangliste & Seltenheits-Badges  
   **Resonanz:** `40/100` 🟨🟨⬜⬜⬜  
@@ -246,6 +251,7 @@ Release Guard (lokal ausführen): `python src/release_guard.py`.
 Repo Resonance Standard: `docs/repo_resonance_standard.md`.
 Runtime Adapter Guide: `docs/runtime_adapter.md`.
 OpenAI/Agents Hook Guide: `docs/openai_agents_hook.md`.
+SDK Hooks Guide: `docs/sdk_hooks.md`.
 
 Made with ❤️ & many late-night runs by IrsanAI
 

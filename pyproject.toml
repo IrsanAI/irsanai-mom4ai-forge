@@ -21,6 +21,7 @@ MomAI = "momai_cli:main"
 momai = "momai_cli:main"
 momai-adapter = "runtime_adapter:main"
 momai-hook = "openai_agents_hook:main"
+momai-sdk-hook = "sdk_hooks:main"
 
 [tool.setuptools]
 py-modules = [
@@ -33,6 +34,7 @@ py-modules = [
   "momai_cli",
   "runtime_adapter",
   "openai_agents_hook",
+  "sdk_hooks",
 ]
 
 [tool.setuptools.package-dir]

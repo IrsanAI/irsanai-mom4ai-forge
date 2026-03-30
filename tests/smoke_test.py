@@ -12,6 +12,7 @@ from live_dashboard_server import _validate_resonance_event
 from resonance_protocol import score_interactions
 from runtime_adapter import build_event
 from openai_agents_hook import derive_turn_metrics, derive_runtime_semantics
+from sdk_hooks import ResonanceSDKHook
 
 
 def test_validate_resonance_event():
@@ -121,6 +122,16 @@ def test_openai_hook_runtime_semantics():
         assert 0.0 <= s[key] <= 1.0
 
 
+def test_sdk_hook_init():
+    hook = ResonanceSDKHook(
+        server_url="http://localhost:8080",
+        skeleton_name="demo-skeleton",
+        actor_type="agent",
+    )
+    assert hook.server_url.startswith("http")
+    assert hook.skeleton_name == "demo-skeleton"
+
+
 if __name__ == "__main__":
     test_validate_resonance_event()
     test_resonance_scoring_bounds()
@@ -128,4 +139,5 @@ if __name__ == "__main__":
     test_runtime_adapter_event_builder()
     test_openai_hook_metric_bounds()
     test_openai_hook_runtime_semantics()
+    test_sdk_hook_init()
     print("smoke tests passed")
