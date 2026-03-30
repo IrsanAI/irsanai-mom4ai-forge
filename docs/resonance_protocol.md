@@ -52,6 +52,12 @@ curl "http://localhost:8080/api/session_summary"
 curl "http://localhost:8080/api/session_summary?session_id=chat-42"
 ```
 
+Session-Stream (SSE) für kontinuierliche Updates:
+
+```bash
+curl -N "http://localhost:8080/api/session_stream"
+```
+
 ## Klassifikation
 
 - `resonant` (>= 0.75, mit mindestens 3 Interaktionen)

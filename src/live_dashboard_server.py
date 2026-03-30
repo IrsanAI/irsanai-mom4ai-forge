@@ -9,6 +9,7 @@ from __future__ import annotations
 import json
 import os
 import subprocess
+import time
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlparse, parse_qs
@@ -160,6 +161,16 @@ def _update_session_aggregate(event: dict):
     return record
 
 
+def _session_snapshot():
+    sessions = list(_load_sessions().values())
+    sessions.sort(key=lambda x: x.get("session_resonance", 0.0), reverse=True)
+    return {
+        "timestamp": datetime.utcnow().isoformat() + "Z",
+        "session_count": len(sessions),
+        "top_session": sessions[0] if sessions else None,
+    }
+
+
 class DashboardHandler(SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(DOCS_DIR), **kwargs)
@@ -189,6 +200,23 @@ class DashboardHandler(SimpleHTTPRequestHandler):
                 self._send_json(sessions.get(session_id, {"error": "session_not_found"}))
             else:
                 self._send_json({"sessions": list(sessions.values())})
+            return
+        if parsed.path == "/api/session_stream":
+            self.send_response(200)
+            self.send_header("Content-Type", "text/event-stream")
+            self.send_header("Cache-Control", "no-cache")
+            self.send_header("Connection", "keep-alive")
+            self.end_headers()
+            try:
+                # einfacher SSE stream, liefert kontinuierliche Session-Snapshots
+                for _ in range(180):  # ca. 6 Minuten bei 2s Intervall
+                    payload = json.dumps(_session_snapshot(), ensure_ascii=False)
+                    self.wfile.write(f"event: session\n".encode("utf-8"))
+                    self.wfile.write(f"data: {payload}\n\n".encode("utf-8"))
+                    self.wfile.flush()
+                    time.sleep(2.0)
+            except (BrokenPipeError, ConnectionResetError):
+                pass
             return
         super().do_GET()
 
@@ -221,7 +249,7 @@ def main():
     port = int(os.getenv("MOM_DASHBOARD_PORT", "8080"))
     server = ThreadingHTTPServer((host, port), DashboardHandler)
     print(f"🚀 Mom4AI Dashboard läuft auf http://{host}:{port}")
-    print("   Endpoints: /api/local_stats, /api/sync_status, /api/session_summary, POST /api/resonance_event")
+    print("   Endpoints: /api/local_stats, /api/sync_status, /api/session_summary, /api/session_stream, POST /api/resonance_event")
     try:
         server.serve_forever()
     except KeyboardInterrupt:

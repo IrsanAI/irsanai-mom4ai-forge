@@ -138,10 +138,15 @@ git push
   **Chemie (Repo-Fit):** `77/100` 🟩🟩🟩⬜⬜  
   **Coach-Feedback:** Kontinuität ist da; nächster Schritt ist Streaming + memory-aware weighting.
 
-- [ ] Live-Resonanz-Messung direkt aus Chat/Agent-Runtime (kontinuierlich + streaming)  
-  **Resonanz:** `54/100` 🟨🟨🟨⬜⬜  
-  **Chemie (Repo-Fit):** `69/100` 🟨🟨🟨⬜⬜  
-  **Coach-Feedback:** API + Session vorhanden, jetzt echte Runtime-Integration pro Turn etablieren.
+- [x] Live-Resonanz-Messung (kontinuierlich + Session-Streaming via SSE)  
+  **Resonanz:** `73/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `79/100` 🟩🟩🟩⬜⬜  
+  **Coach-Feedback:** Kontinuierlicher Session-Flow steht; nächster Schritt sind native Chat/Agent-Adapter.
+
+- [ ] Native Chat/Agent-Runtime-Adapter (OpenAI/Agents/Custom Bots)  
+  **Resonanz:** `41/100` 🟨🟨⬜⬜⬜  
+  **Chemie (Repo-Fit):** `66/100` 🟨🟨🟨⬜⬜  
+  **Coach-Feedback:** Jetzt braucht es produktive Integrationen statt nur lokaler API-Einspeisung.
 
 - [ ] Community-Rangliste & Seltenheits-Badges  
   **Resonanz:** `40/100` 🟨🟨⬜⬜⬜  

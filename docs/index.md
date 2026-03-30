@@ -53,6 +53,7 @@ Hier die aktuell besten 10 Skelette (sortiert nach Fitness – aktualisiert bei 
   <p id="local-runtime-stats">Warte auf lokalen Server...</p>
   <p id="local-runtime-git">Git Sync: -</p>
   <p id="local-runtime-session">Session: -</p>
+  <p id="local-runtime-stream">Stream: -</p>
 </div>
 
 <script>
@@ -123,6 +124,33 @@ async function loadLocalRuntime() {
     document.getElementById('local-runtime-session').textContent =
       'Session-Summary benötigt den lokalen Runtime-Server.';
   }
+}
+
+function connectSessionStream() {
+  const isLocalHost = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+  if (!isLocalHost || !window.EventSource) {
+    document.getElementById('local-runtime-stream').textContent = 'Stream: im Online Mode deaktiviert.';
+    return;
+  }
+
+  const stream = new EventSource('/api/session_stream');
+  stream.addEventListener('session', (evt) => {
+    try {
+      const data = JSON.parse(evt.data);
+      if (data?.top_session) {
+        document.getElementById('local-runtime-stream').textContent =
+          `Stream Top: ${data.top_session.session_id} | Resonance ${(data.top_session.session_resonance || 0).toFixed(3)} | Sessions ${data.session_count}`;
+      } else {
+        document.getElementById('local-runtime-stream').textContent =
+          `Stream aktiv | Sessions ${data.session_count || 0}`;
+      }
+    } catch (_e) {
+      document.getElementById('local-runtime-stream').textContent = 'Stream aktiv (decode fallback).';
+    }
+  });
+  stream.onerror = () => {
+    document.getElementById('local-runtime-stream').textContent = 'Stream getrennt – reconnect läuft...';
+  };
 }
 
 function badgeForResonance(cls) {
@@ -196,6 +224,7 @@ setInterval(loadHall, 30000);
 setInterval(loadLocalRuntime, 8000);
 loadHall();
 loadLocalRuntime();
+connectSessionStream();
 
 // Suche & Sort live reagieren
 document.getElementById('search').addEventListener('input', () => renderSkeletons(allSkeletons));

@@ -77,6 +77,9 @@ def test_session_aggregation():
         s2 = lds._update_session_aggregate(event2)
         assert s2["event_count"] == 2
         assert s2["session_resonance"] != s1["session_resonance"]
+        snap = lds._session_snapshot()
+        assert snap["session_count"] == 1
+        assert snap["top_session"]["session_id"] == "chat-42"
 
 
 if __name__ == "__main__":
