@@ -13,6 +13,7 @@ from resonance_protocol import score_interactions
 from runtime_adapter import build_event
 from openai_agents_hook import derive_turn_metrics, derive_runtime_semantics
 from sdk_hooks import ResonanceSDKHook
+from vendor_wiring import extract_tool_stats
 
 
 def test_validate_resonance_event():
@@ -132,6 +133,24 @@ def test_sdk_hook_init():
     assert hook.skeleton_name == "demo-skeleton"
 
 
+def test_vendor_wiring_extract_tool_stats():
+    payload = {
+        "choices": [
+            {
+                "message": {
+                    "tool_calls": [
+                        {"name": "search", "status": "success"},
+                        {"name": "calc", "status": "failed"},
+                    ]
+                }
+            }
+        ]
+    }
+    total, success = extract_tool_stats(payload)
+    assert total == 2
+    assert success == 1
+
+
 if __name__ == "__main__":
     test_validate_resonance_event()
     test_resonance_scoring_bounds()
@@ -140,4 +159,5 @@ if __name__ == "__main__":
     test_openai_hook_metric_bounds()
     test_openai_hook_runtime_semantics()
     test_sdk_hook_init()
+    test_vendor_wiring_extract_tool_stats()
     print("smoke tests passed")

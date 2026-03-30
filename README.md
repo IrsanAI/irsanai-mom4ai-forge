@@ -163,10 +163,15 @@ git push
   **Chemie (Repo-Fit):** `80/100` 🟩🟩🟩🟩⬜  
   **Coach-Feedback:** Hook-Layer steht; nächster Schritt ist echte Vendor-spezifische Auto-Wiring-Integration.
 
-- [ ] Vendor-native Auto-Wiring (OpenAI Agents SDK / weitere Runtimes)  
-  **Resonanz:** `52/100` 🟨🟨🟨⬜⬜  
-  **Chemie (Repo-Fit):** `71/100` 🟩🟩🟩⬜⬜  
-  **Coach-Feedback:** Ziel: praktisch „drop-in“ ohne eigene Glue-Logik.
+- [x] Vendor-native Auto-Wiring (MVP für OpenAI-ähnliche Responses)  
+  **Resonanz:** `71/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `82/100` 🟩🟩🟩🟩⬜  
+  **Coach-Feedback:** Wire-up steht; nächster Schritt ist provider-spezifische Tiefe (SDK-native Objekte/Tracing).
+
+- [ ] Provider-spezifische Tiefe (OpenAI Agents SDK Tracing, weitere Runtime-Backends)  
+  **Resonanz:** `53/100` 🟨🟨🟨⬜⬜  
+  **Chemie (Repo-Fit):** `72/100` 🟩🟩🟩⬜⬜  
+  **Coach-Feedback:** Von „funktioniert“ zu „produktiv robust“ über echte Provider-Hooks.
 
 - [ ] Community-Rangliste & Seltenheits-Badges  
   **Resonanz:** `40/100` 🟨🟨⬜⬜⬜  
@@ -252,6 +257,7 @@ Repo Resonance Standard: `docs/repo_resonance_standard.md`.
 Runtime Adapter Guide: `docs/runtime_adapter.md`.
 OpenAI/Agents Hook Guide: `docs/openai_agents_hook.md`.
 SDK Hooks Guide: `docs/sdk_hooks.md`.
+Vendor Wiring Guide: `docs/vendor_wiring.md`.
 
 Made with ❤️ & many late-night runs by IrsanAI
 
