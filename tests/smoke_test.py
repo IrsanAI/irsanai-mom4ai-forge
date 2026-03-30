@@ -11,7 +11,7 @@ import live_dashboard_server as lds
 from live_dashboard_server import _validate_resonance_event
 from resonance_protocol import score_interactions
 from runtime_adapter import build_event
-from openai_agents_hook import derive_turn_metrics
+from openai_agents_hook import derive_turn_metrics, derive_runtime_semantics
 
 
 def test_validate_resonance_event():
@@ -110,10 +110,22 @@ def test_openai_hook_metric_bounds():
         assert 0.0 <= m[key] <= 1.0
 
 
+def test_openai_hook_runtime_semantics():
+    s = derive_runtime_semantics(
+        tool_calls_total=4,
+        tool_calls_success=3,
+        recovery_success=0.9,
+        followup_consistency=0.8,
+    )
+    for key in ["tool_success_rate", "recovery_success", "followup_consistency", "semantic_quality"]:
+        assert 0.0 <= s[key] <= 1.0
+
+
 if __name__ == "__main__":
     test_validate_resonance_event()
     test_resonance_scoring_bounds()
     test_session_aggregation()
     test_runtime_adapter_event_builder()
     test_openai_hook_metric_bounds()
+    test_openai_hook_runtime_semantics()
     print("smoke tests passed")

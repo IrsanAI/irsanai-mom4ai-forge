@@ -35,6 +35,30 @@ def derive_turn_metrics(user_text: str, assistant_text: str) -> Dict[str, float]
     }
 
 
+def derive_runtime_semantics(
+    tool_calls_total: int = 0,
+    tool_calls_success: int = 0,
+    recovery_success: float = 0.5,
+    followup_consistency: float = 0.5,
+) -> Dict[str, float]:
+    tool_calls_total = max(0, int(tool_calls_total))
+    tool_calls_success = max(0, int(tool_calls_success))
+    if tool_calls_total == 0:
+        tool_success_rate = 0.5
+    else:
+        tool_success_rate = min(1.0, tool_calls_success / max(1, tool_calls_total))
+
+    recovery = max(0.0, min(1.0, float(recovery_success)))
+    followup = max(0.0, min(1.0, float(followup_consistency)))
+    semantic_quality = (tool_success_rate + recovery + followup) / 3.0
+    return {
+        "tool_success_rate": tool_success_rate,
+        "recovery_success": recovery,
+        "followup_consistency": followup,
+        "semantic_quality": semantic_quality,
+    }
+
+
 def emit_turn_event(
     server_url: str,
     skeleton_name: str,
@@ -42,14 +66,28 @@ def emit_turn_event(
     user_text: str,
     assistant_text: str,
     actor_type: str = "agent",
+    tool_calls_total: int = 0,
+    tool_calls_success: int = 0,
+    recovery_success: float = 0.5,
+    followup_consistency: float = 0.5,
 ):
     metrics = derive_turn_metrics(user_text, assistant_text)
+    semantics = derive_runtime_semantics(
+        tool_calls_total=tool_calls_total,
+        tool_calls_success=tool_calls_success,
+        recovery_success=recovery_success,
+        followup_consistency=followup_consistency,
+    )
+    # leichte Korrektur für Reliability/Coordination auf Basis Runtime-Semantik
+    metrics["reliability"] = min(1.0, max(0.0, 0.7 * metrics["reliability"] + 0.3 * semantics["semantic_quality"]))
+    metrics["coordination"] = min(1.0, max(0.0, 0.7 * metrics["coordination"] + 0.3 * semantics["followup_consistency"]))
     event = build_event(
         skeleton_name=skeleton_name,
         session_id=session_id,
         actor_type=actor_type,
         **metrics,
     )
+    event.update(semantics)
     return send_event(server_url, event)
 
 
@@ -61,6 +99,10 @@ def main() -> int:
     parser.add_argument("--user-text", required=True)
     parser.add_argument("--assistant-text", required=True)
     parser.add_argument("--actor", default="agent")
+    parser.add_argument("--tool-calls-total", type=int, default=0)
+    parser.add_argument("--tool-calls-success", type=int, default=0)
+    parser.add_argument("--recovery-success", type=float, default=0.5)
+    parser.add_argument("--followup-consistency", type=float, default=0.5)
     args = parser.parse_args()
 
     status, body = emit_turn_event(
@@ -70,6 +112,10 @@ def main() -> int:
         user_text=args.user_text,
         assistant_text=args.assistant_text,
         actor_type=args.actor,
+        tool_calls_total=args.tool_calls_total,
+        tool_calls_success=args.tool_calls_success,
+        recovery_success=args.recovery_success,
+        followup_consistency=args.followup_consistency,
     )
     print(f"status={status}")
     print(body)

@@ -153,10 +153,15 @@ git push
   **Chemie (Repo-Fit):** `74/100` 🟩🟩🟩⬜⬜  
   **Coach-Feedback:** Hook ist da; jetzt von Heuristik zu echten Runtime-Signalen gehen.
 
-- [ ] Native Runtime-Semantik (Tool-Calls, Recovery-Qualität, Follow-up-Konsistenz)  
-  **Resonanz:** `43/100` 🟨🟨⬜⬜⬜  
-  **Chemie (Repo-Fit):** `67/100` 🟨🟨🟨⬜⬜  
-  **Coach-Feedback:** Die nächste Qualitätsstufe für belastbare Resonanzmessung.
+- [x] Native Runtime-Semantik (MVP: Tool-Calls, Recovery, Follow-up-Konsistenz)  
+  **Resonanz:** `66/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `78/100` 🟩🟩🟩⬜⬜  
+  **Coach-Feedback:** Semantik ist integriert; jetzt echte SDK-Hooks automatisieren.
+
+- [ ] Direkte SDK-Hooks (Agents/OpenAI/Custom) ohne manuelle Parameter  
+  **Resonanz:** `49/100` 🟨🟨⬜⬜⬜  
+  **Chemie (Repo-Fit):** `70/100` 🟩🟩🟩⬜⬜  
+  **Coach-Feedback:** Ziel ist frictionless Telemetrie pro Turn im produktiven Betrieb.
 
 - [ ] Community-Rangliste & Seltenheits-Badges  
   **Resonanz:** `40/100` 🟨🟨⬜⬜⬜  
