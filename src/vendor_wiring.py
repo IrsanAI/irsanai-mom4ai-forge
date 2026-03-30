@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
-from typing import Any, Dict, Tuple
+from typing import Any, Dict, Literal, Tuple
 
 from sdk_hooks import ResonanceSDKHook
 
@@ -11,6 +11,9 @@ def _safe_get(obj: Any, key: str, default=None):
     if isinstance(obj, dict):
         return obj.get(key, default)
     return getattr(obj, key, default)
+
+
+ProviderName = Literal["openai", "anthropic"]
 
 
 def extract_tool_stats(openai_like_response: Any) -> Tuple[int, int]:
@@ -33,6 +36,26 @@ def extract_tool_stats(openai_like_response: Any) -> Tuple[int, int]:
     for tc in tool_calls:
         status = _safe_get(tc, "status", "success")
         if str(status).lower() in ("success", "ok", "done"):
+            success += 1
+    return total, success
+
+
+def extract_anthropic_tool_stats(anthropic_like_response: Any) -> Tuple[int, int]:
+    """
+    Extrahiert Tool-Use-Blöcke aus Anthropic-ähnlichen Messages:
+    content: [{type: "tool_use", ...}, ...]
+    """
+    content = _safe_get(anthropic_like_response, "content", []) or []
+    tool_blocks = []
+    for block in content:
+        if str(_safe_get(block, "type", "")).lower() == "tool_use":
+            tool_blocks.append(block)
+
+    total = len(tool_blocks)
+    success = 0
+    for tb in tool_blocks:
+        status = str(_safe_get(tb, "status", "success")).lower()
+        if status in ("success", "ok", "done"):
             success += 1
     return total, success
 
@@ -71,17 +94,60 @@ def extract_openai_trace_metrics(openai_like_response: Any) -> Dict[str, float]:
     }
 
 
-def auto_wire_openai_turn(
+def extract_anthropic_trace_metrics(anthropic_like_response: Any) -> Dict[str, float]:
+    usage = _safe_get(anthropic_like_response, "usage", {}) or {}
+    prompt_tokens = float(_safe_get(usage, "input_tokens", 0) or 0)
+    completion_tokens = float(_safe_get(usage, "output_tokens", 0) or 0)
+    stop_reason = str(_safe_get(anthropic_like_response, "stop_reason", "end_turn"))
+    response_ms = float(_safe_get(anthropic_like_response, "response_ms", 0) or 0)
+
+    recovery_success = 0.9 if stop_reason in ("end_turn", "tool_use") else 0.55
+    if completion_tokens <= 0:
+        followup_consistency = 0.45
+    else:
+        ratio = completion_tokens / max(1.0, prompt_tokens)
+        followup_consistency = max(0.4, min(0.95, 0.6 + 0.25 * min(1.0, ratio)))
+
+    if response_ms > 0 and response_ms > 12000:
+        followup_consistency = max(0.35, followup_consistency - 0.1)
+
+    return {
+        "prompt_tokens": prompt_tokens,
+        "completion_tokens": completion_tokens,
+        "finish_reason_score": 1.0 if stop_reason in ("end_turn", "tool_use") else 0.55,
+        "response_ms": response_ms,
+        "recovery_success_inferred": recovery_success,
+        "followup_consistency_inferred": followup_consistency,
+    }
+
+
+def detect_provider(response_payload: Any) -> ProviderName:
+    if _safe_get(response_payload, "choices", None) is not None:
+        return "openai"
+    content = _safe_get(response_payload, "content", None)
+    if isinstance(content, list):
+        return "anthropic"
+    return "openai"
+
+
+def auto_wire_turn(
     hook: ResonanceSDKHook,
     session_id: str,
     user_text: str,
     assistant_text: str,
-    openai_like_response: Any,
+    response_payload: Any,
+    provider: str = "auto",
     recovery_success: float | None = None,
     followup_consistency: float | None = None,
 ):
-    total, success = extract_tool_stats(openai_like_response)
-    trace = extract_openai_trace_metrics(openai_like_response)
+    selected_provider = detect_provider(response_payload) if provider == "auto" else provider
+    if selected_provider == "anthropic":
+        total, success = extract_anthropic_tool_stats(response_payload)
+        trace = extract_anthropic_trace_metrics(response_payload)
+    else:
+        total, success = extract_tool_stats(response_payload)
+        trace = extract_openai_trace_metrics(response_payload)
+
     if recovery_success is None:
         recovery_success = trace["recovery_success_inferred"]
     if followup_consistency is None:
@@ -97,6 +163,27 @@ def auto_wire_openai_turn(
     )
 
 
+def auto_wire_openai_turn(
+    hook: ResonanceSDKHook,
+    session_id: str,
+    user_text: str,
+    assistant_text: str,
+    openai_like_response: Any,
+    recovery_success: float | None = None,
+    followup_consistency: float | None = None,
+):
+    return auto_wire_turn(
+        hook=hook,
+        session_id=session_id,
+        user_text=user_text,
+        assistant_text=assistant_text,
+        response_payload=openai_like_response,
+        provider="openai",
+        recovery_success=recovery_success,
+        followup_consistency=followup_consistency,
+    )
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Vendor wiring demo for OpenAI-like response payloads.")
     parser.add_argument("--server", default="http://localhost:8080")
@@ -105,6 +192,12 @@ def main() -> int:
     parser.add_argument("--user-text", required=True)
     parser.add_argument("--assistant-text", required=True)
     parser.add_argument("--response-json", required=True, help="Path to OpenAI-like response JSON")
+    parser.add_argument(
+        "--provider",
+        choices=["auto", "openai", "anthropic"],
+        default="auto",
+        help="Payload provider format; auto-detect by default.",
+    )
     parser.add_argument("--recovery-success", type=float, default=None)
     parser.add_argument("--followup-consistency", type=float, default=None)
     args = parser.parse_args()
@@ -113,12 +206,13 @@ def main() -> int:
         payload = json.load(f)
 
     hook = ResonanceSDKHook(args.server, args.skeleton)
-    status, body = auto_wire_openai_turn(
+    status, body = auto_wire_turn(
         hook=hook,
         session_id=args.session,
         user_text=args.user_text,
         assistant_text=args.assistant_text,
-        openai_like_response=payload,
+        response_payload=payload,
+        provider=args.provider,
         recovery_success=args.recovery_success,
         followup_consistency=args.followup_consistency,
     )

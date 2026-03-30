@@ -13,7 +13,13 @@ from resonance_protocol import score_interactions
 from runtime_adapter import build_event
 from openai_agents_hook import derive_turn_metrics, derive_runtime_semantics
 from sdk_hooks import ResonanceSDKHook
-from vendor_wiring import extract_tool_stats, extract_openai_trace_metrics
+from vendor_wiring import (
+    auto_wire_turn,
+    extract_anthropic_tool_stats,
+    extract_anthropic_trace_metrics,
+    extract_openai_trace_metrics,
+    extract_tool_stats,
+)
 
 
 def test_validate_resonance_event():
@@ -164,6 +170,49 @@ def test_vendor_wiring_trace_metrics():
     assert 0.0 <= metrics["followup_consistency_inferred"] <= 1.0
 
 
+def test_vendor_wiring_anthropic_metrics():
+    payload = {
+        "content": [
+            {"type": "text", "text": "Ich prüfe das."},
+            {"type": "tool_use", "name": "search", "status": "success"},
+            {"type": "tool_use", "name": "calc", "status": "failed"},
+        ],
+        "usage": {"input_tokens": 70, "output_tokens": 35},
+        "stop_reason": "end_turn",
+    }
+    total, success = extract_anthropic_tool_stats(payload)
+    assert total == 2
+    assert success == 1
+
+    metrics = extract_anthropic_trace_metrics(payload)
+    assert metrics["prompt_tokens"] == 70
+    assert metrics["completion_tokens"] == 35
+    assert 0.0 <= metrics["recovery_success_inferred"] <= 1.0
+    assert 0.0 <= metrics["followup_consistency_inferred"] <= 1.0
+
+
+def test_vendor_wiring_auto_provider_detects_anthropic():
+    class DummyHook:
+        def on_turn(self, **kwargs):
+            return 200, kwargs
+
+    payload = {
+        "content": [{"type": "tool_use", "name": "search", "status": "success"}],
+        "usage": {"input_tokens": 100, "output_tokens": 20},
+        "stop_reason": "end_turn",
+    }
+    _status, body = auto_wire_turn(
+        hook=DummyHook(),
+        session_id="s-1",
+        user_text="u",
+        assistant_text="a",
+        response_payload=payload,
+        provider="auto",
+    )
+    assert body["tool_calls_total"] == 1
+    assert body["tool_calls_success"] == 1
+
+
 if __name__ == "__main__":
     test_validate_resonance_event()
     test_resonance_scoring_bounds()
@@ -174,4 +223,6 @@ if __name__ == "__main__":
     test_sdk_hook_init()
     test_vendor_wiring_extract_tool_stats()
     test_vendor_wiring_trace_metrics()
+    test_vendor_wiring_anthropic_metrics()
+    test_vendor_wiring_auto_provider_detects_anthropic()
     print("smoke tests passed")

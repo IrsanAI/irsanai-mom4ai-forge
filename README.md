@@ -173,10 +173,10 @@ git push
   **Chemie (Repo-Fit):** `83/100` 🟩🟩🟩🟩⬜  
   **Coach-Feedback:** Der Hook liest jetzt echte Provider-Spuren, nicht nur statische Felder.
 
-- [ ] Multi-Provider Backends (OpenAI Agents SDK nativ + weitere Laufzeiten)  
-  **Resonanz:** `57/100` 🟨🟨🟨⬜⬜  
-  **Chemie (Repo-Fit):** `74/100` 🟩🟩🟩⬜⬜  
-  **Coach-Feedback:** Jetzt den Schritt von OpenAI-like zu echten Multi-Provider Integrationen machen.
+- [x] Multi-Provider Backends (OpenAI-like + Anthropic-like Payload-Normalisierung)  
+  **Resonanz:** `66/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `79/100` 🟩🟩🟩⬜⬜  
+  **Coach-Feedback:** Adapter spricht jetzt mehrere Payload-Stile und normalisiert Semantik konsistent.
 
 - [ ] Community-Rangliste & Seltenheits-Badges  
   **Resonanz:** `40/100` 🟨🟨⬜⬜⬜  
