@@ -148,10 +148,15 @@ git push
   **Chemie (Repo-Fit):** `76/100` 🟩🟩🟩⬜⬜  
   **Coach-Feedback:** Adapter-Basis steht; jetzt direkte Framework-Hooks pro Turn.
 
-- [ ] OpenAI/Agents/Custom-Bot Hook-Integrationen (ohne manuelle Flags)  
-  **Resonanz:** `46/100` 🟨🟨⬜⬜⬜  
-  **Chemie (Repo-Fit):** `68/100` 🟨🟨🟨⬜⬜  
-  **Coach-Feedback:** Ziel ist zero-friction Ingestion aus echten Runtime-Stacks.
+- [x] OpenAI/Agents/Custom-Bot Hook-Integration (MVP `momai-hook`)  
+  **Resonanz:** `61/100` 🟨🟨🟨⬜⬜  
+  **Chemie (Repo-Fit):** `74/100` 🟩🟩🟩⬜⬜  
+  **Coach-Feedback:** Hook ist da; jetzt von Heuristik zu echten Runtime-Signalen gehen.
+
+- [ ] Native Runtime-Semantik (Tool-Calls, Recovery-Qualität, Follow-up-Konsistenz)  
+  **Resonanz:** `43/100` 🟨🟨⬜⬜⬜  
+  **Chemie (Repo-Fit):** `67/100` 🟨🟨🟨⬜⬜  
+  **Coach-Feedback:** Die nächste Qualitätsstufe für belastbare Resonanzmessung.
 
 - [ ] Community-Rangliste & Seltenheits-Badges  
   **Resonanz:** `40/100` 🟨🟨⬜⬜⬜  
@@ -235,6 +240,7 @@ Release FAQ: `docs/release_faq.md`.
 Release Guard (lokal ausführen): `python src/release_guard.py`.
 Repo Resonance Standard: `docs/repo_resonance_standard.md`.
 Runtime Adapter Guide: `docs/runtime_adapter.md`.
+OpenAI/Agents Hook Guide: `docs/openai_agents_hook.md`.
 
 Made with ❤️ & many late-night runs by IrsanAI
 

@@ -11,6 +11,7 @@ import live_dashboard_server as lds
 from live_dashboard_server import _validate_resonance_event
 from resonance_protocol import score_interactions
 from runtime_adapter import build_event
+from openai_agents_hook import derive_turn_metrics
 
 
 def test_validate_resonance_event():
@@ -100,9 +101,19 @@ def test_runtime_adapter_event_builder():
     assert "timestamp" in event
 
 
+def test_openai_hook_metric_bounds():
+    m = derive_turn_metrics(
+        user_text="Bitte gib mir einen Plan für diese Woche.",
+        assistant_text="Gerne! Hier ist ein strukturierter Wochenplan mit Prioritäten."
+    )
+    for key in ["intent_match", "context_match", "tone_match", "reliability", "coordination"]:
+        assert 0.0 <= m[key] <= 1.0
+
+
 if __name__ == "__main__":
     test_validate_resonance_event()
     test_resonance_scoring_bounds()
     test_session_aggregation()
     test_runtime_adapter_event_builder()
+    test_openai_hook_metric_bounds()
     print("smoke tests passed")

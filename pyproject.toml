@@ -20,6 +20,7 @@ dependencies = [
 MomAI = "momai_cli:main"
 momai = "momai_cli:main"
 momai-adapter = "runtime_adapter:main"
+momai-hook = "openai_agents_hook:main"
 
 [tool.setuptools]
 py-modules = [
@@ -31,6 +32,7 @@ py-modules = [
   "live_dashboard_server",
   "momai_cli",
   "runtime_adapter",
+  "openai_agents_hook",
 ]
 
 [tool.setuptools.package-dir]
