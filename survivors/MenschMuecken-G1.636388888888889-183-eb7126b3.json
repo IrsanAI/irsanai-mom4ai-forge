@@ -1,0 +1,1343 @@
+{
+  "name": "MenschMuecken-G1.636388888888889-183-eb7126b3",
+  "generation": 0.6363888888888889,
+  "mixture": {
+    "termite_klimakammer": 1.16,
+    "termitenbau": 25.67,
+    "muecken_wolke": 27.14,
+    "mensch_gehirn": 31.16,
+    "pflanzen_woodwideweb": 2.81,
+    "myzel_netz": 12.05
+  },
+  "fitness": 0.31458285942681213,
+  "timestamp": "20260321_025427",
+  "graph_data": {
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 0
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 1
+      },
+      {
+        "type": "AttentionHead",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 2
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 3
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 4
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 5
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 6
+      },
+      {
+        "type": "MyzelRouter",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 7
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 8
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 9
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 10
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 11
+      },
+      {
+        "type": "MyzelRouter",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 12
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 13
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 14
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 15
+      },
+      {
+        "type": "MyzelRouter",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 16
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 17
+      },
+      {
+        "type": "AttentionHead",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 18
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 19
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 20
+      },
+      {
+        "type": "AttentionHead",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 21
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 22
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 23
+      },
+      {
+        "type": "AttentionHead",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 24
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 25
+      },
+      {
+        "type": "MyzelRouter",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 26
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 27
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 28
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 29
+      },
+      {
+        "type": "AttentionHead",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 30
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 31
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 32
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "termite_klimakammer": 1.16,
+          "termitenbau": 25.67,
+          "muecken_wolke": 27.14,
+          "mensch_gehirn": 31.16,
+          "pflanzen_woodwideweb": 2.81,
+          "myzel_netz": 12.05
+        },
+        "id": 33
+      }
+    ],
+    "edges": [
+      {
+        "weight": 1.2494950321555156,
+        "type": "forward",
+        "source": 0,
+        "target": 1
+      },
+      {
+        "weight": 1.2864280324593165,
+        "type": "forward",
+        "source": 0,
+        "target": 3
+      },
+      {
+        "weight": 1.2562839531169958,
+        "type": "forward",
+        "source": 0,
+        "target": 4
+      },
+      {
+        "weight": 1.4000717745632407,
+        "type": "forward",
+        "source": 0,
+        "target": 5
+      },
+      {
+        "weight": 1.295575150100569,
+        "type": "forward",
+        "source": 0,
+        "target": 12
+      },
+      {
+        "weight": 0.9198236341650389,
+        "type": "forward",
+        "source": 0,
+        "target": 20
+      },
+      {
+        "weight": 1.0905092277708985,
+        "type": "forward",
+        "source": 0,
+        "target": 22
+      },
+      {
+        "weight": 0.7570818061029074,
+        "type": "forward",
+        "source": 0,
+        "target": 26
+      },
+      {
+        "weight": 1.0259186764445158,
+        "type": "forward",
+        "source": 0,
+        "target": 28
+      },
+      {
+        "weight": 0.5148420284875967,
+        "type": "forward",
+        "source": 0,
+        "target": 31
+      },
+      {
+        "weight": 0.36714488909891324,
+        "type": "feedback",
+        "source": 0,
+        "target": 19
+      },
+      {
+        "weight": 0.6202238435348254,
+        "type": "forward",
+        "source": 1,
+        "target": 6
+      },
+      {
+        "weight": 0.9611608766482642,
+        "type": "forward",
+        "source": 1,
+        "target": 16
+      },
+      {
+        "weight": 0.6695486825879379,
+        "type": "forward",
+        "source": 1,
+        "target": 19
+      },
+      {
+        "weight": 1.302961220931721,
+        "type": "forward",
+        "source": 1,
+        "target": 27
+      },
+      {
+        "weight": 0.6083523779297472,
+        "type": "forward",
+        "source": 1,
+        "target": 29
+      },
+      {
+        "weight": 1.0738062524222327,
+        "type": "forward",
+        "source": 1,
+        "target": 32
+      },
+      {
+        "weight": 0.4139161298440762,
+        "type": "feedback",
+        "source": 1,
+        "target": 30
+      },
+      {
+        "weight": 0.9153514989442759,
+        "type": "forward",
+        "source": 2,
+        "target": 5
+      },
+      {
+        "weight": 0.6418547942129269,
+        "type": "forward",
+        "source": 2,
+        "target": 10
+      },
+      {
+        "weight": 1.344800065823193,
+        "type": "forward",
+        "source": 2,
+        "target": 11
+      },
+      {
+        "weight": 0.8248279725672697,
+        "type": "forward",
+        "source": 2,
+        "target": 12
+      },
+      {
+        "weight": 0.5647859186277252,
+        "type": "forward",
+        "source": 2,
+        "target": 14
+      },
+      {
+        "weight": 1.3854117840970395,
+        "type": "forward",
+        "source": 2,
+        "target": 19
+      },
+      {
+        "weight": 1.3140604018221747,
+        "type": "forward",
+        "source": 2,
+        "target": 23
+      },
+      {
+        "weight": 1.2059619918856415,
+        "type": "forward",
+        "source": 2,
+        "target": 29
+      },
+      {
+        "weight": 0.9197109828305327,
+        "type": "forward",
+        "source": 3,
+        "target": 4
+      },
+      {
+        "weight": 1.4275218553795088,
+        "type": "forward",
+        "source": 3,
+        "target": 9
+      },
+      {
+        "weight": 0.837264039777597,
+        "type": "forward",
+        "source": 3,
+        "target": 13
+      },
+      {
+        "weight": 0.7525142694194669,
+        "type": "forward",
+        "source": 3,
+        "target": 14
+      },
+      {
+        "weight": 0.5105055758450855,
+        "type": "forward",
+        "source": 3,
+        "target": 15
+      },
+      {
+        "weight": 0.9737320153670889,
+        "type": "forward",
+        "source": 3,
+        "target": 16
+      },
+      {
+        "weight": 0.6376696727328186,
+        "type": "forward",
+        "source": 3,
+        "target": 17
+      },
+      {
+        "weight": 0.7581003798933549,
+        "type": "forward",
+        "source": 3,
+        "target": 20
+      },
+      {
+        "weight": 0.9978518700935279,
+        "type": "forward",
+        "source": 3,
+        "target": 23
+      },
+      {
+        "weight": 1.1776909085094065,
+        "type": "forward",
+        "source": 3,
+        "target": 26
+      },
+      {
+        "weight": 0.6101257867131266,
+        "type": "forward",
+        "source": 3,
+        "target": 32
+      },
+      {
+        "weight": 0.6307037542353036,
+        "type": "forward",
+        "source": 4,
+        "target": 10
+      },
+      {
+        "weight": 0.5245644814428969,
+        "type": "forward",
+        "source": 4,
+        "target": 15
+      },
+      {
+        "weight": 1.4983666102322746,
+        "type": "forward",
+        "source": 4,
+        "target": 18
+      },
+      {
+        "weight": 1.1335880572663186,
+        "type": "forward",
+        "source": 4,
+        "target": 23
+      },
+      {
+        "weight": 0.7017466413662787,
+        "type": "forward",
+        "source": 4,
+        "target": 25
+      },
+      {
+        "weight": 1.262887739362628,
+        "type": "forward",
+        "source": 4,
+        "target": 30
+      },
+      {
+        "weight": 0.4233151074921709,
+        "type": "feedback",
+        "source": 4,
+        "target": 6
+      },
+      {
+        "weight": 0.7126438284267467,
+        "type": "forward",
+        "source": 5,
+        "target": 9
+      },
+      {
+        "weight": 1.4721978770376543,
+        "type": "forward",
+        "source": 5,
+        "target": 13
+      },
+      {
+        "weight": 0.5599578019823898,
+        "type": "forward",
+        "source": 5,
+        "target": 14
+      },
+      {
+        "weight": 0.6187453256100487,
+        "type": "forward",
+        "source": 5,
+        "target": 26
+      },
+      {
+        "weight": 1.294473604505512,
+        "type": "forward",
+        "source": 5,
+        "target": 27
+      },
+      {
+        "weight": 0.8981252273149197,
+        "type": "forward",
+        "source": 6,
+        "target": 8
+      },
+      {
+        "weight": 1.3117509606413291,
+        "type": "forward",
+        "source": 6,
+        "target": 9
+      },
+      {
+        "weight": 1.124065823039251,
+        "type": "forward",
+        "source": 6,
+        "target": 14
+      },
+      {
+        "weight": 0.5647400341353452,
+        "type": "forward",
+        "source": 6,
+        "target": 15
+      },
+      {
+        "weight": 1.2207827147931187,
+        "type": "forward",
+        "source": 6,
+        "target": 16
+      },
+      {
+        "weight": 0.9117105360913609,
+        "type": "forward",
+        "source": 6,
+        "target": 18
+      },
+      {
+        "weight": 1.288716187325162,
+        "type": "forward",
+        "source": 6,
+        "target": 25
+      },
+      {
+        "weight": 0.5423030439571377,
+        "type": "forward",
+        "source": 6,
+        "target": 28
+      },
+      {
+        "weight": 0.6675900995952889,
+        "type": "forward",
+        "source": 6,
+        "target": 30
+      },
+      {
+        "weight": 1.221844058270439,
+        "type": "forward",
+        "source": 6,
+        "target": 31
+      },
+      {
+        "weight": 0.9040108859593396,
+        "type": "forward",
+        "source": 6,
+        "target": 33
+      },
+      {
+        "weight": 0.9699892324227675,
+        "type": "forward",
+        "source": 7,
+        "target": 11
+      },
+      {
+        "weight": 1.4681879205649189,
+        "type": "forward",
+        "source": 7,
+        "target": 12
+      },
+      {
+        "weight": 1.4153843228179457,
+        "type": "forward",
+        "source": 7,
+        "target": 15
+      },
+      {
+        "weight": 0.8390843599768197,
+        "type": "forward",
+        "source": 7,
+        "target": 16
+      },
+      {
+        "weight": 0.8340913327717436,
+        "type": "forward",
+        "source": 7,
+        "target": 21
+      },
+      {
+        "weight": 0.9810130849576357,
+        "type": "forward",
+        "source": 7,
+        "target": 22
+      },
+      {
+        "weight": 1.2457532034916154,
+        "type": "forward",
+        "source": 7,
+        "target": 23
+      },
+      {
+        "weight": 0.8908230357795989,
+        "type": "forward",
+        "source": 8,
+        "target": 15
+      },
+      {
+        "weight": 1.1232515695744147,
+        "type": "forward",
+        "source": 8,
+        "target": 26
+      },
+      {
+        "weight": 1.415032635718986,
+        "type": "forward",
+        "source": 8,
+        "target": 27
+      },
+      {
+        "weight": 1.4086016057083746,
+        "type": "forward",
+        "source": 8,
+        "target": 28
+      },
+      {
+        "weight": 0.9805269790057174,
+        "type": "forward",
+        "source": 8,
+        "target": 31
+      },
+      {
+        "weight": 1.4303541431991973,
+        "type": "forward",
+        "source": 9,
+        "target": 15
+      },
+      {
+        "weight": 0.6469611359809335,
+        "type": "forward",
+        "source": 9,
+        "target": 22
+      },
+      {
+        "weight": 0.7844678451709065,
+        "type": "forward",
+        "source": 10,
+        "target": 11
+      },
+      {
+        "weight": 0.8151419900497302,
+        "type": "forward",
+        "source": 10,
+        "target": 15
+      },
+      {
+        "weight": 0.6337303206764012,
+        "type": "forward",
+        "source": 10,
+        "target": 20
+      },
+      {
+        "weight": 0.9802856664810965,
+        "type": "forward",
+        "source": 10,
+        "target": 24
+      },
+      {
+        "weight": 1.0379499759189992,
+        "type": "forward",
+        "source": 10,
+        "target": 26
+      },
+      {
+        "weight": 0.7461109168633279,
+        "type": "forward",
+        "source": 10,
+        "target": 28
+      },
+      {
+        "weight": 0.7223245983015589,
+        "type": "forward",
+        "source": 10,
+        "target": 29
+      },
+      {
+        "weight": 1.4672506438811288,
+        "type": "forward",
+        "source": 10,
+        "target": 30
+      },
+      {
+        "weight": 0.5946914677307142,
+        "type": "forward",
+        "source": 10,
+        "target": 31
+      },
+      {
+        "weight": 1.4127029384497516,
+        "type": "forward",
+        "source": 10,
+        "target": 33
+      },
+      {
+        "weight": 0.6181248358340428,
+        "type": "forward",
+        "source": 11,
+        "target": 12
+      },
+      {
+        "weight": 0.6075196687726215,
+        "type": "forward",
+        "source": 11,
+        "target": 14
+      },
+      {
+        "weight": 0.7669576947332263,
+        "type": "forward",
+        "source": 11,
+        "target": 16
+      },
+      {
+        "weight": 1.1165048411499026,
+        "type": "forward",
+        "source": 11,
+        "target": 24
+      },
+      {
+        "weight": 0.7112281243618412,
+        "type": "forward",
+        "source": 11,
+        "target": 26
+      },
+      {
+        "weight": 0.7854947491961205,
+        "type": "forward",
+        "source": 11,
+        "target": 32
+      },
+      {
+        "weight": 0.525225625905174,
+        "type": "forward",
+        "source": 11,
+        "target": 33
+      },
+      {
+        "weight": 0.7235448734216292,
+        "type": "forward",
+        "source": 12,
+        "target": 17
+      },
+      {
+        "weight": 1.0055212608407968,
+        "type": "forward",
+        "source": 12,
+        "target": 19
+      },
+      {
+        "weight": 1.3544179122756936,
+        "type": "forward",
+        "source": 12,
+        "target": 21
+      },
+      {
+        "weight": 0.5516028380775055,
+        "type": "forward",
+        "source": 12,
+        "target": 23
+      },
+      {
+        "weight": 0.5075988431187194,
+        "type": "forward",
+        "source": 12,
+        "target": 24
+      },
+      {
+        "weight": 1.3450588024797616,
+        "type": "forward",
+        "source": 12,
+        "target": 26
+      },
+      {
+        "weight": 0.5041123683428926,
+        "type": "forward",
+        "source": 12,
+        "target": 28
+      },
+      {
+        "weight": 1.4165340470272922,
+        "type": "forward",
+        "source": 12,
+        "target": 29
+      },
+      {
+        "weight": 1.2716556441270934,
+        "type": "forward",
+        "source": 12,
+        "target": 30
+      },
+      {
+        "weight": 0.7367889759074407,
+        "type": "forward",
+        "source": 13,
+        "target": 17
+      },
+      {
+        "weight": 1.0255499083454251,
+        "type": "forward",
+        "source": 13,
+        "target": 29
+      },
+      {
+        "weight": 1.1181512253163688,
+        "type": "forward",
+        "source": 13,
+        "target": 31
+      },
+      {
+        "weight": 0.8008136120112339,
+        "type": "forward",
+        "source": 14,
+        "target": 17
+      },
+      {
+        "weight": 0.654189261292942,
+        "type": "forward",
+        "source": 14,
+        "target": 20
+      },
+      {
+        "weight": 1.0099682868633182,
+        "type": "forward",
+        "source": 14,
+        "target": 23
+      },
+      {
+        "weight": 1.2861165628517774,
+        "type": "forward",
+        "source": 14,
+        "target": 24
+      },
+      {
+        "weight": 1.1082831272260443,
+        "type": "forward",
+        "source": 14,
+        "target": 28
+      },
+      {
+        "weight": 0.8308718526451608,
+        "type": "forward",
+        "source": 15,
+        "target": 21
+      },
+      {
+        "weight": 1.3469592253191043,
+        "type": "forward",
+        "source": 15,
+        "target": 24
+      },
+      {
+        "weight": 1.161258312616559,
+        "type": "forward",
+        "source": 15,
+        "target": 25
+      },
+      {
+        "weight": 0.8661427131945257,
+        "type": "forward",
+        "source": 15,
+        "target": 31
+      },
+      {
+        "weight": 0.6347681900931954,
+        "type": "forward",
+        "source": 15,
+        "target": 32
+      },
+      {
+        "weight": 1.3709023527180895,
+        "type": "forward",
+        "source": 16,
+        "target": 18
+      },
+      {
+        "weight": 0.6480138146624661,
+        "type": "forward",
+        "source": 16,
+        "target": 21
+      },
+      {
+        "weight": 1.1790961327486422,
+        "type": "forward",
+        "source": 16,
+        "target": 27
+      },
+      {
+        "weight": 1.331564917737074,
+        "type": "forward",
+        "source": 17,
+        "target": 18
+      },
+      {
+        "weight": 1.1169972340454042,
+        "type": "forward",
+        "source": 17,
+        "target": 19
+      },
+      {
+        "weight": 0.9964306916527702,
+        "type": "forward",
+        "source": 17,
+        "target": 20
+      },
+      {
+        "weight": 0.507639132393309,
+        "type": "forward",
+        "source": 17,
+        "target": 24
+      },
+      {
+        "weight": 1.1299207989676416,
+        "type": "forward",
+        "source": 17,
+        "target": 27
+      },
+      {
+        "weight": 0.5104986016499755,
+        "type": "forward",
+        "source": 17,
+        "target": 29
+      },
+      {
+        "weight": 0.6643838155242587,
+        "type": "forward",
+        "source": 17,
+        "target": 30
+      },
+      {
+        "weight": 0.5255195738638444,
+        "type": "forward",
+        "source": 17,
+        "target": 31
+      },
+      {
+        "weight": 0.6640315417691713,
+        "type": "forward",
+        "source": 18,
+        "target": 21
+      },
+      {
+        "weight": 1.1307944862047197,
+        "type": "forward",
+        "source": 18,
+        "target": 22
+      },
+      {
+        "weight": 1.1129855826805843,
+        "type": "forward",
+        "source": 18,
+        "target": 23
+      },
+      {
+        "weight": 0.5281431282348822,
+        "type": "forward",
+        "source": 19,
+        "target": 20
+      },
+      {
+        "weight": 0.7436170357356204,
+        "type": "forward",
+        "source": 19,
+        "target": 25
+      },
+      {
+        "weight": 1.459959587122977,
+        "type": "forward",
+        "source": 19,
+        "target": 30
+      },
+      {
+        "weight": 0.6193731643140897,
+        "type": "forward",
+        "source": 20,
+        "target": 28
+      },
+      {
+        "weight": 1.3982147354839536,
+        "type": "forward",
+        "source": 20,
+        "target": 30
+      },
+      {
+        "weight": 1.1395120014206084,
+        "type": "forward",
+        "source": 20,
+        "target": 31
+      },
+      {
+        "weight": 1.3495718583397114,
+        "type": "forward",
+        "source": 20,
+        "target": 32
+      },
+      {
+        "weight": 0.5561973926812193,
+        "type": "forward",
+        "source": 20,
+        "target": 33
+      },
+      {
+        "weight": 0.8208511137475806,
+        "type": "forward",
+        "source": 21,
+        "target": 26
+      },
+      {
+        "weight": 1.2825678502348015,
+        "type": "forward",
+        "source": 21,
+        "target": 28
+      },
+      {
+        "weight": 1.1419068230425937,
+        "type": "forward",
+        "source": 21,
+        "target": 29
+      },
+      {
+        "weight": 0.9755022071701641,
+        "type": "forward",
+        "source": 21,
+        "target": 31
+      },
+      {
+        "weight": 0.6683371119320586,
+        "type": "forward",
+        "source": 22,
+        "target": 27
+      },
+      {
+        "weight": 0.70166330782064,
+        "type": "forward",
+        "source": 22,
+        "target": 32
+      },
+      {
+        "weight": 0.6386855168027123,
+        "type": "forward",
+        "source": 24,
+        "target": 25
+      },
+      {
+        "weight": 0.9396454903493944,
+        "type": "forward",
+        "source": 25,
+        "target": 26
+      },
+      {
+        "weight": 0.7872245642247274,
+        "type": "forward",
+        "source": 25,
+        "target": 28
+      },
+      {
+        "weight": 0.5960532709023709,
+        "type": "forward",
+        "source": 25,
+        "target": 31
+      },
+      {
+        "weight": 0.7257925424869198,
+        "type": "forward",
+        "source": 25,
+        "target": 33
+      },
+      {
+        "weight": 0.5587911747526964,
+        "type": "forward",
+        "source": 26,
+        "target": 28
+      },
+      {
+        "weight": 1.1436125816434684,
+        "type": "forward",
+        "source": 27,
+        "target": 32
+      },
+      {
+        "weight": 1.2477930314411245,
+        "type": "forward",
+        "source": 28,
+        "target": 32
+      },
+      {
+        "weight": 1.0415420654872714,
+        "type": "forward",
+        "source": 28,
+        "target": 33
+      },
+      {
+        "weight": 0.9902408139369647,
+        "type": "forward",
+        "source": 29,
+        "target": 30
+      },
+      {
+        "weight": 1.465463120299006,
+        "type": "forward",
+        "source": 29,
+        "target": 31
+      }
+    ]
+  }
+}
