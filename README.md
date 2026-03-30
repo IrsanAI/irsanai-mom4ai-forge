@@ -168,10 +168,15 @@ git push
   **Chemie (Repo-Fit):** `82/100` 🟩🟩🟩🟩⬜  
   **Coach-Feedback:** Wire-up steht; nächster Schritt ist provider-spezifische Tiefe (SDK-native Objekte/Tracing).
 
-- [ ] Provider-spezifische Tiefe (OpenAI Agents SDK Tracing, weitere Runtime-Backends)  
-  **Resonanz:** `53/100` 🟨🟨🟨⬜⬜  
-  **Chemie (Repo-Fit):** `72/100` 🟩🟩🟩⬜⬜  
-  **Coach-Feedback:** Von „funktioniert“ zu „produktiv robust“ über echte Provider-Hooks.
+- [x] Provider-spezifische Tiefe (OpenAI-like Tracing: usage/finish_reason/response_ms)  
+  **Resonanz:** `74/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `83/100` 🟩🟩🟩🟩⬜  
+  **Coach-Feedback:** Der Hook liest jetzt echte Provider-Spuren, nicht nur statische Felder.
+
+- [ ] Multi-Provider Backends (OpenAI Agents SDK nativ + weitere Laufzeiten)  
+  **Resonanz:** `57/100` 🟨🟨🟨⬜⬜  
+  **Chemie (Repo-Fit):** `74/100` 🟩🟩🟩⬜⬜  
+  **Coach-Feedback:** Jetzt den Schritt von OpenAI-like zu echten Multi-Provider Integrationen machen.
 
 - [ ] Community-Rangliste & Seltenheits-Badges  
   **Resonanz:** `40/100` 🟨🟨⬜⬜⬜  

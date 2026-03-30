@@ -13,7 +13,7 @@ from resonance_protocol import score_interactions
 from runtime_adapter import build_event
 from openai_agents_hook import derive_turn_metrics, derive_runtime_semantics
 from sdk_hooks import ResonanceSDKHook
-from vendor_wiring import extract_tool_stats
+from vendor_wiring import extract_tool_stats, extract_openai_trace_metrics
 
 
 def test_validate_resonance_event():
@@ -151,6 +151,19 @@ def test_vendor_wiring_extract_tool_stats():
     assert success == 1
 
 
+def test_vendor_wiring_trace_metrics():
+    payload = {
+        "usage": {"prompt_tokens": 50, "completion_tokens": 40},
+        "choices": [{"finish_reason": "stop"}],
+        "response_ms": 900,
+    }
+    metrics = extract_openai_trace_metrics(payload)
+    assert metrics["prompt_tokens"] == 50
+    assert metrics["completion_tokens"] == 40
+    assert 0.0 <= metrics["recovery_success_inferred"] <= 1.0
+    assert 0.0 <= metrics["followup_consistency_inferred"] <= 1.0
+
+
 if __name__ == "__main__":
     test_validate_resonance_event()
     test_resonance_scoring_bounds()
@@ -160,4 +173,5 @@ if __name__ == "__main__":
     test_openai_hook_runtime_semantics()
     test_sdk_hook_init()
     test_vendor_wiring_extract_tool_stats()
+    test_vendor_wiring_trace_metrics()
     print("smoke tests passed")
