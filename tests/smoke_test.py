@@ -219,6 +219,8 @@ def test_dashboard_index_html_present():
     content = index_html.read_text(encoding="utf-8")
     assert "Live Evolution" in content
     assert "loadHall()" in content
+    assert "vis-network.min.js" in content
+    assert "buildEvolutionTree" in content
 
 
 if __name__ == "__main__":

@@ -183,10 +183,10 @@ git push
   **Chemie (Repo-Fit):** `77/100` 🟩🟩🟩⬜⬜  
   **Coach-Feedback:** Contributor-Ranking + Rarity-Badges stärken den Community-Loop sichtbar.
 
-- [ ] Vis.js Evolution-Tree in der Hall of Fame  
-  **Resonanz:** `44/100` 🟨🟨⬜⬜⬜  
-  **Chemie (Repo-Fit):** `67/100` 🟨🟨🟨⬜⬜  
-  **Coach-Feedback:** Macht Lineage-Intelligenz visuell und sofort erfassbar.
+- [x] Vis.js Evolution-Tree in der Hall of Fame  
+  **Resonanz:** `63/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `78/100` 🟩🟩🟩⬜⬜  
+  **Coach-Feedback:** Interaktive Graph-Ansicht macht Evolution und Contributor-Linien direkt greifbar.
 
 - [ ] Mini-Transformer aus Graph-Skeletten  
   **Resonanz:** `30/100` 🟧⬜⬜⬜⬜  
