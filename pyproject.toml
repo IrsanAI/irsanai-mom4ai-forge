@@ -23,6 +23,7 @@ momai-adapter = "runtime_adapter:main"
 momai-hook = "openai_agents_hook:main"
 momai-sdk-hook = "sdk_hooks:main"
 momai-vendor-wire = "vendor_wiring:main"
+momai-mini-transformer = "mini_transformer_adapter:main"
 
 [tool.setuptools]
 py-modules = [
@@ -37,6 +38,7 @@ py-modules = [
   "openai_agents_hook",
   "sdk_hooks",
   "vendor_wiring",
+  "mini_transformer_adapter",
 ]
 
 [tool.setuptools.package-dir]

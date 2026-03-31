@@ -191,7 +191,7 @@ git push
 - [ ] Mini-Transformer aus Graph-Skeletten  
   **Resonanz:** `30/100` 🟧⬜⬜⬜⬜  
   **Chemie (Repo-Fit):** `72/100` 🟩🟩🟩⬜⬜  
-  **Coach-Feedback:** Der zentrale „Moonshot“ Richtung Endprodukt/USP.
+  **Coach-Feedback:** Der zentrale „Moonshot“ Richtung Endprodukt/USP (Vorstufe: Blueprint-Adapter vorhanden).
 
 ## Resonance Protocol (neu)
 
@@ -264,6 +264,7 @@ Runtime Adapter Guide: `docs/runtime_adapter.md`.
 OpenAI/Agents Hook Guide: `docs/openai_agents_hook.md`.
 SDK Hooks Guide: `docs/sdk_hooks.md`.
 Vendor Wiring Guide: `docs/vendor_wiring.md`.
+Mini-Transformer Adapter Guide: `docs/mini_transformer_adapter.md`.
 
 Made with ❤️ & many late-night runs by IrsanAI
 

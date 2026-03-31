@@ -13,6 +13,7 @@ from resonance_protocol import score_interactions
 from runtime_adapter import build_event
 from openai_agents_hook import derive_turn_metrics, derive_runtime_semantics
 from sdk_hooks import ResonanceSDKHook
+from mini_transformer_adapter import blueprint_from_skeleton
 from vendor_wiring import (
     auto_wire_turn,
     extract_anthropic_tool_stats,
@@ -223,6 +224,26 @@ def test_dashboard_index_html_present():
     assert "buildEvolutionTree" in content
 
 
+def test_mini_transformer_blueprint_ranges():
+    skeleton = {
+        "name": "demo-mini-transformer",
+        "generation": 2.5,
+        "fitness": 0.41,
+        "facts": {
+            "nodes": 42,
+            "density": 0.18,
+            "modularity": 0.27,
+            "feedback_loops": 4,
+        },
+    }
+    bp = blueprint_from_skeleton(skeleton)
+    assert bp.d_model % 32 == 0
+    assert 2 <= bp.num_layers <= 12
+    assert bp.d_model % bp.num_heads == 0
+    assert 256 <= bp.max_seq_len <= 2048
+    assert 0.05 <= bp.dropout <= 0.25
+
+
 if __name__ == "__main__":
     test_validate_resonance_event()
     test_resonance_scoring_bounds()
@@ -236,4 +257,5 @@ if __name__ == "__main__":
     test_vendor_wiring_anthropic_metrics()
     test_vendor_wiring_auto_provider_detects_anthropic()
     test_dashboard_index_html_present()
+    test_mini_transformer_blueprint_ranges()
     print("smoke tests passed")
