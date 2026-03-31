@@ -1,0 +1,28 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  python-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Syntax check
+        run: |
+          python -m py_compile src/mom_forge.py src/bio_components.py src/child_generator.py src/resonance_protocol.py src/live_dashboard_server.py src/release_guard.py
+      - name: Release guard
+        run: |
+          python src/release_guard.py
+      - name: Smoke tests
+        run: |
+          python tests/smoke_test.py
