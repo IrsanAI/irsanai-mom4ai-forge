@@ -6409,5 +6409,376 @@
     "objective_auto_resonance": 0.28443991754725834,
     "objective_diversity": 0.89353125,
     "image_path": "images/TermitenbauKorallen-G1.636388888888889-382-43950602.png"
+  },
+  {
+    "id": "b83892d4",
+    "name": "FledermausVogelzug-G1.636388888888889-389-b83892d4",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "elefanten_matriarchat": 13.23,
+      "libellen_schwarm": 3.18,
+      "mensch_gehirn": 6.97,
+      "vogel_formation": 0.0,
+      "fledermaus_echolot": 26.75,
+      "vogelzug": 19.14,
+      "ameisen_schwarm": 0.0,
+      "oktopus_nervensystem": 10.51,
+      "korallenriff": 14.92,
+      "pflanzenwurzelnetz": 0.94,
+      "slime_mold": 4.36
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-31T14:23:29.150484",
+    "facts": {
+      "nodes": 32,
+      "edges": 144,
+      "density": 0.14516129032258066,
+      "modularity": 0.21511070675001387,
+      "feedback_loops": 4,
+      "dominant_type": "fledermaus_echolot"
+    },
+    "creation_mode": "mutation",
+    "parents": [
+      "FledermausVogelzug-G1.636388888888889-382-a266238b"
+    ],
+    "fitness": 0.4419682704488349,
+    "auto_fitness": 0.30875144393177995,
+    "resonance_fitness": 0.0,
+    "resonance_interactions": 0,
+    "resonance_classification": "insufficient_data",
+    "objective_auto_resonance": 0.30875144393177995,
+    "objective_diversity": 0.84161875,
+    "image_path": "images/FledermausVogelzug-G1.636388888888889-389-b83892d4.png"
+  },
+  {
+    "id": "d71987fa",
+    "name": "AmeisenPflanzenwurzelnetz-G1.636388888888889-389-d71987fa",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "quorum_sensing": 10.08,
+      "slime_mold": 16.22,
+      "ameisen_schwarm": 41.02,
+      "pflanzenwurzelnetz": 32.68
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-31T14:23:29.829807",
+    "facts": {
+      "nodes": 33,
+      "edges": 157,
+      "density": 0.14867424242424243,
+      "modularity": 0.19301118036383527,
+      "feedback_loops": 2,
+      "dominant_type": "ameisen_schwarm"
+    },
+    "creation_mode": "crossover",
+    "parents": [
+      "Skeleton-G1.636388888888889-2",
+      "PflanzenwurzelnetzSlime-G1.636388888888889-178-3a91bd3f"
+    ],
+    "fitness": 0.4336692799964263,
+    "auto_fitness": 0.2826007066619017,
+    "resonance_fitness": 0.0,
+    "resonance_interactions": 0,
+    "resonance_classification": "insufficient_data",
+    "objective_auto_resonance": 0.2826007066619017,
+    "objective_diversity": 0.8868750000000001,
+    "image_path": "images/AmeisenPflanzenwurzelnetz-G1.636388888888889-389-d71987fa.png"
+  },
+  {
+    "id": "a39cb984",
+    "name": "FledermausTiefsee-G1.636388888888889-389-a39cb984",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "kaktus_wasserspeicher": 8.59,
+      "korallenriff": 12.64,
+      "fledermaus_echolot": 50.59,
+      "tiefsee_leuchtnetz": 18.28,
+      "pilz_ektomykorrhiza": 9.9
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-31T14:23:30.253467",
+    "facts": {
+      "nodes": 33,
+      "edges": 138,
+      "density": 0.13068181818181818,
+      "modularity": 0.22463091523401182,
+      "feedback_loops": 4,
+      "dominant_type": "fledermaus_echolot"
+    },
+    "creation_mode": "random",
+    "parents": [],
+    "fitness": 0.46113940966235006,
+    "auto_fitness": 0.30794004621646676,
+    "resonance_fitness": 0.0,
+    "resonance_interactions": 0,
+    "resonance_classification": "insufficient_data",
+    "objective_auto_resonance": 0.30794004621646676,
+    "objective_diversity": 0.9207375,
+    "image_path": "images/FledermausTiefsee-G1.636388888888889-389-a39cb984.png"
+  },
+  {
+    "id": "4caa554c",
+    "name": "PflanzenwurzelnetzSlime-G1.636388888888889-389-4caa554c",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "pflanzenwurzelnetz": 65.9,
+      "slime_mold": 34.1
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-31T14:23:30.631530",
+    "facts": {
+      "nodes": 34,
+      "edges": 145,
+      "density": 0.12923351158645277,
+      "modularity": 0.20469365432093803,
+      "feedback_loops": 5,
+      "dominant_type": "pflanzenwurzelnetz"
+    },
+    "creation_mode": "mutation",
+    "parents": [
+      "PflanzenwurzelnetzSlime-G1.636388888888889-178-3a91bd3f"
+    ],
+    "fitness": 0.483646801512165,
+    "auto_fitness": 0.31658323534955335,
+    "resonance_fitness": 0.0,
+    "resonance_interactions": 0,
+    "resonance_classification": "insufficient_data",
+    "objective_auto_resonance": 0.31658323534955335,
+    "objective_diversity": 0.9848375,
+    "image_path": "images/PflanzenwurzelnetzSlime-G1.636388888888889-389-4caa554c.png"
+  },
+  {
+    "id": "534649e1",
+    "name": "MyzelKorallen-G1.636388888888889-389-534649e1",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "myzel_netz": 43.84,
+      "korallen_symbiose": 13.63,
+      "quorum_sensing": 3.49,
+      "wolf_rudel_jagd": 0.0,
+      "vogelzug": 6.09,
+      "oktopus_nervensystem": 4.81,
+      "schnecken_chemospur": 11.76,
+      "termitenbau": 9.33,
+      "mensch_gehirn": 0.0,
+      "slime_mold": 3.0,
+      "ameisen_schwarm": 4.04,
+      "bienen_schwarm": 0.0
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-31T14:23:31.047481",
+    "facts": {
+      "nodes": 33,
+      "edges": 152,
+      "density": 0.14393939393939395,
+      "modularity": 0.2065263923105526,
+      "feedback_loops": 3,
+      "dominant_type": "myzel_netz"
+    },
+    "creation_mode": "crossover",
+    "parents": [
+      "MyzelAmeisen-G1.636388888888889-77-f62aecaf",
+      "TermitenbauKorallen-G1.636388888888889-382-43950602"
+    ],
+    "fitness": 0.42945781516873316,
+    "auto_fitness": 0.2992791702249775,
+    "resonance_fitness": 0.0,
+    "resonance_interactions": 0,
+    "resonance_classification": "insufficient_data",
+    "objective_auto_resonance": 0.2992791702249775,
+    "objective_diversity": 0.8199937500000001,
+    "image_path": "images/MyzelKorallen-G1.636388888888889-389-534649e1.png"
+  },
+  {
+    "id": "74767d97",
+    "name": "FledermausKorallenriff-G1.636388888888889-389-74767d97",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "elefanten_matriarchat": 6.35,
+      "libellen_schwarm": 5.16,
+      "mensch_gehirn": 6.22,
+      "vogel_formation": 4.68,
+      "fledermaus_echolot": 20.88,
+      "vogelzug": 11.03,
+      "ameisen_schwarm": 6.23,
+      "oktopus_nervensystem": 12.14,
+      "korallenriff": 12.59,
+      "pflanzenwurzelnetz": 10.05,
+      "slime_mold": 4.66
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-31T14:23:31.456378",
+    "facts": {
+      "nodes": 33,
+      "edges": 133,
+      "density": 0.1259469696969697,
+      "modularity": 0.21124577055531635,
+      "feedback_loops": 4,
+      "dominant_type": "fledermaus_echolot"
+    },
+    "creation_mode": "mutation",
+    "parents": [
+      "FledermausVogelzug-G1.636388888888889-382-a266238b"
+    ],
+    "fitness": 0.43421098067947006,
+    "auto_fitness": 0.30184589090596015,
+    "resonance_fitness": 0.0,
+    "resonance_interactions": 0,
+    "resonance_classification": "insufficient_data",
+    "objective_auto_resonance": 0.30184589090596015,
+    "objective_diversity": 0.8313062499999999,
+    "image_path": "images/FledermausKorallenriff-G1.636388888888889-389-74767d97.png"
+  },
+  {
+    "id": "da6197eb",
+    "name": "AlgenVogel-G1.636388888888889-389-da6197eb",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "wolf_rudel": 15.45,
+      "algen_bluete": 26.16,
+      "korallenriff": 11.34,
+      "schwarmfisch": 0.0,
+      "honigbienentanz": 12.07,
+      "termitenbau": 6.9,
+      "vogel_formation": 22.41,
+      "fledermaus_echolot": 0.0,
+      "bakterien_biofilm": 5.67
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-31T14:23:31.848785",
+    "facts": {
+      "nodes": 30,
+      "edges": 110,
+      "density": 0.12643678160919541,
+      "modularity": 0.2454458150594684,
+      "feedback_loops": 4,
+      "dominant_type": "algen_bluete"
+    },
+    "creation_mode": "crossover",
+    "parents": [
+      "WolfKorallenriff-G1.636388888888889-382-da68c2bc",
+      "VogelAlgen-G1.636388888888889-382-0e2bf3f2"
+    ],
+    "fitness": 0.4383444451058015,
+    "auto_fitness": 0.30168217680773535,
+    "resonance_fitness": 0.0,
+    "resonance_interactions": 0,
+    "resonance_classification": "insufficient_data",
+    "objective_auto_resonance": 0.30168217680773535,
+    "objective_diversity": 0.84833125,
+    "image_path": "images/AlgenVogel-G1.636388888888889-389-da6197eb.png"
+  },
+  {
+    "id": "1900b54a",
+    "name": "SlimeFledermaus-G1.636388888888889-389-1900b54a",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "myzel_netz": 0.0,
+      "vogelzug": 10.73,
+      "oktopus_nervensystem": 3.03,
+      "korallenriff": 6.57,
+      "slime_mold": 30.38,
+      "libellen_schwarm": 5.53,
+      "vogel_formation": 0.1,
+      "mensch_gehirn": 4.01,
+      "pflanzenwurzelnetz": 6.03,
+      "fledermaus_echolot": 16.33,
+      "ameisen_schwarm": 9.31,
+      "elefanten_matriarchat": 7.98
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-31T14:23:32.249000",
+    "facts": {
+      "nodes": 33,
+      "edges": 160,
+      "density": 0.15151515151515152,
+      "modularity": 0.18580442367711472,
+      "feedback_loops": 6,
+      "dominant_type": "slime_mold"
+    },
+    "creation_mode": "crossover",
+    "parents": [
+      "SlimeAmeisen-G1.636388888888889-32-2ac6754a",
+      "FledermausVogelzug-G1.636388888888889-382-a266238b"
+    ],
+    "fitness": 0.45607196595829114,
+    "auto_fitness": 0.3214980379443882,
+    "resonance_fitness": 0.0,
+    "resonance_interactions": 0,
+    "resonance_classification": "insufficient_data",
+    "objective_auto_resonance": 0.3214980379443882,
+    "objective_diversity": 0.8597937499999999,
+    "image_path": "images/SlimeFledermaus-G1.636388888888889-389-1900b54a.png"
+  },
+  {
+    "id": "a1f5fb93",
+    "name": "SlimeMyzel-G1.636388888888889-389-a1f5fb93",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "myzel_netz": 39.87,
+      "quorum_sensing": 0.0,
+      "slime_mold": 45.5,
+      "mensch_gehirn": 2.92,
+      "bienen_schwarm": 0.0,
+      "ameisen_schwarm": 11.72
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-31T14:23:32.685258",
+    "facts": {
+      "nodes": 36,
+      "edges": 180,
+      "density": 0.14285714285714285,
+      "modularity": 0.2178870436310859,
+      "feedback_loops": 6,
+      "dominant_type": "slime_mold"
+    },
+    "creation_mode": "crossover",
+    "parents": [
+      "SlimeAmeisen-G1.636388888888889-32-2ac6754a",
+      "MyzelAmeisen-G1.636388888888889-77-f62aecaf"
+    ],
+    "fitness": 0.48133809838664915,
+    "auto_fitness": 0.3407403811821989,
+    "resonance_fitness": 0.0,
+    "resonance_interactions": 0,
+    "resonance_classification": "insufficient_data",
+    "objective_auto_resonance": 0.3407403811821989,
+    "objective_diversity": 0.9031312499999999,
+    "image_path": "images/SlimeMyzel-G1.636388888888889-389-a1f5fb93.png"
+  },
+  {
+    "id": "854bb607",
+    "name": "WolfKorallenriff-G1.636388888888889-389-854bb607",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "honigbienentanz": 23.54,
+      "bakterien_biofilm": 18.99,
+      "algen_bluete": 1.29,
+      "korallenriff": 24.13,
+      "wolf_rudel": 25.6,
+      "termite_klimakammer": 6.45
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-03-31T14:23:33.213372",
+    "facts": {
+      "nodes": 31,
+      "edges": 118,
+      "density": 0.12688172043010754,
+      "modularity": 0.20392141294078864,
+      "feedback_loops": 5,
+      "dominant_type": "wolf_rudel"
+    },
+    "creation_mode": "mutation",
+    "parents": [
+      "WolfKorallenriff-G1.636388888888889-382-da68c2bc"
+    ],
+    "fitness": 0.4420581197537678,
+    "auto_fitness": 0.299435826338357,
+    "resonance_fitness": 0.0,
+    "resonance_interactions": 0,
+    "resonance_classification": "insufficient_data",
+    "objective_auto_resonance": 0.299435826338357,
+    "objective_diversity": 0.8699250000000001,
+    "image_path": "images/WolfKorallenriff-G1.636388888888889-389-854bb607.png"
   }
 ]
