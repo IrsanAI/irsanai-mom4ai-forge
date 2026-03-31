@@ -178,10 +178,10 @@ git push
   **Chemie (Repo-Fit):** `79/100` 🟩🟩🟩⬜⬜  
   **Coach-Feedback:** Adapter spricht jetzt mehrere Payload-Stile und normalisiert Semantik konsistent.
 
-- [ ] Community-Rangliste & Seltenheits-Badges  
-  **Resonanz:** `40/100` 🟨🟨⬜⬜⬜  
-  **Chemie (Repo-Fit):** `63/100` 🟨🟨🟨⬜⬜  
-  **Coach-Feedback:** Wichtig für Langzeit-Motivation und Netzwerk-Effekte.
+- [x] Community-Rangliste & Seltenheits-Badges  
+  **Resonanz:** `61/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `77/100` 🟩🟩🟩⬜⬜  
+  **Coach-Feedback:** Contributor-Ranking + Rarity-Badges stärken den Community-Loop sichtbar.
 
 - [ ] Vis.js Evolution-Tree in der Hall of Fame  
   **Resonanz:** `44/100` 🟨🟨⬜⬜⬜  

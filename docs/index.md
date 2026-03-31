@@ -163,118 +163,6 @@ small,
   color: var(--muted);
 }
 
-.hero-card p {
-  color: var(--muted);
-  margin: 0.3rem 0;
-}
-
-.hero-img {
-  width: 100%;
-  border-radius: 10px;
-  border: 1px solid rgba(89, 168, 255, 0.5);
-}
-
-.cta-box {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.cta-button {
-  margin-top: 0.8rem;
-  display: inline-block;
-  text-decoration: none;
-  color: #031016;
-  background: linear-gradient(90deg, var(--accent), #7effc4);
-  font-weight: 700;
-  border-radius: 9px;
-  padding: 0.6rem 0.85rem;
-}
-
-.stats-grid {
-  margin: 1rem 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 0.7rem;
-}
-
-.stat-tile {
-  background: var(--panel-2);
-  border: 1px solid rgba(83, 241, 176, 0.2);
-  border-radius: 10px;
-  padding: 0.8rem;
-}
-
-.stat-value {
-  font-size: 1.25rem;
-  font-weight: 700;
-}
-
-.controls {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-  margin: 0.6rem 0 1rem;
-}
-
-.controls input,
-.controls select,
-.controls button {
-  background: #0b121d;
-  color: var(--text);
-  border: 1px solid rgba(83, 241, 176, 0.35);
-  border-radius: 8px;
-  padding: 0.5rem 0.65rem;
-}
-
-.controls button {
-  cursor: pointer;
-}
-
-.hall-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 14px;
-}
-
-.skeleton-card {
-  background: linear-gradient(180deg, #101825, #0a111b);
-  border: 1px solid rgba(83, 241, 176, 0.2);
-  border-radius: 12px;
-  padding: 0.7rem;
-  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
-}
-
-.skeleton-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(83, 241, 176, 0.55);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-}
-
-.skeleton-card img {
-  width: 100%;
-  border-radius: 8px;
-  border: 1px solid rgba(89, 168, 255, 0.3);
-}
-
-.meta-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 12px;
-  margin: 1.2rem 0;
-}
-
-.meta-grid ul {
-  margin: 0.4rem 0 0;
-  padding-left: 1.2rem;
-}
-
-small,
-.muted {
-  color: var(--muted);
-}
-
 .modal-backdrop {
   display: none;
   position: fixed;
@@ -302,109 +190,21 @@ small,
 .badge.non_resonant { color: #ff7b7b; }
 .badge.no_data { color: #98a6aa; }
 
-@media (max-width: 900px) {
-  .hero { grid-template-columns: 1fr; }
-}
-</style>
-
-<div class="forge-shell">
-  <div class="hero">
-    <section class="hero-card">
-      <h1>Mom4AI Forge — Live Evolution Lab</h1>
-      <p>Keine statische Modell-Liste, sondern ein lebendiges Ökosystem aus bio-inspirierten Netz-Skeletten mit kontinuierlicher Selektion.</p>
-      <p class="muted">Die Grafik zeigt den Kern-Claim: klassisches Feedforward-Netz vs. evolutive MomAI-Topologie.</p>
-      <img class="hero-img" src="images/momai-forge-vs-typical-nn.jpg" alt="Typisches NN vs MomAI Forge Topologie">
-    </section>
-
-    <aside class="hero-card cta-box">
-      <div>
-        <h2 style="margin-top:0;">Join the Forge</h2>
-        <p>Generiere eigene Skelette, pushe sie ins Repo und sieh zu, wie sie in der Hall of Fame auftauchen.</p>
-        <p class="muted">Online läuft die öffentliche Hall of Fame. Für Runtime-APIs/Sessions lokal starten:</p>
-        <code>python src/live_dashboard_server.py</code>
-      </div>
-      <a class="cta-button" href="https://github.com/IrsanAI/irsanai-mom4ai-forge">Mitbauen auf GitHub</a>
-    </aside>
-  </div>
-
-  <section class="panel" style="padding:0.9rem;">
-    <h2 style="margin:0.2rem 0 0.6rem;">Live Evolution – Hall of Fame</h2>
-    <div class="stats-grid" id="stats-grid">
-      <div class="stat-tile"><div class="muted">Gesamt Skelette</div><div id="total-count" class="stat-value">…</div></div>
-      <div class="stat-tile"><div class="muted">Contributor</div><div id="user-count" class="stat-value">…</div></div>
-      <div class="stat-tile"><div class="muted">Resonant</div><div id="resonant-count" class="stat-value">…</div></div>
-      <div class="stat-tile"><div class="muted">Emerging</div><div id="emerging-count" class="stat-value">…</div></div>
-      <div class="stat-tile"><div class="muted">Non-resonant</div><div id="non-resonant-count" class="stat-value">…</div></div>
-      <div class="stat-tile"><div class="muted">Seltenste Geburt</div><div id="rare-count" class="stat-value">…</div></div>
-    </div>
-
-    <div class="controls">
-      <input type="text" id="search" placeholder="Suche Name, User, Dominant Type…">
-      <select id="sort">
-        <option value="fitness-desc">Fitness ↓</option>
-        <option value="fitness-asc">Fitness ↑</option>
-        <option value="born-desc">Born count ↓</option>
-        <option value="born-asc">Born count ↑</option>
-      </select>
-      <button id="refresh-btn">Aktualisieren</button>
-    </div>
-
-    <div class="hall-grid" id="hall-of-fame"></div>
-  </section>
-
-  <section class="meta-grid">
-    <article class="panel" style="padding:0.9rem;">
-      <h3 style="margin:0;">Top 5 Gesamt (Fitness)</h3>
-      <ol id="top-5-list"></ol>
-    </article>
-    <article class="panel" style="padding:0.9rem;">
-      <h3 style="margin:0;">Seltenste Skelette (born_count ≤ 1)</h3>
-      <ul id="rare-list"></ul>
-    </article>
-    <article class="panel" style="padding:0.9rem;">
-      <h3 style="margin:0;">Top Contributor</h3>
-      <ul id="contributors-list"></ul>
-    </article>
-    <article class="panel" style="padding:0.9rem;">
-      <h3 style="margin:0;">Dominante Bio-Typen</h3>
-      <ul id="dominant-list"></ul>
-    </article>
-  </section>
-
-  <section class="panel" style="padding:0.9rem; margin-top:0.4rem;">
-    <h3 style="margin-top:0;">Local Runtime / Sync Monitor</h3>
-    <p id="local-runtime-stats">Warte auf lokalen Server…</p>
-    <p id="local-runtime-git">Git Sync: -</p>
-    <p id="local-runtime-session">Session: -</p>
-    <p id="local-runtime-stream">Stream: -</p>
-  </section>
-
-  <p style="margin-top:1rem;"><small>Hinweis: Auf GitHub Pages ist nur der Online-Modus aktiv; lokale Runtime-APIs sind absichtlich deaktiviert.</small></p>
-</div>
-
-<div class="modal-backdrop" id="detail-backdrop">
-  <div class="modal">
-    <button id="close-modal" style="float:right;">Schließen</button>
-    <h3 id="detail-title">Skeleton Detail</h3>
-    <pre id="detail-json" style="white-space:pre-wrap; font-size:0.86rem;"></pre>
-  </div>
-
-.modal {
-  width: min(740px, 96vw);
-  max-height: 88vh;
-  overflow: auto;
-  background: #0c1320;
-  border: 1px solid rgba(83, 241, 176, 0.35);
-  border-radius: 12px;
-  padding: 1rem;
+.rarity-badge {
+  display: inline-block;
+  padding: 0.18rem 0.48rem;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  margin-left: 0.4rem;
 }
 
-.badge { font-weight: 700; }
-.badge.resonant { color: #57ffba; }
-.badge.emerging { color: #befd6f; }
-.badge.neutral { color: #ffd166; }
-.badge.non_resonant { color: #ff7b7b; }
-.badge.no_data { color: #98a6aa; }
+.rarity-legend {
+  margin: 0.45rem 0 0;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
 
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; }
@@ -466,8 +266,9 @@ small,
       <ul id="rare-list"></ul>
     </article>
     <article class="panel" style="padding:0.9rem;">
-      <h3 style="margin:0;">Top Contributor</h3>
+      <h3 style="margin:0;">Top Contributor Ranking</h3>
       <ul id="contributors-list"></ul>
+      <p class="rarity-legend">🏆 Legendär = Top1 • 🥈 Aufstrebend = Top2/3 • 🌱 Newcomer = alle weiteren</p>
     </article>
     <article class="panel" style="padding:0.9rem;">
       <h3 style="margin:0;">Dominante Bio-Typen</h3>
@@ -500,6 +301,14 @@ let allSkeletons = [];
 function badgeForResonance(cls) {
   const safe = cls || 'no_data';
   return `<span class="badge ${safe}">${safe}</span>`;
+}
+
+function rarityBadgeForBornCount(bornCount) {
+  const born = bornCount || 1;
+  if (born <= 1) return '<span class="rarity-badge" style="background:#7b2cff22; color:#c8a6ff; border:1px solid #a46eff55;">🦄 Mythic (1x)</span>';
+  if (born <= 2) return '<span class="rarity-badge" style="background:#3a6aff22; color:#9dc8ff; border:1px solid #7fa9ff55;">💎 Rare (2x)</span>';
+  if (born <= 4) return '<span class="rarity-badge" style="background:#2e9f6a22; color:#9ff7c7; border:1px solid #7de2b055;">✨ Uncommon (3-4x)</span>';
+  return '<span class="rarity-badge" style="background:#6a7a8822; color:#c5d1da; border:1px solid #a8bac955;">📦 Common (5x+)</span>';
 }
 
 function number(v, digits = 3) {
@@ -539,32 +348,6 @@ function renderTop5(data) {
   top5.forEach((s, idx) => {
     const li = document.createElement('li');
     li.innerHTML = `<strong>#${idx + 1}</strong> ${s.name} — Fitness ${number(s.fitness)} — ${badgeForResonance(s.resonance_classification)}`;
-  }
-  rare.forEach((s) => {
-    const li = document.createElement('li');
-    li.textContent = `${s.name} (${s.produced_by || 'unbekannt'})`;
-    list.appendChild(li);
-  });
-}
-
-function renderContributors(data) {
-  const ranking = aggregateBy(data, s => s.produced_by || 'unbekannt').slice(0, 8);
-  const list = document.getElementById('contributors-list');
-  list.innerHTML = '';
-  ranking.forEach(([name, count], idx) => {
-    const li = document.createElement('li');
-    li.textContent = `#${idx + 1} ${name}: ${count} skeletons`;
-    list.appendChild(li);
-  });
-}
-
-function renderDominants(data) {
-  const ranking = aggregateBy(data, s => s.facts?.dominant_type || 'n/a').slice(0, 8);
-  const list = document.getElementById('dominant-list');
-  list.innerHTML = '';
-  ranking.forEach(([dominant, count]) => {
-    const li = document.createElement('li');
-    li.textContent = `${dominant}: ${count}`;
     list.appendChild(li);
   });
 }
@@ -590,7 +373,10 @@ function renderContributors(data) {
   list.innerHTML = '';
   ranking.forEach(([name, count], idx) => {
     const li = document.createElement('li');
-    li.textContent = `#${idx + 1} ${name}: ${count} skeletons`;
+    let tier = '🌱 Newcomer';
+    if (idx === 0) tier = '🏆 Legendär';
+    else if (idx <= 2) tier = '🥈 Aufstrebend';
+    li.textContent = `#${idx + 1} ${name}: ${count} skeletons (${tier})`;
     list.appendChild(li);
   });
 }
@@ -637,11 +423,7 @@ function renderSkeletons(data) {
       <p><strong>Produced by:</strong> ${s.produced_by || 'unbekannt'}</p>
       <p><strong>Fitness:</strong> ${number(s.fitness)}</p>
       <p><strong>Resonance:</strong> ${badgeForResonance(s.resonance_classification)}</p>
-      <p><strong>Born count:</strong> ${s.born_count || 1}x</p>
-      <p><strong>Fitness:</strong> ${number(s.fitness)}</p>
-      <p><strong>Resonance:</strong> ${badgeForResonance(s.resonance_classification)}</p>
-      <p><strong>Born count:</strong> ${s.born_count || 1}x</p>
-
+      <p><strong>Born count:</strong> ${s.born_count || 1}x ${rarityBadgeForBornCount(s.born_count)}</p>
       <p><strong>Dominant:</strong> ${s.facts?.dominant_type || 'N/A'}</p>
       <button class="details-btn">Details</button>
     `;
@@ -655,7 +437,6 @@ async function loadHall() {
     const resp = await fetch('ancestry.json');
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     allSkeletons = await resp.json();
-
 
     updateStats(allSkeletons);
     renderTop5(allSkeletons);
