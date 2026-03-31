@@ -186,6 +186,10 @@ class DashboardHandler(SimpleHTTPRequestHandler):
 
     def do_GET(self):
         parsed = urlparse(self.path)
+        if parsed.path in ("/", "/index.md"):
+            self.path = "/index.html"
+            super().do_GET()
+            return
         if parsed.path == "/api/local_stats":
             self._send_json(_collect_local_stats())
             return

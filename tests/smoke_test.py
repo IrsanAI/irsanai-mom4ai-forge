@@ -213,6 +213,14 @@ def test_vendor_wiring_auto_provider_detects_anthropic():
     assert body["tool_calls_success"] == 1
 
 
+def test_dashboard_index_html_present():
+    index_html = ROOT / "docs" / "index.html"
+    assert index_html.exists()
+    content = index_html.read_text(encoding="utf-8")
+    assert "Live Evolution" in content
+    assert "loadHall()" in content
+
+
 if __name__ == "__main__":
     test_validate_resonance_event()
     test_resonance_scoring_bounds()
@@ -225,4 +233,5 @@ if __name__ == "__main__":
     test_vendor_wiring_trace_metrics()
     test_vendor_wiring_anthropic_metrics()
     test_vendor_wiring_auto_provider_detects_anthropic()
+    test_dashboard_index_html_present()
     print("smoke tests passed")

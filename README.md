@@ -211,6 +211,7 @@ Details und Beispiel-Format: `docs/resonance_protocol.md`.
 python src/live_dashboard_server.py
 ```
 Dann öffnen: `http://localhost:8080`
+(`live_dashboard_server.py` liefert dabei explizit `docs/index.html` als Startseite aus.)
 
 ### Mit Docker
 ```bash
