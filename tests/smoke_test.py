@@ -14,6 +14,7 @@ from runtime_adapter import build_event
 from openai_agents_hook import derive_turn_metrics, derive_runtime_semantics
 from sdk_hooks import ResonanceSDKHook
 from mini_transformer_adapter import blueprint_from_skeleton
+from chemie_manager import build_portfolio_report, parse_roadmap_from_readme
 from vendor_wiring import (
     auto_wire_turn,
     extract_anthropic_tool_stats,
@@ -244,6 +245,18 @@ def test_mini_transformer_blueprint_ranges():
     assert 0.05 <= bp.dropout <= 0.25
 
 
+def test_chemie_manager_report_generation():
+    readme_text = (ROOT / "README.md").read_text(encoding="utf-8")
+    items = parse_roadmap_from_readme(readme_text)
+    assert len(items) >= 5
+
+    report = build_portfolio_report(items)
+    assert report.total_items >= report.completed_items
+    assert report.open_items >= 0
+    assert 0.0 <= report.completion_rate <= 1.0
+    assert isinstance(report.optimization_plan, list) and report.optimization_plan
+
+
 if __name__ == "__main__":
     test_validate_resonance_event()
     test_resonance_scoring_bounds()
@@ -258,4 +271,5 @@ if __name__ == "__main__":
     test_vendor_wiring_auto_provider_detects_anthropic()
     test_dashboard_index_html_present()
     test_mini_transformer_blueprint_ranges()
+    test_chemie_manager_report_generation()
     print("smoke tests passed")

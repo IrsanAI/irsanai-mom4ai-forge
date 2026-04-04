@@ -193,6 +193,11 @@ git push
   **Chemie (Repo-Fit):** `72/100` 🟩🟩🟩⬜⬜  
   **Coach-Feedback:** Der zentrale „Moonshot“ Richtung Endprodukt/USP (Vorstufe: Blueprint-Adapter vorhanden).
 
+- [x] IrsanAI Chemie Manager (KPI-Interpretation + Portfolio-Optimierung)  
+  **Resonanz:** `67/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `85/100` 🟩🟩🟩🟩⬜  
+  **Coach-Feedback:** KPI-getriebene Priorisierung macht Roadmap-Steuerung reproduzierbar und mastermind-fähig.
+
 ## Resonance Protocol (neu)
 
 Mom4AI bewertet nicht mehr nur Struktur, sondern kann auch **echte Interaktion** als Fitnesssignal einbeziehen:
@@ -265,6 +270,7 @@ OpenAI/Agents Hook Guide: `docs/openai_agents_hook.md`.
 SDK Hooks Guide: `docs/sdk_hooks.md`.
 Vendor Wiring Guide: `docs/vendor_wiring.md`.
 Mini-Transformer Adapter Guide: `docs/mini_transformer_adapter.md`.
+IrsanAI Chemie Manager Guide: `docs/chemie_manager.md`.
 
 Made with ❤️ & many late-night runs by IrsanAI
 
