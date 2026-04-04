@@ -1,0 +1,979 @@
+{
+  "name": "AmeisenPflanzen-G1.636388888888889-399-e293b592",
+  "generation": 0.6363888888888889,
+  "mixture": {
+    "vogelzug": 1.26,
+    "quorum_sensing": 0.78,
+    "ameisen_blattschneider": 74.91,
+    "pflanzen_woodwideweb": 23.05
+  },
+  "fitness": 0.47293745791915376,
+  "timestamp": "20260404_142139",
+  "graph_data": {
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 0
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 1
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 2
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 3
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 4
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 5
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 6
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 7
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 8
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 9
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 10
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 11
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 12
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 13
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 14
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 15
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 16
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 17
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 18
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 19
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 20
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 21
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 22
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 23
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 24
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 25
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 26
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 27
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 28
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 29
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogelzug": 1.26,
+          "quorum_sensing": 0.78,
+          "ameisen_blattschneider": 74.91,
+          "pflanzen_woodwideweb": 23.05
+        },
+        "id": 30
+      }
+    ],
+    "edges": [
+      {
+        "weight": 0.8945994632775802,
+        "type": "forward",
+        "source": 0,
+        "target": 2
+      },
+      {
+        "weight": 0.6568694197941444,
+        "type": "forward",
+        "source": 0,
+        "target": 8
+      },
+      {
+        "weight": 1.1560260178346833,
+        "type": "forward",
+        "source": 0,
+        "target": 10
+      },
+      {
+        "weight": 0.9729813448002239,
+        "type": "forward",
+        "source": 0,
+        "target": 20
+      },
+      {
+        "weight": 0.6009925683507159,
+        "type": "forward",
+        "source": 0,
+        "target": 22
+      },
+      {
+        "weight": 1.1619963939242615,
+        "type": "forward",
+        "source": 0,
+        "target": 27
+      },
+      {
+        "weight": 0.6095420440525402,
+        "type": "forward",
+        "source": 0,
+        "target": 28
+      },
+      {
+        "weight": 1.200722811570727,
+        "type": "forward",
+        "source": 0,
+        "target": 30
+      },
+      {
+        "weight": 1.2470013256566777,
+        "type": "forward",
+        "source": 1,
+        "target": 5
+      },
+      {
+        "weight": 0.7776175349374692,
+        "type": "feedback",
+        "source": 1,
+        "target": 7
+      },
+      {
+        "weight": 0.9436194501336723,
+        "type": "forward",
+        "source": 1,
+        "target": 14
+      },
+      {
+        "weight": 0.9113913411215068,
+        "type": "forward",
+        "source": 1,
+        "target": 15
+      },
+      {
+        "weight": 0.8359394805249114,
+        "type": "forward",
+        "source": 1,
+        "target": 19
+      },
+      {
+        "weight": 1.3426639467596462,
+        "type": "forward",
+        "source": 1,
+        "target": 28
+      },
+      {
+        "weight": 0.6344850095176984,
+        "type": "feedback",
+        "source": 1,
+        "target": 1
+      },
+      {
+        "weight": 0.636618893995378,
+        "type": "forward",
+        "source": 2,
+        "target": 3
+      },
+      {
+        "weight": 1.43842305626578,
+        "type": "forward",
+        "source": 2,
+        "target": 11
+      },
+      {
+        "weight": 0.8826224549189772,
+        "type": "forward",
+        "source": 2,
+        "target": 15
+      },
+      {
+        "weight": 1.3398870263001497,
+        "type": "forward",
+        "source": 2,
+        "target": 27
+      },
+      {
+        "weight": 0.9808933943980116,
+        "type": "forward",
+        "source": 2,
+        "target": 30
+      },
+      {
+        "weight": 1.3013166373392595,
+        "type": "forward",
+        "source": 3,
+        "target": 6
+      },
+      {
+        "weight": 0.7665437332759628,
+        "type": "forward",
+        "source": 3,
+        "target": 8
+      },
+      {
+        "weight": 0.7624201558376434,
+        "type": "forward",
+        "source": 3,
+        "target": 14
+      },
+      {
+        "weight": 0.5373786726701393,
+        "type": "forward",
+        "source": 3,
+        "target": 16
+      },
+      {
+        "weight": 0.6663987204428137,
+        "type": "forward",
+        "source": 3,
+        "target": 22
+      },
+      {
+        "weight": 1.253004328907976,
+        "type": "forward",
+        "source": 3,
+        "target": 27
+      },
+      {
+        "weight": 0.8773444315419338,
+        "type": "forward",
+        "source": 3,
+        "target": 30
+      },
+      {
+        "weight": 0.9287846303824053,
+        "type": "forward",
+        "source": 4,
+        "target": 7
+      },
+      {
+        "weight": 0.6432509413893331,
+        "type": "forward",
+        "source": 4,
+        "target": 10
+      },
+      {
+        "weight": 1.1459989405033388,
+        "type": "forward",
+        "source": 4,
+        "target": 17
+      },
+      {
+        "weight": 0.9267835483701211,
+        "type": "forward",
+        "source": 4,
+        "target": 19
+      },
+      {
+        "weight": 1.1509781239890695,
+        "type": "forward",
+        "source": 4,
+        "target": 20
+      },
+      {
+        "weight": 0.5473282740982167,
+        "type": "forward",
+        "source": 4,
+        "target": 27
+      },
+      {
+        "weight": 0.6714974308799811,
+        "type": "forward",
+        "source": 5,
+        "target": 12
+      },
+      {
+        "weight": 0.9508828822304715,
+        "type": "forward",
+        "source": 5,
+        "target": 15
+      },
+      {
+        "weight": 1.0386816152133136,
+        "type": "forward",
+        "source": 5,
+        "target": 20
+      },
+      {
+        "weight": 0.9271238143084746,
+        "type": "forward",
+        "source": 6,
+        "target": 13
+      },
+      {
+        "weight": 1.3931428794918983,
+        "type": "forward",
+        "source": 6,
+        "target": 14
+      },
+      {
+        "weight": 0.8904026564412547,
+        "type": "forward",
+        "source": 6,
+        "target": 16
+      },
+      {
+        "weight": 0.9879890726701901,
+        "type": "forward",
+        "source": 6,
+        "target": 17
+      },
+      {
+        "weight": 1.0667333813982949,
+        "type": "forward",
+        "source": 7,
+        "target": 11
+      },
+      {
+        "weight": 1.4898995283594465,
+        "type": "forward",
+        "source": 7,
+        "target": 15
+      },
+      {
+        "weight": 0.5545737210055348,
+        "type": "forward",
+        "source": 7,
+        "target": 19
+      },
+      {
+        "weight": 0.7221410386751738,
+        "type": "forward",
+        "source": 7,
+        "target": 28
+      },
+      {
+        "weight": 1.1719079213448365,
+        "type": "forward",
+        "source": 8,
+        "target": 9
+      },
+      {
+        "weight": 1.2523361740802483,
+        "type": "forward",
+        "source": 8,
+        "target": 14
+      },
+      {
+        "weight": 0.6548065863321652,
+        "type": "forward",
+        "source": 8,
+        "target": 16
+      },
+      {
+        "weight": 1.4720128107534647,
+        "type": "forward",
+        "source": 8,
+        "target": 19
+      },
+      {
+        "weight": 0.6073165392354003,
+        "type": "forward",
+        "source": 8,
+        "target": 20
+      },
+      {
+        "weight": 0.9393604894941717,
+        "type": "forward",
+        "source": 8,
+        "target": 22
+      },
+      {
+        "weight": 1.1782102180137515,
+        "type": "forward",
+        "source": 8,
+        "target": 25
+      },
+      {
+        "weight": 1.3377073281006542,
+        "type": "forward",
+        "source": 8,
+        "target": 27
+      },
+      {
+        "weight": 0.8438863070956286,
+        "type": "forward",
+        "source": 8,
+        "target": 28
+      },
+      {
+        "weight": 0.9067470743798703,
+        "type": "forward",
+        "source": 8,
+        "target": 29
+      },
+      {
+        "weight": 0.5205532142577893,
+        "type": "forward",
+        "source": 9,
+        "target": 16
+      },
+      {
+        "weight": 1.2314219975200817,
+        "type": "forward",
+        "source": 9,
+        "target": 17
+      },
+      {
+        "weight": 0.5821857440443399,
+        "type": "feedback",
+        "source": 9,
+        "target": 24
+      },
+      {
+        "weight": 1.3785041225965866,
+        "type": "forward",
+        "source": 9,
+        "target": 26
+      },
+      {
+        "weight": 0.5429006295111467,
+        "type": "forward",
+        "source": 10,
+        "target": 11
+      },
+      {
+        "weight": 1.3485601006339198,
+        "type": "forward",
+        "source": 10,
+        "target": 23
+      },
+      {
+        "weight": 1.0631943462690179,
+        "type": "forward",
+        "source": 10,
+        "target": 30
+      },
+      {
+        "weight": 1.0692733653982327,
+        "type": "forward",
+        "source": 11,
+        "target": 14
+      },
+      {
+        "weight": 0.9410213451806339,
+        "type": "forward",
+        "source": 11,
+        "target": 15
+      },
+      {
+        "weight": 1.0987357988828355,
+        "type": "forward",
+        "source": 11,
+        "target": 17
+      },
+      {
+        "weight": 1.1475624761405556,
+        "type": "forward",
+        "source": 11,
+        "target": 23
+      },
+      {
+        "weight": 0.6052602495127553,
+        "type": "forward",
+        "source": 11,
+        "target": 25
+      },
+      {
+        "weight": 0.6931837661381761,
+        "type": "forward",
+        "source": 12,
+        "target": 26
+      },
+      {
+        "weight": 0.5310849074230207,
+        "type": "forward",
+        "source": 13,
+        "target": 17
+      },
+      {
+        "weight": 0.728582401636106,
+        "type": "forward",
+        "source": 13,
+        "target": 19
+      },
+      {
+        "weight": 1.059942195457898,
+        "type": "forward",
+        "source": 13,
+        "target": 20
+      },
+      {
+        "weight": 1.0176546846747654,
+        "type": "forward",
+        "source": 13,
+        "target": 22
+      },
+      {
+        "weight": 1.1705718926959308,
+        "type": "forward",
+        "source": 13,
+        "target": 23
+      },
+      {
+        "weight": 1.058935631487087,
+        "type": "forward",
+        "source": 13,
+        "target": 28
+      },
+      {
+        "weight": 1.1245063817171408,
+        "type": "forward",
+        "source": 13,
+        "target": 29
+      },
+      {
+        "weight": 0.689282429272159,
+        "type": "forward",
+        "source": 14,
+        "target": 16
+      },
+      {
+        "weight": 0.7714816148045126,
+        "type": "forward",
+        "source": 14,
+        "target": 25
+      },
+      {
+        "weight": 1.2101577091548474,
+        "type": "forward",
+        "source": 15,
+        "target": 17
+      },
+      {
+        "weight": 1.420117671605086,
+        "type": "forward",
+        "source": 15,
+        "target": 21
+      },
+      {
+        "weight": 0.9843625031420399,
+        "type": "forward",
+        "source": 15,
+        "target": 22
+      },
+      {
+        "weight": 1.4042701103788375,
+        "type": "forward",
+        "source": 15,
+        "target": 29
+      },
+      {
+        "weight": 1.081032040192707,
+        "type": "forward",
+        "source": 15,
+        "target": 30
+      },
+      {
+        "weight": 0.8916044574878814,
+        "type": "forward",
+        "source": 16,
+        "target": 17
+      },
+      {
+        "weight": 1.2198414232848762,
+        "type": "forward",
+        "source": 16,
+        "target": 24
+      },
+      {
+        "weight": 1.029390141440456,
+        "type": "forward",
+        "source": 16,
+        "target": 29
+      },
+      {
+        "weight": 0.987401644480498,
+        "type": "forward",
+        "source": 17,
+        "target": 27
+      },
+      {
+        "weight": 1.4447796431707718,
+        "type": "forward",
+        "source": 17,
+        "target": 28
+      },
+      {
+        "weight": 1.4908082952942054,
+        "type": "forward",
+        "source": 18,
+        "target": 21
+      },
+      {
+        "weight": 1.1267278746365745,
+        "type": "forward",
+        "source": 18,
+        "target": 23
+      },
+      {
+        "weight": 1.0727760465979705,
+        "type": "forward",
+        "source": 18,
+        "target": 26
+      },
+      {
+        "weight": 1.2140887530468185,
+        "type": "forward",
+        "source": 19,
+        "target": 25
+      },
+      {
+        "weight": 0.7259550936016698,
+        "type": "forward",
+        "source": 19,
+        "target": 26
+      },
+      {
+        "weight": 1.2930722897769216,
+        "type": "forward",
+        "source": 20,
+        "target": 22
+      },
+      {
+        "weight": 0.6082703822967748,
+        "type": "forward",
+        "source": 20,
+        "target": 23
+      },
+      {
+        "weight": 0.5377401583623663,
+        "type": "forward",
+        "source": 20,
+        "target": 28
+      },
+      {
+        "weight": 0.7667708674789429,
+        "type": "forward",
+        "source": 21,
+        "target": 27
+      },
+      {
+        "weight": 0.90698466337807,
+        "type": "forward",
+        "source": 22,
+        "target": 26
+      },
+      {
+        "weight": 1.1882946103781666,
+        "type": "forward",
+        "source": 22,
+        "target": 28
+      },
+      {
+        "weight": 1.296154825098408,
+        "type": "forward",
+        "source": 23,
+        "target": 24
+      },
+      {
+        "weight": 1.2659298009115818,
+        "type": "forward",
+        "source": 23,
+        "target": 25
+      },
+      {
+        "weight": 1.4635320680867228,
+        "type": "forward",
+        "source": 23,
+        "target": 29
+      },
+      {
+        "weight": 1.4344869297775964,
+        "type": "forward",
+        "source": 23,
+        "target": 30
+      },
+      {
+        "weight": 0.6959700356784118,
+        "type": "forward",
+        "source": 24,
+        "target": 25
+      },
+      {
+        "weight": 0.6868365864173133,
+        "type": "forward",
+        "source": 24,
+        "target": 26
+      },
+      {
+        "weight": 0.9738297648655571,
+        "type": "forward",
+        "source": 24,
+        "target": 27
+      },
+      {
+        "weight": 1.4853529833463135,
+        "type": "forward",
+        "source": 24,
+        "target": 30
+      },
+      {
+        "weight": 0.5991915148804213,
+        "type": "forward",
+        "source": 26,
+        "target": 27
+      },
+      {
+        "weight": 0.9537309053264496,
+        "type": "forward",
+        "source": 26,
+        "target": 28
+      },
+      {
+        "weight": 0.6300904308463087,
+        "type": "forward",
+        "source": 27,
+        "target": 30
+      }
+    ]
+  }
+}
