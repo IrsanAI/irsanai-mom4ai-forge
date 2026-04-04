@@ -70,27 +70,38 @@ def blueprint_from_skeleton(skeleton: Dict[str, Any]) -> MiniTransformerBlueprin
 
 def build_pytorch_model(blueprint: MiniTransformerBlueprint):
     try:
+        import torch
         import torch.nn as nn
     except Exception as exc:  # pragma: no cover - optional runtime path
         raise RuntimeError("PyTorch not available. Install torch to build model instances.") from exc
 
-    encoder_layer = nn.TransformerEncoderLayer(
-        d_model=blueprint.d_model,
-        nhead=blueprint.num_heads,
-        dim_feedforward=blueprint.ffn_dim,
-        dropout=blueprint.dropout,
-        batch_first=True,
-    )
-    encoder = nn.TransformerEncoder(encoder_layer, num_layers=blueprint.num_layers)
-    token_embedding = nn.Embedding(blueprint.vocab_size, blueprint.d_model)
-    lm_head = nn.Linear(blueprint.d_model, blueprint.vocab_size)
-    return nn.ModuleDict(
-        {
-            "token_embedding": token_embedding,
-            "encoder": encoder,
-            "lm_head": lm_head,
-        }
-    )
+    class MiniTransformerLM(nn.Module):
+        def __init__(self):
+            super().__init__()
+            self.token_embedding = nn.Embedding(blueprint.vocab_size, blueprint.d_model)
+            self.position_embedding = nn.Embedding(blueprint.max_seq_len, blueprint.d_model)
+            layer = nn.TransformerEncoderLayer(
+                d_model=blueprint.d_model,
+                nhead=blueprint.num_heads,
+                dim_feedforward=blueprint.ffn_dim,
+                dropout=blueprint.dropout,
+                batch_first=True,
+            )
+            self.encoder = nn.TransformerEncoder(layer, num_layers=blueprint.num_layers)
+            self.norm = nn.LayerNorm(blueprint.d_model)
+            self.lm_head = nn.Linear(blueprint.d_model, blueprint.vocab_size)
+
+        def forward(self, input_ids):
+            seq_len = input_ids.shape[1]
+            if seq_len > blueprint.max_seq_len:
+                raise ValueError(f"sequence length {seq_len} exceeds max_seq_len={blueprint.max_seq_len}")
+            pos = torch.arange(seq_len, device=input_ids.device).unsqueeze(0).expand(input_ids.shape[0], seq_len)
+            x = self.token_embedding(input_ids) + self.position_embedding(pos)
+            x = self.encoder(x)
+            x = self.norm(x)
+            return self.lm_head(x)
+
+    return MiniTransformerLM()
 
 
 def _load_skeleton(ancestry_path: Path, skeleton_name: str | None) -> Dict[str, Any]:

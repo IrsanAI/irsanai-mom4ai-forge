@@ -13,7 +13,8 @@ from resonance_protocol import score_interactions
 from runtime_adapter import build_event
 from openai_agents_hook import derive_turn_metrics, derive_runtime_semantics
 from sdk_hooks import ResonanceSDKHook
-from mini_transformer_adapter import blueprint_from_skeleton
+from mini_transformer_adapter import blueprint_from_skeleton, build_pytorch_model
+from mini_transformer_trainer import train_once
 from chemie_manager import build_portfolio_report, parse_roadmap_from_readme
 from readme_sync_manager import build_sync_report
 from vendor_wiring import (
@@ -246,6 +247,46 @@ def test_mini_transformer_blueprint_ranges():
     assert 0.05 <= bp.dropout <= 0.25
 
 
+def test_mini_transformer_model_forward():
+    try:
+        import torch
+    except Exception:
+        return
+
+    bp = blueprint_from_skeleton(
+        {
+            "name": "forward-test",
+            "generation": 1.0,
+            "fitness": 0.5,
+            "facts": {"nodes": 16, "density": 0.1, "modularity": 0.2, "feedback_loops": 2},
+        }
+    )
+    model = build_pytorch_model(bp)
+    x = torch.randint(0, bp.vocab_size, (2, 12), dtype=torch.long)
+    y = model(x)
+    assert tuple(y.shape) == (2, 12, bp.vocab_size)
+
+
+def test_mini_transformer_training_mvp_runs():
+    try:
+        import torch  # noqa: F401
+    except Exception:
+        return
+
+    with tempfile.TemporaryDirectory() as tmp:
+        out = Path(tmp) / "mt"
+        metrics = train_once(
+            ancestry_json=ROOT / "ancestry.json",
+            output_dir=out,
+            steps=1,
+            batch_size=2,
+            seq_len=8,
+        )
+        assert metrics["steps"] == 1
+        assert (out / "mini_transformer.pt").exists()
+        assert (out / "train_metrics.json").exists()
+
+
 def test_chemie_manager_report_generation():
     readme_text = (ROOT / "README.md").read_text(encoding="utf-8")
     items = parse_roadmap_from_readme(readme_text)
@@ -278,6 +319,8 @@ if __name__ == "__main__":
     test_vendor_wiring_auto_provider_detects_anthropic()
     test_dashboard_index_html_present()
     test_mini_transformer_blueprint_ranges()
+    test_mini_transformer_model_forward()
+    test_mini_transformer_training_mvp_runs()
     test_chemie_manager_report_generation()
     test_readme_sync_manager_status()
     print("smoke tests passed")

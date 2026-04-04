@@ -2,7 +2,7 @@
 <!-- README_SYNC_STATUS_START -->
 🟢 **Readme Language Sync:** `up_to_date`  
 🌐 **Context Delta:** `0`  
-🕒 **Last Sync Check (UTC):** `2026-04-04T00:40:34Z`
+🕒 **Last Sync Check (UTC):** `2026-04-04T01:05:58Z`
 <!-- README_SYNC_STATUS_END -->
 
 **English** | [Deutsch](./README.md)
@@ -133,10 +133,10 @@ MomAI
   **Chemistry (Repo-Fit):** `78/100` 🟩🟩🟩⬜⬜
   **Coach Feedback:** Interaktive Graph-Ansicht macht Evolution und Contributor-Linien direkt greifbar.
 
-- [ ] Mini-transformer from graph skeletons
-  **Resonance:** `30/100` 🟧⬜⬜⬜⬜
-  **Chemistry (Repo-Fit):** `72/100` 🟩🟩🟩⬜⬜
-  **Coach Feedback:** Der zentrale „Moonshot“ Richtung Endprodukt/USP (Vorstufe: Blueprint-Adapter vorhanden).
+- [x] Mini-transformer from graph skeletons (MVP training + checkpointing)
+  **Resonance:** `58/100` 🟨🟨🟨⬜⬜
+  **Chemistry (Repo-Fit):** `81/100` 🟩🟩🟩🟩⬜
+  **Coach Feedback:** Von Blueprint zu trainierbarem Artefakt ist jetzt im Repo-End-to-End abbildbar.
 
 - [x] IrsanAI Chemie Manager (KPI interpretation + portfolio optimization)
   **Resonance:** `67/100` 🟩🟩🟩⬜⬜
@@ -187,4 +187,5 @@ Guides:
 - SDK Hooks: `docs/sdk_hooks.md`
 - Vendor Wiring: `docs/vendor_wiring.md`
 - Mini-Transformer Adapter: `docs/mini_transformer_adapter.md`
+- Mini-Transformer Training: `docs/mini_transformer_training.md`
 - IrsanAI Chemie Manager: `docs/chemie_manager.md`
