@@ -25,6 +25,7 @@ momai-sdk-hook = "sdk_hooks:main"
 momai-vendor-wire = "vendor_wiring:main"
 momai-mini-transformer = "mini_transformer_adapter:main"
 momai-chemie-manager = "chemie_manager:main"
+momai-readme-sync = "readme_sync_manager:main"
 
 [tool.setuptools]
 py-modules = [
@@ -41,6 +42,7 @@ py-modules = [
   "vendor_wiring",
   "mini_transformer_adapter",
   "chemie_manager",
+  "readme_sync_manager",
 ]
 
 [tool.setuptools.package-dir]

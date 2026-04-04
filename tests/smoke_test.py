@@ -15,6 +15,7 @@ from openai_agents_hook import derive_turn_metrics, derive_runtime_semantics
 from sdk_hooks import ResonanceSDKHook
 from mini_transformer_adapter import blueprint_from_skeleton
 from chemie_manager import build_portfolio_report, parse_roadmap_from_readme
+from readme_sync_manager import build_sync_report
 from vendor_wiring import (
     auto_wire_turn,
     extract_anthropic_tool_stats,
@@ -257,6 +258,12 @@ def test_chemie_manager_report_generation():
     assert isinstance(report.optimization_plan, list) and report.optimization_plan
 
 
+def test_readme_sync_manager_status():
+    report = build_sync_report(ROOT / "README.md", ROOT / "README.en.md")
+    assert report.context_delta_score >= 0
+    assert report.status == "up_to_date"
+
+
 if __name__ == "__main__":
     test_validate_resonance_event()
     test_resonance_scoring_bounds()
@@ -272,4 +279,5 @@ if __name__ == "__main__":
     test_dashboard_index_html_present()
     test_mini_transformer_blueprint_ranges()
     test_chemie_manager_report_generation()
+    test_readme_sync_manager_status()
     print("smoke tests passed")

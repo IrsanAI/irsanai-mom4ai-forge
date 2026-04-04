@@ -1,4 +1,9 @@
 # Mom4AI Forge
+<!-- README_SYNC_STATUS_START -->
+🟢 **Readme Language Sync:** `up_to_date`  
+🌐 **Context Delta:** `0`  
+🕒 **Last Sync Check (UTC):** `2026-04-04T00:26:03Z`
+<!-- README_SYNC_STATUS_END -->
 
 <p align="center">
   <img src="docs/images/momai-forge-vs-typical-nn.jpg" alt="MomAI Forge vs. typisches neuronales Netz" width="800"/>
@@ -11,7 +16,7 @@
 [![GitHub Pages](https://img.shields.io/badge/Live%20Demo-View%20Hall%20of%20Fame-brightgreen?style=for-the-badge&logo=githubpages)](https://irsanai.github.io/irsanai-mom4ai-forge/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
-**Deutsch** | [English](#english)
+**Deutsch** | [English](./README.en.md)
 
 ## Was ist Mom4AI Forge?
 
@@ -198,6 +203,11 @@ git push
   **Chemie (Repo-Fit):** `85/100` 🟩🟩🟩🟩⬜  
   **Coach-Feedback:** KPI-getriebene Priorisierung macht Roadmap-Steuerung reproduzierbar und mastermind-fähig.
 
+- [x] IrsanAI Readme Auto Sync Manager (DE/EN Delta + Statusanzeige)  
+  **Resonanz:** `64/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `88/100` 🟩🟩🟩🟩⬜  
+  **Coach-Feedback:** Mehrsprachigkeit bleibt nachhaltig konsistent statt über Zeit auseinanderzulaufen.
+
 ## Resonance Protocol (neu)
 
 Mom4AI bewertet nicht mehr nur Struktur, sondern kann auch **echte Interaktion** als Fitnesssignal einbeziehen:
@@ -271,14 +281,6 @@ SDK Hooks Guide: `docs/sdk_hooks.md`.
 Vendor Wiring Guide: `docs/vendor_wiring.md`.
 Mini-Transformer Adapter Guide: `docs/mini_transformer_adapter.md`.
 IrsanAI Chemie Manager Guide: `docs/chemie_manager.md`.
+Readme Sync Manager Guide: `docs/readme_sync_manager.md`.
 
 Made with ❤️ & many late-night runs by IrsanAI
-
----
-
-## English
-
-# Mom4AI Forge
-**The evolutionary AI mother giving birth to new neural network architectures**
-
-[... englische Version analog zur deutschen, kürzer gehalten wenn du willst ...]
