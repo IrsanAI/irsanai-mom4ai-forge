@@ -2,7 +2,7 @@
 <!-- README_SYNC_STATUS_START -->
 🟢 **Readme Language Sync:** `up_to_date`  
 🌐 **Context Delta:** `0`  
-🕒 **Last Sync Check (UTC):** `2026-04-04T11:57:01Z`
+🕒 **Last Sync Check (UTC):** `2026-04-04T12:36:48Z`
 <!-- README_SYNC_STATUS_END -->
 
 <p align="center">
@@ -240,6 +240,8 @@ docker run --rm -p 8080:80 -v "${PWD}/docs:/usr/share/nginx/html:ro" nginx:alpin
 Dann öffnen: `http://localhost:8080`
 
 So können User lokal dieselbe Hall-of-Fame-Ansicht sehen, inkl. Live-Reload der `ancestry.json`.
+Beim Auto-Push wird `ancestry.json` jetzt bewusst nach `docs/ancestry.json` gespiegelt,
+damit GitHub Pages dieselben Zahlen wie lokal zeigt.
 Wenn der Python-Hybrid-Server läuft, kommen zusätzlich lokale Endpunkte dazu:
 - `/api/local_stats` (lokale Top-5, User-/Skeleton-Counts, Resonanzverteilung)
 - `/api/sync_status` (Branch/Tracking/dirty worktree)

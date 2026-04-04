@@ -324,6 +324,12 @@ def test_resonance_lifecycle_states():
     assert report.event_count == 1
 
 
+def test_mom_forge_pages_ancestry_sync_present():
+    source = (ROOT / "src" / "mom_forge.py").read_text(encoding="utf-8")
+    assert "docs/ancestry.json" in source
+    assert "git\", \"add\", \"ancestry.json\", \"docs/ancestry.json\"" in source
+
+
 if __name__ == "__main__":
     test_validate_resonance_event()
     test_resonance_scoring_bounds()
@@ -343,4 +349,5 @@ if __name__ == "__main__":
     test_chemie_manager_report_generation()
     test_readme_sync_manager_status()
     test_resonance_lifecycle_states()
+    test_mom_forge_pages_ancestry_sync_present()
     print("smoke tests passed")

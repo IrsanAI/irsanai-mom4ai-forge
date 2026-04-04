@@ -9,15 +9,15 @@ jobs:
   readme-sync-check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.11"
       - name: Run Readme Sync Manager (check mode)
         run: |
           python src/readme_sync_manager.py --check
       - name: Upload sync report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: readme-sync-report
           path: docs/readme_sync_report.json

@@ -432,7 +432,11 @@ if __name__ == "__main__":
 
     with open(ancestry_path, 'w', encoding='utf-8') as f:
         json.dump(ancestry, f, indent=2, ensure_ascii=False)
-    print(f"Ancestry aktualisiert: {len(ancestry)} Skelette insgesamt")
+    # GitHub Pages liest aus docs/; daher ancestry auch dort spiegeln.
+    docs_ancestry_path = os.path.join("docs", "ancestry.json")
+    with open(docs_ancestry_path, 'w', encoding='utf-8') as f:
+        json.dump(ancestry, f, indent=2, ensure_ascii=False)
+    print(f"Ancestry aktualisiert: {len(ancestry)} Skelette insgesamt (root + docs)")
     # Nach dem ancestry-Speichern: User in users.json eintragen (nur beim ersten Mal oder wenn neu)
     users_path = "users.json"
     users = []
@@ -514,7 +518,7 @@ if __name__ == "__main__":
 
         # 4. Add + Commit + Push
         print("   → Add + Commit + Push...")
-        subprocess.run(["git", "add", "ancestry.json", "docs/images/", "users.json", ".user.json", "survivors/"],
+        subprocess.run(["git", "add", "ancestry.json", "docs/ancestry.json", "docs/images/", "users.json", ".user.json", "survivors/"],
                        check=True)
         commit_result = subprocess.run(
             ["git", "commit", "-m", f"Automatischer Upload: {len(survivors)} neue Skelette von {mom.user_id}"],
