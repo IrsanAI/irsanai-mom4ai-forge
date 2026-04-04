@@ -2,7 +2,7 @@
 <!-- README_SYNC_STATUS_START -->
 🟢 **Readme Language Sync:** `up_to_date`  
 🌐 **Context Delta:** `0`  
-🕒 **Last Sync Check (UTC):** `2026-04-04T00:26:03Z`
+🕒 **Last Sync Check (UTC):** `2026-04-04T00:40:34Z`
 <!-- README_SYNC_STATUS_END -->
 
 **English** | [Deutsch](./README.md)
@@ -38,29 +38,115 @@ MomAI
 ```
 
 ## Roadmap
-
 - [x] Auto-Fitness & Ancestry Tracking
+  **Resonance:** `88/100` 🟩🟩🟩🟩⬜
+  **Chemistry (Repo-Fit):** `90/100` 🟩🟩🟩🟩🟩
+  **Coach Feedback:** Starkes Fundament, stabil mit Datenhaltung verzahnt.
+
 - [x] Interactive Hall of Fame (search, filters, stats)
+  **Resonance:** `84/100` 🟩🟩🟩🟩⬜
+  **Chemistry (Repo-Fit):** `86/100` 🟩🟩🟩🟩⬜
+  **Coach Feedback:** Gute Sichtbarkeit von Fortschritt, motiviert Contributor.
+
 - [x] Automatic Push via PAT
+  **Resonance:** `72/100` 🟩🟩🟩⬜⬜
+  **Chemistry (Repo-Fit):** `78/100` 🟩🟩🟩⬜⬜
+  **Coach Feedback:** Nützlich, aber bleibt sicherheits- und token-sensitiv.
+
 - [x] Base Mutation & Crossover
+  **Resonance:** `81/100` 🟩🟩🟩🟩⬜
+  **Chemistry (Repo-Fit):** `85/100` 🟩🟩🟩🟩⬜
+  **Coach Feedback:** Klarer Evolutionssprung gegenüber rein zufälligen Geburten.
+
 - [x] Advanced Evolution (lineage-aware parent selection)
+  **Resonance:** `83/100` 🟩🟩🟩🟩⬜
+  **Chemistry (Repo-Fit):** `88/100` 🟩🟩🟩🟩⬜
+  **Coach Feedback:** Bessere Balance aus Leistung und Vielfalt im Genpool.
+
 - [x] Multi-objective Selection (fitness + resonance + diversity)
+  **Resonance:** `79/100` 🟩🟩🟩⬜⬜
+  **Chemistry (Repo-Fit):** `84/100` 🟩🟩🟩🟩⬜
+  **Coach Feedback:** Ab jetzt wird Diversität explizit als Ziel mitoptimiert.
+
 - [x] Initial Resonance Scoring (JSONL interaction score)
+  **Resonance:** `76/100` 🟩🟩🟩⬜⬜
+  **Chemistry (Repo-Fit):** `82/100` 🟩🟩🟩🟩⬜
+  **Coach Feedback:** Gute Brücke zwischen Theorie und implementierbarer Praxis.
+
 - [x] Live Resonance Ingestion (`POST /api/resonance_event`)
+  **Resonance:** `62/100` 🟨🟨🟨⬜⬜
+  **Chemistry (Repo-Fit):** `74/100` 🟩🟩🟩⬜⬜
+  **Coach Feedback:** Runtime-Eingang steht; als Nächstes Session-Memory + Streaming.
+
 - [x] Session Continuity (`resonance_sessions.json` aggregation)
+  **Resonance:** `68/100` 🟩🟩🟩⬜⬜
+  **Chemistry (Repo-Fit):** `77/100` 🟩🟩🟩⬜⬜
+  **Coach Feedback:** Kontinuität ist da; nächster Schritt ist Streaming + memory-aware weighting.
+
 - [x] Live Resonance Streaming (SSE)
+  **Resonance:** `73/100` 🟩🟩🟩⬜⬜
+  **Chemistry (Repo-Fit):** `79/100` 🟩🟩🟩⬜⬜
+  **Coach Feedback:** Kontinuierlicher Session-Flow steht; nächster Schritt sind native Chat/Agent-Adapter.
+
 - [x] Native Runtime Adapter (`momai-adapter`)
+  **Resonance:** `64/100` 🟩🟩🟩⬜⬜
+  **Chemistry (Repo-Fit):** `76/100` 🟩🟩🟩⬜⬜
+  **Coach Feedback:** Adapter-Basis steht; jetzt direkte Framework-Hooks pro Turn.
+
 - [x] OpenAI/Agents/Custom Hook Integration (`momai-hook`)
+  **Resonance:** `61/100` 🟨🟨🟨⬜⬜
+  **Chemistry (Repo-Fit):** `74/100` 🟩🟩🟩⬜⬜
+  **Coach Feedback:** Hook ist da; jetzt von Heuristik zu echten Runtime-Signalen gehen.
+
 - [x] Native Runtime Semantics (tool-calls/recovery/follow-up)
+  **Resonance:** `66/100` 🟩🟩🟩⬜⬜
+  **Chemistry (Repo-Fit):** `78/100` 🟩🟩🟩⬜⬜
+  **Coach Feedback:** Semantik ist integriert; jetzt echte SDK-Hooks automatisieren.
+
 - [x] Direct SDK Hooks (Agents/OpenAI/Custom)
+  **Resonance:** `69/100` 🟩🟩🟩⬜⬜
+  **Chemistry (Repo-Fit):** `80/100` 🟩🟩🟩🟩⬜
+  **Coach Feedback:** Hook-Layer steht; nächster Schritt ist echte Vendor-spezifische Auto-Wiring-Integration.
+
 - [x] Vendor-native Auto Wiring (OpenAI-like)
+  **Resonance:** `71/100` 🟩🟩🟩⬜⬜
+  **Chemistry (Repo-Fit):** `82/100` 🟩🟩🟩🟩⬜
+  **Coach Feedback:** Wire-up steht; nächster Schritt ist provider-spezifische Tiefe (SDK-native Objekte/Tracing).
+
 - [x] Provider-specific depth (OpenAI-like tracing)
+  **Resonance:** `74/100` 🟩🟩🟩⬜⬜
+  **Chemistry (Repo-Fit):** `83/100` 🟩🟩🟩🟩⬜
+  **Coach Feedback:** Der Hook liest jetzt echte Provider-Spuren, nicht nur statische Felder.
+
 - [x] Multi-provider backends (OpenAI-like + Anthropic-like normalization)
+  **Resonance:** `66/100` 🟩🟩🟩⬜⬜
+  **Chemistry (Repo-Fit):** `79/100` 🟩🟩🟩⬜⬜
+  **Coach Feedback:** Adapter spricht jetzt mehrere Payload-Stile und normalisiert Semantik konsistent.
+
 - [x] Community ranking & rarity badges
+  **Resonance:** `61/100` 🟩🟩🟩⬜⬜
+  **Chemistry (Repo-Fit):** `77/100` 🟩🟩🟩⬜⬜
+  **Coach Feedback:** Contributor-Ranking + Rarity-Badges stärken den Community-Loop sichtbar.
+
 - [x] Vis.js Evolution Tree in Hall of Fame
+  **Resonance:** `63/100` 🟩🟩🟩⬜⬜
+  **Chemistry (Repo-Fit):** `78/100` 🟩🟩🟩⬜⬜
+  **Coach Feedback:** Interaktive Graph-Ansicht macht Evolution und Contributor-Linien direkt greifbar.
+
 - [ ] Mini-transformer from graph skeletons
+  **Resonance:** `30/100` 🟧⬜⬜⬜⬜
+  **Chemistry (Repo-Fit):** `72/100` 🟩🟩🟩⬜⬜
+  **Coach Feedback:** Der zentrale „Moonshot“ Richtung Endprodukt/USP (Vorstufe: Blueprint-Adapter vorhanden).
+
 - [x] IrsanAI Chemie Manager (KPI interpretation + portfolio optimization)
+  **Resonance:** `67/100` 🟩🟩🟩⬜⬜
+  **Chemistry (Repo-Fit):** `85/100` 🟩🟩🟩🟩⬜
+  **Coach Feedback:** KPI-getriebene Priorisierung macht Roadmap-Steuerung reproduzierbar und mastermind-fähig.
+
 - [x] IrsanAI Readme Auto Sync Manager (DE/EN delta + status indicator)
+  **Resonance:** `64/100` 🟩🟩🟩⬜⬜
+  **Chemistry (Repo-Fit):** `88/100` 🟩🟩🟩🟩⬜
+  **Coach Feedback:** Mehrsprachigkeit bleibt nachhaltig konsistent statt über Zeit auseinanderzulaufen.
 
 ## Resonance Protocol
 

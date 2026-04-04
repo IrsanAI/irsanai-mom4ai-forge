@@ -43,6 +43,109 @@ def _extract_roadmap_items(md: str) -> int:
     return count
 
 
+def _extract_roadmap_block(md: str) -> tuple[int, int, list[str]] | None:
+    lines = md.splitlines()
+    start = None
+    end = None
+    for idx, line in enumerate(lines):
+        if line.startswith("## Roadmap") or line.startswith("## Roadmap &"):
+            start = idx
+            continue
+        if start is not None and idx > start and line.startswith("## "):
+            end = idx
+            break
+    if start is None:
+        return None
+    if end is None:
+        end = len(lines)
+    return start, end, lines
+
+
+def _extract_de_visual_triplets(md: str) -> List[tuple[str, str, str]]:
+    block = _extract_roadmap_block(md)
+    if not block:
+        return []
+    start, end, lines = block
+    visuals: List[tuple[str, str, str]] = []
+    i = start + 1
+    while i < end:
+        if lines[i].strip().startswith("- ["):
+            resonanz = ""
+            chemie = ""
+            feedback = ""
+            for j in range(i + 1, min(i + 8, end)):
+                probe = lines[j].strip()
+                if probe.startswith("- ["):
+                    break
+                if probe.startswith("**Resonanz:**"):
+                    resonanz = probe.replace("**Resonanz:**", "**Resonance:**", 1)
+                elif probe.startswith("**Chemie"):
+                    chemie = probe.replace("**Chemie (Repo-Fit):**", "**Chemistry (Repo-Fit):**", 1)
+                elif probe.startswith("**Coach-Feedback:**"):
+                    feedback = probe.replace("**Coach-Feedback:**", "**Coach Feedback:**", 1)
+            visuals.append((resonanz, chemie, feedback))
+        i += 1
+    return visuals
+
+
+def _sync_en_roadmap_visuals(de_md: str, en_md: str) -> str:
+    de_visuals = _extract_de_visual_triplets(de_md)
+    block = _extract_roadmap_block(en_md)
+    if not block or not de_visuals:
+        return en_md
+
+    start, end, lines = block
+    out = lines[: start + 1]
+    body = lines[start + 1 : end]
+    item_idx = -1
+    i = 0
+    while i < len(body):
+        line = body[i]
+        if line.strip().startswith("- ["):
+            item_idx += 1
+            out.append(line)
+            # skip existing detail lines and blank lines until next roadmap item/heading
+            j = i + 1
+            while j < len(body):
+                probe = body[j].strip()
+                if probe.startswith("- ["):
+                    break
+                j += 1
+
+            if 0 <= item_idx < len(de_visuals):
+                resonanz, chemie, feedback = de_visuals[item_idx]
+                if resonanz:
+                    out.append(f"  {resonanz}")
+                if chemie:
+                    out.append(f"  {chemie}")
+                if feedback:
+                    out.append(f"  {feedback}")
+                out.append("")
+            i = j
+            continue
+        i += 1
+
+    out.extend(lines[end:])
+    return "\n".join(out).rstrip() + "\n"
+
+
+def _extract_visual_line_count(md: str) -> int:
+    block = _extract_roadmap_block(md)
+    if not block:
+        return 0
+    start, end, lines = block
+    count = 0
+    for line in lines[start:end]:
+        s = line.strip()
+        if s.startswith("**Resonanz:**") or s.startswith("**Resonance:**"):
+            count += 1
+        if s.startswith("**Chemie") or s.startswith("**Chemistry"):
+            count += 1
+        if s.startswith("**Coach-Feedback:**") or s.startswith("**Coach Feedback:**"):
+            count += 1
+    return count
+
+
 def _normalize_title(title: str) -> str:
     t = title.lower().strip()
     replacements = {
@@ -95,7 +198,11 @@ def build_sync_report(readme_de: Path, readme_en: Path) -> ReadmeSyncReport:
     en_roadmap = _extract_roadmap_items(en_text)
     roadmap_delta = abs(de_roadmap - en_roadmap)
 
-    context_delta = len(missing_in_en) + len(missing_in_de) + roadmap_delta
+    de_visual_lines = _extract_visual_line_count(de_text)
+    en_visual_lines = _extract_visual_line_count(en_text)
+    visual_delta = abs(de_visual_lines - en_visual_lines)
+
+    context_delta = len(missing_in_en) + len(missing_in_de) + roadmap_delta + visual_delta
     status = "up_to_date" if context_delta == 0 else "out_of_sync"
 
     return ReadmeSyncReport(
@@ -137,11 +244,15 @@ def main() -> int:
     de_path = Path(args.de)
     en_path = Path(args.en)
 
-    report = build_sync_report(de_path, en_path)
-    block = _build_sync_block(report)
-
     de_text = de_path.read_text(encoding="utf-8")
     en_text = en_path.read_text(encoding="utf-8")
+    synced_en_text = _sync_en_roadmap_visuals(de_text, en_text)
+    if synced_en_text != en_text:
+        en_path.write_text(synced_en_text, encoding="utf-8")
+        en_text = synced_en_text
+
+    report = build_sync_report(de_path, en_path)
+    block = _build_sync_block(report)
     de_path.write_text(_upsert_sync_block(de_text, block), encoding="utf-8")
     en_path.write_text(_upsert_sync_block(en_text, block), encoding="utf-8")
 
