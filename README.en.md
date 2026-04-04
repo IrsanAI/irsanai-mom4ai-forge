@@ -2,7 +2,7 @@
 <!-- README_SYNC_STATUS_START -->
 🟢 **Readme Language Sync:** `up_to_date`  
 🌐 **Context Delta:** `0`  
-🕒 **Last Sync Check (UTC):** `2026-04-04T01:05:58Z`
+🕒 **Last Sync Check (UTC):** `2026-04-04T11:57:01Z`
 <!-- README_SYNC_STATUS_END -->
 
 **English** | [Deutsch](./README.md)
@@ -148,6 +148,11 @@ MomAI
   **Chemistry (Repo-Fit):** `88/100` 🟩🟩🟩🟩⬜
   **Coach Feedback:** Mehrsprachigkeit bleibt nachhaltig konsistent statt über Zeit auseinanderzulaufen.
 
+- [x] Resonance Lifecycle Survival Engine (thriving/alive/dormant/reconnecting/extinct)
+  **Resonance:** `70/100` 🟩🟩🟩⬜⬜
+  **Chemistry (Repo-Fit):** `86/100` 🟩🟩🟩🟩⬜
+  **Coach Feedback:** Modelliert produktnah, dass Überleben erst über echte User-Produkt-Resonanz entschieden wird.
+
 ## Resonance Protocol
 
 Mom4AI uses real interaction events as an additional fitness signal:
@@ -189,3 +194,4 @@ Guides:
 - Mini-Transformer Adapter: `docs/mini_transformer_adapter.md`
 - Mini-Transformer Training: `docs/mini_transformer_training.md`
 - IrsanAI Chemie Manager: `docs/chemie_manager.md`
+- Resonance Lifecycle: `docs/resonance_lifecycle.md`

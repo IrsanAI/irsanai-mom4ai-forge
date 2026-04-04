@@ -15,6 +15,7 @@ from openai_agents_hook import derive_turn_metrics, derive_runtime_semantics
 from sdk_hooks import ResonanceSDKHook
 from mini_transformer_adapter import blueprint_from_skeleton, build_pytorch_model
 from mini_transformer_trainer import train_once
+from resonance_lifecycle import evaluate_skeleton_lifecycle
 from chemie_manager import build_portfolio_report, parse_roadmap_from_readme
 from readme_sync_manager import build_sync_report
 from vendor_wiring import (
@@ -305,6 +306,24 @@ def test_readme_sync_manager_status():
     assert report.status == "up_to_date"
 
 
+def test_resonance_lifecycle_states():
+    events = [
+        {
+            "skeleton_name": "demo-a",
+            "session_id": "s1",
+            "intent_match": 0.9,
+            "context_match": 0.85,
+            "tone_match": 0.8,
+            "reliability": 0.82,
+            "coordination": 0.88,
+            "timestamp": "2026-04-03T00:00:00Z",
+        }
+    ]
+    report = evaluate_skeleton_lifecycle(events)
+    assert report.state in {"thriving", "alive", "dormant", "reconnecting", "extinct"}
+    assert report.event_count == 1
+
+
 if __name__ == "__main__":
     test_validate_resonance_event()
     test_resonance_scoring_bounds()
@@ -323,4 +342,5 @@ if __name__ == "__main__":
     test_mini_transformer_training_mvp_runs()
     test_chemie_manager_report_generation()
     test_readme_sync_manager_status()
+    test_resonance_lifecycle_states()
     print("smoke tests passed")
