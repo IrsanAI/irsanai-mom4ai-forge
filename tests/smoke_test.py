@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 from pathlib import Path
 import sys
 import tempfile
@@ -16,6 +17,8 @@ from sdk_hooks import ResonanceSDKHook
 from mini_transformer_adapter import blueprint_from_skeleton, build_pytorch_model
 from mini_transformer_trainer import train_once
 from resonance_lifecycle import evaluate_skeleton_lifecycle
+from benchmark_runner import build_benchmark_report
+from quality_gates import evaluate_gates
 from chemie_manager import build_portfolio_report, parse_roadmap_from_readme
 from readme_sync_manager import build_sync_report
 from vendor_wiring import (
@@ -330,6 +333,35 @@ def test_mom_forge_pages_ancestry_sync_present():
     assert "git\", \"add\", \"ancestry.json\", \"docs/ancestry.json\"" in source
 
 
+def test_benchmark_and_quality_gates():
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp_path = Path(tmp)
+        ancestry_path = tmp_path / "ancestry.json"
+        ancestry_path.write_text(
+            json.dumps(
+                [
+                    {"fitness": 0.4, "facts": {"dominant_type": "myzel_netz"}, "resonance_classification": "no_data"},
+                    {"fitness": 0.2, "facts": {"dominant_type": "ameisen_schwarm"}, "resonance_classification": "no_data"},
+                ]
+            ),
+            encoding="utf-8",
+        )
+        readme_sync_path = tmp_path / "readme_sync_report.json"
+        readme_sync_path.write_text(json.dumps({"status": "up_to_date", "context_delta_score": 0}), encoding="utf-8")
+        lifecycle_path = tmp_path / "lifecycle.json"
+        lifecycle_path.write_text(json.dumps({"population_size": 0, "state_counts": {}}), encoding="utf-8")
+
+        report = build_benchmark_report(
+            ancestry_path=ancestry_path,
+            resonance_events_path=tmp_path / "events.jsonl",
+            readme_sync_report_path=readme_sync_path,
+            lifecycle_report_path=lifecycle_path,
+        )
+        gates = evaluate_gates(report)
+        assert report["kpis"]["total_skeletons"] == 2
+        assert any(g.name == "context_delta_zero" and g.passed for g in gates)
+
+
 if __name__ == "__main__":
     test_validate_resonance_event()
     test_resonance_scoring_bounds()
@@ -350,4 +382,5 @@ if __name__ == "__main__":
     test_readme_sync_manager_status()
     test_resonance_lifecycle_states()
     test_mom_forge_pages_ancestry_sync_present()
+    test_benchmark_and_quality_gates()
     print("smoke tests passed")

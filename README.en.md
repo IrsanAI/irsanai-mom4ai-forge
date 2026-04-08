@@ -2,7 +2,7 @@
 <!-- README_SYNC_STATUS_START -->
 🟢 **Readme Language Sync:** `up_to_date`  
 🌐 **Context Delta:** `0`  
-🕒 **Last Sync Check (UTC):** `2026-04-04T12:36:48Z`
+🕒 **Last Sync Check (UTC):** `2026-04-08T21:17:24Z`
 <!-- README_SYNC_STATUS_END -->
 
 **English** | [Deutsch](./README.md)
@@ -153,6 +153,11 @@ MomAI
   **Chemistry (Repo-Fit):** `86/100` 🟩🟩🟩🟩⬜
   **Coach Feedback:** Modelliert produktnah, dass Überleben erst über echte User-Produkt-Resonanz entschieden wird.
 
+- [x] Benchmark Runner + Quality Gates (KPI snapshot + minimum criteria)
+  **Resonance:** `65/100` 🟩🟩🟩⬜⬜
+  **Chemistry (Repo-Fit):** `89/100` 🟩🟩🟩🟩⬜
+  **Coach Feedback:** Hebt das Repo von „funktioniert“ zu „messbar stabil“ mit reproduzierbaren Qualitätsgrenzen.
+
 ## Resonance Protocol
 
 Mom4AI uses real interaction events as an additional fitness signal:
@@ -195,3 +200,5 @@ Guides:
 - Mini-Transformer Training: `docs/mini_transformer_training.md`
 - IrsanAI Chemie Manager: `docs/chemie_manager.md`
 - Resonance Lifecycle: `docs/resonance_lifecycle.md`
+- Benchmark Runner: `docs/benchmark_runner.md`
+- Quality Gates: `docs/quality_gates.md`

@@ -28,6 +28,8 @@ momai-chemie-manager = "chemie_manager:main"
 momai-readme-sync = "readme_sync_manager:main"
 momai-mini-train = "mini_transformer_trainer:main"
 momai-lifecycle = "resonance_lifecycle:main"
+momai-benchmark = "benchmark_runner:main"
+momai-quality-gates = "quality_gates:main"
 
 [tool.setuptools]
 py-modules = [
@@ -47,6 +49,8 @@ py-modules = [
   "readme_sync_manager",
   "mini_transformer_trainer",
   "resonance_lifecycle",
+  "benchmark_runner",
+  "quality_gates",
 ]
 
 [tool.setuptools.package-dir]
