@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "gates": [
+    {
+      "name": "total_skeletons_min",
+      "passed": true,
+      "detail": "total_skeletons=34 (min=30)"
+    },
+    {
+      "name": "avg_fitness_min",
+      "passed": true,
+      "detail": "avg_fitness=0.3081 (min=0.20)"
+    },
+    {
+      "name": "readme_sync_up_to_date",
+      "passed": true,
+      "detail": "readme_sync_status=up_to_date"
+    },
+    {
+      "name": "context_delta_zero",
+      "passed": true,
+      "detail": "readme_context_delta=0"
+    }
+  ]
+}
