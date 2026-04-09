@@ -1,0 +1,1581 @@
+{
+  "name": "VogelMyzel-G1.636388888888889-399-c57f4347",
+  "generation": 0.6363888888888889,
+  "mixture": {
+    "schwarmfisch": 4.84,
+    "quorum_sensing": 2.81,
+    "slime_mold": 0.0,
+    "korallen_symbiose": 3.51,
+    "oktopus_nervensystem": 0.0,
+    "vogel_formation": 22.31,
+    "mensch_gehirn": 0.0,
+    "ameisen_schwarm": 0.0,
+    "myzel_netz": 22.16,
+    "fledermaus_echolot": 4.22,
+    "algen_bluete": 13.71,
+    "vogelzug": 6.07,
+    "bienen_schwarm": 0.97,
+    "termitenbau": 9.82,
+    "wolf_rudel_jagd": 0.0,
+    "schnecken_chemospur": 7.68,
+    "korallenriff": 1.91
+  },
+  "fitness": 0.44240704024644495,
+  "timestamp": "20260404_142048",
+  "graph_data": {
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 0
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 1
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 2
+      },
+      {
+        "type": "MyzelRouter",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 3
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 4
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 5
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 6
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 7
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 8
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 9
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 10
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 11
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 12
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 13
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 14
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 15
+      },
+      {
+        "type": "MyzelRouter",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 16
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 17
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 18
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 19
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 20
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 21
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 22
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 23
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 24
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 25
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 26
+      },
+      {
+        "type": "MyzelRouter",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 27
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 28
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 29
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "schwarmfisch": 4.84,
+          "quorum_sensing": 2.81,
+          "slime_mold": 0.0,
+          "korallen_symbiose": 3.51,
+          "oktopus_nervensystem": 0.0,
+          "vogel_formation": 22.31,
+          "mensch_gehirn": 0.0,
+          "ameisen_schwarm": 0.0,
+          "myzel_netz": 22.16,
+          "fledermaus_echolot": 4.22,
+          "algen_bluete": 13.71,
+          "vogelzug": 6.07,
+          "bienen_schwarm": 0.97,
+          "termitenbau": 9.82,
+          "wolf_rudel_jagd": 0.0,
+          "schnecken_chemospur": 7.68,
+          "korallenriff": 1.91
+        },
+        "id": 30
+      }
+    ],
+    "edges": [
+      {
+        "weight": 0.5623749711158773,
+        "type": "forward",
+        "source": 0,
+        "target": 3
+      },
+      {
+        "weight": 0.5743637771814042,
+        "type": "feedback",
+        "source": 0,
+        "target": 4
+      },
+      {
+        "weight": 0.693957144102764,
+        "type": "forward",
+        "source": 0,
+        "target": 6
+      },
+      {
+        "weight": 0.5339565908730172,
+        "type": "forward",
+        "source": 0,
+        "target": 12
+      },
+      {
+        "weight": 1.1044200456530358,
+        "type": "forward",
+        "source": 0,
+        "target": 13
+      },
+      {
+        "weight": 0.8944264084294618,
+        "type": "forward",
+        "source": 0,
+        "target": 14
+      },
+      {
+        "weight": 0.5435794576454275,
+        "type": "forward",
+        "source": 0,
+        "target": 20
+      },
+      {
+        "weight": 1.060558083123821,
+        "type": "forward",
+        "source": 0,
+        "target": 24
+      },
+      {
+        "weight": 1.4609743963842272,
+        "type": "forward",
+        "source": 0,
+        "target": 25
+      },
+      {
+        "weight": 1.3112236187808854,
+        "type": "forward",
+        "source": 0,
+        "target": 30
+      },
+      {
+        "weight": 0.8323285184519954,
+        "type": "forward",
+        "source": 1,
+        "target": 3
+      },
+      {
+        "weight": 0.848915846247307,
+        "type": "forward",
+        "source": 1,
+        "target": 8
+      },
+      {
+        "weight": 0.8403140314881182,
+        "type": "forward",
+        "source": 1,
+        "target": 13
+      },
+      {
+        "weight": 0.7118195417150692,
+        "type": "forward",
+        "source": 1,
+        "target": 17
+      },
+      {
+        "weight": 0.5970783329723929,
+        "type": "forward",
+        "source": 1,
+        "target": 24
+      },
+      {
+        "weight": 1.0974457664598636,
+        "type": "forward",
+        "source": 1,
+        "target": 25
+      },
+      {
+        "weight": 1.2848988056495818,
+        "type": "forward",
+        "source": 1,
+        "target": 27
+      },
+      {
+        "weight": 0.9021814665520774,
+        "type": "forward",
+        "source": 1,
+        "target": 28
+      },
+      {
+        "weight": 1.1230494316343096,
+        "type": "forward",
+        "source": 1,
+        "target": 29
+      },
+      {
+        "weight": 0.9955089730668318,
+        "type": "forward",
+        "source": 1,
+        "target": 30
+      },
+      {
+        "weight": 1.380575922197719,
+        "type": "forward",
+        "source": 2,
+        "target": 3
+      },
+      {
+        "weight": 0.8664580927524471,
+        "type": "forward",
+        "source": 2,
+        "target": 9
+      },
+      {
+        "weight": 0.616009649477666,
+        "type": "forward",
+        "source": 2,
+        "target": 15
+      },
+      {
+        "weight": 0.954151407346869,
+        "type": "forward",
+        "source": 2,
+        "target": 21
+      },
+      {
+        "weight": 0.8728346350198317,
+        "type": "forward",
+        "source": 2,
+        "target": 23
+      },
+      {
+        "weight": 0.8091045691751295,
+        "type": "forward",
+        "source": 2,
+        "target": 25
+      },
+      {
+        "weight": 1.0624427519442876,
+        "type": "forward",
+        "source": 2,
+        "target": 29
+      },
+      {
+        "weight": 0.5055782102677838,
+        "type": "forward",
+        "source": 3,
+        "target": 4
+      },
+      {
+        "weight": 1.1235141517392706,
+        "type": "forward",
+        "source": 3,
+        "target": 7
+      },
+      {
+        "weight": 1.1421362939014936,
+        "type": "forward",
+        "source": 3,
+        "target": 8
+      },
+      {
+        "weight": 1.3644713720953532,
+        "type": "forward",
+        "source": 3,
+        "target": 9
+      },
+      {
+        "weight": 0.6140394740666686,
+        "type": "forward",
+        "source": 3,
+        "target": 12
+      },
+      {
+        "weight": 1.2039349594444242,
+        "type": "forward",
+        "source": 3,
+        "target": 16
+      },
+      {
+        "weight": 1.1686825603770048,
+        "type": "forward",
+        "source": 3,
+        "target": 20
+      },
+      {
+        "weight": 0.8751628792366533,
+        "type": "forward",
+        "source": 3,
+        "target": 22
+      },
+      {
+        "weight": 1.3508824410403641,
+        "type": "forward",
+        "source": 3,
+        "target": 23
+      },
+      {
+        "weight": 1.4079676090821032,
+        "type": "forward",
+        "source": 3,
+        "target": 25
+      },
+      {
+        "weight": 0.5677657338110738,
+        "type": "forward",
+        "source": 3,
+        "target": 26
+      },
+      {
+        "weight": 0.9985151220085813,
+        "type": "forward",
+        "source": 3,
+        "target": 28
+      },
+      {
+        "weight": 1.1302618930923325,
+        "type": "forward",
+        "source": 4,
+        "target": 8
+      },
+      {
+        "weight": 0.6155674881989656,
+        "type": "forward",
+        "source": 4,
+        "target": 11
+      },
+      {
+        "weight": 0.8378322311409013,
+        "type": "forward",
+        "source": 4,
+        "target": 14
+      },
+      {
+        "weight": 0.9880813828065949,
+        "type": "forward",
+        "source": 4,
+        "target": 17
+      },
+      {
+        "weight": 1.4697877665514483,
+        "type": "forward",
+        "source": 4,
+        "target": 18
+      },
+      {
+        "weight": 1.102364024921525,
+        "type": "forward",
+        "source": 4,
+        "target": 19
+      },
+      {
+        "weight": 1.181340773749933,
+        "type": "forward",
+        "source": 4,
+        "target": 22
+      },
+      {
+        "weight": 1.412853419074278,
+        "type": "forward",
+        "source": 4,
+        "target": 23
+      },
+      {
+        "weight": 1.4294782453174286,
+        "type": "forward",
+        "source": 4,
+        "target": 26
+      },
+      {
+        "weight": 0.7725365338575025,
+        "type": "feedback",
+        "source": 4,
+        "target": 5
+      },
+      {
+        "weight": 1.447875910782615,
+        "type": "forward",
+        "source": 5,
+        "target": 10
+      },
+      {
+        "weight": 1.3032687279583932,
+        "type": "forward",
+        "source": 5,
+        "target": 11
+      },
+      {
+        "weight": 0.5676832797779657,
+        "type": "forward",
+        "source": 5,
+        "target": 17
+      },
+      {
+        "weight": 0.9832941835918269,
+        "type": "forward",
+        "source": 5,
+        "target": 25
+      },
+      {
+        "weight": 1.258017329689887,
+        "type": "forward",
+        "source": 5,
+        "target": 27
+      },
+      {
+        "weight": 0.8301613136599845,
+        "type": "forward",
+        "source": 5,
+        "target": 29
+      },
+      {
+        "weight": 1.0040549093737456,
+        "type": "forward",
+        "source": 5,
+        "target": 30
+      },
+      {
+        "weight": 0.7102184348054678,
+        "type": "forward",
+        "source": 6,
+        "target": 7
+      },
+      {
+        "weight": 0.7065750314543273,
+        "type": "forward",
+        "source": 6,
+        "target": 10
+      },
+      {
+        "weight": 1.1170516795293652,
+        "type": "forward",
+        "source": 6,
+        "target": 11
+      },
+      {
+        "weight": 0.5381832572611172,
+        "type": "forward",
+        "source": 6,
+        "target": 13
+      },
+      {
+        "weight": 0.6773876005984711,
+        "type": "forward",
+        "source": 6,
+        "target": 15
+      },
+      {
+        "weight": 0.8853191725302045,
+        "type": "forward",
+        "source": 6,
+        "target": 19
+      },
+      {
+        "weight": 0.8479580039185988,
+        "type": "forward",
+        "source": 6,
+        "target": 20
+      },
+      {
+        "weight": 0.586680966454247,
+        "type": "forward",
+        "source": 6,
+        "target": 23
+      },
+      {
+        "weight": 0.755407490422167,
+        "type": "forward",
+        "source": 6,
+        "target": 27
+      },
+      {
+        "weight": 0.5648051605180369,
+        "type": "forward",
+        "source": 7,
+        "target": 8
+      },
+      {
+        "weight": 0.6170294470281382,
+        "type": "forward",
+        "source": 7,
+        "target": 9
+      },
+      {
+        "weight": 1.2577585007149366,
+        "type": "forward",
+        "source": 7,
+        "target": 10
+      },
+      {
+        "weight": 1.2054876945314557,
+        "type": "forward",
+        "source": 7,
+        "target": 12
+      },
+      {
+        "weight": 1.0220482806660265,
+        "type": "forward",
+        "source": 7,
+        "target": 21
+      },
+      {
+        "weight": 0.909295856547971,
+        "type": "forward",
+        "source": 7,
+        "target": 26
+      },
+      {
+        "weight": 1.4385795422553582,
+        "type": "forward",
+        "source": 7,
+        "target": 28
+      },
+      {
+        "weight": 0.818258187823437,
+        "type": "forward",
+        "source": 8,
+        "target": 11
+      },
+      {
+        "weight": 0.6434510841863857,
+        "type": "forward",
+        "source": 8,
+        "target": 17
+      },
+      {
+        "weight": 0.7812483101543779,
+        "type": "forward",
+        "source": 8,
+        "target": 19
+      },
+      {
+        "weight": 1.1394770566083974,
+        "type": "forward",
+        "source": 8,
+        "target": 21
+      },
+      {
+        "weight": 1.0929650533694761,
+        "type": "forward",
+        "source": 8,
+        "target": 22
+      },
+      {
+        "weight": 1.4655305732002044,
+        "type": "forward",
+        "source": 8,
+        "target": 25
+      },
+      {
+        "weight": 0.9934317340137383,
+        "type": "forward",
+        "source": 9,
+        "target": 13
+      },
+      {
+        "weight": 0.7662287103919885,
+        "type": "forward",
+        "source": 9,
+        "target": 17
+      },
+      {
+        "weight": 0.9091287548595549,
+        "type": "forward",
+        "source": 9,
+        "target": 19
+      },
+      {
+        "weight": 1.120944651055635,
+        "type": "forward",
+        "source": 9,
+        "target": 20
+      },
+      {
+        "weight": 0.9202534905016039,
+        "type": "forward",
+        "source": 9,
+        "target": 24
+      },
+      {
+        "weight": 0.6145341644519913,
+        "type": "forward",
+        "source": 9,
+        "target": 27
+      },
+      {
+        "weight": 1.0660887333440772,
+        "type": "forward",
+        "source": 9,
+        "target": 29
+      },
+      {
+        "weight": 0.682263650524232,
+        "type": "forward",
+        "source": 10,
+        "target": 11
+      },
+      {
+        "weight": 1.4762670585920081,
+        "type": "forward",
+        "source": 10,
+        "target": 25
+      },
+      {
+        "weight": 0.6241792445244905,
+        "type": "forward",
+        "source": 11,
+        "target": 13
+      },
+      {
+        "weight": 0.8436148793673329,
+        "type": "forward",
+        "source": 11,
+        "target": 15
+      },
+      {
+        "weight": 1.427898433999208,
+        "type": "forward",
+        "source": 11,
+        "target": 16
+      },
+      {
+        "weight": 1.444214000499702,
+        "type": "forward",
+        "source": 11,
+        "target": 17
+      },
+      {
+        "weight": 0.5579161962286919,
+        "type": "forward",
+        "source": 11,
+        "target": 22
+      },
+      {
+        "weight": 0.7153031456849688,
+        "type": "forward",
+        "source": 11,
+        "target": 29
+      },
+      {
+        "weight": 1.0666366603641695,
+        "type": "forward",
+        "source": 12,
+        "target": 18
+      },
+      {
+        "weight": 0.6453246524050091,
+        "type": "forward",
+        "source": 12,
+        "target": 25
+      },
+      {
+        "weight": 0.7188504777538295,
+        "type": "forward",
+        "source": 12,
+        "target": 30
+      },
+      {
+        "weight": 0.7830876427973105,
+        "type": "feedback",
+        "source": 12,
+        "target": 12
+      },
+      {
+        "weight": 0.8580108674245105,
+        "type": "forward",
+        "source": 13,
+        "target": 15
+      },
+      {
+        "weight": 0.6747293502599527,
+        "type": "forward",
+        "source": 13,
+        "target": 19
+      },
+      {
+        "weight": 1.4528965805098395,
+        "type": "forward",
+        "source": 13,
+        "target": 23
+      },
+      {
+        "weight": 1.2590488237630426,
+        "type": "forward",
+        "source": 13,
+        "target": 26
+      },
+      {
+        "weight": 0.6254974643198108,
+        "type": "forward",
+        "source": 13,
+        "target": 28
+      },
+      {
+        "weight": 0.7053789741878319,
+        "type": "feedback",
+        "source": 13,
+        "target": 16
+      },
+      {
+        "weight": 1.3402908968846043,
+        "type": "forward",
+        "source": 14,
+        "target": 19
+      },
+      {
+        "weight": 0.8241374174658608,
+        "type": "forward",
+        "source": 14,
+        "target": 20
+      },
+      {
+        "weight": 0.6475076126231194,
+        "type": "forward",
+        "source": 14,
+        "target": 28
+      },
+      {
+        "weight": 0.9717214375138638,
+        "type": "forward",
+        "source": 15,
+        "target": 18
+      },
+      {
+        "weight": 0.8582347085700286,
+        "type": "forward",
+        "source": 15,
+        "target": 20
+      },
+      {
+        "weight": 1.1052816416070326,
+        "type": "forward",
+        "source": 15,
+        "target": 21
+      },
+      {
+        "weight": 0.5958309657389703,
+        "type": "forward",
+        "source": 15,
+        "target": 23
+      },
+      {
+        "weight": 1.1887465474957954,
+        "type": "forward",
+        "source": 15,
+        "target": 26
+      },
+      {
+        "weight": 0.743008991177978,
+        "type": "forward",
+        "source": 16,
+        "target": 17
+      },
+      {
+        "weight": 1.349651857846919,
+        "type": "forward",
+        "source": 16,
+        "target": 18
+      },
+      {
+        "weight": 1.0725361182157047,
+        "type": "forward",
+        "source": 16,
+        "target": 21
+      },
+      {
+        "weight": 1.1981828803247756,
+        "type": "forward",
+        "source": 16,
+        "target": 22
+      },
+      {
+        "weight": 0.503180127822801,
+        "type": "forward",
+        "source": 16,
+        "target": 29
+      },
+      {
+        "weight": 0.7026777157111269,
+        "type": "forward",
+        "source": 16,
+        "target": 30
+      },
+      {
+        "weight": 1.4900432118265265,
+        "type": "forward",
+        "source": 17,
+        "target": 20
+      },
+      {
+        "weight": 1.496248169869307,
+        "type": "forward",
+        "source": 17,
+        "target": 28
+      },
+      {
+        "weight": 1.1804473494962087,
+        "type": "forward",
+        "source": 18,
+        "target": 23
+      },
+      {
+        "weight": 1.4917714377371887,
+        "type": "forward",
+        "source": 18,
+        "target": 26
+      },
+      {
+        "weight": 1.2722507273788728,
+        "type": "forward",
+        "source": 18,
+        "target": 28
+      },
+      {
+        "weight": 1.2859478629449927,
+        "type": "forward",
+        "source": 19,
+        "target": 20
+      },
+      {
+        "weight": 0.7636674975282088,
+        "type": "forward",
+        "source": 19,
+        "target": 23
+      },
+      {
+        "weight": 0.9692734353456072,
+        "type": "forward",
+        "source": 19,
+        "target": 26
+      },
+      {
+        "weight": 0.6124160021717946,
+        "type": "forward",
+        "source": 19,
+        "target": 29
+      },
+      {
+        "weight": 0.3720926945947648,
+        "type": "feedback",
+        "source": 19,
+        "target": 27
+      },
+      {
+        "weight": 0.7305901949422812,
+        "type": "forward",
+        "source": 20,
+        "target": 22
+      },
+      {
+        "weight": 1.4529860533895258,
+        "type": "forward",
+        "source": 20,
+        "target": 26
+      },
+      {
+        "weight": 0.8665901382390451,
+        "type": "forward",
+        "source": 22,
+        "target": 23
+      },
+      {
+        "weight": 1.1053437540640565,
+        "type": "forward",
+        "source": 22,
+        "target": 25
+      },
+      {
+        "weight": 1.0916039846214116,
+        "type": "forward",
+        "source": 23,
+        "target": 28
+      },
+      {
+        "weight": 0.7461458485956087,
+        "type": "forward",
+        "source": 24,
+        "target": 26
+      },
+      {
+        "weight": 1.0903719787768242,
+        "type": "forward",
+        "source": 24,
+        "target": 28
+      },
+      {
+        "weight": 0.7388078336379683,
+        "type": "forward",
+        "source": 25,
+        "target": 27
+      },
+      {
+        "weight": 1.3271013022477312,
+        "type": "forward",
+        "source": 26,
+        "target": 30
+      },
+      {
+        "weight": 1.4558824223889753,
+        "type": "forward",
+        "source": 27,
+        "target": 30
+      },
+      {
+        "weight": 0.8289185117111608,
+        "type": "forward",
+        "source": 28,
+        "target": 29
+      },
+      {
+        "weight": 1.392800022643284,
+        "type": "forward",
+        "source": 29,
+        "target": 30
+      }
+    ]
+  }
+}
