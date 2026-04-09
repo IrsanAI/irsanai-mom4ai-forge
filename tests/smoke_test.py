@@ -45,6 +45,42 @@ def test_validate_resonance_event():
     missing_ok, missing_msg = _validate_resonance_event({"skeleton_name": "x"})
     assert not missing_ok and "missing fields" in missing_msg
 
+    out_of_range_ok, out_of_range_msg = _validate_resonance_event(
+        {
+            "skeleton_name": "demo",
+            "intent_match": 1.1,
+            "context_match": 0.8,
+            "tone_match": 0.7,
+            "reliability": 0.6,
+            "coordination": 0.75,
+        }
+    )
+    assert not out_of_range_ok and "expected float in [0, 1]" in out_of_range_msg
+
+    non_finite_ok, non_finite_msg = _validate_resonance_event(
+        {
+            "skeleton_name": "demo",
+            "intent_match": float("nan"),
+            "context_match": 0.8,
+            "tone_match": 0.7,
+            "reliability": 0.6,
+            "coordination": 0.75,
+        }
+    )
+    assert not non_finite_ok and "must be finite" in non_finite_msg
+
+    empty_name_ok, empty_name_msg = _validate_resonance_event(
+        {
+            "skeleton_name": "   ",
+            "intent_match": 0.9,
+            "context_match": 0.8,
+            "tone_match": 0.7,
+            "reliability": 0.6,
+            "coordination": 0.75,
+        }
+    )
+    assert not empty_name_ok and "non-empty" in empty_name_msg
+
 
 def test_resonance_scoring_bounds():
     result = score_interactions(
@@ -98,6 +134,27 @@ def test_session_aggregation():
         snap = lds._session_snapshot()
         assert snap["session_count"] == 1
         assert snap["top_session"]["session_id"] == "chat-42"
+
+
+def test_append_event_normalizes_defaults():
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp_path = Path(tmp)
+        lds.RESONANCE_EVENTS_FILE = tmp_path / "events.jsonl"
+        event = {
+            "skeleton_name": "  demo-name  ",
+            "intent_match": "0.9",
+            "context_match": 0.8,
+            "tone_match": 0.7,
+            "reliability": 0.6,
+            "coordination": 0.75,
+            "session_id": "   ",
+            "actor_type": "   ",
+        }
+        stored = lds._append_resonance_event(event)
+        assert stored["skeleton_name"] == "demo-name"
+        assert stored["session_id"] == "default-session"
+        assert stored["actor_type"] == "agent"
+        assert isinstance(stored["intent_match"], float)
 
 
 def test_runtime_adapter_event_builder():
@@ -366,6 +423,7 @@ if __name__ == "__main__":
     test_validate_resonance_event()
     test_resonance_scoring_bounds()
     test_session_aggregation()
+    test_append_event_normalizes_defaults()
     test_runtime_adapter_event_builder()
     test_openai_hook_metric_bounds()
     test_openai_hook_runtime_semantics()

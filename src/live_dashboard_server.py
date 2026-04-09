@@ -7,6 +7,7 @@ optional kann dasselbe `docs/` Verzeichnis in Docker/Nginx gemountet werden.
 from __future__ import annotations
 
 import json
+import math
 import os
 import subprocess
 import time
@@ -92,11 +93,30 @@ def _validate_resonance_event(event: dict):
     missing = [k for k in required if k not in event]
     if missing:
         return False, f"missing fields: {', '.join(missing)}"
+    metric_fields = ["intent_match", "context_match", "tone_match", "reliability", "coordination"]
+    for field in metric_fields:
+        try:
+            value = float(event.get(field))
+        except (TypeError, ValueError):
+            return False, f"invalid metric '{field}': expected float in [0, 1]"
+        if not math.isfinite(value):
+            return False, f"invalid metric '{field}': must be finite"
+        if value < 0.0 or value > 1.0:
+            return False, f"invalid metric '{field}': expected float in [0, 1]"
+
+    skeleton_name = str(event.get("skeleton_name", "")).strip()
+    if not skeleton_name:
+        return False, "invalid field 'skeleton_name': must be non-empty"
     return True, "ok"
 
 
 def _append_resonance_event(event: dict):
     payload = dict(event)
+    payload["skeleton_name"] = str(payload.get("skeleton_name", "")).strip()
+    payload["session_id"] = str(payload.get("session_id") or "default-session").strip() or "default-session"
+    payload["actor_type"] = str(payload.get("actor_type") or "agent").strip() or "agent"
+    for key in ["intent_match", "context_match", "tone_match", "reliability", "coordination"]:
+        payload[key] = float(payload.get(key, 0.0))
     payload.setdefault("timestamp", datetime.utcnow().isoformat() + "Z")
     with RESONANCE_EVENTS_FILE.open("a", encoding="utf-8") as f:
         f.write(json.dumps(payload, ensure_ascii=False) + "\n")
