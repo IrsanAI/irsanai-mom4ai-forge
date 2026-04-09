@@ -24,13 +24,17 @@ def check_files():
     return missing
 
 
+def _load_json(path: Path):
+    with path.open("r", encoding="utf-8") as f:
+        return json.load(f)
+
+
 def check_ancestry_valid():
     path = ROOT / "ancestry.json"
     if not path.exists():
         return False, "ancestry.json fehlt"
     try:
-        with path.open("r", encoding="utf-8") as f:
-            data = json.load(f)
+        data = _load_json(path)
         if not isinstance(data, list):
             return False, "ancestry.json ist keine Liste"
         return True, f"{len(data)} Einträge"
@@ -38,9 +42,51 @@ def check_ancestry_valid():
         return False, f"JSON-Fehler: {exc}"
 
 
+def check_report_contracts():
+    report_specs = [
+        {
+            "path": ROOT / "docs" / "readme_sync_report.json",
+            "required_keys": ["status", "context_delta_score"],
+        },
+        {
+            "path": ROOT / "docs" / "benchmark_report.json",
+            "required_keys": ["kpis", "integrity"],
+        },
+        {
+            "path": ROOT / "docs" / "quality_gates_report.json",
+            "required_keys": ["passed", "gates"],
+        },
+        {
+            "path": ROOT / "docs" / "resonance_lifecycle_report.json",
+            "required_keys": ["population_size", "state_counts", "skeletons"],
+        },
+    ]
+
+    problems = []
+    for spec in report_specs:
+        path = spec["path"]
+        if not path.exists():
+            problems.append(f"{path.relative_to(ROOT)} fehlt")
+            continue
+        try:
+            data = _load_json(path)
+        except Exception as exc:
+            problems.append(f"{path.relative_to(ROOT)} JSON-Fehler: {exc}")
+            continue
+        if not isinstance(data, dict):
+            problems.append(f"{path.relative_to(ROOT)} hat kein Objekt-Top-Level")
+            continue
+        missing = [k for k in spec["required_keys"] if k not in data]
+        if missing:
+            problems.append(f"{path.relative_to(ROOT)} missing keys: {', '.join(missing)}")
+
+    return len(problems) == 0, problems
+
+
 def main() -> int:
     missing = check_files()
     ancestry_ok, ancestry_msg = check_ancestry_valid()
+    contracts_ok, contract_problems = check_report_contracts()
 
     print("=== MomAI Release Guard ===")
     if missing:
@@ -51,8 +97,14 @@ def main() -> int:
         print("✅ Pflichtdateien vorhanden")
 
     print(("✅" if ancestry_ok else "❌") + f" ancestry.json: {ancestry_msg}")
+    if contracts_ok:
+        print("✅ report contracts: ok")
+    else:
+        print("❌ report contracts:")
+        for problem in contract_problems:
+            print(f"  - {problem}")
 
-    if missing or not ancestry_ok:
+    if missing or not ancestry_ok or not contracts_ok:
         print("\nRelease-Guard: BLOCKED")
         return 1
 

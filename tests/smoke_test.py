@@ -21,6 +21,7 @@ from benchmark_runner import build_benchmark_report
 from quality_gates import evaluate_gates
 from chemie_manager import build_portfolio_report, parse_roadmap_from_readme
 from readme_sync_manager import build_sync_report
+import release_guard as rg
 from vendor_wiring import (
     auto_wire_turn,
     extract_anthropic_tool_stats,
@@ -419,6 +420,43 @@ def test_benchmark_and_quality_gates():
         assert any(g.name == "context_delta_zero" and g.passed for g in gates)
 
 
+def test_release_guard_report_contracts():
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp_root = Path(tmp)
+        docs = tmp_root / "docs"
+        docs.mkdir(parents=True, exist_ok=True)
+
+        (docs / "readme_sync_report.json").write_text(
+            json.dumps({"status": "up_to_date", "context_delta_score": 0}),
+            encoding="utf-8",
+        )
+        (docs / "benchmark_report.json").write_text(
+            json.dumps({"kpis": {}, "integrity": {}}),
+            encoding="utf-8",
+        )
+        (docs / "quality_gates_report.json").write_text(
+            json.dumps({"passed": True, "gates": []}),
+            encoding="utf-8",
+        )
+        (docs / "resonance_lifecycle_report.json").write_text(
+            json.dumps({"population_size": 0, "state_counts": {}, "skeletons": []}),
+            encoding="utf-8",
+        )
+
+        old_root = rg.ROOT
+        rg.ROOT = tmp_root
+        try:
+            ok, problems = rg.check_report_contracts()
+            assert ok, problems
+
+            (docs / "benchmark_report.json").write_text(json.dumps({"kpis": {}}), encoding="utf-8")
+            ok2, problems2 = rg.check_report_contracts()
+            assert not ok2
+            assert any("missing keys" in p for p in problems2)
+        finally:
+            rg.ROOT = old_root
+
+
 if __name__ == "__main__":
     test_validate_resonance_event()
     test_resonance_scoring_bounds()
@@ -441,4 +479,5 @@ if __name__ == "__main__":
     test_resonance_lifecycle_states()
     test_mom_forge_pages_ancestry_sync_present()
     test_benchmark_and_quality_gates()
+    test_release_guard_report_contracts()
     print("smoke tests passed")
