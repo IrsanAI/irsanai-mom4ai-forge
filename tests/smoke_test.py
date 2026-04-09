@@ -22,6 +22,7 @@ from quality_gates import evaluate_gates
 from chemie_manager import build_portfolio_report, parse_roadmap_from_readme
 from readme_sync_manager import build_sync_report
 import release_guard as rg
+from component_manager import build_component_registry, summarize_registry, suggest_new_components
 from vendor_wiring import (
     auto_wire_turn,
     extract_anthropic_tool_stats,
@@ -457,6 +458,17 @@ def test_release_guard_report_contracts():
             rg.ROOT = old_root
 
 
+def test_component_manager_registry_and_suggestions():
+    records = build_component_registry()
+    summary = summarize_registry(records)
+    suggestions = suggest_new_components(limit=4)
+
+    assert summary["total_components"] >= 30
+    assert "category_counts" in summary and summary["category_counts"]
+    assert all("label_de" in x and "label_en" in x for x in suggestions)
+    assert len(suggestions) <= 4
+
+
 if __name__ == "__main__":
     test_validate_resonance_event()
     test_resonance_scoring_bounds()
@@ -480,4 +492,5 @@ if __name__ == "__main__":
     test_mom_forge_pages_ancestry_sync_present()
     test_benchmark_and_quality_gates()
     test_release_guard_report_contracts()
+    test_component_manager_registry_and_suggestions()
     print("smoke tests passed")

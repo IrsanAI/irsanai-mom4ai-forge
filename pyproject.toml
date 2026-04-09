@@ -30,6 +30,7 @@ momai-mini-train = "mini_transformer_trainer:main"
 momai-lifecycle = "resonance_lifecycle:main"
 momai-benchmark = "benchmark_runner:main"
 momai-quality-gates = "quality_gates:main"
+momai-components = "component_manager:main"
 
 [tool.setuptools]
 py-modules = [
@@ -51,6 +52,7 @@ py-modules = [
   "resonance_lifecycle",
   "benchmark_runner",
   "quality_gates",
+  "component_manager",
 ]
 
 [tool.setuptools.package-dir]

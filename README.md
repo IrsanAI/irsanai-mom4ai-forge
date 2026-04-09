@@ -2,7 +2,7 @@
 <!-- README_SYNC_STATUS_START -->
 🟢 **Readme Language Sync:** `up_to_date`  
 🌐 **Context Delta:** `0`  
-🕒 **Last Sync Check (UTC):** `2026-04-08T21:17:24Z`
+🕒 **Last Sync Check (UTC):** `2026-04-09T20:32:38Z`
 <!-- README_SYNC_STATUS_END -->
 
 <p align="center">
@@ -217,6 +217,11 @@ git push
   **Resonanz:** `65/100` 🟩🟩🟩⬜⬜  
   **Chemie (Repo-Fit):** `89/100` 🟩🟩🟩🟩⬜  
   **Coach-Feedback:** Hebt das Repo von „funktioniert“ zu „messbar stabil“ mit reproduzierbaren Qualitätsgrenzen.
+
+- [x] Component Manager (Katalog + Auto-Lokalisierung + Kategorien)  
+  **Resonanz:** `69/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `87/100` 🟩🟩🟩🟩⬜  
+  **Coach-Feedback:** Komponentenbasis skaliert, Taxonomie + DE/EN-Labels für langfristige Erweiterbarkeit operationalisiert.
 
 ## Resonance Protocol (neu)
 
