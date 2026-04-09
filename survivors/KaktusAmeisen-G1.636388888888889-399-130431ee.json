@@ -1,0 +1,923 @@
+{
+  "name": "KaktusAmeisen-G1.636388888888889-399-130431ee",
+  "generation": 0.6363888888888889,
+  "mixture": {
+    "vogel_formation": 4.46,
+    "ameisen_schwarm": 9.0,
+    "honigbienentanz": 6.95,
+    "pilz_ektomykorrhiza": 7.21,
+    "vogelzug": 7.85,
+    "kaktus_wasserspeicher": 64.53
+  },
+  "fitness": 0.47513275048580955,
+  "timestamp": "20260404_142212",
+  "graph_data": {
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogel_formation": 4.46,
+          "ameisen_schwarm": 9.0,
+          "honigbienentanz": 6.95,
+          "pilz_ektomykorrhiza": 7.21,
+          "vogelzug": 7.85,
+          "kaktus_wasserspeicher": 64.53
+        },
+        "id": 0
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogel_formation": 4.46,
+          "ameisen_schwarm": 9.0,
+          "honigbienentanz": 6.95,
+          "pilz_ektomykorrhiza": 7.21,
+          "vogelzug": 7.85,
+          "kaktus_wasserspeicher": 64.53
+        },
+        "id": 1
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogel_formation": 4.46,
+          "ameisen_schwarm": 9.0,
+          "honigbienentanz": 6.95,
+          "pilz_ektomykorrhiza": 7.21,
+          "vogelzug": 7.85,
+          "kaktus_wasserspeicher": 64.53
+        },
+        "id": 2
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogel_formation": 4.46,
+          "ameisen_schwarm": 9.0,
+          "honigbienentanz": 6.95,
+          "pilz_ektomykorrhiza": 7.21,
+          "vogelzug": 7.85,
+          "kaktus_wasserspeicher": 64.53
+        },
+        "id": 3
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogel_formation": 4.46,
+          "ameisen_schwarm": 9.0,
+          "honigbienentanz": 6.95,
+          "pilz_ektomykorrhiza": 7.21,
+          "vogelzug": 7.85,
+          "kaktus_wasserspeicher": 64.53
+        },
+        "id": 4
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogel_formation": 4.46,
+          "ameisen_schwarm": 9.0,
+          "honigbienentanz": 6.95,
+          "pilz_ektomykorrhiza": 7.21,
+          "vogelzug": 7.85,
+          "kaktus_wasserspeicher": 64.53
+        },
+        "id": 5
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogel_formation": 4.46,
+          "ameisen_schwarm": 9.0,
+          "honigbienentanz": 6.95,
+          "pilz_ektomykorrhiza": 7.21,
+          "vogelzug": 7.85,
+          "kaktus_wasserspeicher": 64.53
+        },
+        "id": 6
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogel_formation": 4.46,
+          "ameisen_schwarm": 9.0,
+          "honigbienentanz": 6.95,
+          "pilz_ektomykorrhiza": 7.21,
+          "vogelzug": 7.85,
+          "kaktus_wasserspeicher": 64.53
+        },
+        "id": 7
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogel_formation": 4.46,
+          "ameisen_schwarm": 9.0,
+          "honigbienentanz": 6.95,
+          "pilz_ektomykorrhiza": 7.21,
+          "vogelzug": 7.85,
+          "kaktus_wasserspeicher": 64.53
+        },
+        "id": 8
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogel_formation": 4.46,
+          "ameisen_schwarm": 9.0,
+          "honigbienentanz": 6.95,
+          "pilz_ektomykorrhiza": 7.21,
+          "vogelzug": 7.85,
+          "kaktus_wasserspeicher": 64.53
+        },
+        "id": 9
+      },
+      {
+        "type": "SwarmFFN",
+        "bio_influence": {
+          "vogel_formation": 4.46,
+          "ameisen_schwarm": 9.0,
+          "honigbienentanz": 6.95,
+          "pilz_ektomykorrhiza": 7.21,
+          "vogelzug": 7.85,
+          "kaktus_wasserspeicher": 64.53
+        },
+        "id": 10
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogel_formation": 4.46,
+          "ameisen_schwarm": 9.0,
+          "honigbienentanz": 6.95,
+          "pilz_ektomykorrhiza": 7.21,
+          "vogelzug": 7.85,
+          "kaktus_wasserspeicher": 64.53
+        },
+        "id": 11
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogel_formation": 4.46,
+          "ameisen_schwarm": 9.0,
+          "honigbienentanz": 6.95,
+          "pilz_ektomykorrhiza": 7.21,
+          "vogelzug": 7.85,
+          "kaktus_wasserspeicher": 64.53
+        },
+        "id": 12
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogel_formation": 4.46,
+          "ameisen_schwarm": 9.0,
+          "honigbienentanz": 6.95,
+          "pilz_ektomykorrhiza": 7.21,
+          "vogelzug": 7.85,
+          "kaktus_wasserspeicher": 64.53
+        },
+        "id": 13
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogel_formation": 4.46,
+          "ameisen_schwarm": 9.0,
+          "honigbienentanz": 6.95,
+          "pilz_ektomykorrhiza": 7.21,
+          "vogelzug": 7.85,
+          "kaktus_wasserspeicher": 64.53
+        },
+        "id": 14
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogel_formation": 4.46,
+          "ameisen_schwarm": 9.0,
+          "honigbienentanz": 6.95,
+          "pilz_ektomykorrhiza": 7.21,
+          "vogelzug": 7.85,
+          "kaktus_wasserspeicher": 64.53
+        },
+        "id": 15
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogel_formation": 4.46,
+          "ameisen_schwarm": 9.0,
+          "honigbienentanz": 6.95,
+          "pilz_ektomykorrhiza": 7.21,
+          "vogelzug": 7.85,
+          "kaktus_wasserspeicher": 64.53
+        },
+        "id": 16
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogel_formation": 4.46,
+          "ameisen_schwarm": 9.0,
+          "honigbienentanz": 6.95,
+          "pilz_ektomykorrhiza": 7.21,
+          "vogelzug": 7.85,
+          "kaktus_wasserspeicher": 64.53
+        },
+        "id": 17
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogel_formation": 4.46,
+          "ameisen_schwarm": 9.0,
+          "honigbienentanz": 6.95,
+          "pilz_ektomykorrhiza": 7.21,
+          "vogelzug": 7.85,
+          "kaktus_wasserspeicher": 64.53
+        },
+        "id": 18
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogel_formation": 4.46,
+          "ameisen_schwarm": 9.0,
+          "honigbienentanz": 6.95,
+          "pilz_ektomykorrhiza": 7.21,
+          "vogelzug": 7.85,
+          "kaktus_wasserspeicher": 64.53
+        },
+        "id": 19
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogel_formation": 4.46,
+          "ameisen_schwarm": 9.0,
+          "honigbienentanz": 6.95,
+          "pilz_ektomykorrhiza": 7.21,
+          "vogelzug": 7.85,
+          "kaktus_wasserspeicher": 64.53
+        },
+        "id": 20
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogel_formation": 4.46,
+          "ameisen_schwarm": 9.0,
+          "honigbienentanz": 6.95,
+          "pilz_ektomykorrhiza": 7.21,
+          "vogelzug": 7.85,
+          "kaktus_wasserspeicher": 64.53
+        },
+        "id": 21
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "vogel_formation": 4.46,
+          "ameisen_schwarm": 9.0,
+          "honigbienentanz": 6.95,
+          "pilz_ektomykorrhiza": 7.21,
+          "vogelzug": 7.85,
+          "kaktus_wasserspeicher": 64.53
+        },
+        "id": 22
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogel_formation": 4.46,
+          "ameisen_schwarm": 9.0,
+          "honigbienentanz": 6.95,
+          "pilz_ektomykorrhiza": 7.21,
+          "vogelzug": 7.85,
+          "kaktus_wasserspeicher": 64.53
+        },
+        "id": 23
+      },
+      {
+        "type": "SwarmFFN",
+        "bio_influence": {
+          "vogel_formation": 4.46,
+          "ameisen_schwarm": 9.0,
+          "honigbienentanz": 6.95,
+          "pilz_ektomykorrhiza": 7.21,
+          "vogelzug": 7.85,
+          "kaktus_wasserspeicher": 64.53
+        },
+        "id": 24
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogel_formation": 4.46,
+          "ameisen_schwarm": 9.0,
+          "honigbienentanz": 6.95,
+          "pilz_ektomykorrhiza": 7.21,
+          "vogelzug": 7.85,
+          "kaktus_wasserspeicher": 64.53
+        },
+        "id": 25
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogel_formation": 4.46,
+          "ameisen_schwarm": 9.0,
+          "honigbienentanz": 6.95,
+          "pilz_ektomykorrhiza": 7.21,
+          "vogelzug": 7.85,
+          "kaktus_wasserspeicher": 64.53
+        },
+        "id": 26
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "vogel_formation": 4.46,
+          "ameisen_schwarm": 9.0,
+          "honigbienentanz": 6.95,
+          "pilz_ektomykorrhiza": 7.21,
+          "vogelzug": 7.85,
+          "kaktus_wasserspeicher": 64.53
+        },
+        "id": 27
+      }
+    ],
+    "edges": [
+      {
+        "weight": 1.172536680548683,
+        "type": "forward",
+        "source": 0,
+        "target": 1
+      },
+      {
+        "weight": 1.1838999697662218,
+        "type": "forward",
+        "source": 0,
+        "target": 6
+      },
+      {
+        "weight": 1.235867346854683,
+        "type": "forward",
+        "source": 0,
+        "target": 8
+      },
+      {
+        "weight": 0.9078483861936292,
+        "type": "forward",
+        "source": 0,
+        "target": 13
+      },
+      {
+        "weight": 0.7720249333435636,
+        "type": "forward",
+        "source": 0,
+        "target": 17
+      },
+      {
+        "weight": 0.5142619731140382,
+        "type": "forward",
+        "source": 0,
+        "target": 18
+      },
+      {
+        "weight": 1.3783455760703445,
+        "type": "forward",
+        "source": 0,
+        "target": 21
+      },
+      {
+        "weight": 0.522476540370338,
+        "type": "feedback",
+        "source": 0,
+        "target": 5
+      },
+      {
+        "weight": 0.42206258000138924,
+        "type": "feedback",
+        "source": 0,
+        "target": 12
+      },
+      {
+        "weight": 1.0331263651533902,
+        "type": "forward",
+        "source": 1,
+        "target": 13
+      },
+      {
+        "weight": 0.7325490463569441,
+        "type": "forward",
+        "source": 1,
+        "target": 17
+      },
+      {
+        "weight": 0.7423392137263634,
+        "type": "feedback",
+        "source": 1,
+        "target": 1
+      },
+      {
+        "weight": 1.367082886209528,
+        "type": "forward",
+        "source": 2,
+        "target": 6
+      },
+      {
+        "weight": 1.0332532983033902,
+        "type": "forward",
+        "source": 2,
+        "target": 12
+      },
+      {
+        "weight": 0.9458113240004984,
+        "type": "forward",
+        "source": 2,
+        "target": 15
+      },
+      {
+        "weight": 0.5117824974278822,
+        "type": "forward",
+        "source": 2,
+        "target": 17
+      },
+      {
+        "weight": 1.0747894722544267,
+        "type": "forward",
+        "source": 2,
+        "target": 23
+      },
+      {
+        "weight": 0.7795829699570379,
+        "type": "forward",
+        "source": 2,
+        "target": 25
+      },
+      {
+        "weight": 1.006405733429963,
+        "type": "forward",
+        "source": 2,
+        "target": 26
+      },
+      {
+        "weight": 1.2315801734117455,
+        "type": "forward",
+        "source": 3,
+        "target": 5
+      },
+      {
+        "weight": 1.3004253014656115,
+        "type": "forward",
+        "source": 3,
+        "target": 11
+      },
+      {
+        "weight": 1.3944950751879461,
+        "type": "forward",
+        "source": 3,
+        "target": 14
+      },
+      {
+        "weight": 0.8025607040806313,
+        "type": "forward",
+        "source": 3,
+        "target": 18
+      },
+      {
+        "weight": 0.7960416396564892,
+        "type": "forward",
+        "source": 3,
+        "target": 19
+      },
+      {
+        "weight": 0.7012236575168493,
+        "type": "forward",
+        "source": 3,
+        "target": 22
+      },
+      {
+        "weight": 1.3166362575053197,
+        "type": "forward",
+        "source": 3,
+        "target": 23
+      },
+      {
+        "weight": 1.4242629340701352,
+        "type": "forward",
+        "source": 3,
+        "target": 25
+      },
+      {
+        "weight": 0.7683980294364675,
+        "type": "forward",
+        "source": 4,
+        "target": 8
+      },
+      {
+        "weight": 1.2334576599083786,
+        "type": "forward",
+        "source": 4,
+        "target": 9
+      },
+      {
+        "weight": 0.9173361989368599,
+        "type": "forward",
+        "source": 4,
+        "target": 17
+      },
+      {
+        "weight": 1.0276251412552075,
+        "type": "forward",
+        "source": 4,
+        "target": 20
+      },
+      {
+        "weight": 1.4730377191974944,
+        "type": "forward",
+        "source": 4,
+        "target": 23
+      },
+      {
+        "weight": 0.7136744387497393,
+        "type": "forward",
+        "source": 4,
+        "target": 24
+      },
+      {
+        "weight": 0.74124937165985,
+        "type": "forward",
+        "source": 5,
+        "target": 10
+      },
+      {
+        "weight": 0.9008724631569865,
+        "type": "forward",
+        "source": 5,
+        "target": 21
+      },
+      {
+        "weight": 0.7827907848107756,
+        "type": "feedback",
+        "source": 5,
+        "target": 16
+      },
+      {
+        "weight": 0.9888397793750413,
+        "type": "forward",
+        "source": 6,
+        "target": 12
+      },
+      {
+        "weight": 1.0593154373215872,
+        "type": "forward",
+        "source": 7,
+        "target": 8
+      },
+      {
+        "weight": 0.9389785486648874,
+        "type": "forward",
+        "source": 7,
+        "target": 13
+      },
+      {
+        "weight": 0.601735128687108,
+        "type": "forward",
+        "source": 7,
+        "target": 16
+      },
+      {
+        "weight": 1.0172006246415863,
+        "type": "forward",
+        "source": 8,
+        "target": 11
+      },
+      {
+        "weight": 1.3641568066668364,
+        "type": "forward",
+        "source": 8,
+        "target": 13
+      },
+      {
+        "weight": 1.452784481219175,
+        "type": "forward",
+        "source": 8,
+        "target": 15
+      },
+      {
+        "weight": 1.288886500974718,
+        "type": "forward",
+        "source": 8,
+        "target": 22
+      },
+      {
+        "weight": 1.0292233039293166,
+        "type": "forward",
+        "source": 8,
+        "target": 23
+      },
+      {
+        "weight": 0.7099417394693499,
+        "type": "forward",
+        "source": 8,
+        "target": 25
+      },
+      {
+        "weight": 1.354400988523495,
+        "type": "forward",
+        "source": 8,
+        "target": 27
+      },
+      {
+        "weight": 1.372166196697925,
+        "type": "forward",
+        "source": 9,
+        "target": 10
+      },
+      {
+        "weight": 0.8904777893465752,
+        "type": "forward",
+        "source": 9,
+        "target": 11
+      },
+      {
+        "weight": 1.1320401656930055,
+        "type": "forward",
+        "source": 9,
+        "target": 12
+      },
+      {
+        "weight": 1.1223005355182099,
+        "type": "forward",
+        "source": 9,
+        "target": 14
+      },
+      {
+        "weight": 0.5829069680350968,
+        "type": "forward",
+        "source": 9,
+        "target": 17
+      },
+      {
+        "weight": 0.8981015558573244,
+        "type": "forward",
+        "source": 9,
+        "target": 22
+      },
+      {
+        "weight": 0.6484002827236626,
+        "type": "forward",
+        "source": 9,
+        "target": 26
+      },
+      {
+        "weight": 0.7036414219702841,
+        "type": "forward",
+        "source": 9,
+        "target": 27
+      },
+      {
+        "weight": 1.3335475566815183,
+        "type": "forward",
+        "source": 10,
+        "target": 17
+      },
+      {
+        "weight": 0.802966155343711,
+        "type": "forward",
+        "source": 10,
+        "target": 20
+      },
+      {
+        "weight": 0.6649629257126121,
+        "type": "forward",
+        "source": 10,
+        "target": 22
+      },
+      {
+        "weight": 0.9579941522558298,
+        "type": "forward",
+        "source": 10,
+        "target": 26
+      },
+      {
+        "weight": 1.0268342299997402,
+        "type": "forward",
+        "source": 11,
+        "target": 15
+      },
+      {
+        "weight": 1.3278608625606498,
+        "type": "forward",
+        "source": 12,
+        "target": 13
+      },
+      {
+        "weight": 1.0504046880616986,
+        "type": "forward",
+        "source": 12,
+        "target": 15
+      },
+      {
+        "weight": 1.1443408015487586,
+        "type": "forward",
+        "source": 12,
+        "target": 19
+      },
+      {
+        "weight": 0.8596615863791364,
+        "type": "forward",
+        "source": 12,
+        "target": 22
+      },
+      {
+        "weight": 1.3396267487302902,
+        "type": "forward",
+        "source": 12,
+        "target": 27
+      },
+      {
+        "weight": 0.6953989383764994,
+        "type": "forward",
+        "source": 13,
+        "target": 15
+      },
+      {
+        "weight": 1.0272132705591908,
+        "type": "forward",
+        "source": 13,
+        "target": 16
+      },
+      {
+        "weight": 1.228492547628838,
+        "type": "forward",
+        "source": 13,
+        "target": 17
+      },
+      {
+        "weight": 0.6713459126581908,
+        "type": "forward",
+        "source": 13,
+        "target": 24
+      },
+      {
+        "weight": 0.8387631945184083,
+        "type": "forward",
+        "source": 13,
+        "target": 25
+      },
+      {
+        "weight": 0.3281164009743462,
+        "type": "feedback",
+        "source": 13,
+        "target": 26
+      },
+      {
+        "weight": 1.1956540504877884,
+        "type": "forward",
+        "source": 15,
+        "target": 18
+      },
+      {
+        "weight": 0.9539742619540994,
+        "type": "forward",
+        "source": 15,
+        "target": 20
+      },
+      {
+        "weight": 1.2088946962607228,
+        "type": "forward",
+        "source": 15,
+        "target": 21
+      },
+      {
+        "weight": 0.7315757187264075,
+        "type": "forward",
+        "source": 15,
+        "target": 26
+      },
+      {
+        "weight": 1.3939615193783088,
+        "type": "forward",
+        "source": 16,
+        "target": 17
+      },
+      {
+        "weight": 0.999957930970251,
+        "type": "forward",
+        "source": 16,
+        "target": 19
+      },
+      {
+        "weight": 0.4983367513006022,
+        "type": "feedback",
+        "source": 16,
+        "target": 18
+      },
+      {
+        "weight": 1.4137153485640708,
+        "type": "forward",
+        "source": 17,
+        "target": 22
+      },
+      {
+        "weight": 1.3547577365572763,
+        "type": "forward",
+        "source": 17,
+        "target": 25
+      },
+      {
+        "weight": 1.2745933512230052,
+        "type": "forward",
+        "source": 18,
+        "target": 27
+      },
+      {
+        "weight": 0.9014003538455186,
+        "type": "forward",
+        "source": 19,
+        "target": 26
+      },
+      {
+        "weight": 0.6513077692793983,
+        "type": "forward",
+        "source": 20,
+        "target": 25
+      },
+      {
+        "weight": 1.0079259533748774,
+        "type": "forward",
+        "source": 21,
+        "target": 26
+      },
+      {
+        "weight": 0.7270222858064354,
+        "type": "forward",
+        "source": 22,
+        "target": 23
+      },
+      {
+        "weight": 1.1490246621718334,
+        "type": "forward",
+        "source": 22,
+        "target": 25
+      },
+      {
+        "weight": 1.4320164712799701,
+        "type": "forward",
+        "source": 22,
+        "target": 26
+      },
+      {
+        "weight": 0.548458995559744,
+        "type": "forward",
+        "source": 23,
+        "target": 25
+      },
+      {
+        "weight": 1.4608012441764346,
+        "type": "forward",
+        "source": 23,
+        "target": 26
+      },
+      {
+        "weight": 1.1077651193934241,
+        "type": "forward",
+        "source": 24,
+        "target": 26
+      },
+      {
+        "weight": 0.55477708266346,
+        "type": "forward",
+        "source": 24,
+        "target": 27
+      },
+      {
+        "weight": 1.4801932825720292,
+        "type": "forward",
+        "source": 25,
+        "target": 26
+      },
+      {
+        "weight": 1.3887069459235883,
+        "type": "forward",
+        "source": 25,
+        "target": 27
+      },
+      {
+        "weight": 1.0834518102180333,
+        "type": "forward",
+        "source": 26,
+        "target": 27
+      }
+    ]
+  }
+}
