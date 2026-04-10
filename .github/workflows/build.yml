@@ -1,0 +1,40 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  python-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - name: Syntax check
+        run: |
+          python -m py_compile src/mom_forge.py src/bio_components.py src/child_generator.py src/resonance_protocol.py src/live_dashboard_server.py src/release_guard.py
+      - name: Release guard
+        run: |
+          python src/release_guard.py
+      - name: Smoke tests
+        run: |
+          python tests/smoke_test.py
+      - name: Readme sync check
+        run: |
+          python src/readme_sync_manager.py --check
+      - name: Resonance lifecycle snapshot
+        run: |
+          python src/resonance_lifecycle.py --events-file resonance_events.jsonl --output docs/resonance_lifecycle_report.json
+      - name: Benchmark report
+        run: |
+          python src/benchmark_runner.py --output docs/benchmark_report.json
+      - name: Quality gates
+        run: |
+          python src/quality_gates.py --report docs/benchmark_report.json --output docs/quality_gates_report.json
