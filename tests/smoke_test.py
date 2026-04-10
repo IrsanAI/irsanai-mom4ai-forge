@@ -22,7 +22,13 @@ from quality_gates import evaluate_gates
 from chemie_manager import build_portfolio_report, parse_roadmap_from_readme
 from readme_sync_manager import build_sync_report
 import release_guard as rg
-from component_manager import build_component_registry, summarize_registry, suggest_new_components
+from component_manager import (
+    build_component_registry,
+    summarize_registry,
+    suggest_new_components,
+    _label_en,
+    _underrepresented_categories,
+)
 from vendor_wiring import (
     auto_wire_turn,
     extract_anthropic_tool_stats,
@@ -467,6 +473,14 @@ def test_component_manager_registry_and_suggestions():
     assert "category_counts" in summary and summary["category_counts"]
     assert all("label_de" in x and "label_en" in x for x in suggestions)
     assert len(suggestions) <= 4
+    assert isinstance(_underrepresented_categories(), list)
+
+
+def test_component_manager_localization_tokens():
+    label = _label_en("murmuration_stare")
+    assert "murmuration" in label
+    label2 = _label_en("muecken_wolke")
+    assert "cloud" in label2
 
 
 if __name__ == "__main__":
@@ -493,4 +507,5 @@ if __name__ == "__main__":
     test_benchmark_and_quality_gates()
     test_release_guard_report_contracts()
     test_component_manager_registry_and_suggestions()
+    test_component_manager_localization_tokens()
     print("smoke tests passed")

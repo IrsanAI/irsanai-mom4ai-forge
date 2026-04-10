@@ -24,5 +24,6 @@ momai-components --output docs/component_registry.json --suggest 8
 `docs/component_registry.json` enthält:
 
 - `summary`: Anzahl, Kategorien, Mittelwerte
+- `underrepresented_categories`: Kategorien mit Ausbaupotenzial (für priorisierte Erweiterung)
 - `components`: vollständige registrierte Komponentenliste
 - `suggestions`: noch nicht integrierte Kandidaten

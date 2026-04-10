@@ -36,6 +36,34 @@ LOCALIZATION_HINTS = {
     "krankenhaus": "hospital",
 }
 
+TOKEN_TRANSLATIONS = {
+    "schwarm": "swarm",
+    "netz": "network",
+    "nervensystem": "nervous_system",
+    "gehirn": "brain",
+    "matriarchat": "matriarchy",
+    "symbiose": "symbiosis",
+    "wolke": "cloud",
+    "bluete": "bloom",
+    "mutationsdruck": "mutation_pressure",
+    "chemospur": "chemo_trail",
+    "wasserspeicher": "water_storage",
+    "regelkreis": "control_loop",
+    "jagdkoordination": "hunt_coordination",
+    "klicksprache": "click_language",
+    "werkzeugkultur": "tool_culture",
+    "schwingung": "vibration",
+    "wurzelmatrix": "root_matrix",
+    "stockwerk": "layered",
+    "nischen": "niches",
+    "selbstorganisation": "self_organization",
+    "triage": "triage",
+    "kooperative": "cooperative",
+    "kollektiv": "collective",
+    "preissignal": "price_signal",
+    "transmission": "transmission",
+}
+
 SUGGESTED_CANDIDATES = {
     "quallen_schwarm_signal": {"plastizitaet": 0.77, "dezentral": 0.95},
     "walgesang_langdistanz": {"plastizitaet": 0.73, "dezentral": 0.72},
@@ -72,11 +100,12 @@ def _label_en(name: str) -> str:
     parts = name.split("_")
     translated = []
     for part in parts:
-        replacement = part
-        for de_hint, en_hint in LOCALIZATION_HINTS.items():
-            if de_hint in part:
-                replacement = part.replace(de_hint, en_hint)
-                break
+        replacement = TOKEN_TRANSLATIONS.get(part, part)
+        if replacement == part:
+            for de_hint, en_hint in LOCALIZATION_HINTS.items():
+                if de_hint in part:
+                    replacement = part.replace(de_hint, en_hint)
+                    break
         translated.append(replacement)
     return " ".join(translated)
 
@@ -110,21 +139,40 @@ def summarize_registry(records: List[ComponentRecord]) -> dict:
     }
 
 
+def _underrepresented_categories(target_per_category: int = 8) -> List[str]:
+    summary = summarize_registry(build_component_registry())
+    deficits = []
+    counts = summary.get("category_counts", {})
+    for category in sorted(CATEGORY_RULES.keys()):
+        count = int(counts.get(category, 0))
+        if count < target_per_category:
+            deficits.append((category, target_per_category - count))
+    deficits.sort(key=lambda x: x[1], reverse=True)
+    return [c for c, _ in deficits]
+
+
 def suggest_new_components(limit: int = 5) -> List[dict]:
     existing = set(BIO_COMPONENTS.keys())
+    category_priority = _underrepresented_categories()
+    category_rank = {cat: idx for idx, cat in enumerate(category_priority)}
     suggestions = []
     for name, metrics in SUGGESTED_CANDIDATES.items():
         if name in existing:
             continue
+        category = _category_for(name)
         suggestions.append(
             {
                 "name": name,
                 "metrics": metrics,
-                "category": _category_for(name),
+                "category": category,
                 "label_de": _label_de(name),
                 "label_en": _label_en(name),
+                "_rank": category_rank.get(category, 999),
             }
         )
+    suggestions.sort(key=lambda x: (x["_rank"], -x["metrics"]["dezentral"], -x["metrics"]["plastizitaet"]))
+    for item in suggestions:
+        item.pop("_rank", None)
     return suggestions[: max(0, int(limit))]
 
 
@@ -150,6 +198,7 @@ def main() -> int:
     summary = summarize_registry(records)
     payload = {
         "summary": summary,
+        "underrepresented_categories": _underrepresented_categories(),
         "components": [asdict(r) for r in records],
         "suggestions": suggest_new_components(limit=args.suggest),
     }
