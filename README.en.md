@@ -2,7 +2,7 @@
 <!-- README_SYNC_STATUS_START -->
 🟢 **Readme Language Sync:** `up_to_date`  
 🌐 **Context Delta:** `0`  
-🕒 **Last Sync Check (UTC):** `2026-04-09T20:32:38Z`
+🕒 **Last Sync Check (UTC):** `2026-04-11T21:55:07Z`
 <!-- README_SYNC_STATUS_END -->
 
 **English** | [Deutsch](./README.md)
@@ -162,6 +162,21 @@ MomAI
   **Resonance:** `69/100` 🟩🟩🟩⬜⬜
   **Chemistry (Repo-Fit):** `87/100` 🟩🟩🟩🟩⬜
   **Coach Feedback:** Komponentenbasis skaliert, Taxonomie + DE/EN-Labels für langfristige Erweiterbarkeit operationalisiert.
+
+- [ ] DAG→PyTorch Assembly Compiler v0.2 (graph skeleton -> trainable `nn.Module`)
+  **Resonance:** `92/100` 🟩🟩🟩🟩🟩
+  **Chemistry (Repo-Fit):** `94/100` 🟩🟩🟩🟩🟩
+  **Coach Feedback:** Kritischer Brückenschritt vom evolutionären Blueprint zum real trainierbaren Child-Modell.
+
+- [ ] Child-GPT Training Pipeline v0.2 (tokenizer, positional encoding, checkpoint policy)
+  **Resonance:** `90/100` 🟩🟩🟩🟩🟩
+  **Chemistry (Repo-Fit):** `91/100` 🟩🟩🟩🟩🟩
+  **Coach Feedback:** Schließt den derzeit größten Gap zwischen Struktur-Evolution und produktnaher Modellgeburt.
+
+- [ ] Resonance class learning v0.2 (human resonance vs agent resonance + anti-gaming guards)
+  **Resonance:** `89/100` 🟩🟩🟩🟩🟩
+  **Chemistry (Repo-Fit):** `90/100` 🟩🟩🟩🟩🟩
+  **Coach Feedback:** Macht den eigentlichen Selektionsdruck explizit und robust gegen reine Heuristik-/Metrik-Optimierung.
 
 ## Resonance Protocol
 

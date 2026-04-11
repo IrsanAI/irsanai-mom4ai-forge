@@ -2,7 +2,7 @@
 <!-- README_SYNC_STATUS_START -->
 🟢 **Readme Language Sync:** `up_to_date`  
 🌐 **Context Delta:** `0`  
-🕒 **Last Sync Check (UTC):** `2026-04-09T20:32:38Z`
+🕒 **Last Sync Check (UTC):** `2026-04-11T21:55:07Z`
 <!-- README_SYNC_STATUS_END -->
 
 <p align="center">
@@ -222,6 +222,21 @@ git push
   **Resonanz:** `69/100` 🟩🟩🟩⬜⬜  
   **Chemie (Repo-Fit):** `87/100` 🟩🟩🟩🟩⬜  
   **Coach-Feedback:** Komponentenbasis skaliert, Taxonomie + DE/EN-Labels für langfristige Erweiterbarkeit operationalisiert.
+
+- [ ] DAG→PyTorch Assembly Compiler v0.2 (Graph-Skelett -> trainierbares `nn.Module`)  
+  **Resonanz:** `92/100` 🟩🟩🟩🟩🟩  
+  **Chemie (Repo-Fit):** `94/100` 🟩🟩🟩🟩🟩  
+  **Coach-Feedback:** Kritischer Brückenschritt vom evolutionären Blueprint zum real trainierbaren Child-Modell.
+
+- [ ] Child-GPT Trainingspipeline v0.2 (Tokenizer, Positional Encoding, Checkpoint-Policy)  
+  **Resonanz:** `90/100` 🟩🟩🟩🟩🟩  
+  **Chemie (Repo-Fit):** `91/100` 🟩🟩🟩🟩🟩  
+  **Coach-Feedback:** Schließt den derzeit größten Gap zwischen Struktur-Evolution und produktnaher Modellgeburt.
+
+- [ ] Resonanz-Klassenlernen v0.2 (Human-Resonanz vs. Agent-Resonanz + Anti-Gaming-Guards)  
+  **Resonanz:** `89/100` 🟩🟩🟩🟩🟩  
+  **Chemie (Repo-Fit):** `90/100` 🟩🟩🟩🟩🟩  
+  **Coach-Feedback:** Macht den eigentlichen Selektionsdruck explizit und robust gegen reine Heuristik-/Metrik-Optimierung.
 
 ## Resonance Protocol (neu)
 
