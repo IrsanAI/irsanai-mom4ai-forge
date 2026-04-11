@@ -1,5 +1,9 @@
-```markdown
 # Mom4AI Forge
+<!-- README_SYNC_STATUS_START -->
+🟢 **Readme Language Sync:** `up_to_date`  
+🌐 **Context Delta:** `0`  
+🕒 **Last Sync Check (UTC):** `2026-04-11T21:55:07Z`
+<!-- README_SYNC_STATUS_END -->
 
 <p align="center">
   <img src="docs/images/momai-forge-vs-typical-nn.jpg" alt="MomAI Forge vs. typisches neuronales Netz" width="800"/>
@@ -12,7 +16,7 @@
 [![GitHub Pages](https://img.shields.io/badge/Live%20Demo-View%20Hall%20of%20Fame-brightgreen?style=for-the-badge&logo=githubpages)](https://irsanai.github.io/irsanai-mom4ai-forge/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
-**Deutsch** | [English](#english)
+**Deutsch** | [English](./README.en.md)
 
 ## Was ist Mom4AI Forge?
 
@@ -24,6 +28,7 @@ Aktueller Stand (März 2026):
 - Auto-Fitness (Density, Modularity, Feedback-Loops)
 - PNG-Visualisierungen der Graphen
 - Ancestry-Tracking (Lineage + born_count)
+- Resonance Protocol v0.1 (Interaction-Score aus echten Dialogen via `resonance_events.jsonl`)
 - Hall of Fame (interaktiv, filterbar, live aktualisiert)
 - Automatisches Pushen neuer Skelette zum zentralen Repo (optional)
 
@@ -42,9 +47,18 @@ cd irsanai-mom4ai-forge
 pip install -r requirements.txt
 ```
 
+Optional (empfohlen für 1-Kommando-Start):
+```bash
+pip install -e .
+```
+
 3. Ersten Run starten
 ```bash
 python src/mom_forge.py
+```
+oder nach `pip install -e .` einfach:
+```bash
+MomAI
 ```
 
 Du wirst einmalig nach einem **unique User-Namen** gefragt (z. B. dein GitHub-Name oder ein Nick). Dieser Name wird zentral in `users.json` registriert – jeder Name darf nur einmal existieren.
@@ -60,7 +74,8 @@ Damit deine Skelette in der globalen Hall of Fame landen, muss das Repo pushen d
 
 1. Gehe zu https://github.com/settings/tokens
 2. „Generate new token (classic)“
-3. Wähle Scope: **repo** (full control of private repositories)
+3. Wähle Scope: **repo**  
+   Wenn du Dateien unter `.github/workflows/*` pushen willst, zusätzlich Scope: **workflow**
 4. Token generieren und kopieren
 5. In deinem Home-Verzeichnis speichern:
    ```powershell
@@ -83,14 +98,199 @@ git push
 
 ## Roadmap & was kommt als Nächstes
 
-- [x] Auto-Fitness & Ancestry-Tracking
-- [x] Interaktive Hall of Fame (Suche, Filter, Stats)
-- [x] Automatisches Pushen mit PAT
-- [ ] Mutation & Crossover (Skelette paaren)
-- [ ] Erste echte Resonanz-Messung (Chat-Interaktionen)
-- [ ] Community-Rangliste & Seltenheits-Badges
-- [ ] Vis.js Evolution-Tree in der Hall of Fame
-- [ ] Mini-Transformer aus Graph-Skeletten
+- [x] Auto-Fitness & Ancestry-Tracking  
+  **Resonanz:** `88/100` 🟩🟩🟩🟩⬜  
+  **Chemie (Repo-Fit):** `90/100` 🟩🟩🟩🟩🟩  
+  **Coach-Feedback:** Starkes Fundament, stabil mit Datenhaltung verzahnt.
+
+- [x] Interaktive Hall of Fame (Suche, Filter, Stats)  
+  **Resonanz:** `84/100` 🟩🟩🟩🟩⬜  
+  **Chemie (Repo-Fit):** `86/100` 🟩🟩🟩🟩⬜  
+  **Coach-Feedback:** Gute Sichtbarkeit von Fortschritt, motiviert Contributor.
+
+- [x] Automatisches Pushen mit PAT  
+  **Resonanz:** `72/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `78/100` 🟩🟩🟩⬜⬜  
+  **Coach-Feedback:** Nützlich, aber bleibt sicherheits- und token-sensitiv.
+
+- [x] Basis-Mutation & Crossover (DNA-Mischungen aus Survivor-Eltern)  
+  **Resonanz:** `81/100` 🟩🟩🟩🟩⬜  
+  **Chemie (Repo-Fit):** `85/100` 🟩🟩🟩🟩⬜  
+  **Coach-Feedback:** Klarer Evolutionssprung gegenüber rein zufälligen Geburten.
+
+- [x] Erweiterte Evolution (lineage-aware Parent-Selection, adaptive Mutationsraten)  
+  **Resonanz:** `83/100` 🟩🟩🟩🟩⬜  
+  **Chemie (Repo-Fit):** `88/100` 🟩🟩🟩🟩⬜  
+  **Coach-Feedback:** Bessere Balance aus Leistung und Vielfalt im Genpool.
+
+- [x] Multi-Objective Selektion (Fitness + Resonanz + Diversitätsdruck)  
+  **Resonanz:** `79/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `84/100` 🟩🟩🟩🟩⬜  
+  **Coach-Feedback:** Ab jetzt wird Diversität explizit als Ziel mitoptimiert.
+
+- [x] Erste Resonanz-Messung (JSONL-basierter Interaction-Score)  
+  **Resonanz:** `76/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `82/100` 🟩🟩🟩🟩⬜  
+  **Coach-Feedback:** Gute Brücke zwischen Theorie und implementierbarer Praxis.
+
+- [x] Live-Resonanz-Ingestion (POST `/api/resonance_event`)  
+  **Resonanz:** `62/100` 🟨🟨🟨⬜⬜  
+  **Chemie (Repo-Fit):** `74/100` 🟩🟩🟩⬜⬜  
+  **Coach-Feedback:** Runtime-Eingang steht; als Nächstes Session-Memory + Streaming.
+
+- [x] Session-Continuity (session-basierte Aggregation via `resonance_sessions.json`)  
+  **Resonanz:** `68/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `77/100` 🟩🟩🟩⬜⬜  
+  **Coach-Feedback:** Kontinuität ist da; nächster Schritt ist Streaming + memory-aware weighting.
+
+- [x] Live-Resonanz-Messung (kontinuierlich + Session-Streaming via SSE)  
+  **Resonanz:** `73/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `79/100` 🟩🟩🟩⬜⬜  
+  **Coach-Feedback:** Kontinuierlicher Session-Flow steht; nächster Schritt sind native Chat/Agent-Adapter.
+
+- [x] Native Runtime-Adapter (MVP CLI: `momai-adapter`)  
+  **Resonanz:** `64/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `76/100` 🟩🟩🟩⬜⬜  
+  **Coach-Feedback:** Adapter-Basis steht; jetzt direkte Framework-Hooks pro Turn.
+
+- [x] OpenAI/Agents/Custom-Bot Hook-Integration (MVP `momai-hook`)  
+  **Resonanz:** `61/100` 🟨🟨🟨⬜⬜  
+  **Chemie (Repo-Fit):** `74/100` 🟩🟩🟩⬜⬜  
+  **Coach-Feedback:** Hook ist da; jetzt von Heuristik zu echten Runtime-Signalen gehen.
+
+- [x] Native Runtime-Semantik (MVP: Tool-Calls, Recovery, Follow-up-Konsistenz)  
+  **Resonanz:** `66/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `78/100` 🟩🟩🟩⬜⬜  
+  **Coach-Feedback:** Semantik ist integriert; jetzt echte SDK-Hooks automatisieren.
+
+- [x] Direkte SDK-Hooks (Agents/OpenAI/Custom) ohne manuelle Resonanz-Parameter  
+  **Resonanz:** `69/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `80/100` 🟩🟩🟩🟩⬜  
+  **Coach-Feedback:** Hook-Layer steht; nächster Schritt ist echte Vendor-spezifische Auto-Wiring-Integration.
+
+- [x] Vendor-native Auto-Wiring (MVP für OpenAI-ähnliche Responses)  
+  **Resonanz:** `71/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `82/100` 🟩🟩🟩🟩⬜  
+  **Coach-Feedback:** Wire-up steht; nächster Schritt ist provider-spezifische Tiefe (SDK-native Objekte/Tracing).
+
+- [x] Provider-spezifische Tiefe (OpenAI-like Tracing: usage/finish_reason/response_ms)  
+  **Resonanz:** `74/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `83/100` 🟩🟩🟩🟩⬜  
+  **Coach-Feedback:** Der Hook liest jetzt echte Provider-Spuren, nicht nur statische Felder.
+
+- [x] Multi-Provider Backends (OpenAI-like + Anthropic-like Payload-Normalisierung)  
+  **Resonanz:** `66/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `79/100` 🟩🟩🟩⬜⬜  
+  **Coach-Feedback:** Adapter spricht jetzt mehrere Payload-Stile und normalisiert Semantik konsistent.
+
+- [x] Community-Rangliste & Seltenheits-Badges  
+  **Resonanz:** `61/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `77/100` 🟩🟩🟩⬜⬜  
+  **Coach-Feedback:** Contributor-Ranking + Rarity-Badges stärken den Community-Loop sichtbar.
+
+- [x] Vis.js Evolution-Tree in der Hall of Fame  
+  **Resonanz:** `63/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `78/100` 🟩🟩🟩⬜⬜  
+  **Coach-Feedback:** Interaktive Graph-Ansicht macht Evolution und Contributor-Linien direkt greifbar.
+
+- [x] Mini-Transformer aus Graph-Skeletten (MVP Training + Checkpointing)  
+  **Resonanz:** `58/100` 🟨🟨🟨⬜⬜  
+  **Chemie (Repo-Fit):** `81/100` 🟩🟩🟩🟩⬜  
+  **Coach-Feedback:** Von Blueprint zu trainierbarem Artefakt ist jetzt im Repo-End-to-End abbildbar.
+
+- [x] IrsanAI Chemie Manager (KPI-Interpretation + Portfolio-Optimierung)  
+  **Resonanz:** `67/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `85/100` 🟩🟩🟩🟩⬜  
+  **Coach-Feedback:** KPI-getriebene Priorisierung macht Roadmap-Steuerung reproduzierbar und mastermind-fähig.
+
+- [x] IrsanAI Readme Auto Sync Manager (DE/EN Delta + Statusanzeige)  
+  **Resonanz:** `64/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `88/100` 🟩🟩🟩🟩⬜  
+  **Coach-Feedback:** Mehrsprachigkeit bleibt nachhaltig konsistent statt über Zeit auseinanderzulaufen.
+
+- [x] Resonance Lifecycle Survival Engine (thriving/alive/dormant/reconnecting/extinct)  
+  **Resonanz:** `70/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `86/100` 🟩🟩🟩🟩⬜  
+  **Coach-Feedback:** Modelliert produktnah, dass Überleben erst über echte User-Produkt-Resonanz entschieden wird.
+
+- [x] Benchmark Runner + Quality Gates (KPI-Snapshot + Mindestkriterien)  
+  **Resonanz:** `65/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `89/100` 🟩🟩🟩🟩⬜  
+  **Coach-Feedback:** Hebt das Repo von „funktioniert“ zu „messbar stabil“ mit reproduzierbaren Qualitätsgrenzen.
+
+- [x] Component Manager (Katalog + Auto-Lokalisierung + Kategorien)  
+  **Resonanz:** `69/100` 🟩🟩🟩⬜⬜  
+  **Chemie (Repo-Fit):** `87/100` 🟩🟩🟩🟩⬜  
+  **Coach-Feedback:** Komponentenbasis skaliert, Taxonomie + DE/EN-Labels für langfristige Erweiterbarkeit operationalisiert.
+
+- [ ] DAG→PyTorch Assembly Compiler v0.2 (Graph-Skelett -> trainierbares `nn.Module`)  
+  **Resonanz:** `92/100` 🟩🟩🟩🟩🟩  
+  **Chemie (Repo-Fit):** `94/100` 🟩🟩🟩🟩🟩  
+  **Coach-Feedback:** Kritischer Brückenschritt vom evolutionären Blueprint zum real trainierbaren Child-Modell.
+
+- [ ] Child-GPT Trainingspipeline v0.2 (Tokenizer, Positional Encoding, Checkpoint-Policy)  
+  **Resonanz:** `90/100` 🟩🟩🟩🟩🟩  
+  **Chemie (Repo-Fit):** `91/100` 🟩🟩🟩🟩🟩  
+  **Coach-Feedback:** Schließt den derzeit größten Gap zwischen Struktur-Evolution und produktnaher Modellgeburt.
+
+- [ ] Resonanz-Klassenlernen v0.2 (Human-Resonanz vs. Agent-Resonanz + Anti-Gaming-Guards)  
+  **Resonanz:** `89/100` 🟩🟩🟩🟩🟩  
+  **Chemie (Repo-Fit):** `90/100` 🟩🟩🟩🟩🟩  
+  **Coach-Feedback:** Macht den eigentlichen Selektionsdruck explizit und robust gegen reine Heuristik-/Metrik-Optimierung.
+
+## Resonance Protocol (neu)
+
+Mom4AI bewertet nicht mehr nur Struktur, sondern kann auch **echte Interaktion** als Fitnesssignal einbeziehen:
+
+- Datei: `resonance_events.jsonl` (eine JSON-Zeile pro Dialog-Event)
+- Kernkriterien: `intent_match`, `context_match`, `tone_match`, `reliability`, `coordination`
+- Klassifikation: `resonant`, `emerging`, `neutral`, `non_resonant`
+
+Details und Beispiel-Format: `docs/resonance_protocol.md`.
+
+## Lokales Live-Dashboard (ohne Docker & mit Docker)
+
+### Ohne Docker
+```bash
+# Im Repo-Root (Hybrid runtime inkl. local APIs)
+python src/live_dashboard_server.py
+```
+Dann öffnen: `http://localhost:8080`
+(`live_dashboard_server.py` liefert dabei explizit `docs/index.html` als Startseite aus.)
+
+### Mit Docker
+```bash
+docker run --rm -p 8080:80 -v "${PWD}/docs:/usr/share/nginx/html:ro" nginx:alpine
+```
+Dann öffnen: `http://localhost:8080`
+
+So können User lokal dieselbe Hall-of-Fame-Ansicht sehen, inkl. Live-Reload der `ancestry.json`.
+Beim Auto-Push wird `ancestry.json` jetzt bewusst nach `docs/ancestry.json` gespiegelt,
+damit GitHub Pages dieselben Zahlen wie lokal zeigt.
+Wenn der Python-Hybrid-Server läuft, kommen zusätzlich lokale Endpunkte dazu:
+- `/api/local_stats` (lokale Top-5, User-/Skeleton-Counts, Resonanzverteilung)
+- `/api/sync_status` (Branch/Tracking/dirty worktree)
+Auf GitHub Pages erscheint dafür automatisch ein „Online Mode“-Hinweis statt einer Fehlermeldung.
+
+## Nächster logischer Schritt (USP-Richtung)
+
+1. **Realtime Evolution Stream** (SSE/WebSocket): Birth, Fitness, Resonance, Survival live.
+2. **Lineage Explorer** (3D/2.5D): Kind → Eltern → Cluster inkl. Drift über Zeit.
+3. **Dual-Ranking**: Local vs Global (deine Runs vs Online Hall of Fame).
+4. **Human + Agent Feedback Layer**: Kommentare/Signals je Skeleton als Resonanz-Quelle.
+
+## Factory Blueprint (Produktionslinien-Denken)
+
+Für das von dir beschriebene „Werkshallen“-Modell sollten wir die Pipeline explizit in Linien aufteilen:
+
+1. **Design-Linie**: MomAI erzeugt Skelett + DNA + Visual + Basisklassifikation.
+2. **Assembly-Linie**: Skelett → trainierbares Child-GPT (weights/tokenizer/config).
+3. **Quality-Linie**: Resonanztests (Mensch + Agent), Robustheit, Kultur-/Kontext-Checks.
+4. **Registry-Linie**: Veröffentlichung in Model-Portal (free/paid, Tags, Zielgruppe).
+5. **Feedback-Linie**: Nutzungsdaten/Kommentare/Resonanz fließen zurück in Selektion.
+
+Das ist der Weg zum echten USP: **nicht nur Modelle erzeugen, sondern reproduzierbar Resonanz-Modelle fertigen**.
+Mehr Details: `docs/factory_blueprint.md`.
 
 ## Mitmachen & Community
 
@@ -101,15 +301,22 @@ Falls du Lust hast, einfach clonen, PAT setzen, laufen lassen – und zuschauen,
 **Fragen / Ideen / Bugs?**  
 → Issues auf GitHub oder einfach einen PR mit neuen Bio-Komponenten.
 
+Release-Checkliste: `docs/release_readiness.md`.
+Release Notes Draft: `docs/releases/v0.1.0-alpha.md`.
+Changelog: `CHANGELOG.md`.
+Release FAQ: `docs/release_faq.md`.
+Release Guard (lokal ausführen): `python src/release_guard.py`.
+Repo Resonance Standard: `docs/repo_resonance_standard.md`.
+Runtime Adapter Guide: `docs/runtime_adapter.md`.
+OpenAI/Agents Hook Guide: `docs/openai_agents_hook.md`.
+SDK Hooks Guide: `docs/sdk_hooks.md`.
+Vendor Wiring Guide: `docs/vendor_wiring.md`.
+Mini-Transformer Adapter Guide: `docs/mini_transformer_adapter.md`.
+Mini-Transformer Training Guide: `docs/mini_transformer_training.md`.
+IrsanAI Chemie Manager Guide: `docs/chemie_manager.md`.
+Readme Sync Manager Guide: `docs/readme_sync_manager.md`.
+Resonance Lifecycle Guide: `docs/resonance_lifecycle.md`.
+Benchmark Runner Guide: `docs/benchmark_runner.md`.
+Quality Gates Guide: `docs/quality_gates.md`.
+
 Made with ❤️ & many late-night runs by IrsanAI
-
----
-
-## English
-
-# Mom4AI Forge
-**The evolutionary AI mother giving birth to new neural network architectures**
-
-[... englische Version analog zur deutschen, kürzer gehalten wenn du willst ...]
-
-```
