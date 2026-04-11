@@ -1,0 +1,540 @@
+{
+  "summary": {
+    "total_components": 57,
+    "category_counts": {
+      "human_system": 6,
+      "hybrid": 19,
+      "mikrobiell": 4,
+      "neuro_biologisch": 5,
+      "oekosystem": 9,
+      "tier_schwarm": 14
+    },
+    "avg_plastizitaet": 0.7751,
+    "avg_dezentral": 0.8149
+  },
+  "underrepresented_categories": [
+    "mikrobiell",
+    "neuro_biologisch",
+    "human_system"
+  ],
+  "components": [
+    {
+      "name": "algen_bluete",
+      "plastizitaet": 0.7,
+      "dezentral": 0.88,
+      "category": "oekosystem",
+      "label_de": "algen bluete",
+      "label_en": "algen bloom"
+    },
+    {
+      "name": "ameisen_blattschneider",
+      "plastizitaet": 0.68,
+      "dezentral": 0.91,
+      "category": "tier_schwarm",
+      "label_de": "ameisen blattschneider",
+      "label_en": "ant blattschneider"
+    },
+    {
+      "name": "ameisen_schwarm",
+      "plastizitaet": 0.72,
+      "dezentral": 0.95,
+      "category": "tier_schwarm",
+      "label_de": "ameisen schwarm",
+      "label_en": "ant swarm"
+    },
+    {
+      "name": "bakterien_biofilm",
+      "plastizitaet": 0.88,
+      "dezentral": 0.99,
+      "category": "mikrobiell",
+      "label_de": "bakterien biofilm",
+      "label_en": "bakterien biofilm"
+    },
+    {
+      "name": "beaver_damm_system",
+      "plastizitaet": 0.67,
+      "dezentral": 0.63,
+      "category": "hybrid",
+      "label_de": "beaver damm system",
+      "label_en": "beaver damm system"
+    },
+    {
+      "name": "bienen_schwarm",
+      "plastizitaet": 0.68,
+      "dezentral": 0.88,
+      "category": "tier_schwarm",
+      "label_de": "bienen schwarm",
+      "label_en": "bee swarm"
+    },
+    {
+      "name": "bildungs_oekosystem_peerlearn",
+      "plastizitaet": 0.84,
+      "dezentral": 0.82,
+      "category": "human_system",
+      "label_de": "bildungs oekosystem peerlearn",
+      "label_en": "education oekosystem peerlearn"
+    },
+    {
+      "name": "delphin_klicksprache",
+      "plastizitaet": 0.84,
+      "dezentral": 0.78,
+      "category": "tier_schwarm",
+      "label_de": "delphin klicksprache",
+      "label_en": "dolphin click_language"
+    },
+    {
+      "name": "dna_reparatur_pfadenetz",
+      "plastizitaet": 0.87,
+      "dezentral": 0.66,
+      "category": "hybrid",
+      "label_de": "dna reparatur pfadenetz",
+      "label_en": "dna reparatur pfadenetz"
+    },
+    {
+      "name": "elefanten_matriarchat",
+      "plastizitaet": 0.82,
+      "dezentral": 0.65,
+      "category": "hybrid",
+      "label_de": "elefanten matriarchat",
+      "label_en": "elefanten matriarchy"
+    },
+    {
+      "name": "elefantenherde",
+      "plastizitaet": 0.71,
+      "dezentral": 0.64,
+      "category": "hybrid",
+      "label_de": "elefantenherde",
+      "label_en": "elefantenherde"
+    },
+    {
+      "name": "federated_learning_kooperative",
+      "plastizitaet": 0.89,
+      "dezentral": 0.92,
+      "category": "hybrid",
+      "label_de": "federated learning kooperative",
+      "label_en": "federated learning cooperative"
+    },
+    {
+      "name": "flechten_symbiose",
+      "plastizitaet": 0.74,
+      "dezentral": 0.75,
+      "category": "mikrobiell",
+      "label_de": "flechten symbiose",
+      "label_en": "flechten symbiosis"
+    },
+    {
+      "name": "fledermaus_echolot",
+      "plastizitaet": 0.81,
+      "dezentral": 0.84,
+      "category": "neuro_biologisch",
+      "label_de": "fledermaus echolot",
+      "label_en": "fledermaus echolot"
+    },
+    {
+      "name": "herz_kreislauf_regelkreis",
+      "plastizitaet": 0.69,
+      "dezentral": 0.52,
+      "category": "hybrid",
+      "label_de": "herz kreislauf regelkreis",
+      "label_en": "herz kreislauf control_loop"
+    },
+    {
+      "name": "honigbienentanz",
+      "plastizitaet": 0.62,
+      "dezentral": 0.85,
+      "category": "tier_schwarm",
+      "label_de": "honigbienentanz",
+      "label_en": "honigbeetanz"
+    },
+    {
+      "name": "immunsystem_adaptiv",
+      "plastizitaet": 0.91,
+      "dezentral": 0.79,
+      "category": "hybrid",
+      "label_de": "immunsystem adaptiv",
+      "label_en": "immunsystem adaptiv"
+    },
+    {
+      "name": "kaktus_wasserspeicher",
+      "plastizitaet": 0.55,
+      "dezentral": 0.6,
+      "category": "hybrid",
+      "label_de": "kaktus wasserspeicher",
+      "label_en": "kaktus water_storage"
+    },
+    {
+      "name": "katastrophenhilfe_mesh",
+      "plastizitaet": 0.81,
+      "dezentral": 0.89,
+      "category": "human_system",
+      "label_de": "katastrophenhilfe mesh",
+      "label_en": "katastrophenhilfe mesh"
+    },
+    {
+      "name": "korallen_symbiose",
+      "plastizitaet": 0.67,
+      "dezentral": 0.78,
+      "category": "oekosystem",
+      "label_de": "korallen symbiose",
+      "label_en": "coral symbiosis"
+    },
+    {
+      "name": "korallenriff",
+      "plastizitaet": 0.63,
+      "dezentral": 0.76,
+      "category": "oekosystem",
+      "label_de": "korallenriff",
+      "label_en": "coralriff"
+    },
+    {
+      "name": "kraehen_werkzeugkultur",
+      "plastizitaet": 0.82,
+      "dezentral": 0.69,
+      "category": "hybrid",
+      "label_de": "kraehen werkzeugkultur",
+      "label_en": "kraehen tool_culture"
+    },
+    {
+      "name": "krankenhaus_triage_flow",
+      "plastizitaet": 0.72,
+      "dezentral": 0.57,
+      "category": "human_system",
+      "label_de": "krankenhaus triage flow",
+      "label_en": "hospital triage flow"
+    },
+    {
+      "name": "libellen_schwarm",
+      "plastizitaet": 0.92,
+      "dezentral": 0.96,
+      "category": "tier_schwarm",
+      "label_de": "libellen schwarm",
+      "label_en": "libellen swarm"
+    },
+    {
+      "name": "logistik_hub_spoke",
+      "plastizitaet": 0.63,
+      "dezentral": 0.55,
+      "category": "human_system",
+      "label_de": "logistik hub spoke",
+      "label_en": "logistics hub spoke"
+    },
+    {
+      "name": "mangroven_wurzelmatrix",
+      "plastizitaet": 0.79,
+      "dezentral": 0.83,
+      "category": "oekosystem",
+      "label_de": "mangroven wurzelmatrix",
+      "label_en": "mangroven root_matrix"
+    },
+    {
+      "name": "markt_preissignal_schwarm",
+      "plastizitaet": 0.66,
+      "dezentral": 0.94,
+      "category": "tier_schwarm",
+      "label_de": "markt preissignal schwarm",
+      "label_en": "markt price_signal swarm"
+    },
+    {
+      "name": "mensch_gehirn",
+      "plastizitaet": 0.86,
+      "dezentral": 0.62,
+      "category": "neuro_biologisch",
+      "label_de": "mensch gehirn",
+      "label_en": "mensch brain"
+    },
+    {
+      "name": "muecken_wolke",
+      "plastizitaet": 0.85,
+      "dezentral": 0.95,
+      "category": "hybrid",
+      "label_de": "muecken wolke",
+      "label_en": "muecken cloud"
+    },
+    {
+      "name": "murmuration_stare",
+      "plastizitaet": 0.88,
+      "dezentral": 0.97,
+      "category": "tier_schwarm",
+      "label_de": "murmuration stare",
+      "label_en": "murmuration stare"
+    },
+    {
+      "name": "myzel_netz",
+      "plastizitaet": 0.9,
+      "dezentral": 0.97,
+      "category": "oekosystem",
+      "label_de": "myzel netz",
+      "label_en": "mycelium network"
+    },
+    {
+      "name": "neurales_glia_net",
+      "plastizitaet": 0.93,
+      "dezentral": 0.58,
+      "category": "neuro_biologisch",
+      "label_de": "neurales glia net",
+      "label_en": "neurales glia net"
+    },
+    {
+      "name": "oktopus_kamouflage",
+      "plastizitaet": 0.98,
+      "dezentral": 0.99,
+      "category": "neuro_biologisch",
+      "label_de": "oktopus kamouflage",
+      "label_en": "octopus kamouflage"
+    },
+    {
+      "name": "oktopus_nervensystem",
+      "plastizitaet": 0.95,
+      "dezentral": 0.9,
+      "category": "neuro_biologisch",
+      "label_de": "oktopus nervensystem",
+      "label_en": "octopus nervous_system"
+    },
+    {
+      "name": "open_source_maintainer_netz",
+      "plastizitaet": 0.86,
+      "dezentral": 0.84,
+      "category": "human_system",
+      "label_de": "open source maintainer netz",
+      "label_en": "open source maintainer network"
+    },
+    {
+      "name": "orca_jagdkoordination",
+      "plastizitaet": 0.77,
+      "dezentral": 0.73,
+      "category": "tier_schwarm",
+      "label_de": "orca jagdkoordination",
+      "label_en": "orca hunt_coordination"
+    },
+    {
+      "name": "pflanzen_woodwideweb",
+      "plastizitaet": 0.91,
+      "dezentral": 0.96,
+      "category": "oekosystem",
+      "label_de": "pflanzen woodwideweb",
+      "label_en": "plant woodwideweb"
+    },
+    {
+      "name": "pflanzenwurzelnetz",
+      "plastizitaet": 0.79,
+      "dezentral": 0.87,
+      "category": "oekosystem",
+      "label_de": "pflanzenwurzelnetz",
+      "label_en": "plantwurzelnetz"
+    },
+    {
+      "name": "pilz_ektomykorrhiza",
+      "plastizitaet": 0.94,
+      "dezentral": 0.97,
+      "category": "oekosystem",
+      "label_de": "pilz ektomykorrhiza",
+      "label_en": "pilz ektomykorrhiza"
+    },
+    {
+      "name": "pinguin_huddle_thermik",
+      "plastizitaet": 0.64,
+      "dezentral": 0.86,
+      "category": "hybrid",
+      "label_de": "pinguin huddle thermik",
+      "label_en": "pinguin huddle thermik"
+    },
+    {
+      "name": "quorum_sensing",
+      "plastizitaet": 0.74,
+      "dezentral": 0.9,
+      "category": "mikrobiell",
+      "label_de": "quorum sensing",
+      "label_en": "quorum sensing"
+    },
+    {
+      "name": "regenwald_stockwerk_nischen",
+      "plastizitaet": 0.83,
+      "dezentral": 0.71,
+      "category": "oekosystem",
+      "label_de": "regenwald stockwerk nischen",
+      "label_en": "regenwald layered niches"
+    },
+    {
+      "name": "ritual_kultur_transmission",
+      "plastizitaet": 0.71,
+      "dezentral": 0.68,
+      "category": "hybrid",
+      "label_de": "ritual kultur transmission",
+      "label_en": "ritual kultur transmission"
+    },
+    {
+      "name": "schnecken_chemospur",
+      "plastizitaet": 0.65,
+      "dezentral": 0.8,
+      "category": "hybrid",
+      "label_de": "schnecken chemospur",
+      "label_en": "schnecken chemo_trail"
+    },
+    {
+      "name": "schwarmfisch",
+      "plastizitaet": 0.8,
+      "dezentral": 0.94,
+      "category": "tier_schwarm",
+      "label_de": "schwarmfisch",
+      "label_en": "schwarmfisch"
+    },
+    {
+      "name": "slime_mold",
+      "plastizitaet": 0.88,
+      "dezentral": 0.93,
+      "category": "hybrid",
+      "label_de": "slime mold",
+      "label_en": "slime mold"
+    },
+    {
+      "name": "spinnennetz_schwingung",
+      "plastizitaet": 0.76,
+      "dezentral": 0.81,
+      "category": "hybrid",
+      "label_de": "spinnennetz schwingung",
+      "label_en": "spinnennetz vibration"
+    },
+    {
+      "name": "stadtverkehr_selbstorganisation",
+      "plastizitaet": 0.61,
+      "dezentral": 0.88,
+      "category": "human_system",
+      "label_de": "stadtverkehr selbstorganisation",
+      "label_en": "cityverkehr self_organization"
+    },
+    {
+      "name": "termite_klimakammer",
+      "plastizitaet": 0.72,
+      "dezentral": 0.93,
+      "category": "hybrid",
+      "label_de": "termite klimakammer",
+      "label_en": "termitee klimakammer"
+    },
+    {
+      "name": "termitenbau",
+      "plastizitaet": 0.7,
+      "dezentral": 0.92,
+      "category": "hybrid",
+      "label_de": "termitenbau",
+      "label_en": "termiteenbau"
+    },
+    {
+      "name": "tiefsee_leuchtnetz",
+      "plastizitaet": 0.75,
+      "dezentral": 0.82,
+      "category": "hybrid",
+      "label_de": "tiefsee leuchtnetz",
+      "label_en": "tiefsee leuchtnetz"
+    },
+    {
+      "name": "virus_mutationsdruck",
+      "plastizitaet": 0.99,
+      "dezentral": 0.97,
+      "category": "mikrobiell",
+      "label_de": "virus mutationsdruck",
+      "label_en": "virus mutation_pressure"
+    },
+    {
+      "name": "vogel_formation",
+      "plastizitaet": 0.58,
+      "dezentral": 0.89,
+      "category": "tier_schwarm",
+      "label_de": "vogel formation",
+      "label_en": "bird formation"
+    },
+    {
+      "name": "vogelzug",
+      "plastizitaet": 0.57,
+      "dezentral": 0.84,
+      "category": "tier_schwarm",
+      "label_de": "vogelzug",
+      "label_en": "birdzug"
+    },
+    {
+      "name": "wissensgraph_kollektiv",
+      "plastizitaet": 0.85,
+      "dezentral": 0.77,
+      "category": "hybrid",
+      "label_de": "wissensgraph kollektiv",
+      "label_en": "wissensgraph collective"
+    },
+    {
+      "name": "wolf_rudel",
+      "plastizitaet": 0.73,
+      "dezentral": 0.7,
+      "category": "tier_schwarm",
+      "label_de": "wolf rudel",
+      "label_en": "wolf rudel"
+    },
+    {
+      "name": "wolf_rudel_jagd",
+      "plastizitaet": 0.78,
+      "dezentral": 0.72,
+      "category": "tier_schwarm",
+      "label_de": "wolf rudel jagd",
+      "label_en": "wolf rudel jagd"
+    }
+  ],
+  "suggestions": [
+    {
+      "name": "quallen_schwarm_signal",
+      "metrics": {
+        "plastizitaet": 0.77,
+        "dezentral": 0.95
+      },
+      "category": "tier_schwarm",
+      "label_de": "quallen schwarm signal",
+      "label_en": "quallen swarm signal"
+    },
+    {
+      "name": "fruehwarnnetz_epidemiologie",
+      "metrics": {
+        "plastizitaet": 0.83,
+        "dezentral": 0.88
+      },
+      "category": "hybrid",
+      "label_de": "fruehwarnnetz epidemiologie",
+      "label_en": "fruehwarnnetz epidemiologie"
+    },
+    {
+      "name": "papierwespen_nestlogik",
+      "metrics": {
+        "plastizitaet": 0.71,
+        "dezentral": 0.82
+      },
+      "category": "hybrid",
+      "label_de": "papierwespen nestlogik",
+      "label_en": "papierwespen nestlogik"
+    },
+    {
+      "name": "walgesang_langdistanz",
+      "metrics": {
+        "plastizitaet": 0.73,
+        "dezentral": 0.72
+      },
+      "category": "hybrid",
+      "label_de": "walgesang langdistanz",
+      "label_en": "walgesang langdistanz"
+    },
+    {
+      "name": "koalitions_diplomatie_mensch",
+      "metrics": {
+        "plastizitaet": 0.78,
+        "dezentral": 0.67
+      },
+      "category": "hybrid",
+      "label_de": "koalitions diplomatie mensch",
+      "label_en": "koalitions diplomatie mensch"
+    },
+    {
+      "name": "biberlandschaft_ingenieur",
+      "metrics": {
+        "plastizitaet": 0.69,
+        "dezentral": 0.64
+      },
+      "category": "hybrid",
+      "label_de": "biberlandschaft ingenieur",
+      "label_en": "biberlandschaft ingenieur"
+    }
+  ]
+}
