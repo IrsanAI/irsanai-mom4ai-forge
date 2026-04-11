@@ -17619,5 +17619,244 @@
     "objective_auto_resonance": 0.2747478432039673,
     "objective_diversity": 0.93720625,
     "image_path": "images/TermitenbauVogelzug-G1.636388888888889-399-fcbe0a17.png"
+  },
+  {
+    "id": "974d8d80",
+    "name": "TermitePilz-G1.636388888888889-699-974d8d80",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "termite_klimakammer": 61.97,
+      "pilz_ektomykorrhiza": 37.81,
+      "elefantenherde": 0.21
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-04-12T01:37:35.969923",
+    "facts": {
+      "nodes": 34,
+      "edges": 168,
+      "density": 0.1497326203208556,
+      "modularity": 0.17156860176936103,
+      "feedback_loops": 3,
+      "dominant_type": "termite_klimakammer"
+    },
+    "creation_mode": "mutation",
+    "parents": [
+      "TermitePilz-G1.636388888888889-399-d996a291"
+    ],
+    "fitness": 0.45411171780601184,
+    "auto_fitness": 0.2880052070746824,
+    "resonance_fitness": 0.0,
+    "resonance_interactions": 0,
+    "resonance_classification": "insufficient_data",
+    "objective_auto_resonance": 0.2880052070746824,
+    "objective_diversity": 0.9524312500000001,
+    "image_path": "images/TermitePilz-G1.636388888888889-699-974d8d80.png"
+  },
+  {
+    "id": "a12610ac",
+    "name": "PflanzenSchnecken-G1.636388888888889-699-a12610ac",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "pflanzen_woodwideweb": 42.63,
+      "kaktus_wasserspeicher": 4.6,
+      "vogel_formation": 15.66,
+      "ameisen_schwarm": 0.0,
+      "virus_mutationsdruck": 2.91,
+      "schnecken_chemospur": 30.94,
+      "termitenbau": 3.25
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-04-12T01:37:36.946127",
+    "facts": {
+      "nodes": 32,
+      "edges": 136,
+      "density": 0.13709677419354838,
+      "modularity": 0.24905622881369258,
+      "feedback_loops": 4,
+      "dominant_type": "pflanzen_woodwideweb"
+    },
+    "creation_mode": "crossover",
+    "parents": [
+      "SchneckenVirus-G1.636388888888889-399-ee69f7a6",
+      "PflanzenVogel-G1.636388888888889-399-5ba0133d"
+    ],
+    "fitness": 0.4565064737698616,
+    "auto_fitness": 0.3194440483598154,
+    "resonance_fitness": 0.0,
+    "resonance_interactions": 0,
+    "resonance_classification": "insufficient_data",
+    "objective_auto_resonance": 0.3194440483598154,
+    "objective_diversity": 0.8676937500000002,
+    "image_path": "images/PflanzenSchnecken-G1.636388888888889-699-a12610ac.png"
+  },
+  {
+    "id": "3fa442c0",
+    "name": "PflanzenVogelzug-G1.636388888888889-699-3fa442c0",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "pflanzen_woodwideweb": 40.13,
+      "muecken_wolke": 6.97,
+      "vogel_formation": 10.04,
+      "myzel_netz": 10.57,
+      "vogelzug": 32.29
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-04-12T01:37:37.363127",
+    "facts": {
+      "nodes": 32,
+      "edges": 152,
+      "density": 0.1532258064516129,
+      "modularity": 0.18609491189928123,
+      "feedback_loops": 7,
+      "dominant_type": "pflanzen_woodwideweb"
+    },
+    "creation_mode": "crossover",
+    "parents": [
+      "PflanzenVogel-G1.636388888888889-399-5ba0133d",
+      "VogelzugMyzel-G1.636388888888889-399-9c45677d"
+    ],
+    "fitness": 0.46391325869988653,
+    "auto_fitness": 0.326884344933182,
+    "resonance_fitness": 0.0,
+    "resonance_interactions": 0,
+    "resonance_classification": "insufficient_data",
+    "objective_auto_resonance": 0.326884344933182,
+    "objective_diversity": 0.875,
+    "image_path": "images/PflanzenVogelzug-G1.636388888888889-699-3fa442c0.png"
+  },
+  {
+    "id": "7933fcd5",
+    "name": "BakterienDelphin-G1.636388888888889-699-7933fcd5",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "federated_learning_kooperative": 17.69,
+      "bakterien_biofilm": 42.18,
+      "kraehen_werkzeugkultur": 0.09,
+      "elefantenherde": 4.74,
+      "delphin_klicksprache": 35.29
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-04-12T01:37:37.816196",
+    "facts": {
+      "nodes": 35,
+      "edges": 181,
+      "density": 0.15210084033613444,
+      "modularity": 0.1892504260153882,
+      "feedback_loops": 2,
+      "dominant_type": "bakterien_biofilm"
+    },
+    "creation_mode": "random",
+    "parents": [],
+    "fitness": 0.47122768362762035,
+    "auto_fitness": 0.2969598281701605,
+    "resonance_fitness": 0.0,
+    "resonance_interactions": 0,
+    "resonance_classification": "insufficient_data",
+    "objective_auto_resonance": 0.2969598281701605,
+    "objective_diversity": 0.9940312499999999,
+    "image_path": "images/BakterienDelphin-G1.636388888888889-699-7933fcd5.png"
+  },
+  {
+    "id": "2a4d4017",
+    "name": "PflanzenVirus-G1.636388888888889-699-2a4d4017",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "pflanzen_woodwideweb": 44.0,
+      "vogel_formation": 12.03,
+      "virus_mutationsdruck": 31.21,
+      "wolf_rudel": 8.74,
+      "wolf_rudel_jagd": 4.02
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-04-12T01:37:38.298922",
+    "facts": {
+      "nodes": 36,
+      "edges": 163,
+      "density": 0.12936507936507938,
+      "modularity": 0.18671378618905687,
+      "feedback_loops": 3,
+      "dominant_type": "pflanzen_woodwideweb"
+    },
+    "creation_mode": "crossover",
+    "parents": [
+      "PflanzenVogel-G1.636388888888889-399-5ba0133d",
+      "VirusWolf-G1.636388888888889-399-1f03380e"
+    ],
+    "fitness": 0.43120084550669574,
+    "auto_fitness": 0.29960529400892766,
+    "resonance_fitness": 0.0,
+    "resonance_interactions": 0,
+    "resonance_classification": "insufficient_data",
+    "objective_auto_resonance": 0.29960529400892766,
+    "objective_diversity": 0.8259875,
+    "image_path": "images/PflanzenVirus-G1.636388888888889-699-2a4d4017.png"
+  },
+  {
+    "id": "9e131f89",
+    "name": "PflanzenwurzelnetzMensch-G1.636388888888889-699-9e131f89",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "pflanzenwurzelnetz": 30.73,
+      "myzel_netz": 18.81,
+      "quorum_sensing": 5.02,
+      "slime_mold": 10.62,
+      "bienen_schwarm": 9.83,
+      "mensch_gehirn": 21.8,
+      "immunsystem_adaptiv": 3.18
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-04-12T01:37:38.756911",
+    "facts": {
+      "nodes": 34,
+      "edges": 146,
+      "density": 0.13012477718360071,
+      "modularity": 0.20216126229537326,
+      "feedback_loops": 6,
+      "dominant_type": "pflanzenwurzelnetz"
+    },
+    "creation_mode": "mutation",
+    "parents": [
+      "PflanzenwurzelnetzMensch-G1.636388888888889-399-ce8fceba"
+    ],
+    "fitness": 0.4788034223422939,
+    "auto_fitness": 0.3255524797897252,
+    "resonance_fitness": 0.0,
+    "resonance_interactions": 0,
+    "resonance_classification": "insufficient_data",
+    "objective_auto_resonance": 0.3255524797897252,
+    "objective_diversity": 0.93855625,
+    "image_path": "images/PflanzenwurzelnetzMensch-G1.636388888888889-699-9e131f89.png"
+  },
+  {
+    "id": "e5b16b35",
+    "name": "TermitePilz-G1.636388888888889-699-e5b16b35",
+    "generation": 1.636388888888889,
+    "mixture": {
+      "termite_klimakammer": 58.83,
+      "pilz_ektomykorrhiza": 41.17,
+      "elefantenherde": 0.0
+    },
+    "produced_by": "IrsanAI",
+    "timestamp": "2026-04-12T01:37:39.276348",
+    "facts": {
+      "nodes": 34,
+      "edges": 164,
+      "density": 0.14616755793226383,
+      "modularity": 0.21525291050365758,
+      "feedback_loops": 6,
+      "dominant_type": "termite_klimakammer"
+    },
+    "creation_mode": "mutation",
+    "parents": [
+      "TermitePilz-G1.636388888888889-399-d996a291"
+    ],
+    "fitness": 0.48696011469635264,
+    "auto_fitness": 0.3331009862618035,
+    "resonance_fitness": 0.0,
+    "resonance_interactions": 0,
+    "resonance_classification": "insufficient_data",
+    "objective_auto_resonance": 0.3331009862618035,
+    "objective_diversity": 0.9485375,
+    "image_path": "images/TermitePilz-G1.636388888888889-699-e5b16b35.png"
   }
 ]
