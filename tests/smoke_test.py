@@ -29,6 +29,7 @@ from component_manager import (
     _label_en,
     _underrepresented_categories,
 )
+from assembly_compiler import validate_contract, AssemblyContractError, contract_summary
 from vendor_wiring import (
     auto_wire_turn,
     extract_anthropic_tool_stats,
@@ -483,6 +484,36 @@ def test_component_manager_localization_tokens():
     assert "cloud" in label2
 
 
+def test_assembly_contract_valid_and_invalid_cases():
+    valid = {
+        "name": "demo-contract",
+        "nodes": [
+            {"id": "input", "in_dim": 32, "out_dim": 32, "op": "linear"},
+            {"id": "mid", "in_dim": 32, "out_dim": 64, "merge": "sum"},
+            {"id": "out", "in_dim": 64, "out_dim": 64, "merge": "concat"},
+        ],
+        "edges": [["input", "mid"], ["mid", "out"]],
+    }
+    contract = validate_contract(valid)
+    summary = contract_summary(contract)
+    assert summary["node_count"] == 3
+    assert summary["edge_count"] == 2
+
+    invalid_payloads = [
+        {"name": "", "nodes": [], "edges": []},  # missing name / nodes
+        {"name": "x", "nodes": [{"id": "a", "in_dim": 4, "out_dim": 4}], "edges": [["a", "b"]]},  # unknown node
+        {"name": "x", "nodes": [{"id": "a", "in_dim": 4, "out_dim": 4}], "edges": [["a", "a"]]},  # self loop
+        {"name": "x", "nodes": [{"id": "a", "in_dim": 4, "out_dim": 4}, {"id": "b", "in_dim": 4, "out_dim": 4}], "edges": [["a", "b"], ["b", "a"]]},  # cycle
+        {"name": "x", "nodes": [{"id": "a", "in_dim": -1, "out_dim": 4}], "edges": []},  # invalid dims
+    ]
+    for payload in invalid_payloads:
+        try:
+            validate_contract(payload)
+            assert False, "expected AssemblyContractError"
+        except AssemblyContractError:
+            pass
+
+
 if __name__ == "__main__":
     test_validate_resonance_event()
     test_resonance_scoring_bounds()
@@ -508,4 +539,5 @@ if __name__ == "__main__":
     test_release_guard_report_contracts()
     test_component_manager_registry_and_suggestions()
     test_component_manager_localization_tokens()
+    test_assembly_contract_valid_and_invalid_cases()
     print("smoke tests passed")

@@ -31,6 +31,7 @@ momai-lifecycle = "resonance_lifecycle:main"
 momai-benchmark = "benchmark_runner:main"
 momai-quality-gates = "quality_gates:main"
 momai-components = "component_manager:main"
+momai-assembly-contract = "assembly_compiler:main"
 
 [tool.setuptools]
 py-modules = [
@@ -53,6 +54,7 @@ py-modules = [
   "benchmark_runner",
   "quality_gates",
   "component_manager",
+  "assembly_compiler",
 ]
 
 [tool.setuptools.package-dir]

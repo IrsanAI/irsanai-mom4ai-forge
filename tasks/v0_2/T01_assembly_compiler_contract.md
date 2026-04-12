@@ -1,5 +1,8 @@
 # T01 — Assembly Compiler Contract
 
+## Status
+✅ Done
+
 ## Ziel
 Definiere den formalen DAG->Model Contract (Knoten-/Kantenanforderungen, Merge-Regeln, Dimensionsschema).
 
@@ -11,8 +14,8 @@ Definiere den formalen DAG->Model Contract (Knoten-/Kantenanforderungen, Merge-R
 - Vollständige Trainingsintegration
 
 ## Akzeptanzkriterien
-- [ ] Contract ist dokumentiert und testbar
-- [ ] Mindestens 5 Invalid-Case-Fehler klar benannt
+- [x] Contract ist dokumentiert und testbar
+- [x] Mindestens 5 Invalid-Case-Fehler klar benannt
 
 ## Tests
 - [ ] `python -m py_compile src/*.py tests/smoke_test.py`
