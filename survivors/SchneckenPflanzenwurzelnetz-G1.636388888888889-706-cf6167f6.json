@@ -1,0 +1,1274 @@
+{
+  "name": "SchneckenPflanzenwurzelnetz-G1.636388888888889-706-cf6167f6",
+  "generation": 0.6363888888888889,
+  "mixture": {
+    "slime_mold": 6.63,
+    "virus_mutationsdruck": 3.86,
+    "kaktus_wasserspeicher": 6.76,
+    "bienen_schwarm": 6.35,
+    "termitenbau": 6.26,
+    "schnecken_chemospur": 21.55,
+    "myzel_netz": 7.13,
+    "mensch_gehirn": 18.07,
+    "ameisen_schwarm": 0.0,
+    "pflanzenwurzelnetz": 20.83,
+    "quorum_sensing": 2.56
+  },
+  "fitness": 0.42051498095984174,
+  "timestamp": "20260412_021642",
+  "graph_data": {
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 0
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 1
+      },
+      {
+        "type": "AttentionHead",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 2
+      },
+      {
+        "type": "AttentionHead",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 3
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 4
+      },
+      {
+        "type": "MyzelRouter",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 5
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 6
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 7
+      },
+      {
+        "type": "AttentionHead",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 8
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 9
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 10
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 11
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 12
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 13
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 14
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 15
+      },
+      {
+        "type": "SwarmFFN",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 16
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 17
+      },
+      {
+        "type": "AttentionHead",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 18
+      },
+      {
+        "type": "MyzelRouter",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 19
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 20
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 21
+      },
+      {
+        "type": "AttentionHead",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 22
+      },
+      {
+        "type": "AttentionHead",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 23
+      },
+      {
+        "type": "SwarmFFN",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 24
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 25
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 26
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 27
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 28
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 29
+      },
+      {
+        "type": "SwarmFFN",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 30
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "slime_mold": 6.63,
+          "virus_mutationsdruck": 3.86,
+          "kaktus_wasserspeicher": 6.76,
+          "bienen_schwarm": 6.35,
+          "termitenbau": 6.26,
+          "schnecken_chemospur": 21.55,
+          "myzel_netz": 7.13,
+          "mensch_gehirn": 18.07,
+          "ameisen_schwarm": 0.0,
+          "pflanzenwurzelnetz": 20.83,
+          "quorum_sensing": 2.56
+        },
+        "id": 31
+      }
+    ],
+    "edges": [
+      {
+        "weight": 1.1738873991930512,
+        "type": "forward",
+        "source": 0,
+        "target": 7
+      },
+      {
+        "weight": 1.0391599151614654,
+        "type": "forward",
+        "source": 0,
+        "target": 8
+      },
+      {
+        "weight": 0.7875144411826344,
+        "type": "forward",
+        "source": 0,
+        "target": 13
+      },
+      {
+        "weight": 0.5825271076609958,
+        "type": "forward",
+        "source": 0,
+        "target": 15
+      },
+      {
+        "weight": 1.097446196343104,
+        "type": "forward",
+        "source": 0,
+        "target": 20
+      },
+      {
+        "weight": 1.0520862497365688,
+        "type": "forward",
+        "source": 0,
+        "target": 23
+      },
+      {
+        "weight": 1.3639949252412076,
+        "type": "forward",
+        "source": 0,
+        "target": 25
+      },
+      {
+        "weight": 0.9040863502088086,
+        "type": "forward",
+        "source": 1,
+        "target": 4
+      },
+      {
+        "weight": 0.5946116069941454,
+        "type": "forward",
+        "source": 1,
+        "target": 10
+      },
+      {
+        "weight": 1.0538599555696138,
+        "type": "forward",
+        "source": 1,
+        "target": 13
+      },
+      {
+        "weight": 1.2450883436803983,
+        "type": "forward",
+        "source": 1,
+        "target": 19
+      },
+      {
+        "weight": 0.8723370369373147,
+        "type": "forward",
+        "source": 1,
+        "target": 23
+      },
+      {
+        "weight": 1.02161769597622,
+        "type": "forward",
+        "source": 1,
+        "target": 29
+      },
+      {
+        "weight": 0.7908471992599085,
+        "type": "forward",
+        "source": 1,
+        "target": 30
+      },
+      {
+        "weight": 0.5942296803937785,
+        "type": "forward",
+        "source": 2,
+        "target": 6
+      },
+      {
+        "weight": 0.6536659713545948,
+        "type": "forward",
+        "source": 2,
+        "target": 11
+      },
+      {
+        "weight": 1.4190533116481399,
+        "type": "forward",
+        "source": 2,
+        "target": 12
+      },
+      {
+        "weight": 1.1329385667894827,
+        "type": "forward",
+        "source": 2,
+        "target": 16
+      },
+      {
+        "weight": 0.5405185803502011,
+        "type": "forward",
+        "source": 2,
+        "target": 17
+      },
+      {
+        "weight": 1.2967105717057257,
+        "type": "forward",
+        "source": 2,
+        "target": 19
+      },
+      {
+        "weight": 0.5074545073431105,
+        "type": "forward",
+        "source": 2,
+        "target": 20
+      },
+      {
+        "weight": 0.8463833149105608,
+        "type": "forward",
+        "source": 3,
+        "target": 9
+      },
+      {
+        "weight": 0.858507292714036,
+        "type": "forward",
+        "source": 3,
+        "target": 12
+      },
+      {
+        "weight": 1.2017082199937765,
+        "type": "forward",
+        "source": 3,
+        "target": 13
+      },
+      {
+        "weight": 0.5222078590617207,
+        "type": "forward",
+        "source": 3,
+        "target": 14
+      },
+      {
+        "weight": 0.929706239777573,
+        "type": "forward",
+        "source": 3,
+        "target": 18
+      },
+      {
+        "weight": 0.9867950206216797,
+        "type": "forward",
+        "source": 3,
+        "target": 25
+      },
+      {
+        "weight": 0.7468449141651924,
+        "type": "forward",
+        "source": 3,
+        "target": 27
+      },
+      {
+        "weight": 1.4417694215969568,
+        "type": "forward",
+        "source": 3,
+        "target": 29
+      },
+      {
+        "weight": 0.628867576920416,
+        "type": "forward",
+        "source": 4,
+        "target": 12
+      },
+      {
+        "weight": 1.4507826297801212,
+        "type": "forward",
+        "source": 4,
+        "target": 15
+      },
+      {
+        "weight": 0.547028881932828,
+        "type": "forward",
+        "source": 4,
+        "target": 18
+      },
+      {
+        "weight": 0.9756720857718644,
+        "type": "forward",
+        "source": 4,
+        "target": 24
+      },
+      {
+        "weight": 1.4832742922999458,
+        "type": "forward",
+        "source": 4,
+        "target": 25
+      },
+      {
+        "weight": 1.4880021560028993,
+        "type": "forward",
+        "source": 4,
+        "target": 28
+      },
+      {
+        "weight": 1.1071494186928525,
+        "type": "forward",
+        "source": 5,
+        "target": 7
+      },
+      {
+        "weight": 0.8254102998714261,
+        "type": "forward",
+        "source": 5,
+        "target": 8
+      },
+      {
+        "weight": 1.1551309901971567,
+        "type": "forward",
+        "source": 5,
+        "target": 14
+      },
+      {
+        "weight": 0.6470382127340046,
+        "type": "forward",
+        "source": 5,
+        "target": 18
+      },
+      {
+        "weight": 0.858826262889122,
+        "type": "forward",
+        "source": 5,
+        "target": 21
+      },
+      {
+        "weight": 1.1969529740495766,
+        "type": "forward",
+        "source": 5,
+        "target": 26
+      },
+      {
+        "weight": 0.6504011510822054,
+        "type": "forward",
+        "source": 6,
+        "target": 9
+      },
+      {
+        "weight": 1.2212044020317885,
+        "type": "forward",
+        "source": 6,
+        "target": 10
+      },
+      {
+        "weight": 1.1621231888547168,
+        "type": "forward",
+        "source": 6,
+        "target": 15
+      },
+      {
+        "weight": 0.9722222831463802,
+        "type": "forward",
+        "source": 6,
+        "target": 17
+      },
+      {
+        "weight": 0.731255747433953,
+        "type": "forward",
+        "source": 6,
+        "target": 18
+      },
+      {
+        "weight": 0.6427833299717894,
+        "type": "forward",
+        "source": 6,
+        "target": 20
+      },
+      {
+        "weight": 0.93781278075052,
+        "type": "forward",
+        "source": 6,
+        "target": 23
+      },
+      {
+        "weight": 1.4764412435560272,
+        "type": "forward",
+        "source": 6,
+        "target": 25
+      },
+      {
+        "weight": 0.981718779703659,
+        "type": "forward",
+        "source": 7,
+        "target": 10
+      },
+      {
+        "weight": 0.5679505811360729,
+        "type": "forward",
+        "source": 7,
+        "target": 12
+      },
+      {
+        "weight": 1.4509353173717958,
+        "type": "forward",
+        "source": 7,
+        "target": 14
+      },
+      {
+        "weight": 0.7279743757161029,
+        "type": "forward",
+        "source": 7,
+        "target": 15
+      },
+      {
+        "weight": 0.7702510828246296,
+        "type": "forward",
+        "source": 7,
+        "target": 17
+      },
+      {
+        "weight": 0.8284802990603769,
+        "type": "forward",
+        "source": 7,
+        "target": 18
+      },
+      {
+        "weight": 1.3069347056284593,
+        "type": "forward",
+        "source": 7,
+        "target": 26
+      },
+      {
+        "weight": 0.9875827031575292,
+        "type": "forward",
+        "source": 7,
+        "target": 29
+      },
+      {
+        "weight": 0.9070156752966817,
+        "type": "forward",
+        "source": 7,
+        "target": 30
+      },
+      {
+        "weight": 0.5208440435078535,
+        "type": "forward",
+        "source": 8,
+        "target": 14
+      },
+      {
+        "weight": 1.389462609603732,
+        "type": "forward",
+        "source": 8,
+        "target": 27
+      },
+      {
+        "weight": 0.6617294688218752,
+        "type": "forward",
+        "source": 9,
+        "target": 14
+      },
+      {
+        "weight": 1.1000777570908,
+        "type": "forward",
+        "source": 9,
+        "target": 15
+      },
+      {
+        "weight": 0.5603199967545671,
+        "type": "forward",
+        "source": 9,
+        "target": 23
+      },
+      {
+        "weight": 0.9420827156966901,
+        "type": "forward",
+        "source": 9,
+        "target": 28
+      },
+      {
+        "weight": 1.2859022122649932,
+        "type": "forward",
+        "source": 9,
+        "target": 30
+      },
+      {
+        "weight": 0.6308180191860663,
+        "type": "forward",
+        "source": 9,
+        "target": 31
+      },
+      {
+        "weight": 0.7637703514626145,
+        "type": "forward",
+        "source": 10,
+        "target": 12
+      },
+      {
+        "weight": 1.0323978653391461,
+        "type": "forward",
+        "source": 10,
+        "target": 15
+      },
+      {
+        "weight": 1.3976220215091115,
+        "type": "forward",
+        "source": 10,
+        "target": 28
+      },
+      {
+        "weight": 0.8593807743432507,
+        "type": "forward",
+        "source": 10,
+        "target": 31
+      },
+      {
+        "weight": 1.3617387642279342,
+        "type": "forward",
+        "source": 11,
+        "target": 18
+      },
+      {
+        "weight": 0.8037594707590479,
+        "type": "forward",
+        "source": 11,
+        "target": 21
+      },
+      {
+        "weight": 1.268184502565866,
+        "type": "forward",
+        "source": 11,
+        "target": 22
+      },
+      {
+        "weight": 1.40830663185324,
+        "type": "forward",
+        "source": 11,
+        "target": 29
+      },
+      {
+        "weight": 1.242909107031437,
+        "type": "forward",
+        "source": 12,
+        "target": 16
+      },
+      {
+        "weight": 0.8978969509913058,
+        "type": "forward",
+        "source": 12,
+        "target": 24
+      },
+      {
+        "weight": 0.7379666900342423,
+        "type": "forward",
+        "source": 12,
+        "target": 27
+      },
+      {
+        "weight": 0.8173303045604019,
+        "type": "forward",
+        "source": 13,
+        "target": 14
+      },
+      {
+        "weight": 0.8368205075023039,
+        "type": "forward",
+        "source": 13,
+        "target": 25
+      },
+      {
+        "weight": 0.5449761961269666,
+        "type": "forward",
+        "source": 13,
+        "target": 26
+      },
+      {
+        "weight": 1.331759209526148,
+        "type": "forward",
+        "source": 13,
+        "target": 28
+      },
+      {
+        "weight": 1.1724320188952295,
+        "type": "forward",
+        "source": 14,
+        "target": 20
+      },
+      {
+        "weight": 1.2626947548254892,
+        "type": "forward",
+        "source": 14,
+        "target": 21
+      },
+      {
+        "weight": 1.2466961677479267,
+        "type": "forward",
+        "source": 14,
+        "target": 23
+      },
+      {
+        "weight": 0.8740900702636484,
+        "type": "forward",
+        "source": 14,
+        "target": 24
+      },
+      {
+        "weight": 0.9873609846220195,
+        "type": "forward",
+        "source": 14,
+        "target": 25
+      },
+      {
+        "weight": 0.9521623637549894,
+        "type": "forward",
+        "source": 15,
+        "target": 16
+      },
+      {
+        "weight": 0.7667177189893537,
+        "type": "forward",
+        "source": 15,
+        "target": 19
+      },
+      {
+        "weight": 0.6090019797168051,
+        "type": "forward",
+        "source": 15,
+        "target": 20
+      },
+      {
+        "weight": 1.4719740872825628,
+        "type": "forward",
+        "source": 15,
+        "target": 28
+      },
+      {
+        "weight": 0.9962135976636413,
+        "type": "forward",
+        "source": 16,
+        "target": 20
+      },
+      {
+        "weight": 1.0690597647556355,
+        "type": "forward",
+        "source": 16,
+        "target": 22
+      },
+      {
+        "weight": 0.942394546756394,
+        "type": "forward",
+        "source": 16,
+        "target": 23
+      },
+      {
+        "weight": 1.0570706149494635,
+        "type": "forward",
+        "source": 16,
+        "target": 31
+      },
+      {
+        "weight": 1.059959746225794,
+        "type": "forward",
+        "source": 17,
+        "target": 30
+      },
+      {
+        "weight": 1.189763902472913,
+        "type": "forward",
+        "source": 19,
+        "target": 21
+      },
+      {
+        "weight": 1.4068597665853573,
+        "type": "forward",
+        "source": 19,
+        "target": 22
+      },
+      {
+        "weight": 0.7614087416958761,
+        "type": "forward",
+        "source": 19,
+        "target": 25
+      },
+      {
+        "weight": 0.8973524071517301,
+        "type": "forward",
+        "source": 19,
+        "target": 26
+      },
+      {
+        "weight": 1.4493157114318045,
+        "type": "forward",
+        "source": 19,
+        "target": 27
+      },
+      {
+        "weight": 1.1331459326068876,
+        "type": "forward",
+        "source": 20,
+        "target": 25
+      },
+      {
+        "weight": 0.8626241227781931,
+        "type": "forward",
+        "source": 20,
+        "target": 26
+      },
+      {
+        "weight": 1.0981537119461882,
+        "type": "forward",
+        "source": 20,
+        "target": 27
+      },
+      {
+        "weight": 0.821499268245412,
+        "type": "forward",
+        "source": 21,
+        "target": 22
+      },
+      {
+        "weight": 1.0493349587783078,
+        "type": "forward",
+        "source": 21,
+        "target": 28
+      },
+      {
+        "weight": 0.5932099649947664,
+        "type": "forward",
+        "source": 21,
+        "target": 29
+      },
+      {
+        "weight": 0.6679751911628417,
+        "type": "forward",
+        "source": 21,
+        "target": 30
+      },
+      {
+        "weight": 0.7906431396619537,
+        "type": "forward",
+        "source": 22,
+        "target": 24
+      },
+      {
+        "weight": 0.8133619685490654,
+        "type": "forward",
+        "source": 22,
+        "target": 30
+      },
+      {
+        "weight": 0.8467748515788163,
+        "type": "forward",
+        "source": 23,
+        "target": 24
+      },
+      {
+        "weight": 1.4132437545674366,
+        "type": "forward",
+        "source": 23,
+        "target": 25
+      },
+      {
+        "weight": 0.7468510285320096,
+        "type": "forward",
+        "source": 24,
+        "target": 31
+      },
+      {
+        "weight": 0.5058238833893083,
+        "type": "forward",
+        "source": 25,
+        "target": 27
+      },
+      {
+        "weight": 1.201096639375149,
+        "type": "forward",
+        "source": 26,
+        "target": 30
+      },
+      {
+        "weight": 0.7959394934152504,
+        "type": "forward",
+        "source": 27,
+        "target": 31
+      },
+      {
+        "weight": 0.9978667953192267,
+        "type": "forward",
+        "source": 28,
+        "target": 30
+      },
+      {
+        "weight": 1.320166786533488,
+        "type": "forward",
+        "source": 29,
+        "target": 31
+      }
+    ]
+  }
+}

@@ -1,0 +1,929 @@
+{
+  "name": "BienenWolf-G1.636388888888889-706-0940847e",
+  "generation": 0.6363888888888889,
+  "mixture": {
+    "wolf_rudel_jagd": 43.46,
+    "bienen_schwarm": 47.01,
+    "logistik_hub_spoke": 9.53
+  },
+  "fitness": 0.46562009805607174,
+  "timestamp": "20260412_021732",
+  "graph_data": {
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+      {
+        "type": "SwarmFFN",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 0
+      },
+      {
+        "type": "SwarmFFN",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 1
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 2
+      },
+      {
+        "type": "SwarmFFN",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 3
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 4
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 5
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 6
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 7
+      },
+      {
+        "type": "SwarmFFN",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 8
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 9
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 10
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 11
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 12
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 13
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 14
+      },
+      {
+        "type": "SwarmFFN",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 15
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 16
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 17
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 18
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 19
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 20
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 21
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 22
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 23
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 24
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 25
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 26
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 27
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 28
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 29
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "wolf_rudel_jagd": 43.46,
+          "bienen_schwarm": 47.01,
+          "logistik_hub_spoke": 9.53
+        },
+        "id": 30
+      }
+    ],
+    "edges": [
+      {
+        "weight": 0.6617066131584185,
+        "type": "forward",
+        "source": 0,
+        "target": 2
+      },
+      {
+        "weight": 0.9480036975652816,
+        "type": "forward",
+        "source": 0,
+        "target": 3
+      },
+      {
+        "weight": 1.391728627998146,
+        "type": "forward",
+        "source": 0,
+        "target": 5
+      },
+      {
+        "weight": 1.1520948075854487,
+        "type": "forward",
+        "source": 0,
+        "target": 12
+      },
+      {
+        "weight": 0.9827523901939804,
+        "type": "forward",
+        "source": 0,
+        "target": 17
+      },
+      {
+        "weight": 0.8388963329495611,
+        "type": "forward",
+        "source": 0,
+        "target": 21
+      },
+      {
+        "weight": 0.6800749509051514,
+        "type": "forward",
+        "source": 0,
+        "target": 22
+      },
+      {
+        "weight": 0.515905814846705,
+        "type": "forward",
+        "source": 0,
+        "target": 24
+      },
+      {
+        "weight": 0.5763580338550437,
+        "type": "forward",
+        "source": 0,
+        "target": 30
+      },
+      {
+        "weight": 0.6894287070810703,
+        "type": "forward",
+        "source": 1,
+        "target": 2
+      },
+      {
+        "weight": 0.8450367723971549,
+        "type": "forward",
+        "source": 1,
+        "target": 5
+      },
+      {
+        "weight": 1.218990602004686,
+        "type": "forward",
+        "source": 1,
+        "target": 8
+      },
+      {
+        "weight": 0.7980120243612384,
+        "type": "forward",
+        "source": 1,
+        "target": 10
+      },
+      {
+        "weight": 0.7380926668582586,
+        "type": "forward",
+        "source": 1,
+        "target": 13
+      },
+      {
+        "weight": 0.7337419982768681,
+        "type": "forward",
+        "source": 1,
+        "target": 20
+      },
+      {
+        "weight": 1.3380126207943603,
+        "type": "forward",
+        "source": 1,
+        "target": 24
+      },
+      {
+        "weight": 0.8167523843531155,
+        "type": "forward",
+        "source": 1,
+        "target": 26
+      },
+      {
+        "weight": 1.0542231647000033,
+        "type": "forward",
+        "source": 2,
+        "target": 17
+      },
+      {
+        "weight": 1.4661987054013688,
+        "type": "forward",
+        "source": 2,
+        "target": 27
+      },
+      {
+        "weight": 1.4237981400174031,
+        "type": "forward",
+        "source": 3,
+        "target": 7
+      },
+      {
+        "weight": 0.8473652932909209,
+        "type": "forward",
+        "source": 3,
+        "target": 13
+      },
+      {
+        "weight": 1.4663067813639348,
+        "type": "forward",
+        "source": 3,
+        "target": 17
+      },
+      {
+        "weight": 1.0575735966664812,
+        "type": "forward",
+        "source": 3,
+        "target": 21
+      },
+      {
+        "weight": 1.4558358749954032,
+        "type": "forward",
+        "source": 3,
+        "target": 23
+      },
+      {
+        "weight": 0.6743731034824262,
+        "type": "forward",
+        "source": 3,
+        "target": 24
+      },
+      {
+        "weight": 0.7948181017547612,
+        "type": "forward",
+        "source": 3,
+        "target": 28
+      },
+      {
+        "weight": 1.4092901050381,
+        "type": "forward",
+        "source": 3,
+        "target": 30
+      },
+      {
+        "weight": 1.0795341514554426,
+        "type": "forward",
+        "source": 4,
+        "target": 17
+      },
+      {
+        "weight": 1.1232051680697737,
+        "type": "forward",
+        "source": 4,
+        "target": 20
+      },
+      {
+        "weight": 1.0887303619443482,
+        "type": "forward",
+        "source": 4,
+        "target": 28
+      },
+      {
+        "weight": 0.9878230250675597,
+        "type": "forward",
+        "source": 5,
+        "target": 7
+      },
+      {
+        "weight": 0.7931355172294976,
+        "type": "forward",
+        "source": 5,
+        "target": 10
+      },
+      {
+        "weight": 0.6673004767138786,
+        "type": "forward",
+        "source": 5,
+        "target": 12
+      },
+      {
+        "weight": 0.7347647478970499,
+        "type": "forward",
+        "source": 5,
+        "target": 16
+      },
+      {
+        "weight": 1.031199074243398,
+        "type": "forward",
+        "source": 5,
+        "target": 27
+      },
+      {
+        "weight": 1.1426693814074387,
+        "type": "forward",
+        "source": 5,
+        "target": 30
+      },
+      {
+        "weight": 0.6983855467340598,
+        "type": "feedback",
+        "source": 5,
+        "target": 13
+      },
+      {
+        "weight": 1.206708413206383,
+        "type": "forward",
+        "source": 6,
+        "target": 8
+      },
+      {
+        "weight": 1.3446824942112006,
+        "type": "forward",
+        "source": 6,
+        "target": 11
+      },
+      {
+        "weight": 0.8505646880385906,
+        "type": "forward",
+        "source": 6,
+        "target": 16
+      },
+      {
+        "weight": 1.387024801541148,
+        "type": "forward",
+        "source": 6,
+        "target": 19
+      },
+      {
+        "weight": 0.8043255902426072,
+        "type": "forward",
+        "source": 6,
+        "target": 23
+      },
+      {
+        "weight": 1.4164800141262037,
+        "type": "forward",
+        "source": 6,
+        "target": 28
+      },
+      {
+        "weight": 0.6126419528343816,
+        "type": "forward",
+        "source": 7,
+        "target": 8
+      },
+      {
+        "weight": 0.7243098344334473,
+        "type": "forward",
+        "source": 7,
+        "target": 9
+      },
+      {
+        "weight": 0.5569089171768994,
+        "type": "forward",
+        "source": 7,
+        "target": 15
+      },
+      {
+        "weight": 0.8659843782441927,
+        "type": "forward",
+        "source": 7,
+        "target": 20
+      },
+      {
+        "weight": 1.4469505698494158,
+        "type": "forward",
+        "source": 7,
+        "target": 21
+      },
+      {
+        "weight": 1.0686574090436853,
+        "type": "forward",
+        "source": 7,
+        "target": 25
+      },
+      {
+        "weight": 0.9172937111671366,
+        "type": "forward",
+        "source": 7,
+        "target": 29
+      },
+      {
+        "weight": 0.5348380925681758,
+        "type": "forward",
+        "source": 8,
+        "target": 9
+      },
+      {
+        "weight": 1.4326138565474915,
+        "type": "forward",
+        "source": 8,
+        "target": 11
+      },
+      {
+        "weight": 1.3327257992401158,
+        "type": "forward",
+        "source": 8,
+        "target": 13
+      },
+      {
+        "weight": 1.080998547932944,
+        "type": "forward",
+        "source": 8,
+        "target": 22
+      },
+      {
+        "weight": 0.959804356693651,
+        "type": "forward",
+        "source": 8,
+        "target": 23
+      },
+      {
+        "weight": 0.8090872231976396,
+        "type": "forward",
+        "source": 8,
+        "target": 25
+      },
+      {
+        "weight": 0.6776316044269624,
+        "type": "forward",
+        "source": 9,
+        "target": 18
+      },
+      {
+        "weight": 1.131928241372176,
+        "type": "forward",
+        "source": 9,
+        "target": 20
+      },
+      {
+        "weight": 1.3530913319098747,
+        "type": "forward",
+        "source": 9,
+        "target": 21
+      },
+      {
+        "weight": 0.5076189493535874,
+        "type": "forward",
+        "source": 9,
+        "target": 27
+      },
+      {
+        "weight": 0.7870752047994317,
+        "type": "forward",
+        "source": 9,
+        "target": 30
+      },
+      {
+        "weight": 0.6389673811110715,
+        "type": "forward",
+        "source": 10,
+        "target": 13
+      },
+      {
+        "weight": 1.4240537175870478,
+        "type": "forward",
+        "source": 10,
+        "target": 17
+      },
+      {
+        "weight": 0.9347284914442541,
+        "type": "forward",
+        "source": 10,
+        "target": 18
+      },
+      {
+        "weight": 1.0852661484332553,
+        "type": "forward",
+        "source": 10,
+        "target": 25
+      },
+      {
+        "weight": 1.2629013721606717,
+        "type": "forward",
+        "source": 11,
+        "target": 18
+      },
+      {
+        "weight": 0.802141227237848,
+        "type": "forward",
+        "source": 11,
+        "target": 24
+      },
+      {
+        "weight": 0.6383651971580289,
+        "type": "forward",
+        "source": 12,
+        "target": 21
+      },
+      {
+        "weight": 0.8711084800269213,
+        "type": "forward",
+        "source": 12,
+        "target": 22
+      },
+      {
+        "weight": 0.7895664873751934,
+        "type": "forward",
+        "source": 12,
+        "target": 23
+      },
+      {
+        "weight": 1.0519561193092772,
+        "type": "forward",
+        "source": 12,
+        "target": 24
+      },
+      {
+        "weight": 0.5112081240843402,
+        "type": "forward",
+        "source": 12,
+        "target": 25
+      },
+      {
+        "weight": 0.6618196519790069,
+        "type": "forward",
+        "source": 13,
+        "target": 21
+      },
+      {
+        "weight": 0.5635663949407516,
+        "type": "feedback",
+        "source": 13,
+        "target": 24
+      },
+      {
+        "weight": 1.4872181600079852,
+        "type": "forward",
+        "source": 13,
+        "target": 25
+      },
+      {
+        "weight": 0.6758444292465677,
+        "type": "feedback",
+        "source": 13,
+        "target": 19
+      },
+      {
+        "weight": 0.6769184341902412,
+        "type": "forward",
+        "source": 14,
+        "target": 17
+      },
+      {
+        "weight": 1.4417135039575937,
+        "type": "forward",
+        "source": 14,
+        "target": 21
+      },
+      {
+        "weight": 0.5538931641398198,
+        "type": "forward",
+        "source": 15,
+        "target": 23
+      },
+      {
+        "weight": 1.1451482113001537,
+        "type": "forward",
+        "source": 16,
+        "target": 17
+      },
+      {
+        "weight": 0.6973899534886796,
+        "type": "forward",
+        "source": 16,
+        "target": 22
+      },
+      {
+        "weight": 0.6695197750396729,
+        "type": "forward",
+        "source": 16,
+        "target": 23
+      },
+      {
+        "weight": 0.8817544802909586,
+        "type": "forward",
+        "source": 16,
+        "target": 25
+      },
+      {
+        "weight": 1.4206662631072948,
+        "type": "forward",
+        "source": 16,
+        "target": 26
+      },
+      {
+        "weight": 0.8737388375383441,
+        "type": "forward",
+        "source": 16,
+        "target": 27
+      },
+      {
+        "weight": 1.2693320762209406,
+        "type": "forward",
+        "source": 16,
+        "target": 28
+      },
+      {
+        "weight": 0.6648630926887062,
+        "type": "forward",
+        "source": 17,
+        "target": 19
+      },
+      {
+        "weight": 0.9114276702420391,
+        "type": "forward",
+        "source": 17,
+        "target": 21
+      },
+      {
+        "weight": 1.2989228965942161,
+        "type": "forward",
+        "source": 17,
+        "target": 23
+      },
+      {
+        "weight": 0.7738779008105525,
+        "type": "feedback",
+        "source": 17,
+        "target": 25
+      },
+      {
+        "weight": 0.7560824579224322,
+        "type": "forward",
+        "source": 17,
+        "target": 28
+      },
+      {
+        "weight": 1.261765346009358,
+        "type": "forward",
+        "source": 18,
+        "target": 20
+      },
+      {
+        "weight": 1.0253419652597375,
+        "type": "forward",
+        "source": 18,
+        "target": 25
+      },
+      {
+        "weight": 0.6401442156253683,
+        "type": "forward",
+        "source": 18,
+        "target": 27
+      },
+      {
+        "weight": 1.2224634445698388,
+        "type": "forward",
+        "source": 20,
+        "target": 24
+      },
+      {
+        "weight": 1.2919879679001505,
+        "type": "forward",
+        "source": 20,
+        "target": 27
+      },
+      {
+        "weight": 1.3381072680303423,
+        "type": "forward",
+        "source": 21,
+        "target": 29
+      },
+      {
+        "weight": 1.3493606751887661,
+        "type": "forward",
+        "source": 22,
+        "target": 26
+      },
+      {
+        "weight": 0.9896154766609667,
+        "type": "forward",
+        "source": 22,
+        "target": 27
+      },
+      {
+        "weight": 1.153395026003412,
+        "type": "forward",
+        "source": 22,
+        "target": 30
+      },
+      {
+        "weight": 0.999185756385554,
+        "type": "forward",
+        "source": 23,
+        "target": 28
+      },
+      {
+        "weight": 1.3337232818945264,
+        "type": "forward",
+        "source": 24,
+        "target": 30
+      },
+      {
+        "weight": 0.9805728619061348,
+        "type": "forward",
+        "source": 26,
+        "target": 29
+      },
+      {
+        "weight": 1.0630937680321377,
+        "type": "forward",
+        "source": 27,
+        "target": 28
+      },
+      {
+        "weight": 1.2087170011910933,
+        "type": "forward",
+        "source": 27,
+        "target": 29
+      }
+    ]
+  }
+}

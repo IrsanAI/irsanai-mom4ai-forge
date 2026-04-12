@@ -1,0 +1,923 @@
+{
+  "name": "StadtverkehrWolf-G1.636388888888889-706-3e5fc2a8",
+  "generation": 0.6363888888888889,
+  "mixture": {
+    "wolf_rudel": 0.87,
+    "stadtverkehr_selbstorganisation": 63.25,
+    "federated_learning_kooperative": 3.44,
+    "wolf_rudel_jagd": 16.68,
+    "ameisen_schwarm": 15.76
+  },
+  "fitness": 0.4548027300492732,
+  "timestamp": "20260412_021639",
+  "graph_data": {
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "wolf_rudel": 0.87,
+          "stadtverkehr_selbstorganisation": 63.25,
+          "federated_learning_kooperative": 3.44,
+          "wolf_rudel_jagd": 16.68,
+          "ameisen_schwarm": 15.76
+        },
+        "id": 0
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "wolf_rudel": 0.87,
+          "stadtverkehr_selbstorganisation": 63.25,
+          "federated_learning_kooperative": 3.44,
+          "wolf_rudel_jagd": 16.68,
+          "ameisen_schwarm": 15.76
+        },
+        "id": 1
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "wolf_rudel": 0.87,
+          "stadtverkehr_selbstorganisation": 63.25,
+          "federated_learning_kooperative": 3.44,
+          "wolf_rudel_jagd": 16.68,
+          "ameisen_schwarm": 15.76
+        },
+        "id": 2
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "wolf_rudel": 0.87,
+          "stadtverkehr_selbstorganisation": 63.25,
+          "federated_learning_kooperative": 3.44,
+          "wolf_rudel_jagd": 16.68,
+          "ameisen_schwarm": 15.76
+        },
+        "id": 3
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "wolf_rudel": 0.87,
+          "stadtverkehr_selbstorganisation": 63.25,
+          "federated_learning_kooperative": 3.44,
+          "wolf_rudel_jagd": 16.68,
+          "ameisen_schwarm": 15.76
+        },
+        "id": 4
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "wolf_rudel": 0.87,
+          "stadtverkehr_selbstorganisation": 63.25,
+          "federated_learning_kooperative": 3.44,
+          "wolf_rudel_jagd": 16.68,
+          "ameisen_schwarm": 15.76
+        },
+        "id": 5
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "wolf_rudel": 0.87,
+          "stadtverkehr_selbstorganisation": 63.25,
+          "federated_learning_kooperative": 3.44,
+          "wolf_rudel_jagd": 16.68,
+          "ameisen_schwarm": 15.76
+        },
+        "id": 6
+      },
+      {
+        "type": "SwarmFFN",
+        "bio_influence": {
+          "wolf_rudel": 0.87,
+          "stadtverkehr_selbstorganisation": 63.25,
+          "federated_learning_kooperative": 3.44,
+          "wolf_rudel_jagd": 16.68,
+          "ameisen_schwarm": 15.76
+        },
+        "id": 7
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "wolf_rudel": 0.87,
+          "stadtverkehr_selbstorganisation": 63.25,
+          "federated_learning_kooperative": 3.44,
+          "wolf_rudel_jagd": 16.68,
+          "ameisen_schwarm": 15.76
+        },
+        "id": 8
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "wolf_rudel": 0.87,
+          "stadtverkehr_selbstorganisation": 63.25,
+          "federated_learning_kooperative": 3.44,
+          "wolf_rudel_jagd": 16.68,
+          "ameisen_schwarm": 15.76
+        },
+        "id": 9
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "wolf_rudel": 0.87,
+          "stadtverkehr_selbstorganisation": 63.25,
+          "federated_learning_kooperative": 3.44,
+          "wolf_rudel_jagd": 16.68,
+          "ameisen_schwarm": 15.76
+        },
+        "id": 10
+      },
+      {
+        "type": "SwarmFFN",
+        "bio_influence": {
+          "wolf_rudel": 0.87,
+          "stadtverkehr_selbstorganisation": 63.25,
+          "federated_learning_kooperative": 3.44,
+          "wolf_rudel_jagd": 16.68,
+          "ameisen_schwarm": 15.76
+        },
+        "id": 11
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "wolf_rudel": 0.87,
+          "stadtverkehr_selbstorganisation": 63.25,
+          "federated_learning_kooperative": 3.44,
+          "wolf_rudel_jagd": 16.68,
+          "ameisen_schwarm": 15.76
+        },
+        "id": 12
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "wolf_rudel": 0.87,
+          "stadtverkehr_selbstorganisation": 63.25,
+          "federated_learning_kooperative": 3.44,
+          "wolf_rudel_jagd": 16.68,
+          "ameisen_schwarm": 15.76
+        },
+        "id": 13
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "wolf_rudel": 0.87,
+          "stadtverkehr_selbstorganisation": 63.25,
+          "federated_learning_kooperative": 3.44,
+          "wolf_rudel_jagd": 16.68,
+          "ameisen_schwarm": 15.76
+        },
+        "id": 14
+      },
+      {
+        "type": "SwarmFFN",
+        "bio_influence": {
+          "wolf_rudel": 0.87,
+          "stadtverkehr_selbstorganisation": 63.25,
+          "federated_learning_kooperative": 3.44,
+          "wolf_rudel_jagd": 16.68,
+          "ameisen_schwarm": 15.76
+        },
+        "id": 15
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "wolf_rudel": 0.87,
+          "stadtverkehr_selbstorganisation": 63.25,
+          "federated_learning_kooperative": 3.44,
+          "wolf_rudel_jagd": 16.68,
+          "ameisen_schwarm": 15.76
+        },
+        "id": 16
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "wolf_rudel": 0.87,
+          "stadtverkehr_selbstorganisation": 63.25,
+          "federated_learning_kooperative": 3.44,
+          "wolf_rudel_jagd": 16.68,
+          "ameisen_schwarm": 15.76
+        },
+        "id": 17
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "wolf_rudel": 0.87,
+          "stadtverkehr_selbstorganisation": 63.25,
+          "federated_learning_kooperative": 3.44,
+          "wolf_rudel_jagd": 16.68,
+          "ameisen_schwarm": 15.76
+        },
+        "id": 18
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "wolf_rudel": 0.87,
+          "stadtverkehr_selbstorganisation": 63.25,
+          "federated_learning_kooperative": 3.44,
+          "wolf_rudel_jagd": 16.68,
+          "ameisen_schwarm": 15.76
+        },
+        "id": 19
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "wolf_rudel": 0.87,
+          "stadtverkehr_selbstorganisation": 63.25,
+          "federated_learning_kooperative": 3.44,
+          "wolf_rudel_jagd": 16.68,
+          "ameisen_schwarm": 15.76
+        },
+        "id": 20
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "wolf_rudel": 0.87,
+          "stadtverkehr_selbstorganisation": 63.25,
+          "federated_learning_kooperative": 3.44,
+          "wolf_rudel_jagd": 16.68,
+          "ameisen_schwarm": 15.76
+        },
+        "id": 21
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "wolf_rudel": 0.87,
+          "stadtverkehr_selbstorganisation": 63.25,
+          "federated_learning_kooperative": 3.44,
+          "wolf_rudel_jagd": 16.68,
+          "ameisen_schwarm": 15.76
+        },
+        "id": 22
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "wolf_rudel": 0.87,
+          "stadtverkehr_selbstorganisation": 63.25,
+          "federated_learning_kooperative": 3.44,
+          "wolf_rudel_jagd": 16.68,
+          "ameisen_schwarm": 15.76
+        },
+        "id": 23
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "wolf_rudel": 0.87,
+          "stadtverkehr_selbstorganisation": 63.25,
+          "federated_learning_kooperative": 3.44,
+          "wolf_rudel_jagd": 16.68,
+          "ameisen_schwarm": 15.76
+        },
+        "id": 24
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "wolf_rudel": 0.87,
+          "stadtverkehr_selbstorganisation": 63.25,
+          "federated_learning_kooperative": 3.44,
+          "wolf_rudel_jagd": 16.68,
+          "ameisen_schwarm": 15.76
+        },
+        "id": 25
+      },
+      {
+        "type": "StandardMLP",
+        "bio_influence": {
+          "wolf_rudel": 0.87,
+          "stadtverkehr_selbstorganisation": 63.25,
+          "federated_learning_kooperative": 3.44,
+          "wolf_rudel_jagd": 16.68,
+          "ameisen_schwarm": 15.76
+        },
+        "id": 26
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "wolf_rudel": 0.87,
+          "stadtverkehr_selbstorganisation": 63.25,
+          "federated_learning_kooperative": 3.44,
+          "wolf_rudel_jagd": 16.68,
+          "ameisen_schwarm": 15.76
+        },
+        "id": 27
+      },
+      {
+        "type": "PlasticityGate",
+        "bio_influence": {
+          "wolf_rudel": 0.87,
+          "stadtverkehr_selbstorganisation": 63.25,
+          "federated_learning_kooperative": 3.44,
+          "wolf_rudel_jagd": 16.68,
+          "ameisen_schwarm": 15.76
+        },
+        "id": 28
+      }
+    ],
+    "edges": [
+      {
+        "weight": 0.7213966691865081,
+        "type": "forward",
+        "source": 0,
+        "target": 3
+      },
+      {
+        "weight": 1.2049194976320963,
+        "type": "forward",
+        "source": 0,
+        "target": 4
+      },
+      {
+        "weight": 1.0751215521978152,
+        "type": "forward",
+        "source": 0,
+        "target": 6
+      },
+      {
+        "weight": 1.2615727874608367,
+        "type": "forward",
+        "source": 0,
+        "target": 7
+      },
+      {
+        "weight": 0.9655019775756437,
+        "type": "forward",
+        "source": 0,
+        "target": 8
+      },
+      {
+        "weight": 1.4561629968351966,
+        "type": "forward",
+        "source": 0,
+        "target": 18
+      },
+      {
+        "weight": 0.5732992056831364,
+        "type": "forward",
+        "source": 0,
+        "target": 19
+      },
+      {
+        "weight": 1.1610406401519824,
+        "type": "forward",
+        "source": 1,
+        "target": 12
+      },
+      {
+        "weight": 0.39011192716645043,
+        "type": "feedback",
+        "source": 1,
+        "target": 1
+      },
+      {
+        "weight": 0.5976734884906849,
+        "type": "forward",
+        "source": 2,
+        "target": 3
+      },
+      {
+        "weight": 1.0683875147457202,
+        "type": "forward",
+        "source": 2,
+        "target": 8
+      },
+      {
+        "weight": 0.9928485035561008,
+        "type": "forward",
+        "source": 2,
+        "target": 9
+      },
+      {
+        "weight": 1.054208200857657,
+        "type": "forward",
+        "source": 2,
+        "target": 10
+      },
+      {
+        "weight": 0.7816304607348482,
+        "type": "forward",
+        "source": 2,
+        "target": 14
+      },
+      {
+        "weight": 0.6275761234301664,
+        "type": "forward",
+        "source": 2,
+        "target": 16
+      },
+      {
+        "weight": 1.0843152865995827,
+        "type": "forward",
+        "source": 2,
+        "target": 18
+      },
+      {
+        "weight": 0.6781604772003546,
+        "type": "forward",
+        "source": 2,
+        "target": 21
+      },
+      {
+        "weight": 1.2459676824513854,
+        "type": "forward",
+        "source": 2,
+        "target": 24
+      },
+      {
+        "weight": 0.30124997215770466,
+        "type": "feedback",
+        "source": 2,
+        "target": 17
+      },
+      {
+        "weight": 0.5083754713785317,
+        "type": "forward",
+        "source": 3,
+        "target": 4
+      },
+      {
+        "weight": 0.8558919000861822,
+        "type": "forward",
+        "source": 3,
+        "target": 5
+      },
+      {
+        "weight": 0.601527326002908,
+        "type": "forward",
+        "source": 3,
+        "target": 11
+      },
+      {
+        "weight": 1.1733943495701684,
+        "type": "forward",
+        "source": 3,
+        "target": 13
+      },
+      {
+        "weight": 0.969175326660379,
+        "type": "forward",
+        "source": 3,
+        "target": 14
+      },
+      {
+        "weight": 0.6769476113901606,
+        "type": "forward",
+        "source": 3,
+        "target": 15
+      },
+      {
+        "weight": 0.5871033671146654,
+        "type": "forward",
+        "source": 3,
+        "target": 16
+      },
+      {
+        "weight": 1.1997199300886146,
+        "type": "forward",
+        "source": 3,
+        "target": 17
+      },
+      {
+        "weight": 1.348809833450845,
+        "type": "forward",
+        "source": 3,
+        "target": 22
+      },
+      {
+        "weight": 0.5415899484811021,
+        "type": "forward",
+        "source": 3,
+        "target": 23
+      },
+      {
+        "weight": 1.435131483393615,
+        "type": "forward",
+        "source": 3,
+        "target": 26
+      },
+      {
+        "weight": 0.7421895428651524,
+        "type": "forward",
+        "source": 4,
+        "target": 7
+      },
+      {
+        "weight": 1.4521549029541163,
+        "type": "forward",
+        "source": 4,
+        "target": 13
+      },
+      {
+        "weight": 1.1527204650556881,
+        "type": "forward",
+        "source": 4,
+        "target": 17
+      },
+      {
+        "weight": 1.097354646857136,
+        "type": "forward",
+        "source": 4,
+        "target": 20
+      },
+      {
+        "weight": 1.0405995734437559,
+        "type": "forward",
+        "source": 4,
+        "target": 22
+      },
+      {
+        "weight": 1.4058105830625203,
+        "type": "forward",
+        "source": 4,
+        "target": 26
+      },
+      {
+        "weight": 0.8373047349264502,
+        "type": "forward",
+        "source": 4,
+        "target": 27
+      },
+      {
+        "weight": 1.1378327731743496,
+        "type": "forward",
+        "source": 5,
+        "target": 6
+      },
+      {
+        "weight": 0.5128249619742791,
+        "type": "forward",
+        "source": 5,
+        "target": 7
+      },
+      {
+        "weight": 0.5027881670691324,
+        "type": "forward",
+        "source": 5,
+        "target": 9
+      },
+      {
+        "weight": 0.5865886918821972,
+        "type": "forward",
+        "source": 5,
+        "target": 17
+      },
+      {
+        "weight": 0.5080470360753924,
+        "type": "forward",
+        "source": 5,
+        "target": 19
+      },
+      {
+        "weight": 1.2933108707715695,
+        "type": "forward",
+        "source": 5,
+        "target": 25
+      },
+      {
+        "weight": 0.9685668138143367,
+        "type": "forward",
+        "source": 5,
+        "target": 28
+      },
+      {
+        "weight": 0.6610936985205967,
+        "type": "forward",
+        "source": 6,
+        "target": 11
+      },
+      {
+        "weight": 0.7039352155468626,
+        "type": "forward",
+        "source": 6,
+        "target": 15
+      },
+      {
+        "weight": 0.8185688301054287,
+        "type": "forward",
+        "source": 6,
+        "target": 27
+      },
+      {
+        "weight": 1.0965648382487267,
+        "type": "forward",
+        "source": 6,
+        "target": 28
+      },
+      {
+        "weight": 1.2708533918032119,
+        "type": "forward",
+        "source": 7,
+        "target": 18
+      },
+      {
+        "weight": 1.0221706978681202,
+        "type": "forward",
+        "source": 7,
+        "target": 23
+      },
+      {
+        "weight": 0.7638780326223412,
+        "type": "forward",
+        "source": 7,
+        "target": 25
+      },
+      {
+        "weight": 1.2209109172528747,
+        "type": "forward",
+        "source": 8,
+        "target": 9
+      },
+      {
+        "weight": 1.2387113275775077,
+        "type": "forward",
+        "source": 8,
+        "target": 20
+      },
+      {
+        "weight": 0.5888117012326237,
+        "type": "forward",
+        "source": 8,
+        "target": 21
+      },
+      {
+        "weight": 1.0332662262473398,
+        "type": "forward",
+        "source": 8,
+        "target": 23
+      },
+      {
+        "weight": 0.8354752021592539,
+        "type": "forward",
+        "source": 8,
+        "target": 28
+      },
+      {
+        "weight": 1.2130360464653487,
+        "type": "forward",
+        "source": 9,
+        "target": 11
+      },
+      {
+        "weight": 1.1809456279429749,
+        "type": "forward",
+        "source": 9,
+        "target": 13
+      },
+      {
+        "weight": 0.7261241042620479,
+        "type": "forward",
+        "source": 9,
+        "target": 17
+      },
+      {
+        "weight": 1.3149877394872083,
+        "type": "forward",
+        "source": 10,
+        "target": 13
+      },
+      {
+        "weight": 1.186413885261568,
+        "type": "forward",
+        "source": 10,
+        "target": 26
+      },
+      {
+        "weight": 1.1774048867284568,
+        "type": "forward",
+        "source": 10,
+        "target": 27
+      },
+      {
+        "weight": 1.1704077273541773,
+        "type": "forward",
+        "source": 11,
+        "target": 15
+      },
+      {
+        "weight": 0.7513674396640001,
+        "type": "forward",
+        "source": 11,
+        "target": 16
+      },
+      {
+        "weight": 0.6365047221154734,
+        "type": "forward",
+        "source": 11,
+        "target": 25
+      },
+      {
+        "weight": 0.6879044891707811,
+        "type": "forward",
+        "source": 11,
+        "target": 27
+      },
+      {
+        "weight": 0.5543825196500675,
+        "type": "forward",
+        "source": 12,
+        "target": 21
+      },
+      {
+        "weight": 1.2162162539665737,
+        "type": "forward",
+        "source": 12,
+        "target": 22
+      },
+      {
+        "weight": 0.610579498350434,
+        "type": "forward",
+        "source": 12,
+        "target": 26
+      },
+      {
+        "weight": 1.4975332033720816,
+        "type": "forward",
+        "source": 13,
+        "target": 18
+      },
+      {
+        "weight": 0.8291954034195641,
+        "type": "forward",
+        "source": 13,
+        "target": 23
+      },
+      {
+        "weight": 1.3719450670723794,
+        "type": "forward",
+        "source": 13,
+        "target": 26
+      },
+      {
+        "weight": 0.6841595027283908,
+        "type": "forward",
+        "source": 13,
+        "target": 28
+      },
+      {
+        "weight": 1.181321236730859,
+        "type": "forward",
+        "source": 14,
+        "target": 16
+      },
+      {
+        "weight": 1.2058657825203587,
+        "type": "forward",
+        "source": 14,
+        "target": 20
+      },
+      {
+        "weight": 0.5755450036016547,
+        "type": "forward",
+        "source": 14,
+        "target": 21
+      },
+      {
+        "weight": 1.113841943574168,
+        "type": "forward",
+        "source": 14,
+        "target": 24
+      },
+      {
+        "weight": 1.0825568163787183,
+        "type": "forward",
+        "source": 15,
+        "target": 18
+      },
+      {
+        "weight": 0.5487194656932955,
+        "type": "forward",
+        "source": 15,
+        "target": 25
+      },
+      {
+        "weight": 0.7846396860204814,
+        "type": "forward",
+        "source": 15,
+        "target": 26
+      },
+      {
+        "weight": 1.3413270540746796,
+        "type": "forward",
+        "source": 16,
+        "target": 23
+      },
+      {
+        "weight": 1.1418554362923932,
+        "type": "forward",
+        "source": 16,
+        "target": 24
+      },
+      {
+        "weight": 0.6998766986491435,
+        "type": "forward",
+        "source": 16,
+        "target": 26
+      },
+      {
+        "weight": 0.6314272253354127,
+        "type": "forward",
+        "source": 16,
+        "target": 28
+      },
+      {
+        "weight": 0.514227261432958,
+        "type": "forward",
+        "source": 17,
+        "target": 18
+      },
+      {
+        "weight": 0.8153276065595774,
+        "type": "forward",
+        "source": 17,
+        "target": 21
+      },
+      {
+        "weight": 0.9281050025846963,
+        "type": "forward",
+        "source": 17,
+        "target": 24
+      },
+      {
+        "weight": 1.1868921069716443,
+        "type": "forward",
+        "source": 17,
+        "target": 28
+      },
+      {
+        "weight": 0.6343266156902657,
+        "type": "forward",
+        "source": 18,
+        "target": 23
+      },
+      {
+        "weight": 1.3413696975705067,
+        "type": "forward",
+        "source": 18,
+        "target": 26
+      },
+      {
+        "weight": 0.9446643088536665,
+        "type": "forward",
+        "source": 19,
+        "target": 22
+      },
+      {
+        "weight": 0.8773876601125997,
+        "type": "forward",
+        "source": 19,
+        "target": 24
+      },
+      {
+        "weight": 0.7087612442659498,
+        "type": "forward",
+        "source": 20,
+        "target": 24
+      },
+      {
+        "weight": 1.3916162254617206,
+        "type": "forward",
+        "source": 20,
+        "target": 27
+      },
+      {
+        "weight": 0.9821682256266605,
+        "type": "forward",
+        "source": 21,
+        "target": 25
+      },
+      {
+        "weight": 1.4700814203888266,
+        "type": "forward",
+        "source": 24,
+        "target": 26
+      },
+      {
+        "weight": 0.7523205607964171,
+        "type": "forward",
+        "source": 24,
+        "target": 27
+      }
+    ]
+  }
+}
